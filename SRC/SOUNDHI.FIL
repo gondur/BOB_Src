@@ -1,0 +1,242 @@
+[files]
+116	dir.dir		FIL_DIR_SFX_HI	//sfx_samples
+	enlufinh.wav		//200
+	enlufexh.wav
+	enlufinl.wav
+	enlufexl.wav
+	enrafinh.wav		
+	enrafexh.wav
+	enrafinl.wav
+	enrafexl.wav
+	enbmbinh.wav
+	enbmbexh.wav
+	enbmbinl.wav
+	enbmbexl.wav
+	Idlluflp.wav
+	Idlraflp.wav
+	smotrstr.wav	
+	Smotrmid.wav 	
+	Smotrend.wav 	
+	inflywhl.wav 	
+	Gunbrwn.wav	
+	Gunoerlk.wav	
+	Gunrhbor.wav	
+	Gunmg15.wav	
+	mgcanlp3.wav	
+	engsplut.wav 	
+	engdamg.wav	
+	engweak.wav	
+	engfuel.wav	
+	colbuild.wav	
+	colsgnd.wav 	
+	colhgnd.wav	
+	plncrsh3.wav	
+	plncrsh4.wav	
+	colac.wav	
+	colwater.wav	
+	cable.wav 	 
+	ricglss1.wav			//60
+	ricglss2.wav			//60
+	ricconc1.wav		//75
+	ricconc2.wav		//75
+	ricconc3.wav		//75
+	ricconc4.wav		//75
+	riccanv1.wav		//75
+	riccanv2.wav		//75
+	ricsoft1.wav		//75
+	ricsoft2.wav		//75
+	ricsoft3.wav		//75
+	ricsoft4.wav		//75
+	ricwood1.wav		//75
+	ricwood2.wav		//75
+	ricwood3.wav		//75
+	ricwood4.wav		//75
+	ricmetl1.wav		//75
+	ricmetl2.wav		//75
+	ricmetl3.wav		//75
+	ricmetl4.wav		//75
+	ricwtr1.wav			//75
+	ricwtr4.wav			//75
+	ricflsh1.wav		//75
+	ricflsh2.wav		//75
+	expflak1.wav				//200
+	expflak2.wav				//200
+	expflak3.wav				//200
+	expflak4.wav				//200
+	airxplo1.wav			//600
+	grndxpls.wav		//600
+	engnxplo.wav		//600
+	airxplo2.wav			//600
+	tnkxplsn.wav			//600
+	expfuel1.wav		//600
+	oilexp-1.wav		//600
+	oilexp-2.wav		//600
+	expdist1.wav		//600
+	expdist2.wav		//600
+	xplode-8.wav		//600
+	expbomb1.wav			//600
+	nplmrls.wav		//600
+	balnignt.wav		//600
+	gfrcmtl.wav	
+	ammoclck.wav	
+	gunempty.wav	
+	Guntank1.wav	
+	tankgun1.wav	
+	GunAA1.wav	 
+	altrif4.wav		//30
+	gncckng3.wav	
+	gncckng4.wav	
+	gnclck1.wav	
+	gnclck4.wav	
+	Gunlpfr.wav
+	Gunlpfl.wav
+	Gunlpt.wav
+	Cpsbuld1.wav	
+	Cpsbuld2.wav	
+	Cpsbuld3.wav	
+	Cpsbuld4.wav	
+	Cpswcol1.wav	
+	Cpswcol2.wav	
+	Cpswcol3.wav	
+	Cpswcol4.wav	
+	bmbwstl2.wav	
+	tyrscrh1.wav	
+	tyrscrh2.wav	
+	canopy.wav	
+	cnpyblow.wav	
+	canshat.wav	
+	buffmod1.wav
+	buffloo2.wav	
+	buffloo3.wav			//55
+	wngsnap.wav		//80
+	woodbrk1.wav	
+	woodbrk2.wav	
+	wngstrss.wav	
+	wngbrk.wav	
+	Pisthyd.wav	
+	Pistpne.wav	
+	gearret.wav	
+	unclamp1.wav	
+	airhiss.wav	
+	wrnhorn1.wav 	
+	wrnhorn2.wav 	
+	wrnhorn3.wav 	
+	cptswch1.wav	
+	cptswch2.wav 	
+	cptswch3.wav 	
+	cpthand1.wav 	
+	cpthand2.wav 	
+	cptpump1.wav 	
+	cptcatch.wav 	
+	cptslide.wav 	 
+	LOOPSTART	
+	dronlp.wav	
+	ovrevlp1.wav		//55
+	smlflp1.wav	
+	cptfire.wav	
+	wloop1.wav			//10
+	windloop.wav		//200
+	battlelp.wav		//200
+	gndloop.wav	
+	tloop2.wav		//40
+	trainlo1.wav	
+	trknrmlp.wav		//60
+	tug.wav		
+	rainloo.wav	
+	pflaploo.wav	
+	watloo.wav	
+	matflap.wav    	
+	brdnice1.wav	
+	birdsea1.wav	
+	LOOPEND		
+	sirnraid.wav	
+	dstalrm2.wav	
+	siren1.wav     	
+	sirclear.wav 	
+	flbysraf.wav 			//200
+	flbysluf.wav 			//200
+	flbysbmb.wav 		//200
+	flbyfraf.wav 			//200
+	flbyfluf.wav 			//200
+	flbyfbmb.wav 		//200
+	popen.wav	
+	plandwat.wav	
+	plandgnd.wav	
+	paraoof4.wav	
+	paraoof8.wav	
+	bnghead.wav		//45
+	yelp1.wav			//45
+	yelp2.wav			//45
+	yelp3.wav			//45
+	yelp4.wav			//45
+	yelp5.wav			//45
+	breath7.wav	
+	Cpswcrk1.wav	
+ 	Cpswcrk2.wav	
+	Cpswcrk3.wav	
+	Cpswsnp1.wav 	
+	gasp-1.wav	
+	snglgasp.wav	
+	arrgh.wav 		//45
+	Debshwr1.wav		
+	Debshwr2.wav	
+	Debshwr3.wav	
+	Debshwr4.wav	
+	debthud1.wav		//40
+	debthud2.wav		//40
+	debthud3.wav		//40
+	debthud4.wav		//40
+	debwatr1.wav		//75
+	debwatr2.wav		//75
+	debwatr3.wav		//75
+	debwatr4.wav		//75
+	henscuff.wav		//30
+	bbbls1.wav   	
+	sizzle.wav   	
+	bmbuncp1.wav	
+	stmwst1a.wav	
+	emjingle.wav 	
+	bbchime.wav 	
+	rats.wav 	
+	birdowl1.wav	
+	birdowl2.wav	
+	brdtweet.wav	
+	wings.wav 	 
+	ravens.wav 	
+	panic.wav 	
+	ambience.wav 	
+	nstlclg1.wav			
+	drawer1.wav			//10
+	drawer2.wav			//15
+	drwrsld3.wav		//70
+	paper1.wav 			//250
+	paper2.wav 			//230
+	paper3.wav 			//90
+	slide1.wav 		//230
+	button1.wav			//350
+	button2.wav			//200
+	button3.wav			//200
+	book1.wav  	
+	book2.wav  	
+	book3.wav   	
+	key1.wav   		//50
+	key2.wav   		//250
+	key3.wav   	
+	tick1.wav			//220
+	nstlclg1.wav			//10
+	ammoclck.wav			//20
+	telring.wav	
+	mutsiren.wav	
+	convloop.wav	
+	telpick.wav	
+	teletype.wav	
+	ftsteps.wav	//20
+	chair1.wav	//20
+	chair2.wav	//20
+	chair3.wav	//20
+	chair4.wav	//20
+	dooropen.wav	//20
+	doorclos.wav	//20
+
+	LASTSND		
+	volumes.bin	

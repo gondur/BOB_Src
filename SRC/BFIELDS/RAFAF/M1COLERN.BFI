@@ -1,0 +1,91 @@
+	WayPoint	M1COLERN_011d,
+	WayPoint	M1COLERN_011e,
+	WayPoint	M1COLERN_011f,
+	WayPoint	M1COLERN_0120,
+	WayPoint	M1COLERN_0121,
+	GroundItem	M1COLERN_2905,
+	BattleField
+	{
+		FileName	FIL_1_M1COLERN=M1COLERN.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_COLERNE,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	14838784,
+						Z	34371072
+					}
+				},
+				Route
+				{
+					WayPoint	M1COLERN_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	14833152,
+								Z	34339840
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1COLERN_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	14839808,
+								Z	34325504
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1COLERN_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	14857728,
+								Z	34325504
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1COLERN_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	14891520,
+								Z	34339840
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1COLERN_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	14918144,
+								Z	34354688
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1COLERN_2905=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

@@ -1,0 +1,136 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGEMAP
+DEST = ..\GAME\maskmap
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\ME109LW.x8\
+	$(DEST)\ME109RW.x8\
+	$(DEST)\DOMSK.x8\
+	$(DEST)\FONT.x8\
+	$(DEST)\HULWING.x8\
+	$(DEST)\HURWING.x8\
+	$(DEST)\ULWING2.x8\
+	$(DEST)\URWING2.x8\
+	$(DEST)\PSPIN.x8\
+	$(DEST)\LUFF.x8\
+	$(DEST)\CLOUD2.x8\
+	$(DEST)\PILOT.x8\
+	$(DEST)\GUNBITS.x8\
+	$(DEST)\PARLT.x8\
+	$(DEST)\WOODY.x8\
+	$(DEST)\PTOWER.x8\
+	$(DEST)\BIGEX.x8\
+	$(DEST)\PLUME1.x8\
+	$(DEST)\PLUME1A.x8\
+	$(DEST)\PLUME2.x8\
+	$(DEST)\PLUME3.x8\
+	$(DEST)\GFIRE2.x8\
+	$(DEST)\FIRE2.x8\
+	$(DEST)\FIREFAD1.x8\
+
+
+MAPS64X64	=	$(DEST)\TCAMO.x8\
+	$(DEST)\TCAMO2.x8\
+	$(DEST)\MAPCHAP.x8\
+	$(DEST)\RUNWHEEL.x8\
+	$(DEST)\TLADDER.x8\
+	$(DEST)\PARLFEN.x8\
+	$(DEST)\GRAV.x8\
+	$(DEST)\BALFIRE.x8\
+	$(DEST)\CRATER.x8\
+	$(DEST)\EXPFLASH.x8\
+
+
+MAPS128X128	=	$(DEST)\WHEEL.x8\
+	$(DEST)\JU88CANO.x8\
+	$(DEST)\ME110MSK.x8\
+	$(DEST)\RADIO.x8\
+	$(DEST)\THREAT01.x8\
+	$(DEST)\BRIST2.x8\
+	$(DEST)\CANNOP.x8\
+	$(DEST)\HURBITS2.x8\
+	$(DEST)\JU87CANN.x8\
+	$(DEST)\TRKWHEEL.x8\
+	$(DEST)\HE11TEST.x8\
+	$(DEST)\DOCSHP.x8\
+	$(DEST)\JU88CSHP.x8\
+	$(DEST)\PARLS.x8\
+	$(DEST)\PARLSIN.x8\
+	$(DEST)\DEBRIS1.x8\
+	$(DEST)\SPLUME1.x8\
+	$(DEST)\SPLUME2.x8\
+	$(DEST)\SPLUME3.x8\
+	$(DEST)\SPLUME4.x8\
+	$(DEST)\SMKMAPDK.x8\
+	$(DEST)\SMKMAPMD.x8\
+	$(DEST)\DUSTMAP.x8\
+	$(DEST)\FIRE.x8\
+
+
+MAPS32X32	=	$(DEST)\SQUEAK.x8\
+	$(DEST)\DITHER.x8\
+	$(DEST)\DITHER2.x8\
+	$(DEST)\DITHER3.x8\
+	$(DEST)\DITHER4.x8\
+	$(DEST)\DITHER5.x8\
+	$(DEST)\DITHER6.x8\
+	$(DEST)\DITHER7.x8\
+	$(DEST)\DITHER8.x8\
+	$(DEST)\PERIPH.x8\
+	$(DEST)\GUNGLOW.x8\
+
+
+MAPS64X128	=
+
+MAPS16X256	=
+
+MAPS128X16	=
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT256X256) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+
+$(MAPS64X64):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT64X64) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT128X128) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+
+$(MAPS32X32):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT32X32) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+

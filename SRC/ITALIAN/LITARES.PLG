@@ -1,0 +1,28 @@
+--------------------Configuration: LItaRes - Win32 Debug--------------------
+Begining build with project "C:\mig\Src\Italian\lItares.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"..\..\debug\italian/lItares.pch" /YX /Fo"..\..\debug\italian/" /Fd"..\..\debug\italian/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x809 /fo"..\..\debug\italian/Mig.res" /i "..\mfc" /i "..\mfc\res" /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"..\..\debug\italian/lItares.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /dll /pdb:none /machine:I386 /out:"..\..\debug\italian/miglang.dll" /implib:"..\..\debug\italian/miglang.lib" /NOENTRY "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x410 /fo"..\..\debug\italian/Mig.res" /i "..\mfc" /i "..\mfc\res" /d "_DEBUG" "C:\mig\Src\Italian\Mig.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /dll /pdb:none /machine:I386 /out:"..\..\debug\italian/miglang.dll" /implib:"..\..\debug\italian/miglang.lib" /NOENTRY  \mig\debug\italian\Mig.res" 
+Compiling resources...
+C:\Program Files\DevStudio\VC\MFC\include/afxres.rc (38): error RC2104 : undefined keyword or key name: Open
+
+
+
+
+
+
+Error executing rc.exe.
+
+
+
+miglang.dll - 1 error(s), 0 warning(s)

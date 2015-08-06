@@ -1,0 +1,65 @@
+Total comments requiring checking:
+
+C:\bob\src\AI\			TOTAL	5566	Jim		Fixed
+C:\bob\src\AIRCRAFT\	TOTAL	305				No problems
+C:\bob\src\BFIELDS\		TOTAL	9125			Fixed
+
+C:\bob\src\FILES\		TOTAL	1511	Jim
+C:\bob\src\GENERAL\		TOTAL	305
+C:\bob\src\INPUT\		TOTAL	966
+C:\bob\src\MEDITOR\		TOTAL	4168
+C:\bob\src\MFC\			TOTAL	16351
+C:\bob\src\MISSMAN\		TOTAL	19231
+C:\bob\src\MODEL\		TOTAL	20351
+C:\bob\src\MOVECODE\	TOTAL	19032
+C:\bob\src\PLACENAM\	TOTAL	5
+C:\bob\src\RANIBUT\		TOTAL	13
+C:\bob\src\RBUTTON\		TOTAL	941
+C:\bob\src\RCOMBO\		TOTAL	213
+C:\bob\src\REDIT\		TOTAL	353
+C:\bob\src\REDTBT\		TOTAL	126
+C:\bob\src\RJOYCFG\		TOTAL	100
+C:\bob\src\RLISTBOX\	TOTAL	318
+C:\bob\src\RRADIO\		TOTAL	111
+C:\bob\src\RSCRLBAR\	TOTAL	154
+C:\bob\src\RSPINBUT\	TOTAL	186
+C:\bob\src\RSPLTBAR\	TOTAL	108
+C:\bob\src\RSTATIC\		TOTAL	134
+C:\bob\src\RTABS\		TOTAL	149
+C:\bob\src\RTICKBOX\	TOTAL	114
+C:\bob\src\RTITLE\		TOTAL	104
+
+
+C:\bob\src\3D\			TOTAL	52174	Jon/rob
+C:\bob\src\MATH\		TOTAL	1531
+
+C:\bob\src\HARDWARE\	TOTAL	16279	Jon/Macca
+
+C:\bob\src\ITEMGRID\	TOTAL	24		Jon
+C:\bob\src\LIB3D\		TOTAL	6739
+
+
+C:\bob\src\COMMS\		TOTAL	8745	Macca
+
+
+C:\bob\src\H\			TOTAL	27553	various
+
+
+
+Plan:
+Load the test.dsw project, and compile the named directory err file
+If the number of errors is over 8000 then you may need multiple builds, 
+or chop the list down.
+
+Read through the error list which displays the original comments
+
+Put headers and s=descriptions on each file
+Remove any inflamatory comments. Often a new comment is required.
+Remove large regions of deadcode '99 or older
+Remove any obviously wrong statements
+
+Est rate is about 5000 lines per hour, so 30,000-40,000 per day,
+so 2-3 days.
+
+
+

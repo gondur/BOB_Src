@@ -1,0 +1,1121 @@
+'------------------------------------------------------------------------------
+'FILE DESCRIPTION: Rowan Macro File
+'DO NOT EDIT ROWANU.DSM DIRECTLY!!!!
+'Instead, edit the ROWANX.DSM version, and allow build to do the rest!
+'------------------------------------------------------------------------------
+Dim	file1,file2,afterwarning,backupname,originaldirectory
+dim oldappx,oldappy,oldappw,oldapph
+file2=""
+file1=""
+afterwarning=0
+backupname=""
+originaldirectory=""
+oldappw=0
+oldapph=0
+
+dim Months(12)
+Months(1) = "Jan"
+Months(2) = "Feb"
+Months(3) = "Mar"
+Months(4) = "Apr"
+Months(5) = "May"
+Months(6) = "Jun"
+Months(7) = "Jul"
+Months(8) = "Aug"
+Months(9) = "Sep"
+Months(10) = "Oct"
+Months(11) = "Nov"
+Months(12) = "Dec"
+
+Function crlf():crlf= Chr(13) & Chr(10):end Function
+Function squote():squote= Chr(39):end Function
+Function dquote():dquote= Chr(34):end Function
+Function tabwid():tabwid=4:end Function
+function tabs2():tabs2=chr(9)+chr(9):end function
+Function comments():comments="//":end function
+Function	comm10():comm10=comments+comments+comments+comments+comments:end function
+Function commentsline():commentsline=comm10+comm10+comm10+comm10+comm10+comm10+comm10:end function
+
+Function 	XdsMove			():XdsMove	= 0	:end Function 
+Function 	XdsExtend		():XdsExtend	= 1	:end Function 
+Function 	XdsFirstColumn	():XdsFirstColumn	= 0	:end Function 
+Function 	XdsFirstText	():XdsFirstText		= 1	:end Function 
+Function 	XdsLowercase	():XdsLowercase		= 1	:end Function 
+Function 	XdsUppercase	():XdsUppercase		= 2	:end Function 
+Function 	XdsCapitalize	():XdsCapitalize	= 3	:end Function 
+Function 	XdsHorizontal	():XdsHorizontal	= 0	:end Function 
+Function 	XdsVertical		():XdsVertical	= 1	:end Function 
+Function 	XdsLastLine		():XdsLastLine	= -1	:end Function 
+Function 	XdsDevStudio	():XdsDevStudio		= 0	:end Function 
+Function 	XdsVC2			():XdsVC2	= 1	:end Function 
+Function 	XdsBrief		():XdsBrief	= 2	:end Function 
+Function 	XdsEpsilon		():XdsEpsilon	= 3	:end Function 
+Function 	XdsCustom		():XdsCustom	= 4	:end Function 
+Function 	XdsMatchWord	():XdsMatchWord		= 2	:end Function 
+Function 	XdsMatchCase	():XdsMatchCase		= 4	:end Function 
+Function 	XdsMatchNoRegExp():XdsMatchNoRegExp	= 0	:end Function 
+Function 	XdsMatchRegExp	():	XdsMatchRegExp	= 8	:end Function 
+Function 	XdsMatchRegExpB	():	XdsMatchRegExpB	= 16	:end Function 
+Function 	XdsMatchRegExpE	():	XdsMatchRegExpE	= 32	:end Function 
+Function 	XdsMatchRegExpCur():XdsMatchRegExpCur	= 64	:end Function 
+Function 	XdsMatchForward	():	XdsMatchForward	= 0	:end Function 
+Function 	XdsMatchBackward():	XdsMatchBackward= 128	:end Function 
+Function 	XdsMatchFromStart():XdsMatchFromStart	= 256	:end Function 
+Function 	XvbOKOnly():XvbOKOnly			= 0	:end Function 
+Function	XvbOKCancel():		XvbOKCancel=   		1  :end Function
+Function	XvbAbortRetryIgnore():XvbAbortRetryIgnore=	2  :end Function
+Function	XvbYesNoCancel():	XvbYesNoCancel=		3  :end Function
+Function	XvbYesNo():		XvbYesNo=  		4  :end Function
+Function	XvbRetryCancel():	XvbRetryCancel=		5  :end Function
+Function	XvbOK		() :XvbOK		=1 	:end Function
+Function	XvbCancel	() :XvbCancel	=2  :end Function
+Function	XvbAbort	() :XvbAbort	=3 :end Function
+Function	XvbRetry	() :XvbRetry	=4 :end Function
+Function	XvbIgnore	() :XvbIgnore	=5 :end Function
+Function	XvbYes		() :XvbYes		=6  :end Function
+Function	XvbNo		() :XvbNo		=7 :end Function
+
+Function	XdsBreak 	() :XdsBreak	=1 :end Function
+Function	XdsNoDebugee() :XdsNoDebugee=0 :end Function
+Function	XdsRunning 	() :XdsRunning	=2 :end Function
+
+Function	XvbCritical():		XvbCritical=		16 :end Function
+Function	XvbQuestion():		XvbQuestion=		32 :end Function
+Function	XvbExclamation():	XvbExclamation=		48 :end Function
+Function	XvbInformation():	XvbInformation=		64 :end Function
+Function	XvbDefaultButton1():	XvbDefaultButton1=   	0  :end Function
+Function	XvbDefaultButton2():	XvbDefaultButton2= 	256:end Function
+Function	XvbDefaultButton3():	XvbDefaultButton3= 	512:end Function
+Function	XvbDefaultButton4():	XvbDefaultButton4=	768:end Function
+
+Function	XdsWindowStateMaximized():	XdsWindowStateMaximized  = 1:end Function
+Function	XdsWindowStateMinimized():	XdsWindowStateMinimized  = 2:end Function
+Function	XdsWindowStateNormal():		XdsWindowStateNormal     = 3:end Function
+
+''MsgBox(prompt,buttons=ok,title=app)
+''InputBox(prompt,title=app,default="",xpos=1/2,ypos=1/3)
+''
+
+''Function	currline()
+''	ActiveDocument.Selection.LineUp
+''	ActiveDocument.Selection.LineDown XdsExtend
+''	ActiveDocument.Selection.LineDown XdsExtend
+''	Dim s
+''	s=ActiveDocument.Selection
+''	ActiveDocument.Selection.LineUp
+''	Dim sstart
+''	Dim sstop
+''	sstart=instr(s,crlf)
+''	sstop=instr(sstart+1,s,crlf)
+''	s=mid(s,sstart,sstop-sstart)
+''	MsgBox(s)
+''	currline=s
+''end Function
+''
+''Function	linelen(s)
+''	start=0
+''	linel=0
+''	do while (start<len(s))
+''		if (mid(s,start,1) = chr(9)) then
+''			linel=linel+tabwid
+''		else
+''			linel=linel+1
+''		end if
+''	loop
+''	linelen=linel
+''end Function
+''
+''Function leftcol(s,col)
+''	start=0
+''	linel=0
+''	do while (start<len(s) and col<linel)
+''		if (mid(s,start,1) = chr(9)) then
+''			linel=linel+tabwid
+''		else
+''			linel=linel+1
+''		end if
+''	loop
+''	leftcol=left(s,start)
+''end Function
+''
+''Function rightcol(s,col)
+''	start=0
+''	linel=0
+''	do while (start<len(s) and col<linel)
+''		if (mid(s,start,1) = chr(9)) then
+''			linel=linel+tabwid
+''		else
+''			linel=linel+1
+''		end if
+''	loop
+''	rightcol=mid(s,start)
+''end Function
+''	
+''
+''Sub	replaceline(s)
+''	ActiveDocument.Selection.LineUp
+''	ActiveDocument.Selection.LineDown XdsExtend
+''	ActiveDocument.Selection.LineDown XdsExtend
+''	Dim s
+''	s=ActiveDocument.Selection
+''	Dim sstart
+''	Dim sstop
+''	sstart=instr(s,crlf)
+''	sstop=instr(sstart+1,s,crlf)
+''	pre=left(s,sstart)
+''	post=mid(s,sstop)
+''	ActiveDocument.Selection=pre+s+post
+''	ActiveDocument.Selection.LineUp
+''end sub
+
+Sub deadcode()
+'DESCRIPTION: comment out a line
+
+
+'Begin Recording
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	if ActiveDocument.Selection = "" then
+		ActiveDocument.Selection.StartOfLine
+		ActiveDocument.Selection = comments & "DeadCode " & myname & " " & day(Date) & RealMonth(month(Date)) & right(year(Date),2) & " "
+		ActiveDocument.Selection.MoveTo row+1,col
+	else
+		Dim i
+		Dim s
+		Dim e
+		s=ActiveDocument.Selection.TopLine
+		e=ActiveDocument.Selection.BottomLine
+		ActiveDocument.Selection.Cancel
+		for i=s to e
+		ActiveDocument.Selection.MoveTo i,1
+		ActiveDocument.Selection = comments & "DeadCode " & myname & " " & day(Date) & RealMonth(month(Date)) & right(year(Date),2) & " "
+		next
+		ActiveDocument.Selection.MoveTo row,col
+	end if
+'End Recording
+End Sub
+
+Sub datestampline(colin)
+	dim col
+	col=(colin+3)and-4
+	dim t
+	ActiveDocument.Selection.EndOfLine
+	t=1
+	if ActiveDocument.Selection.currentcolumn <= col	then t = (col+4-ActiveDocument.Selection.currentcolumn)\4
+	ActiveDocument.Selection = string(t,chr(9)) & comments & myname & " " & day(Date) & RealMonth(month(Date)) & right(year(Date),2)
+end sub
+
+Sub datestamp()
+'DESCRIPTION: put date on a line
+
+'Begin Recording
+'
+'Latest mod: When using block mark, make all indent same!
+'
+'
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	Dim i,s,e,rightcolumn
+	rightcolumn=72
+	s=row
+	e=row
+	if ActiveDocument.Selection <> "" then
+		s=ActiveDocument.Selection.TopLine
+		e=ActiveDocument.Selection.BottomLine
+		ActiveDocument.Selection.Cancel
+		row=row-1
+	end if		
+	for i=s to e
+		ActiveDocument.Selection.MoveTo i,1
+		ActiveDocument.Selection.EndOfLine
+		if ActiveDocument.Selection.currentcolumn > rightcolumn	then rightcolumn= ActiveDocument.Selection.currentcolumn
+	next
+	for i=s to e
+		ActiveDocument.Selection.MoveTo i,1
+		datestampline(rightcolumn)
+	next
+	ActiveDocument.Selection.MoveTo row+1,col
+
+'End Recording
+End Sub
+
+Sub fileheader()
+'DESCRIPTION: put header on top of file
+
+'Begin recording
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	Dim s
+	s=""
+	if ActiveDocument.Selection <> "" then	 
+		s=ActiveDocument.Selection
+		ActiveDocument.Selection.Cancel
+	end if
+	ActiveDocument.Selection.MoveTo 1,1
+	ActiveDocument.Selection = commentsline & crlf & comments & crlf 
+	ActiveDocument.Selection = comments & " Module:" + chr(9)  + ActiveDocument.Name & crlf
+	ActiveDocument.Selection = comments & crlf 
+	ActiveDocument.Selection = comments & " Created:" + chr(9) & Date & " by " & myname & crlf
+	ActiveDocument.Selection = comments & crlf 
+	ActiveDocument.Selection = comments & " Description:" + chr(9) + s + crlf
+	ActiveDocument.Selection = comments & crlf 
+	ActiveDocument.Selection = commentsline & crlf
+	if instr(1,ActiveDocument.Name,".h",1) then
+		s=left(ActiveDocument.Name,instr(1,ActiveDocument.Name,".h",1)-1)&"_DEFINED_"&day(date)&"_"&month(date)&"_"&year(date)
+		ActiveDocument.Selection = "#pragma once"&crlf
+		ActiveDocument.Selection = "#ifndef "&s&crlf
+		ActiveDocument.Selection = "#define "&s&crlf&crlf
+		activedocument.Selection.endofdocument
+		ActiveDocument.Selection = "#endif define "&s&crlf
+		ActiveDocument.Selection.MoveTo row+12,col
+	else
+		ActiveDocument.Selection.MoveTo row+9,col
+	end if
+
+'End Recording
+End Sub
+
+Sub procheader()
+'DESCRIPTION: procedure header
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	if ActiveDocument.Selection = "" then	 
+		ActiveDocument.Selection.WordLeft
+		ActiveDocument.Selection.WordRight(XdsExtend)
+	end if	
+	Dim s
+	s=ActiveDocument.Selection
+	Dim crlf
+	crlf=Chr(13) & Chr(10)
+	if s = "" then	ActiveDocument.Selection.Copy
+	ActiveDocument.Selection.Cancel
+	ActiveDocument.Selection.StartOfLine
+	ActiveDocument.Selection = commentsline & crlf & comments & crlf & comments & " Function:    " & s
+	if s = "" then	ActiveDocument.Selection.Paste
+	ActiveDocument.Selection = crlf&comments&" Date:"&tabs2&Date&crlf&comments&" Author:"&tabs2&myname&crlf&comments&crlf&comments&"Description: "&crlf&comments&crlf&commentsline&crlf
+	ActiveDocument.Selection.MoveTo row+9,col
+
+'End Recording
+End Sub
+
+Sub openheader()
+'DESCRIPTION: open header file in H directory, or else! Doesn't work.
+'	if ActiveDocument.Selection = "" then	 
+'		ActiveDocument.Selection.WordLeft
+'		ActiveDocument.Selection.WordRight XdsExtend
+'	end if	
+'	Dim name,path1,path2,path3
+'	name=ActiveDocument.Selection
+'	ActiveDocument.Selection.Cancel
+'	path1=ActiveDocument.path
+'	path2="\\"+ActiveProject.name+"\\src\\mfc"
+'	path3="\\"+ActiveProject.name+"\\src\\h"
+'	dim fso
+'	Set fso = CreateObject("Scripting.FileSystemObject")
+'	If (fso.FileExists(path3 + "\\" + name)) Then
+'		ActiveProjects.Documents.Open path3 + "\\" + name
+'	elseif (fso.FileExists(path2 + "\\" + name)) Then
+'		ActiveProjects.Documents.Open path2 + "\\" + name
+'	elseif (fso.FileExists(path1 + "\\" + name)) Then
+'		ActiveProjects.Documents.Open path1 + "\\" + name
+'	else
+'		ActiveProjects.Documents.Open name
+'	end if
+'End Recording
+End Sub
+
+Sub closedialogs()
+	dim doc,win
+	for each doc in documents
+		for each win in doc.windows
+			if instr(win.caption,"(Dialog)") then 
+				win.close
+			elseif doc.name="resource.h" then
+				win.close
+			elseif doc.name="bob.rc" then
+				win.close
+			end if
+		next
+	next
+end sub
+
+Sub tempcode()
+'DESCRIPTION: comment out a line with //TEMPCODE
+
+'Begin Recording
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	if ActiveDocument.Selection = "" then
+		ActiveDocument.Selection.StartOfLine
+		ActiveDocument.Selection = comments & "TempCode " & myname & " " & day(Date) & RealMonth(month(Date)) & right(year(Date),2) & " "
+		ActiveDocument.Selection.MoveTo row+1,col
+	else
+		Dim i
+		Dim s
+		Dim e
+		s=ActiveDocument.Selection.TopLine
+		e=ActiveDocument.Selection.BottomLine
+		ActiveDocument.Selection.Cancel
+		for i=s to e
+		ActiveDocument.Selection.MoveTo i,1
+		ActiveDocument.Selection = comments & "TempCode " & myname & " " & day(Date) & RealMonth(month(Date)) & right(year(Date),2) & " "
+		next
+		ActiveDocument.Selection.MoveTo row,col
+	end if
+'End Recording
+End Sub
+
+Sub undeadline()
+'' Could instead search for start of line and 3 spaces:			<//[~ ]+ [~ ]+ [~ ]+ 
+'' Then could check that the selected string is as required.
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	ActiveDocument.Selection.StartOfLine
+	ActiveDocument.Selection.CharRight XdsExtend,11
+	good=1
+	if ActiveDocument.Selection = comments & "TEMPCODE " then good=0
+	if ActiveDocument.Selection = comments & "DEADCODE " then good=0
+	if ActiveDocument.Selection = comments & "TempCode " then good=0
+	if ActiveDocument.Selection = comments & "DeadCode " then good=0
+	ActiveDocument.Selection.CharRight XdsExtend
+	if Right(ActiveDocument.Selection.Text,1)=" " then good=2
+	ActiveDocument.Selection.CharRight XdsExtend
+	if Right(ActiveDocument.Selection.Text,1)=" " then good=3
+	ActiveDocument.Selection.CharRight XdsExtend
+	if Right(ActiveDocument.Selection.Text,1)<>" " then ActiveDocument.Selection.CharRight XdsExtend
+	if Right(ActiveDocument.Selection.Text,1)<>" " then good=4
+	PrintToOutputWindow CStr(good)+":"+ActiveDocument.Selection.Text
+	if good=0 then	
+		ActiveDocument.Selection.CharRight XdsExtend,7
+		if Right(ActiveDocument.Selection.Text,1)<>" " then ActiveDocument.Selection.CharRight XdsExtend
+		if Right(ActiveDocument.Selection.Text,1)<>" " then ActiveDocument.Selection.CharRight XdsExtend
+		if Right(ActiveDocument.Selection.Text,1)=" " then ActiveDocument.Selection.delete
+	end if
+	ActiveDocument.Selection.MoveTo row+1,col
+
+End Sub
+
+Sub undeadcode()
+'DESCRIPTION: remove deadcode/tempcode
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	if ActiveDocument.Selection = "" then
+		undeadline
+	else
+		Dim i
+		Dim s
+		Dim e
+		s=ActiveDocument.Selection.TopLine
+		e=ActiveDocument.Selection.BottomLine
+		ActiveDocument.Selection.Cancel
+		ActiveDocument.Selection.MoveTo s,col
+		for i=s to e
+			undeadline()
+		next
+		ActiveDocument.Selection.MoveTo row,col
+	end if
+End sub
+
+sub filecomparenames(file1,file2)
+'compare the 2 selected files
+	dim	doc1, doc2
+	dim myDocument
+	set doc1=Application.Documents(file1)
+	set doc2=Application.Documents(file2)
+	dim doc1line,doc2line
+	dim doc1last,doc2last
+
+	doc1line=doc1.selection.currentline
+	doc1col=doc1.selection.currentcolumn
+	doc1.selection.EndOfDocument
+	doc1last=doc1.selection.currentline
+	doc1.selection.moveto doc1line,doc1col
+
+	doc2line=doc2.selection.currentline
+	doc2col=doc2.selection.currentcolumn
+	doc2.selection.EndOfDocument
+	doc2last=doc2.selection.currentline
+	doc2.selection.moveto doc2line,doc2col
+
+	doc1.selection.cancel
+	doc1.selection.moveto doc1.selection.currentline+1,1,XdsExtend
+	doc2.selection.cancel
+	doc2.selection.moveto doc2.selection.currentline+1,1,XdsExtend
+	botoffile=0
+''	PrintToOutputWindow CStr(doc1last)+" "+CStr(doc2last)
+	do while doc1.selection.text=doc2.selection.text and botoffile=0
+		if doc1.selection.currentline>=doc1last	then botoffile=botoffile+1
+		if doc2.selection.currentline>=doc2last	then botoffile=botoffile+2
+		doc1.selection.cancel
+		doc1.selection.linedown XdsExtend
+		doc2.selection.cancel
+		doc2.selection.linedown XdsExtend
+	loop
+''		msgbox doc1.selection,0,doc2.selection
+''		PrintToOutputWindow CStr(doc1.selection.currentline)+" "+CStr(doc2.selection.currentline)+" "+CStr(botoffile)+": "+doc1.selection+" = "+ doc2.selection
+	if botoffile=3 then		 'reached bottom of both files
+		doc1.selection.cancel
+		doc1.Selection.MoveTo doc1line,doc1col
+		doc2.selection.cancel
+		doc2.Selection.MoveTo doc2line,doc2col
+		PrintToOutputWindow "IDENTICAL to end of file"
+	elseif botoffile=0 then	'reached difference in files
+		doc2.selection.copy
+		PrintToOutputWindow "IN SCRATCH: "+doc2.selection
+		doc1.selection.lineup XdsExtend
+		doc1.selection.setbookmark
+		doc1.selection.linedown XdsExtend
+
+		doc2.selection.cancel
+		doc2.selection.lineup
+		doc2.selection.setbookmark
+		doc2.selection.linedown
+	elseif botoffile=1 then 'reached bottom of file 1
+		doc2.selection.EndOfDocument XdsExtend
+		doc2.selection.copy
+		PrintToOutputWindow "REST OF "+file2+" IN SCRATCH ("+CStr(1+doc2.selection.bottomline-doc2.selection.topline)+" lines)"
+		doc2.selection.cancel
+	else
+		PrintToOutputWindow "END OF FILE "+file2+" before end of this file."
+		doc2.selection.cancel
+	end if
+end sub
+
+Sub	filecompare()
+'DESCRIPTION: compare 2 selected files
+'selects 2 files then compares them from current position
+if file1<>"" and file2<>"" then	'got 2 file names set up and gone again
+	if file2=activedocument.fullname or file1=activedocument.fullname then
+		gotone=0
+		For Each myDocument in Application.Documents
+			if file2=myDocument.fullname	then gotone=gotone+2
+			if file1=myDocument.fullname	then gotone=gotone+1
+		Next
+		if gotone=3 then	'right, everything checks out...
+			if file2=activedocument.fullname then
+				filecomparenames file2,file1
+			else
+				filecomparenames file1,file2
+			end if
+		else	'one or both of files invalid
+			if gotone=0 then
+				PrintToOutputWindow "Discarding closed files "+file1+" & "+file2
+				file1=activedocument.fullname
+				PrintToOutputWindow "Selecting first file to compare: "+file1
+				file2=""
+			elseif gotone=1 then
+				PrintToOutputWindow "Discarding closed file "+file2+". Still got "+file1
+				PrintToOutputWindow "Click key again to select file 2 as "+activedocument.fullname
+				file2=""
+			else
+				PrintToOutputWindow "Discarding closed file "+file1+". Still got "+file2
+				PrintToOutputWindow "Click key again to select file 2 as "+activedocument.fullname
+				file1=file2
+				file2=""
+			end if
+		end if
+		afterwarning=0
+	else	'got 2 filenames but not valid
+		if afterwarning<>1 then
+			afterwarning=1
+			PrintToOutputWindow "Got "+file1+" & "+file2+"to compare."
+			PrintToOutputWindow "Click again to discard both and select first file to compare as "+activedocument.fullname
+		else
+			Application.Documents(file1).ClearBookmarks
+			Application.Documents(file2).ClearBookmarks
+			file1=activedocument.fullname
+			afterwarning=0
+			file2=""
+		end if
+	end if
+elseif file1="" then
+	file1=activedocument.fullname
+	PrintToOutputWindow "Selecting "+file1+" as first file to compare. Select second file and press key."
+else
+	gotone=0
+	For Each myDocument in Application.Documents
+		if file1=myDocument.fullname	then gotone=gotone+1
+	Next
+	if gotone=0 then
+		PrintToOutputWindow "Discarding closed file "+file1
+		file1=activedocument.fullname
+		PrintToOutputWindow "Selecting "+file1+" as first file to compare. Select second file and press key."
+	elseif file1=activedocument.fullname then
+		printToOutputWindow "Cancelling "+file1+" as first file to compare. Select new first file."
+		file1=""
+	else
+		file2=activedocument.fullname
+		Application.Documents(file1).ClearBookmarks
+		Application.Documents(file2).ClearBookmarks
+		PrintToOutputWindow "Selecting "+file2+" as second file to compare. Press key again to start compare."
+	end if
+end if
+
+end sub
+'sub    Application_WindowActivate(theWindow)
+'	' Insert code to handle the event here
+'	PrintToOutputWindow theWindow.parent.FullName	+" = "+ theWindow.caption
+'end sub
+
+
+sub    Application_NewDocument(theDocument) 
+	''msgbox "new document"
+end sub
+
+sub    Application_DocumentOpen(theDocument) 
+	Dim a,b,c,r
+	if theDocument.windows(1).WindowState<>XdsWindowStateMaximized then	theDocument.windows(1).width=684
+	Application.CurrentDirectory = originaldirectory
+
+	if instr(1,theDocument.fullname,"\mfc\",1)<>0 or instr(theDocument.fullname,"\")=0 then
+		if instr(1,theDocument.fullname,".cpp",1) then
+			c=theDocument.Selection.currentcolumn
+			r=theDocument.Selection.currentline
+			theDocument.Selection.StartOfDocument
+			theDocument.Selection.EndOfLine	XdsExtend
+			a= theDocument.Selection.text
+
+			if lcase(a)= lcase("// "+theDocument.name+" : implementation file") then
+				theDocument.Selection.StartOfLine
+				theDocument.Selection="// RowanDialog: "
+
+				if (theDocument.Selection.findtext (": CDialog(")) then
+					theDocument.Selection.delete
+					theDocument.Selection=": RowanDialog("
+					a=theDocument.fullname
+					b=left(a,instr(a,".cpp"))+"h"
+					msgbox b
+					documents.open b
+					a=0
+					if activedocument.Selection.findtext (": public CDialog") then
+						activedocument.Selection.delete
+						activedocument.Selection=": public RowanDialog"
+						a=1
+					else
+						activedocument.Selection.endofdocument
+						if activedocument.Selection.currentline<10 then
+							b=left(b,instr(1,b,"\mfc\",1))+"h"+mid(b,instr(1,b,"\mfc\",1)+4)
+							documents.open b
+							if activedocument.Selection.findtext (": public CDialog") then
+								activedocument.Selection.delete
+								activedocument.Selection=": public RowanDialog"
+								a=1
+							end if
+						end if
+					end if
+					if a=1 then
+						if activedocument.selection.findtext("public:") then
+							activedocument.selection.endofline
+							activedocument.selection=crlf
+							activedocument.selection=chr(9)+"static RDialog* Make();"
+							activedocument.selection=crlf
+							activedocument.selection.startofdocument
+							activedocument.selection.endofline XdsExtend
+							if activedocument.selection="//{{AFX_INCLUDES()" then
+								activedocument.selection.startofdocument
+								activedocument.selection="/* STOP AFX_INCLUDES"+crlf
+								activedocument.selection.findtext "}}AFX_INCLUDES"
+								activedocument.selection.endofline
+								activedocument.selection=crlf+"*/"
+							elseif activedocument.selection<>"/* STOP AFX_INCLUDES" then
+								activedocument.selection.startofdocument
+								activedocument.selection="/* STOP AFX_INCLUDES"+crlf
+								activedocument.selection="//{{AFX_INCLUDES()"+crlf+crlf
+								activedocument.selection="//}}AFX_INCLUDES"+crlf+crlf
+								activedocument.selection="*/"+crlf
+							end if
+							theDocument.selection.lineup
+							thedocument.selection.startofline
+							thedocument.selection.charright XdsExtend
+							do while right(thedocument.selection,1)<>":"
+								thedocument.selection.charright XdsExtend
+							loop
+							thedocument.selection.charleft XdsExtend
+							b=thedocument.selection
+							theDocument.selection.lineup
+							thedocument.selection.startofline
+							thedocument.selection=crlf
+							thedocument.selection="RDialog*"+chr(9)+b+"::Make()"+crlf+"{"+crlf
+							thedocument.selection=chr(9)+"return"+crlf
+							thedocument.selection=chr(9)+chr(9)+"MakeTopDialog(::Place(POSN_CENTRE,POSN_CENTRE),"+crlf
+							thedocument.selection=chr(9)+chr(9)+chr(9)+"DialBox(FIL_NULL,new "+b+"())"+crlf
+							thedocument.selection=chr(9)+chr(9)+chr(9)+");"+crlf
+							thedocument.selection="}"+crlf+crlf
+							r=r+9
+						end if	
+					else
+						activedocument.close
+					end if
+
+				end if
+
+
+			end if
+			documents.open(thedocument.fullname)
+			theDocument.selection.moveto r,c
+		ELSEIF 	instr(1,theDocument.fullname,".h",1) then
+			c=theDocument.Selection.currentcolumn
+			r=theDocument.Selection.currentline
+			theDocument.Selection.EndOfDocument
+			a=theDocument.Selection.currentline
+			theDocument.selection.moveto r,c
+			if (a<10) then
+				b=theDocument.fullname
+				b=left(b,instr(1,b,"\mfc\",1))+"h"+mid(b,instr(1,b,"\mfc\",1)+4)
+				documents.open b
+				theDocument.selection.moveto r,c
+			end if
+		end if
+	end if
+
+end sub
+
+Dim		Inside_Application_DocumentSave
+Inside_Application_DocumentSave=0
+
+sub    Application_DocumentSave(theDocument) 
+    ' Insert code to handle the event here
+	if Inside_Application_DocumentSave=0 and theDocument.type="Text"  then
+		Inside_Application_DocumentSave=1
+		Dim name,name2,nameold,x,y,z
+		name=theDocument.FullName
+		nameold=name
+		x=instr(4,name,"\")
+		if backupname=""	then backupname=left(nameold,x)+"backup\"
+		name=mid(name,x+1)
+		name=Date&"@"&Time&"="&name
+		name=Replace(name, "\", "_")
+		name=Replace(name, "/", "-")
+		name=Replace(name, ":", "!")
+		name=backupname+name
+		PrintToOutputWindow theDocument.FullName & " Saved at " & Date & "@" & Time & " As " & name
+		name2=backupname+"history.lst"
+		Documents.Open(name2)
+		Dim myDocument
+		For Each myDocument in Application.Documents
+			if (myDocument.fullname=name2) then
+				myDocument.selection.startofdocument
+				myDocument.selection=dquote+theDocument.FullName+dquote+tabs2+dquote+name+dquote&crlf
+				myDocument.save
+			end if
+		Next
+		theDocument.save(name)
+		theDocument.active=1
+'		if Debugger.Breakpoints.count > 0 then
+'			MsgBox("Got breakpoints") 
+'			if Debugger.Breakpoints.Item(1).enabled=true then
+'				Debugger.Breakpoints.Item(1).enabled=false
+'				Debugger.Breakpoints.Item(1).enabled=true
+'			else
+'				Debugger.Breakpoints.Item(1).enabled=true
+'				Debugger.Breakpoints.Item(1).enabled=false
+'			end if
+'		end if
+		Inside_Application_DocumentSave=0
+	end if										   
+end sub
+
+sub SetUser()
+'DESCRIPTION: Sets the user name...
+'
+'
+Dim	rv
+	rv=InputBox ("Enter new user initials","CHANGE NAME",myname)
+	if rv<>"" and rv<>myname then
+		documents.open "..\mycmds\rowanx.dsm"
+		Dim myDocument
+		For Each myDocument in Application.Documents
+			if (strcomp(myDocument.name,"rowanx.dsm",1)=0) then
+				myDocument.selection.endofdocument
+				myDocument.selection="Function myname():myname="&dquote&rv&dquote&":End Function "&crlf
+				myDocument.selection="Function myusername():myusername="&dquote&myusername()&dquote&":End Function "&crlf
+				myDocument.save("..\mycmds\rowanu.dsm")
+				myDocument.close
+			end if
+		Next
+	end if
+
+end sub
+
+sub    Application_WorkspaceOpen()
+    ' Insert code to handle the event here
+originaldirectory = Application.CurrentDirectory 
+if Application.ActiveConfiguration<>"BOB - Win32 Debug" and Application.ActiveConfiguration<>"FM - Win32 Debug"then
+	ExecuteCommand	"BuildSetActiveConfiguration"
+end if
+Inside_Application_DocumentSave=1
+'MsgBox "s:\projects\bob\admin\"&myusername&".log",XvbOKOnly,"pre-open"
+'Documents.Open"s:\projects\bob\admin\"&myusername&".log","Text" 
+'MsgBox "s:\projects\bob\admin\"&myusername&".log",XvbOKOnly,"pre-add"
+'MsgBox Documents(myusername&".log").selection,XvbOKOnly,"pre-add"
+'Documents.item(myusername&".log").selection.StartOfDocument
+'MsgBox Application.ActiveConfiguration & " Workspace Opened @ " & Now & crlf,XvbOKOnly,"pre-add"
+'Documents.item(myusername&".log").selection="Log: " & Application.ActiveConfiguration & " Workspace Opened @ " & Now & crlf
+'MsgBox "s:\projects\bob\admin\"&myusername&".log",XvbOKOnly,"pre-save"
+'Documents(myusername&".log").Save
+'MsgBox "s:\projects\bob\admin\"&myusername&".log",XvbOKOnly,"pre-close"
+'Documents(myusername&".log").Close
+'MsgBox "s:\projects\bob\admin\"&myusername&".log",XvbOKOnly,"post close"
+
+Inside_Application_DocumentSave=0
+	
+end sub
+
+sub    Application_BeforeApplicationShutDown()
+   ' Insert code to handle the event here
+Inside_Application_DocumentSave=1
+'Documents.Open("s:\projects\bob\admin\"+myusername()+".log")
+'Documents("s:\projects\bob\admin\"+myusername()+".log").selection=Application.ActiveConfiguration& " Workspace Closed @ "& Now & crlf
+'Documents("s:\projects\bob\admin\"+myusername()+".log").Save
+'Documents("s:\projects\bob\admin\"+myusername()+".log").Close
+
+Inside_Application_DocumentSave=0
+
+end sub
+
+Dim		Inside_BuildRun
+Inside_BuildRun=0
+Sub	BuildRun()
+'DESCRIPTION: Build, protect files, and run if no errors
+	Inside_BuildRun=1
+	Application.ExecuteCommand "Build"
+End Sub
+
+dim Inside_JimDebugger
+Inside_JimDebugger=" "
+sub JimDebuggerGo()
+'DESCRIPTION: protect files, and run
+	if Application.Debugger.ProcessState=XdsNoDebugee then 
+		Dim myDocument
+		Inside_JimDebugger=" "
+		For Each myDocument in Application.Documents
+			if myDocument.ReadOnly=0 then
+				myDocument.ReadOnly=1
+			else
+				Inside_JimDebugger=Inside_JimDebugger&myDocument.fullname&" "
+			end if
+				
+		next
+	end if
+if Application.Debugger.ProcessState<>XdsRunning then Application.Debugger.Go
+end sub
+
+
+sub JimDebuggerStop()
+'DESCRIPTION: Stop debugging and unprotect files
+	Application.Debugger.Stop
+	JimDebuggerEditEnable
+end sub
+
+sub JimDebuggerEditEnable()
+	Dim myDocument
+	For Each myDocument in Application.Documents
+		if (instr(Inside_JimDebugger,myDocument.fullname)=0) then
+			myDocument.ReadOnly=0
+		end if
+	next
+end sub
+
+sub	Application_BeforeBuildStart()
+	Documents.saveall
+end sub
+
+sub Application_BuildFinish(nNumErrors, nNumWarnings)
+    ' Insert code to handle event here				
+	if Inside_BuildRun=1 then						
+		Inside_BuildRun=0							
+		if nNumErrors=0 then						
+			JimDebuggerGo
+		else
+			MsgBox "There were Errors",XvbOKOnly,"There were errors"
+		end if
+	end if		
+end sub
+
+sub	ClearDateLine()
+'DESCRIPTION: remove datestamps
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	ActiveDocument.selection.StartOfLine
+	ActiveDocument.selection.EndOfLine	XdsExtend
+	dim line,x
+	line=ActiveDocument.selection.text
+	ActiveDocument.selection.EndOfLine
+	x=instrrev(line,comments)
+	if x>0 then
+''''		msgBox CStr(x)&" and "&CStr(len(line))&" and "&CStr(instr(x,line," "))&"="&CStr(instrrev(line," "))
+		if x<len(line)-10 and x>len(line)-14 and instr(x,line," ")=instrrev(line," ") then
+			ActiveDocument.selection.CharLeft XdsExtend,10
+			if instr(ActiveDocument.selection,comments)=0  then ActiveDocument.selection.CharLeft XdsExtend
+			if instr(ActiveDocument.selection,comments)=0  then ActiveDocument.selection.CharLeft XdsExtend
+			if instr(ActiveDocument.selection,comments)=0  then ActiveDocument.selection.CharLeft XdsExtend
+			if instr(ActiveDocument.selection,comments)=0  then ActiveDocument.selection.CharLeft XdsExtend
+			if instr(ActiveDocument.selection,comments)<>0 then 
+				dim col2
+				do
+					col2=ActiveDocument.Selection.currentcolumn
+					if (col2>1) then ActiveDocument.selection.CharLeft XdsExtend
+				loop while col2>1 and (instr(ActiveDocument.selection," ")=1 or instr(ActiveDocument.selection,chr(9))=1)
+				if (col2>1) then ActiveDocument.selection.CharRight XdsExtend
+			ActiveDocument.selection.delete
+			end if
+		end if
+	end if 
+	ActiveDocument.Selection.MoveTo row+1,col
+end sub
+
+sub ClearDate()
+	Dim col
+	col=ActiveDocument.Selection.currentcolumn
+	Dim row
+	row=ActiveDocument.Selection.currentline
+	if ActiveDocument.Selection = "" then
+		undeadline
+	else
+		Dim i
+		Dim s
+		Dim e
+		s=ActiveDocument.Selection.TopLine
+		e=ActiveDocument.Selection.BottomLine
+		ActiveDocument.Selection.Cancel
+		ActiveDocument.Selection.MoveTo s,col
+		for i=s to e
+			ClearDateLine()
+		next
+		ActiveDocument.Selection.MoveTo row,col
+	end if
+end sub
+
+sub	DocFullScrToggle()
+	if ActiveDocument.windows(1).WindowState<>XdsWindowStateMaximized then	
+		ActiveDocument.windows(1).WindowState=XdsWindowStateMaximized
+	else
+		ActiveDocument.windows(1).WindowState=XdsWindowStateNormal
+	end if
+
+end sub
+	
+sub	SubScreenToggle()
+	dim fully,fullw,fullh,fullx
+	fullx=1
+	fully=20
+	fullw=1151
+	fullh=860-fully
+''	MsgBox	"Window size L"&application.left&" T"&application.top&" W"&application.width&" H"&application.height
+	if application.left=fullx and application.top=fully then
+		if oldappw=0 then
+			application.left=20
+			application.top=52
+			application.width=1000
+			application.height=800
+		else
+			application.left=oldappx
+			application.top=oldappy
+			application.width=oldappw
+			application.height=oldapph
+		end if
+	else
+		oldappx=application.left
+		oldappy=application.top
+		if oldappy<30 then oldappy=30
+		oldappw=application.width
+		oldapph=application.height
+		application.left=fullx
+		application.top=fully
+		application.width=fullw
+		application.height=fullh
+	end if
+
+end sub
+
+
+sub	AddIncludeList(listingfile,startline,indent,includefilename,parentfullname)
+	dim goodname
+	dim note
+	note=""
+	x=instr(includefilename,"\")
+	if (x=0) then
+		if strcomp(includefilename,"resource.h")=0 or strcomp(includefilename,"afxauto.h")=0  then
+			goodname=includefilename
+			note="Exception header in MFC directory"
+		elseif left(right(includefilename,2),1)="." and instr("hHmMgG",right(includefilename,1)) then
+			goodname="..\h\"+includefilename
+			note="Header"
+		else
+			note="In callers directory"
+			goodname=left(parentfullname,instrrev(parentfullname,"\"))+includefilename
+		end if
+	else
+		goodname=includefilename
+		note="relying on inbuilt path"
+	end if
+	PrintToOutputWindow space(indent)+goodname+tabs2+note
+	AddIncludeListGoodName listingfile,startline,indent,includefilename,parentfullname,goodname
+end sub
+
+sub	AddIncludeListGoodName(listingfile,startline,indent,includefilename,parentfullname,goodname)
+	dim doc,inline
+	dim x
+	dim countchange
+	countchange=documents.count
+	Documents.open(goodname)
+	set doc=Documents.item(includefilename)
+	countchange=countchange-documents.count
+	listingfile.selection.gotoline startline
+	listingfile.selection.findtext dquote+doc.fullname+dquote
+	if listingfile.selection.currentline>startline then
+		SayIncludeList listingfile,indent,includefilename,"(REPEATED)"
+	else
+		SayIncludeList listingfile,indent,includefilename,doc.fullname
+		inline=0
+		doc.selection.gotoline 1
+		do while doc.selection.findtext	("<[ \t]@#[piI]",XdsMatchRegExpB)
+			if doc.selection.currentline<=inline then exit do
+			inline=doc.selection.currentline
+			doc.selection.startofline
+			doc.selection.findtext "[~ \t]+",XdsMatchRegExpB
+			if doc.selection="#include" then
+				doc.selection.findtext "[\""\<]?+[\""\>]",XdsMatchRegExpB
+				if asc (doc.selection.text)=asc("<")	then
+					SayIncludeList listingfile,indent+1,doc.selection.text,"(SYSTEM)"
+				else
+					AddIncludeList listingfile,startline,indent+1,mid(doc.selection.text,2,len(doc.selection.text)-2),doc.fullname 
+				end if
+			elseif doc.selection="#INCLUDE" then
+				doc.selection.findtext "[ \t=][~\t ,;]+[ \t,;]",XdsMatchRegExpB
+				AddIncludeList listingfile,startline,indent+1,"..\"+mid(doc.selection.text,2,len(doc.selection.text)-2),doc.fullname 
+			elseif doc.selection="#pragma" then
+				doc.selection.findtext "[ \t]",XdsMatchRegExpB
+				doc.selection.findtext "[~ \t(=:""]+",XdsMatchRegExpB
+				if doc.selection="message" or doc.selection="warnmsg" then
+					doc.selection.endofline XdsExtend
+					SayIncludeList	listingfile,indent+1,"#pragma",doc.selection 
+				end if
+			else
+			end if
+		loop
+	end if
+	if countchange	then doc.close
+end sub
+
+sub	SayIncludeList(listingfile,indent,includefilename,includefilelongname)
+	listingfile.selection.EndOfDocument
+	listingfile.selection=space(indent)+dquote+includefilename+dquote+tabs2+dquote+includefilelongname+dquote+crlf
+end sub
+
+
+sub	IncludeList()
+	dim line,name,x,doc
+	name=ActiveDocument.Fullname
+	if backupname=""	then 
+	x=instr(4,name,"\")
+	backupname=left(name,x)+"backup\"
+	end if
+	Documents.open(backupname+"history.lst")
+	set doc=Documents.item("history.lst")
+
+	doc.selection.EndOfDocument
+	line=doc.selection.currentline
+	doc.selection="RECURSION TREE FOR "+name+crlf
+	AddIncludeList doc,line,0,name,name
+end sub
+
+sub	RuleFile()
+	Documents.Open("C:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin\Autoexp.dat")
+	Documents.Open("C:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin\usertype.dat")
+end sub
+
+function	RealMonth(themonth)
+
+RealMonth = Months(cint(themonth))
+
+end function
+
+'
+'Unfortunately, thios permanently renames the program!
+'
+'//DEADCODE RDH 07/07/99 sub	WriteBackups()
+'//DEADCODE RDH 07/07/99 	Inside_Application_DocumentSave=1
+'//DEADCODE RDH 07/07/99 	Dim name,name2,nameold,x,y,z
+'//DEADCODE RDH 07/07/99 	name=ActiveDocument.FullName
+'//DEADCODE RDH 07/07/99 	nameold=name
+'//DEADCODE RDH 07/07/99 	x=instr(4,name,"\")
+'//DEADCODE RDH 07/07/99 	name2=left(nameold,x)+"backup\"+"history.lst"
+'//DEADCODE RDH 07/07/99 	Documents.Open(name2)
+'//DEADCODE RDH 07/07/99 	Dim myDocument
+'//DEADCODE RDH 07/07/99 	dim outstr
+'//DEADCODE RDH 07/07/99 	outstr=""
+'//DEADCODE RDH 07/07/99 	For Each myDocument in Application.Documents
+'//DEADCODE RDH 07/07/99 		if (myDocument.fullname<>name2) then
+'//DEADCODE RDH 07/07/99 			name=myDocument.fullname
+'//DEADCODE RDH 07/07/99 			nameold=name
+'//DEADCODE RDH 07/07/99 			name=mid(name,x+1)
+'//DEADCODE RDH 07/07/99 			name=Date&"@"&Time&"="&name
+'//DEADCODE RDH 07/07/99 			name=Replace(name, "\", "_")
+'//DEADCODE RDH 07/07/99 			name=Replace(name, "/", "-")
+'//DEADCODE RDH 07/07/99 			name=Replace(name, ":", "!")
+'//DEADCODE RDH 07/07/99 			name=left(nameold,x)+"backup\"+name
+'//DEADCODE RDH 07/07/99 			PrintToOutputWindow myDocument.FullName & " Saved at " & Date & "@" & Time & " As " & name
+'//DEADCODE RDH 07/07/99 			myDocument.save(name)
+'//DEADCODE RDH 07/07/99 			myDocument.fullname=nameold
+'//DEADCODE RDH 07/07/99 			outstr=outstr&name&crlf
+'//DEADCODE RDH 07/07/99 		end if
+'//DEADCODE RDH 07/07/99 	next
+'//DEADCODE RDH 07/07/99 	For Each myDocument in Application.Documents
+'//DEADCODE RDH 07/07/99 		if (myDocument.fullname=name2) then	
+'//DEADCODE RDH 07/07/99 			myDocument.selection.EndOfDocument
+'//DEADCODE RDH 07/07/99 			myDocument.selection=outstr
+'//DEADCODE RDH 07/07/99 			myDocument.save
+'//DEADCODE RDH 07/07/99 			myDocument.close
+'//DEADCODE RDH 07/07/99 		end if
+'//DEADCODE RDH 07/07/99 	next
+'//DEADCODE RDH 07/07/99 	Inside_Application_DocumentSave=0
+'//DEADCODE RDH 07/07/99 end sub
+
+''	Sub	ListIncludes()
+''		Dim col														  
+''		dim s														  
+''		Dim row														  
+''		col=ActiveDocument.Selection.currentcolumn					  
+''		row=ActiveDocument.Selection.currentline					  //RDH 07 /07/99
+''		ActiveDocument.Selection.moveto 1,1							  //RDHh 07/07/99
+''		PrintToOutputWindow "INCLUDE FILES IN "+ ActiveDocument.name  //RD 077/99
+''		PrintToOutputWindow " "
+''		
+''		line=1
+''		ActiveDocument.Selection.findtext("#include")
+''		do while	(ActiveDocument.Selection.currentline>line)
+''			line=ActiveDocument.Selection.currentline
+''			ActiveDocument.Selection.findtext """"
+''			ActiveDocument.Selection.charright
+''			ActiveDocument.Selection.wordright	XdsExtend
+''			s=ActiveDocument.Selection.text
+''			if InStr(s,"\\")=0 then if s<>"resource.h" then s="..\h\"+s
+''			PrintToOutputWindow s+"(1)"+" : warning C0000: double click this to open"
+''			ActiveDocument.Selection.findtext("#include")
+''		loop
+''		ActiveDocument.Selection.moveto row,col
+''	end sub
+''PROTOTYPES FOR SYSTEM NAMED MACROS WHICH SHOULD BE APPENDED
+'
+' DON'T PUT YOUR OWN FUNCTION HERE. BUILD WILL PUT %USER IN FOR YOU!!!!!
+'
+'Function myname():myname="JIM":End Function 
+Function myname():myname="DAW":End Function
+Function myusername():myusername="RATTUS":End Function

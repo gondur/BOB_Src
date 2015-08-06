@@ -1,0 +1,282 @@
+	BattleField
+	{
+		FileName	FIL_1_TXWARMWE=TXWARMWE.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_WARMWELL,
+		ItemGroup
+		{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	14429696,
+							Z	26912256
+						}
+					},
+					UIDBand		TaxiBAND,
+					SetUID	UID_TAXI0,
+					Shape		EMPTY
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	14435840,
+							Z	26932736
+						}
+					},
+					UIDBand		TaxiBAND,
+					SetUID	UID_TAXI1,
+					Shape		EMPTY
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	14457344,
+							Z	26938880
+						}
+					},
+					UIDBand		TaxiBAND,
+					SetUID	UID_TAXI2,
+					Shape		EMPTY
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	14497280,
+						Z	26930176
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14421632,
+								Z	26899456
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14409024,
+								Z	26894336
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14402720,
+								Z	26891776
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14399568,
+								Z	26890496
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14396416,
+								Z	26889216
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		1,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					RefuellerBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	FULTRK,
+					MoveCode	AUTO_NOPPILOT
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	14499840,
+						Z	26922496
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14421632,
+								Z	26890240
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14409024,
+								Z	26885120
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14402720,
+								Z	26882560
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14399568,
+								Z	26881280
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14396416,
+								Z	26880000
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		1,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					RefuellerBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	FULTRK,
+					MoveCode	AUTO_NOPPILOT
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	14501376,
+						Z	26913792
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14422144,
+								Z	26882560
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14409536,
+								Z	26877440
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14403232,
+								Z	26874880
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14400080,
+								Z	26873600
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	14396928,
+								Z	26872320
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		1,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					RefuellerBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	FULTRK,
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

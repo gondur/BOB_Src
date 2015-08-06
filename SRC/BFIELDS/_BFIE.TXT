@@ -1,0 +1,68 @@
+BFIELDS directory:	Battle Fields
+=================
+
+A battlefield file contains descriptions of objects that are 
+to be loaded into the 3d world.
+The battlefield files can be represented in text or binary.
+When objects are loaded in binary format they are initioaly created 
+in info_xxx records. These can then be used directly or converted ioto 
+worldinc.h Item/FormationItem/AirStruc objects.
+
+This directory contains all the modules that make this happen.
+
+There are 3 seperate programs that use the battlefield system:
+
+Mission Editor (mainly meditor dir)
+	Mission editor program first seen in FC. 
+	Loads individual binary files into info_xxx records 
+	and saves out text files for all ground objects.
+
+MAKEBF:
+	Compiles the whole text format script into binary files
+	Quick mission scenarios are written by hand in text format
+
+Main game:
+	Loads binary files into info_xxx objects on the 2d map screen for the campaign
+	Saves aircraft position info in binary before entering 3d
+	Loads binary fiels into worldinc.h objects in 3d
+
+classes/modules
+---------------
+
+			GLOBREFS.CPP	A set of variables that are visible to both the game 
+							and the battlefield scripts.
+
+			MAKEBF.CXX		The script compiler
+
+PackageList	MAPCODE.CPP		Game module. Various interfaces between Persons4 
+							and the 2D map screen
+
+			MEGLOBAL.CPP	Mission editor module. Instances of globref variables.
+							Was used extensively in FC to set up event parameters.
+							Now not used.
+
+Persons2	PERSONS2.CPP	Loading of binary files into temporary info_xxx objects
+
+Persons3	PERSONS3.CPP	Conversion of info_xxx into individual worldinc.h objects for 3d
+
+Persons4	PERSONS4.CPP	Copying temporary to permanent info_xxx objects for 2d map screen
+
+			PERSONS5.CPP	Mission editor text save functionality
+
+EnumCtrl	PERSONS6.CPP	Mission editor enum header reading to allow mission editor to
+EnumStuff					present up to date member lists for enum fields.
+
+EventVal	PERSONS7.CPP	battlefield object expression evaluator
+
+QuickDef	QMISS.CPP		Quick missions list
+
+			SaveBin.CPP		Main game aircraft binary save functionality and header reading functionality.
+
+			Tank.CPP		Battlefuield file selection for maingame 3d entry.
+
+TokenSpell	TOKEN.CPP		text file parser and dictionary system for script compiler
+
+Trans3d		TRANS3D.CPP		3d studio file file traslator for item position info
+							(the way we used to do it before the mission editor)
+
+

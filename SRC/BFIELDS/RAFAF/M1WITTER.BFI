@@ -1,0 +1,43 @@
+	WayPoint	M1WITTER_011b,
+	GroundItem	M1WITTER_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1WITTER=M1WITTER.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_WITTERING,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	25916160,
+						Z	46291456
+					}
+				},
+				Route
+				{
+					WayPoint	M1WITTER_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	25950208,
+								Z	46301184
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1WITTER_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	}	}
+	};

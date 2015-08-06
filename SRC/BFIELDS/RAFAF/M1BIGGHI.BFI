@@ -1,0 +1,82 @@
+	WayPoint	M1BIGGHI_0139,
+	WayPoint	M1BIGGHI_013a,
+	WayPoint	M1BIGGHI_013b,
+	WayPoint	M1BIGGHI_013c,
+	GroundItem	M1BIGGHI_2909,
+	BattleField
+	{
+		FileName	FIL_1_M1BIGGHI=M1BIGGHI.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{Truck1Shape, Shape {List {Random 0,7,1},PLTRUK,RUNTRK,TRUCK,TROOPT,MEDIC,CAR,VAN}},
+	Setval	{greenstrength, Int {Random 3,6,1}},
+
+	ItemGroup
+	{	Target	UID_AF_BIGGINHILL,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29480448,
+						Z	33424384
+					}
+				},
+				Route
+				{
+					WayPoint	M1BIGGHI_013c=
+					{
+						Posn
+						{
+							Abs
+							{	X	29475328,
+								Z	33377792
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1BIGGHI_013b=
+					{
+						Posn
+						{
+							Abs
+							{	X	29482496,
+								Z	33346048
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1BIGGHI_013a=
+					{
+						Posn
+						{
+							Abs
+							{	X	29473280,
+								Z	33341952
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1BIGGHI_0139=
+					{
+						Posn
+						{
+							Abs
+							{	X	29478400,
+								Z	33321472
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1BIGGHI_2909=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape
+			}	}	}
+	};

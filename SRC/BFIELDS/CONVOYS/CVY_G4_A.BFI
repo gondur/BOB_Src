@@ -1,0 +1,162 @@
+	WayPoint	cvy_g4_a_011b,
+	WayPoint	cvy_g4_a_011c,
+	WayPoint	cvy_g4_a_011d,
+	WayPoint	cvy_g4_a_011e,
+	WayPoint	cvy_g4_a_011f,
+	WayPoint	cvy_g4_a_0120,
+	WayPoint	cvy_g4_a_0121,
+	WayPoint	cvy_g4_a_0122,
+	WayPoint	cvy_g4_a_0123,
+	WayPoint	cvy_g4_a_0124,
+	GroundItem	cvy_g4_a_2af5,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G4_A=cvy_g4_a.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	32198656,
+					Z	35201024
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g4_a_0124=
+				{
+					Posn
+					{
+						Abs
+						{	X	35495936,
+							Z	35201024
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_011b=
+				{
+					Posn
+					{
+						Abs
+						{	X	38854656,
+							Z	34709504
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_011c=
+				{
+					Posn
+					{
+						Abs
+						{	X	39079936,
+							Z	31985664
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_011d=
+				{
+					Posn
+					{
+						Abs
+						{	X	36130816,
+							Z	28585984
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_011e=
+				{
+					Posn
+					{
+						Abs
+						{	X	31952896,
+							Z	26558464
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_011f=
+				{
+					Posn
+					{
+						Abs
+						{	X	26849280,
+							Z	26497024
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_0120=
+				{
+					Posn
+					{
+						Abs
+						{	X	21037056,
+							Z	24715264
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_0121=
+				{
+					Posn
+					{
+						Abs
+						{	X	13971456,
+							Z	24121344
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_0122=
+				{
+					Posn
+					{
+						Abs
+						{	X	5922816,
+							Z	21049344
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g4_a_0123=
+				{
+					Posn
+					{
+						Abs
+						{	X	208734,
+							Z	20511441
+						}
+					},
+					//Vel	145,
+					Action	wpacnoactionno,
+					Range	0
+				}
+			},
+			NumInForm		10,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g4_a_2af5=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G4_A,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR}
+				//Vel	145
+		}	}
+	};

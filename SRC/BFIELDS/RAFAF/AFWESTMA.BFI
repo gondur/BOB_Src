@@ -1,0 +1,126 @@
+	WayPoint	AFWESTMA_0103,
+	WayPoint	AFWESTMA_0104,
+	WayPoint	AFWESTMA_0105,
+	WayPoint	AFWESTMA_0106,
+	SimpleItem	AFWESTMA_0419,
+	SimpleItem	AFWESTMA_041c,
+	SimpleItem	AFWESTMA_041f,
+	GroundItem	AFWESTMA_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFWESTMA=AFWESTMA.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_WESTMALLING,
+		ItemGroup
+		{
+				SimpleItem	AFWESTMA_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	31809536,
+							Z	32883200
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFWESTMA_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	31772672,
+							Z	32818176
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFWESTMA_041f=
+				{
+					Posn
+					{
+						Abs
+						{	X	31718912,
+							Z	32868864
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	31752704,
+						Z	32884224
+					}
+				},
+				Route
+				{
+					WayPoint	AFWESTMA_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	31764480,
+								Z	32870912
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFWESTMA_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	31763456,
+								Z	32857600
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFWESTMA_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	31757312,
+								Z	32849408
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFWESTMA_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	31740928,
+								Z	32843776
+							}
+						},
+						Action	wpdmbtrknoactno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFWESTMA_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

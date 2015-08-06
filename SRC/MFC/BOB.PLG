@@ -1,0 +1,575 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lib3D - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPC3A0.TMP" with contents
+[
+/nologo /Zp1 /MT /W3 /GX /O2 /Ob2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIB3D_EXPORTS" /Fo"\bob\release\lib3d/" /Fd"\bob\release\lib3d/" /FD /c 
+"C:\bob\Src\Lib3D\Getdxver.cpp"
+"C:\bob\Src\Lib3D\l3dguid.cpp"
+"C:\bob\Src\3d\Monotxt.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPC3A0.TMP" 
+Creating temporary file "c:\TEMP\RSPC3A1.TMP" with contents
+[
+/nologo /Zp1 /MT /W3 /GX /Z7 /O2 /Ob2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIB3D_EXPORTS" /Fo"\bob\release\lib3d/" /Fd"\bob\release\lib3d/" /FD /c 
+"C:\bob\Src\Lib3D\Lib3D.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPC3A1.TMP" 
+Creating temporary file "c:\TEMP\RSPC3A2.TMP" with contents
+[
+winmm.lib dxguid.lib ddraw.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /base:"0x10000000" /dll /incremental:no /pdb:"\bob\release\exe/Lib3D.pdb" /debug /machine:I386 /out:"\bob\release\exe/Lib3D.dll" /implib:"\bob\release\exe/Lib3D.lib" /libpath:"\bob\src\lib" 
+\bob\release\lib3d\alloc.obj
+\bob\release\lib3d\Getdxver.obj
+\bob\release\lib3d\l3dguid.obj
+\bob\release\lib3d\Lib3D.obj
+\bob\release\lib3d\Monotxt.obj
+\bob\release\lib3d\radix.obj
+]
+Creating command line "link.exe @c:\TEMP\RSPC3A2.TMP"
+<h3>Output Window</h3>
+Compiling...
+Getdxver.cpp
+l3dguid.cpp
+Monotxt.cpp
+C:\bob\Src\Lib3D\lib3d.h(1274):                  defining GUIDs
+Generating Code...
+C:\bob\Src\3d\Monotxt.cpp(30): Mono debugs disabled
+Compiling...
+Lib3D.cpp
+C:\bob\Src\Lib3D\Lib3D.cpp(196):                   Look at these equates...
+C:\bob\Src\Lib3D\Lib3D.cpp(782):                   many of these functions don't need this ptr. 4035 will only squelch at TOP l
+C:\bob\Src\Lib3D\Lib3D.cpp(1359):                   mask and shift can be quicker
+C:\bob\Src\Lib3D\Lib3D.cpp(792) : warning C4035: 'SetToTopBit' : no return value
+C:\bob\Src\Lib3D\Lib3D.cpp(7661):                   please tweak these values to max out the 64mb+ cards
+C:\bob\Src\Lib3D\Lib3D.cpp(7974):                   should be a const not a constant....
+C:\bob\Src\Lib3D\Lib3D.cpp(12232): drawline can be further optimised by moving the projection to the render
+C:\bob\Src\Lib3D\Lib3D.cpp(12407): drawpoint can be further optimised by moving the projection to the render
+C:\bob\Src\Lib3D\Lib3D.cpp(14397):                   I believe that this should be redundant- however it doesn't work without it
+C:\bob\Src\Lib3D\Lib3D.cpp(14398):                      -Note in SetUpRenderBlocks() this is set to mirror to force the switch
+Linking...
+   Creating library \bob\release\exe/Lib3D.lib and object \bob\release\exe/Lib3D.exp
+<h3>
+--------------------Configuration: RButton - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPD081.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\button/" /Fd"\bob\Release\button/" /FD /c 
+"C:\bob\Src\rbutton\all.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPD081.TMP" 
+Creating temporary file "c:\TEMP\RSPD082.TMP" with contents
+[
+/nologo /base:"0x10100000" /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/Rbutton.pdb" /machine:I386 /def:".\RButton.def" /out:"\bob\Release\exe/Rbutton.ocx" /implib:"\bob\Release\exe/Rbutton.lib" 
+\bob\Release\button\all.obj
+\bob\Release\button\RButton.res
+]
+Creating command line "link.exe @c:\TEMP\RSPD082.TMP"
+Creating temporary file "c:\TEMP\RSPD083.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\Rbutton.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPD083.BAT"
+Compiling...
+all.cpp
+Linking...
+   Creating library \bob\Release\exe/Rbutton.lib and object \bob\Release\exe/Rbutton.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+<h3>
+--------------------Configuration: RScrlBar - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPD0C6.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\Rscroll/" /Fd"\bob\Release\Rscroll/" /FD /c 
+"C:\bob\Src\RSCRLBAR\RScrlBar.cpp"
+"C:\bob\Src\RSCRLBAR\rscrlbrc.cpp"
+"C:\bob\Src\RSCRLBAR\rscrlbrp.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPD0C6.TMP" 
+Creating temporary file "c:\TEMP\RSPD0C7.TMP" with contents
+[
+/nologo /base:"0x10700000" /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/Rscrlbar.pdb" /machine:I386 /def:".\RScrlBar.def" /out:"\bob\Release\exe/Rscrlbar.ocx" /implib:"\bob\Release\exe/Rscrlbar.lib" 
+\bob\Release\Rscroll\RScrlBar.obj
+\bob\Release\Rscroll\rscrlbrc.obj
+\bob\Release\Rscroll\rscrlbrp.obj
+\bob\Release\Rscroll\RScrlBar.res
+]
+Creating command line "link.exe @c:\TEMP\RSPD0C7.TMP"
+Creating temporary file "c:\TEMP\RSPD0C8.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\Rscrlbar.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPD0C8.BAT"
+Compiling...
+RScrlBar.cpp
+rscrlbrc.cpp
+rscrlbrp.cpp
+Generating Code...
+Linking...
+   Creating library \bob\Release\exe/Rscrlbar.lib and object \bob\Release\exe/Rscrlbar.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+<h3>
+--------------------Configuration: RListBox - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPD134.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\BOB\Release\list/" /Fo"\BOB\Release\list/" /Fd"\BOB\Release\list/" /FD /c 
+"C:\bob\Src\Mfc\Getshadw.cpp"
+"C:\bob\Src\rlistbox\LP2.cpp"
+"C:\bob\Src\rlistbox\picture.cpp"
+"C:\bob\Src\rlistbox\RListBox.cpp"
+"C:\bob\Src\rlistbox\rlistbxc.cpp"
+"C:\bob\Src\rlistbox\rlistbxp.cpp"
+"C:\bob\Src\rlistbox\rscrlbar.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPD134.TMP" 
+Creating temporary file "c:\TEMP\RSPD135.TMP" with contents
+[
+/nologo /base:"0x10600000" /subsystem:windows /dll /incremental:no /pdb:"\BOB\release\exe/RListBox.pdb" /machine:I386 /def:".\RListBox.def" /out:"\BOB\release\exe/RListBox.ocx" /implib:"\BOB\release\exe/RListBox.lib" 
+\BOB\Release\list\Getshadw.obj
+\BOB\Release\list\LP2.obj
+\BOB\Release\list\picture.obj
+\BOB\Release\list\RListBox.obj
+\BOB\Release\list\rlistbxc.obj
+\BOB\Release\list\rlistbxp.obj
+\BOB\Release\list\rscrlbar.obj
+\BOB\Release\list\RListBox.res
+\bob\Release\exe\Rscrlbar.lib
+]
+Creating command line "link.exe @c:\TEMP\RSPD135.TMP"
+Creating temporary file "c:\TEMP\RSPD136.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\release\exe\RListBox.ocx"
+echo regsvr32 exec. time > "\BOB\release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPD136.BAT"
+Compiling...
+Getshadw.cpp
+LP2.cpp
+picture.cpp
+RListBox.cpp
+rlistbxc.cpp
+rlistbxp.cpp
+rscrlbar.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\release\exe/RListBox.lib and object \BOB\release\exe/RListBox.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+<h3>
+--------------------Configuration: RCombo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPD253.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\combo/" /Fd"\bob\Release\combo/" /FD /c 
+"C:\bob\Src\RCOMBO\all.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPD253.TMP" 
+Creating temporary file "c:\TEMP\RSPD254.TMP" with contents
+[
+/nologo /base:"0x10200000" /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/RCombo.pdb" /machine:I386 /def:".\RCombo.def" /out:"\bob\Release\exe/RCombo.ocx" /implib:"\bob\Release\exe/RCombo.lib" 
+\bob\Release\combo\all.obj
+\bob\Release\combo\RCombo.res
+\BOB\release\exe\RListBox.lib
+]
+Creating command line "link.exe @c:\TEMP\RSPD254.TMP"
+Creating temporary file "c:\TEMP\RSPD255.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\RCombo.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPD255.BAT"
+Compiling...
+all.cpp
+Linking...
+   Creating library \bob\Release\exe/RCombo.lib and object \bob\Release\exe/RCombo.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+<h3>
+--------------------Configuration: REdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPD284.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\edit/" /Fd"\bob\Release\edit/" /FD /c 
+"C:\bob\Src\Mfc\Getshadw.cpp"
+"C:\bob\Src\redit\REdit.cpp"
+"C:\bob\Src\redit\REditCtl.cpp"
+"C:\bob\Src\redit\REditPpg.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPD284.TMP" 
+Creating temporary file "c:\TEMP\RSPD285.TMP" with contents
+[
+/nologo /base:"0x10300000" /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/Redit.pdb" /machine:I386 /def:".\REdit.def" /out:"\bob\Release\exe/Redit.ocx" /implib:"\bob\Release\exe/Redit.lib" 
+\bob\Release\edit\Getshadw.obj
+\bob\Release\edit\REdit.obj
+\bob\Release\edit\REditCtl.obj
+\bob\Release\edit\REditPpg.obj
+\bob\Release\edit\REdit.res
+]
+Creating command line "link.exe @c:\TEMP\RSPD285.TMP"
+Creating temporary file "c:\TEMP\RSPD286.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\Redit.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPD286.BAT"
+Compiling...
+Getshadw.cpp
+REdit.cpp
+REditCtl.cpp
+REditPpg.cpp
+\bob\src\h\bitfield.h(37):                   Assert is non functional!!!
+\bob\src\h\myError.h(73):                   assert redefined
+Generating Code...
+Linking...
+   Creating library \bob\Release\exe/Redit.lib and object \bob\Release\exe/Redit.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \bob\Release\exe\Redit.ocx succeeded.
+
+<h3>
+--------------------Configuration: REdtBt - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPD313.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\BOB\Release\Reditbt/" /Fd"\BOB\Release\Reditbt/" /FD /c 
+"C:\bob\Src\Mfc\Getshadw.cpp"
+"C:\bob\Src\REdtBt\REdtBt.cpp"
+"C:\bob\Src\REdtBt\redtbtc.cpp"
+"C:\bob\Src\REdtBt\redtbtp.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPD313.TMP" 
+Creating temporary file "c:\TEMP\RSPD314.TMP" with contents
+[
+/nologo /base:"0x10400000" /subsystem:windows /dll /incremental:no /pdb:"\BOB\Release\exe/REdtBt.pdb" /machine:I386 /def:".\REdtBt.def" /out:"\BOB\Release\exe/REdtBt.ocx" /implib:"\BOB\Release\exe/REdtBt.lib" 
+\BOB\Release\Reditbt\Getshadw.obj
+\BOB\Release\Reditbt\REdtBt.obj
+\BOB\Release\Reditbt\redtbtc.obj
+\BOB\Release\Reditbt\redtbtp.obj
+\BOB\Release\Reditbt\REdtBt.res
+]
+Creating command line "link.exe @c:\TEMP\RSPD314.TMP"
+Creating temporary file "c:\TEMP\RSPD315.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\Release\exe\REdtBt.ocx"
+echo regsvr32 exec. time > "\BOB\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPD315.BAT"
+Compiling...
+Getshadw.cpp
+REdtBt.cpp
+redtbtc.cpp
+redtbtp.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\Release\exe/REdtBt.lib and object \BOB\Release\exe/REdtBt.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \BOB\Release\exe\REdtBt.ocx succeeded.
+
+<h3>
+--------------------Configuration: RSpltBar - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPD3A2.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\BOB\Release\RsplttBar/" /Fd"\BOB\Release\RsplttBar/" /FD /c 
+"C:\bob\Src\RSpltBar\RSpltBar.cpp"
+"C:\bob\Src\RSpltBar\rspltbC.CPP"
+"C:\bob\Src\RSpltBar\rspltbP.CPP"
+"C:\bob\Src\Mfc\Getshadw.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPD3A2.TMP" 
+Creating temporary file "c:\TEMP\RSPD3A3.TMP" with contents
+[
+/nologo /base:"0x10900000" /subsystem:windows /dll /incremental:no /pdb:"\BOB\Release\exe/RSpltBar.pdb" /machine:I386 /def:".\RSpltBar.def" /out:"\BOB\Release\exe/RSpltBar.ocx" /implib:"\BOB\Release\exe/RSpltBar.lib" 
+\BOB\Release\RsplttBar\RSpltBar.obj
+\BOB\Release\RsplttBar\rspltbC.obj
+\BOB\Release\RsplttBar\rspltbP.obj
+\BOB\Release\RsplttBar\Getshadw.obj
+\BOB\Release\RsplttBar\RSpltBar.res
+]
+Creating command line "link.exe @c:\TEMP\RSPD3A3.TMP"
+<h3>Output Window</h3>
+Compiling...
+RSpltBar.cpp
+rspltbC.CPP
+rspltbP.CPP
+Getshadw.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\Release\exe/RSpltBar.lib and object \BOB\Release\exe/RSpltBar.exp
+<h3>
+--------------------Configuration: RStatic - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPE063.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\BOB\Release\Rstatic/" /Fd"\BOB\Release\Rstatic/" /FD /c 
+"C:\bob\Src\Mfc\Getresrc.cpp"
+"C:\bob\Src\Mfc\Getshadw.cpp"
+"C:\bob\Src\RStatic\RStatic.cpp"
+"C:\bob\Src\RStatic\RStaticC.cpp"
+"C:\bob\Src\RStatic\RStaticP.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPE063.TMP" 
+Creating temporary file "c:\TEMP\RSPE064.TMP" with contents
+[
+/nologo /base:"0x10A00000" /subsystem:windows /dll /incremental:no /pdb:"\BOB\Release\exe/RStatic.pdb" /machine:I386 /def:".\RStatic.def" /out:"\BOB\Release\exe/RStatic.ocx" /implib:"\BOB\Release\exe/RStatic.lib" 
+\BOB\Release\Rstatic\Getresrc.obj
+\BOB\Release\Rstatic\Getshadw.obj
+\BOB\Release\Rstatic\RStatic.obj
+\BOB\Release\Rstatic\RStaticC.obj
+\BOB\Release\Rstatic\RStaticP.obj
+\BOB\Release\Rstatic\RStatic.res
+]
+Creating command line "link.exe @c:\TEMP\RSPE064.TMP"
+Creating temporary file "c:\TEMP\RSPE065.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\Release\exe\RStatic.ocx"
+echo regsvr32 exec. time > "\BOB\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPE065.BAT"
+Compiling...
+Getresrc.cpp
+Getshadw.cpp
+Processing UI includes
+\bob\src\h\BitField.h(37):                   Assert is non functional!!!
+C:\bob\Src\Mfc\..\h\myError.h(73):                   assert redefined
+RStatic.cpp
+RStaticC.cpp
+RStaticP.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\Release\exe/RStatic.lib and object \BOB\Release\exe/RStatic.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \BOB\Release\exe\RStatic.ocx succeeded.
+
+<h3>
+--------------------Configuration: RTabs - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPE155.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\BOB\Release\Rtabs/" /Fd"\BOB\Release\Rtabs/" /FD /c 
+"C:\bob\Src\Mfc\Getshadw.cpp"
+"C:\bob\Src\RTabs\RTabs.cpp"
+"C:\bob\Src\RTabs\RTabsCtl.cpp"
+"C:\bob\Src\RTabs\RTabsPpg.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPE155.TMP" 
+Creating temporary file "c:\TEMP\RSPE156.TMP" with contents
+[
+/nologo /base:"0x10B00000" /subsystem:windows /dll /incremental:no /pdb:"\BOB\Release\exe/RTabs.pdb" /machine:I386 /def:".\RTabs.def" /out:"\BOB\Release\exe/RTabs.ocx" /implib:"\BOB\Release\exe/RTabs.lib" 
+\BOB\Release\Rtabs\Getshadw.obj
+\BOB\Release\Rtabs\RTabs.obj
+\BOB\Release\Rtabs\RTabsCtl.obj
+\BOB\Release\Rtabs\RTabsPpg.obj
+\BOB\Release\Rtabs\RTabs.res
+]
+Creating command line "link.exe @c:\TEMP\RSPE156.TMP"
+Creating temporary file "c:\TEMP\RSPE157.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\Release\exe\RTabs.ocx"
+echo regsvr32 exec. time > "\BOB\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPE157.BAT"
+Compiling...
+Getshadw.cpp
+RTabs.cpp
+RTabsCtl.cpp
+RTabsPpg.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\Release\exe/RTabs.lib and object \BOB\Release\exe/RTabs.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \BOB\Release\exe\RTabs.ocx succeeded.
+
+<h3>
+--------------------Configuration: RRadio - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPE1F0.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\Rradio/" /Fd"\bob\Release\Rradio/" /FD /c 
+"C:\bob\Src\Mfc\Getshadw.cpp"
+"C:\bob\Src\RRadio\RRadio.cpp"
+"C:\bob\Src\RRadio\RRadioC.cpp"
+"C:\bob\Src\RRadio\RRadioP.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPE1F0.TMP" 
+Creating temporary file "c:\TEMP\RSPE1F1.TMP" with contents
+[
+/nologo /base:"0x10500000" /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/RRadio.pdb" /machine:I386 /def:".\RRadio.def" /out:"\bob\Release\exe/RRadio.ocx" /implib:"\bob\Release\exe/RRadio.lib" 
+\bob\Release\Rradio\Getshadw.obj
+\bob\Release\Rradio\RRadio.obj
+\bob\Release\Rradio\RRadioC.obj
+\bob\Release\Rradio\RRadioP.obj
+\bob\Release\Rradio\RRadio.res
+]
+Creating command line "link.exe @c:\TEMP\RSPE1F1.TMP"
+Creating temporary file "c:\TEMP\RSPE1F2.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\RRadio.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPE1F2.BAT"
+Compiling...
+Getshadw.cpp
+RRadio.cpp
+RRadioC.cpp
+RRadioP.cpp
+Generating Code...
+Linking...
+   Creating library \bob\Release\exe/RRadio.lib and object \bob\Release\exe/RRadio.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \bob\Release\exe\RRadio.ocx succeeded.
+
+<h3>
+--------------------Configuration: ukeylist - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPE275.TMP" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "..\h" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\BOB\Release\UKeylist/Ukeylist.pch" /YX /Fo"\BOB\Release\UKeylist/" /Fd"\BOB\Release\UKeylist/" /FD /c 
+"C:\bob\Src\INPUT\keylist.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPE275.TMP" 
+Creating temporary file "c:\TEMP\RSPE276.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\BOB\Release\exe/Ukeylist.pdb" /machine:I386 /out:"\BOB\Release\exe/Ukeylist.exe" 
+\BOB\Release\UKeylist\keylist.obj
+]
+Creating command line "link.exe @c:\TEMP\RSPE276.TMP"
+<h3>Output Window</h3>
+Compiling...
+keylist.cpp
+Linking...
+<h3>
+--------------------Configuration: RSpinBut - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPE292.TMP" with contents
+[
+/nologo /MD /W3 /GX /Z7 /O2 /I "..\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\BOB\Release\RspinBut/" /Fd"\BOB\Release\RspinBut/" /FD /c 
+"C:\bob\Src\Mfc\Getshadw.cpp"
+"C:\bob\Src\RSPINBUT\Rspinbtc.cpp"
+"C:\bob\Src\RSPINBUT\Rspinbtp.cpp"
+"C:\bob\Src\RSPINBUT\RSpinBut.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPE292.TMP" 
+Creating temporary file "c:\TEMP\RSPE293.TMP" with contents
+[
+/nologo /base:"0x10800000" /subsystem:windows /dll /incremental:no /pdb:"\BOB\Release\exe/Rspinbut.pdb" /debug /machine:I386 /def:".\RSpinBut.def" /out:"\BOB\Release\exe/Rspinbut.ocx" /implib:"\BOB\Release\exe/Rspinbut.lib" 
+\BOB\Release\RspinBut\Getshadw.obj
+\BOB\Release\RspinBut\Rspinbtc.obj
+\BOB\Release\RspinBut\Rspinbtp.obj
+\BOB\Release\RspinBut\RSpinBut.obj
+\BOB\Release\RspinBut\RSpinBut.res
+]
+Creating command line "link.exe @c:\TEMP\RSPE293.TMP"
+Creating temporary file "c:\TEMP\RSPE294.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\Release\exe\Rspinbut.ocx"
+echo regsvr32 exec. time > "\BOB\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\TEMP\RSPE294.BAT"
+Compiling...
+Getshadw.cpp
+Rspinbtc.cpp
+Rspinbtp.cpp
+RSpinBut.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\Release\exe/Rspinbut.lib and object \BOB\Release\exe/Rspinbut.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \BOB\Release\exe\Rspinbut.ocx succeeded.
+
+<h3>
+--------------------Configuration: quickmis - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPE351.TMP" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "..\h" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "STANDALONE" /Fp"\bob\Release\qmiss/QUICKMIS.pch" /YX /Fo"\bob\Release\qmiss/" /Fd"\bob\Release\qmiss/" /FD /c 
+"C:\bob\Src\Bfields\Qmiss.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPE351.TMP" 
+Creating temporary file "c:\TEMP\RSPE352.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\bob\release\exe/QUICKMIS.pdb" /machine:I386 /out:"\bob\release\exe/QUICKMIS.exe" 
+\bob\Release\qmiss\Qmiss.obj
+]
+Creating command line "link.exe @c:\TEMP\RSPE352.TMP"
+<h3>Output Window</h3>
+Compiling...
+Qmiss.cpp
+Linking...
+Creating temporary file "c:\TEMP\RSPE360.BAT" with contents
+[
+@echo off
+\bob\release\exe\QUICKMIS.exe ..\..\game\bfields\quick.dat
+]
+Creating command line "c:\TEMP\RSPE360.BAT"
+
+<h3>
+--------------------Configuration: ItemGrid - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\TEMP\RSPE371.TMP" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /I "..\h" /D "NDEBUG" /D "WIN32" /D "_CONSOLE" /D "_MBCS" /D "STAND_ALONE" /Fo"\bob\Release\utilobj/" /Fd"\bob\Release\utilobj/" /FD /c 
+"C:\bob\Src\Ai\Grid.cpp"
+"C:\bob\Src\itemgrid\ItemGrid.cpp"
+"C:\bob\Src\Bfields\Persons2.cpp"
+"C:\bob\Src\Bfields\Persons7.cpp"
+]
+Creating command line "cl.exe @c:\TEMP\RSPE371.TMP" 
+Creating temporary file "c:\TEMP\RSPE372.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\bob\Release\exe/Itemgrid.pdb" /machine:I386 /out:"\bob\Release\exe/Itemgrid.exe" 
+\bob\Release\utilobj\Grid.obj
+\bob\Release\utilobj\ItemGrid.obj
+\bob\Release\utilobj\Persons2.obj
+\bob\Release\utilobj\Persons7.obj
+]
+Creating command line "link.exe @c:\TEMP\RSPE372.TMP"
+<h3>Output Window</h3>
+Compiling...
+Grid.cpp
+ItemGrid.cpp
+Persons2.cpp
+Persons7.cpp
+Generating Code...
+
+</pre>
+</body>
+</html>

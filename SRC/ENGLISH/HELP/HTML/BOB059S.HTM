@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=Windows-1252">
+<title>Paint Shop</title>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF TEXT=#000000>
+<h2><a name="hidd_paintshop"></a>Paint Shop</h2>
+<p>
+This Dialogue is launched when you click on an aircraft’s nose art that is displayed on the Flight Details Dialogue. </p>
+<p>
+It is possible to change the artwork on any of the aircraft under your command that are based in Korea. You can choose from any of the sixteen pieces of artwork supplied. In addition it is possible for you to provide your own set of sixteen pieces of artwork.</p>
+<p>
+To change the nose art on the selected aircraft, click on your choice.</p>
+<h4>Changing User Nose Art</h4>
+<dl>
+<dt>
+In the game the user nose art exists in two forms: one for the map screen and one for the 3D section. Changing the nose art is therefore a two-stage process:</dt>
+<dd>
+Modify the mapscreen nose art in a standard art pack.<p>
+Run a conversion program, which we have provided, to produce the form of the nose art for the 3D section of the game.</p>
+</dd>
+</dl>
+<p>
+<b>Modifying the Mapscreen Nose Art</b></p>
+<p>
+The source files will be found in: \<code>artwork\noseuser. </code>If you haven’t changed the default directory the full path will be: <code>\rowan\bob\artwork\noseuser\.</code></p>
+<dl>
+<dt>
+The nose art consists of sixteen files in the bmp file format. You can edit any or all of these files in your art pack. The following restrictions apply:</dt>
+<dd>
+Each piece of artwork must be 64 pixels x 64 pixels and must have 256 Colors.<p>
+The palette cannot be changed.</p>
+<p>
+Color 253 must not be used.</p>
+<p>
+Color 254 is the mask color – this will be transparent and not show up on the aircraft.</p>
+<p>
+Color 255 should be pure white (255,255,255).</p>
+</dd>
+</dl>
+<p>
+After saving out a modified piece of nose art, it will be possible to view the change on the mapscreen paint shop dialogue. At this stage, though, the change will not be available in the 3D.</p>
+<p>
+<b>Preparing the Artwork for the 3D Game</b></p>
+<p>
+To make the modified artwork available in the 3D part of the game, you need to run the ‘nose art’ program that is installed in the same directory as bob Alley.</p>
+<dl>
+<dt>
+There are two other ways of running the nose art program:</dt>
+<dd>
+It is available as a menu item in the bob Alley section of the Start Menus.<p>
+It can be initiated from the command line with the command:  <code>tt2 –r user.res</code></p>
+</dd>
+</dl>
+<p>
+Running the nose art program will produce a new version of the file: <code>MaskMap\UsrDecal.X8</code></p>
+<p>
+If at any time any of the user nose art files are corrupted then they can be replaced by copying from the original CD. The directory names on the CD are identical to those on the installed version.</p>
+</BODY>
+</HTML>

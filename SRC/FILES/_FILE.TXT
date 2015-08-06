@@ -1,0 +1,21 @@
+FILEMAN Directory:	File management
+=================
+
+The class FileMan provides a system for managing the multitude of 
+small files that we use without costing the earth for file-naming strings.
+The basic mechanism is that each of 256 directories can store up to 256 files.
+This 2 byte code then forms the unique identifier for the file.
+The original plan was to allow all the files in one directory to be concatinated
+using the same scheme used for the landscape and radio chatter, but this never happened.
+The other important features of the system are that it allows C++ limited scoping
+of file access and that it caches the files against them being re-requested.
+
+The class fileman provides the basic low-level file naming and cacheing facilities, and 
+FileMan is a wrapper that provides very crude multitask protection.
+
+The FileBlock class is the basic scoping object. 
+
+FILEMAN.CPP is the main module, with a few secondary routines in WINFILE.CPP
+
+
++

@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LFreCln - Win32 Debug--------------------
+</h3>
+
+cd
+D:\BOB\SRC\FRENCH
+rem if exist resource.h del resource.h
+if exist resource.h move resource.h ..\mfc\
+for %i in (res\*.*) (del %i)
+for %i in (*.cur) (del %i)
+
+
+
+<h3>Results</h3>
+cleaned.flg - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

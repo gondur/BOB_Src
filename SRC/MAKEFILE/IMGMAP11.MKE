@@ -1,0 +1,54 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGE16
+DEST = ..\GAME\imgmap16
+SRC2 = s:\projects\bob\artsrc\TRANS16
+DEST_DAT = ..\GAME\LANDMAPS
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\MUSHYPEA.x8\
+	$(DEST)\BLENDMAP.x8\
+
+
+MAPS64X64	=
+
+MAPS128X128	=
+
+MAPS32X32	=
+
+MAPS64X128	=
+
+MAPS16X256	=
+
+MAPS128X16	=
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+	echo -es -r $(DEST_DAT)\palclust.x8 > domap.res
+	echo -r $(SRC)\$*.PCX $(TT256X256) >> domap.res
+	echo -ept -r $(SRC2)\$*.PCX >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+	tt2 -d -r domap.res
+

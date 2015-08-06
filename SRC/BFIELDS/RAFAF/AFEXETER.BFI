@@ -1,0 +1,194 @@
+	WayPoint	AFEXETER_0100,
+	WayPoint	AFEXETER_0101,
+	WayPoint	AFEXETER_0102,
+	WayPoint	AFEXETER_0103,
+	WayPoint	AFEXETER_0104,
+	WayPoint	AFEXETER_0105,
+	WayPoint	AFEXETER_0106,
+	WayPoint	AFEXETER_0107,
+	WayPoint	AFEXETER_0108,
+	SimpleItem	AFEXETER_0405,
+	SimpleItem	AFEXETER_040a,
+	SimpleItem	AFEXETER_040d,
+	GroundItem	AFEXETER_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFEXETER=AFEXETER.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_EXETER,
+		ItemGroup
+		{
+				SimpleItem	AFEXETER_0405=
+				{
+					Posn
+					{
+						Abs
+						{	X	7163904,
+							Z	27074560
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFEXETER_040a=
+				{
+					Posn
+					{
+						Abs
+						{	X	7085056,
+							Z	27019264
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFEXETER_040d=
+				{
+					Posn
+					{
+						Abs
+						{	X	7186432,
+							Z	26998784
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	7243776,
+						Z	27039232
+					}
+				},
+				Route
+				{
+					WayPoint	AFEXETER_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	7245824,
+								Z	27032064
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	7209984,
+								Z	27025408
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	7208448,
+								Z	27034112
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	7194624,
+								Z	27035392
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	7193600,
+								Z	27047936
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	7186944,
+								Z	27053056
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	7178752,
+								Z	27052032
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0108=
+					{
+						Posn
+						{
+							Abs
+							{	X	7173632,
+								Z	27044864
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFEXETER_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	7179264,
+								Z	27036160
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFEXETER_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

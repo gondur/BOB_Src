@@ -1,0 +1,10 @@
+GENERAL Directory:	Generally not much here at all!
+=================
+
+WinError.CPP provides the basic Error class and all-purpose SayAndQuit procedure.
+SayAndQuit() is embedded into the macro EmitSysError and it's variants.
+
+Malloc.CPP	Used to be out memory allocation debug module, but these days the MFC tracing is sufficient.
+
+Static.CPP	Declares some static member variables that don't fit anywhere else.
+

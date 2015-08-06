@@ -1,0 +1,44 @@
+	WayPoint	M2BIGGHI_013d,
+	GroundItem	M2BIGGHI_290a,
+	BattleField
+	{
+		FileName	FIL_1_M2BIGGHI=M2BIGGHI.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_BIGGINHILL,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29444608,
+						Z	33345536
+					}
+				},
+				Route
+				{
+					WayPoint	M2BIGGHI_013d=
+					{
+						Posn
+						{
+							Abs
+							{	X	29402112,
+								Z	33357824
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M2BIGGHI_290a=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	TRUCK,
+					Vel	100
+			}	}	}
+	};

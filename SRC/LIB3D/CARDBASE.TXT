@@ -1,0 +1,169 @@
+FORALL MIN_FRAME_TIME_MS 20
+#FORALL DO_DIAGS
+#FORALL FRAME_TIME_BUFF 50
+# please note that the above line MUST come before your cards entry, or before the 
+# DEFAULT line
+#
+##################################################################################
+# This is the card database, containing fixes for cards...
+# The format of this file is pretty simple (you'll have guessed that a '#' 
+# is a comment line) Fixes come in a list (whitespace separated) after the 
+# device identifier (in hex)
+# Following fixes allowed - note case sensitivity (as I'm lazy...)
+#		DO_DIAGS						  - write some diagnotsics to file 3D_Diags.txts
+#		FRAME_TIME_BUFF	<integer>		  - store a buffer of frame times,
+#											size is the argument.
+#											will be output on exit to 3d into
+#											3D_Timings.txt
+#								
+#		MIN_FRAME_TIME_MS <integer>		  - follow this by a number which is the 
+#											minimum frame time in milliseconds
+#											setting to 20 (which is max of 50 fps)
+#											will often fix stuttering problems
+#											The first line in this file uses
+#											that as a generic fix for all cards
+#
+#       VERTEX_FOG                        - try this if there are fog problems 
+#					    (usually things are blue in the 
+#					    wrong places) or everything is blue.
+# 	NO_TEXTURE_TARGET		  - try this if tiles (squares) of the 
+#					    landscape are black or the wrong 
+#					    colour.
+#       SLOW_TEXTURE_DOWNLOAD             - as above, often needed in 
+#					    conjunction with it.
+#       SLOWEST_TEXTURE_DOWNLOAD          - as above, however only one of 
+#                                           this fix and the previous one
+#                                           can be active at once, if both 
+#					    are in a line then the last to
+#                                           appear will be used. 
+#       LOCK_TARG_FMT_TO_BACK_BUFF        - as above, sometimes a better 
+#                                           option as it can be quicker, however
+#                                           can use up gfx card memory 
+#                                           in 32 bit colour depth
+#	NO_TEXTURE_BLEND		  - if the sea looks wrong or 
+#					    the cloud layer looks wrong 
+#                                           then this may be the option 
+#					    for you (also effects the dither
+#                                           antialiasing).
+#       NO_DEVICE_VALIDATION              - this can fix the problems from 
+#					    the above in a more satisfactory 
+#                                           manner.  Also if the game 
+#					    can't even get into the 3D it is a
+#                                           good idea to try this one.
+#       MAX_TEXTURE_WIDTH <integer>       - if textures seem to be cut 
+#					    off or you can't get into the 3D                                            
+#       MAX_TEXTURE_HEIGHT <integer>      - then using these two fixes 
+#					    with values of 256 or 128
+#	ALWAYS_USE_W			  - Always use a W buffer
+#	ALWAYS_USE_Z			  - Always use a Z buffer
+#                                         - if there is only a 16 bit or 
+#					    smaller z buffer available we 
+#					    will use a z buffer, otherwise 
+#					    we will use a w buffer if the 
+#					    card claims it can. Symptoms for 
+#					    needing these fixes include the 
+#					    3d not being displayed over
+#                                           the splash screen, only the 2d 
+#					    overlay.
+#       FAKE_W_BUFFER                     - fakes a w buffer using z, 
+#					    can prevent the above being used.  
+#                                           fixed fog and specular for 
+#					    the voodoo 5. 
+#	NO_GUARDBAND_CLIP		  - don't do guardband clipping if 
+#					    it is available
+#	STIPPLE_ALPHA			  - fixes problems that may occur 
+#					    with the luminous transparency 
+#					    blending
+#                                         - use if the view reticule in 
+#					    the cockpit and the lens flares 
+#					    look wrong
+#       W_16BIT                           - use if textures don't mesh 
+#					    tear along polygon in the 
+#					    landscape and clouds
+# the following should not be needed...
+#       SET_TEX_FMT_NUMBER <integer> <texture type>     -       where texture 
+#					    type is one of; 
+#					    TF_LAND TF_LANDINIT
+
+# Many cards will not need a line in this file to fix issues with them, 
+# also some configurations will not need the fixes that are here, 
+# however if after entering the 3D in the game there are obvious graphical
+# problems then these may be avoidable using on or a combinations
+# of the work around's available in this file.
+
+# If your machine has a problem in the 3D try experimenting 
+# with the functionality available within this file, this is the 
+# general procedure to follow to try and find a fix;
+
+# Step one - establish the device identifier (in hex) for your card.
+# In order to establish the device identifier of your card, use a 
+# default card fix, the easiest way is to uncomment the following line 
+# (i.e. remove the '#' symbol), save this file and then enter the 3D
+# again.  
+#
+#DEFAULT
+#
+# On the loading splash screen there should be a line displayed 
+# reading something along the line of "using default fix, your 
+# cards number is ????", where ???? is a hexadecimal number.
+# write down the number given as you will need it later to build 
+# your own line in the database below
+
+# Step two - establish a fix or combination of fixes for your card.
+# The first thing to do in order to try and find fixes for 
+# your graphics card is to check the list and see if there is a 
+# similar card already listed.  If there is this is normally a 
+# good starting point of options to test.  To try out the different 
+# options put the fix name (in capitals with spaces separating
+# different options) after 'DEFAULT' on the line above.
+
+# Step three - add your cards fixes to the database below
+# Now you have all of the fixes that you need to play the game 
+# you can add a specific line for your card to the database below.  
+# The fist thing on the line is a description of your card, this must 
+# contain no spaces but other than that there is no real restriction 
+# on what you call it.  After this you should add some whitespace (a space 
+# for example), then your cards identification number and more whitespace.  
+# Finally copy the fixes from the default line you created onto the end 
+# of the entry you have created for your card.  Don't forget to recomment 
+# the default line.  Congratulations, you should have now created 
+# a new database entry for your card.
+#####################
+# current fixes
+
+Voodoo2             0002    W_16BIT VERTEX_FOG NO_TEXTURE_BLEND	NO_TEXTURE_TARGET
+VoodooBanshee       0003    W_16BIT VERTEX_FOG	NO_TEXTURE_TARGET	NO_TEXTURE_BLEND
+Voodoo3             0005    W_16BIT VERTEX_FOG	NO_TEXTURE_TARGET	NO_TEXTURE_BLEND
+Voodoo5             0009    W_16BIT VERTEX_FOG FAKE_W_BUFFER
+# 3dLabs Oxygen VX1 Cards are a bit of a pain.
+# if you are using 32Bit then you just need VERTEX_FOG ALWAYS_USE_W 
+# if you are using 16bit then you have you add NO_TEXTURE_TARGET SLOW_TEXTURE_DOWNLOAD
+# The first line is always used - this is setup for 32Bit Displays.
+OxygenVX1	    000C    VERTEX_FOG ALWAYS_USE_W 
+OxygenVX1	    000C    VERTEX_FOG ALWAYS_USE_W NO_TEXTURE_TARGET SLOW_TEXTURE_DOWNLOAD
+Kyro		    0010    NO_TEXTURE_TARGET SLOW_TEXTURE_DOWNLOAD VERTEX_FOG
+Riva_TNT            0020    NO_TEXTURE_TARGET SLOW_TEXTURE_DOWNLOAD
+Riva_TNT2	    0028    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+Riva_TNT2_Ultra	    0029    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+Riva_TNT2_Vanta     002C    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+#GeForce            0100    NO_TEXTURE_TARGET SLOW_TEXTURE_DOWNLOAD
+GeForce	            0100    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+GeForce_DDR         0101    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+GeForce2            0150    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+GeForce2DDR         0151    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+GeForce2MX	    0110    NO_TEXTURE_TARGET LOCK_TARG_FMT_TO_BACK_BUFF
+Matrox_G200_AGP     0521    NO_DEVICE_VALIDATION
+FireGL_1KPro        3D07    STIPPLE_ALPHA SLOWEST_TEXTURE_DOWNLOAD NO_TEXTURE_TARGET NO_DEVICE_VALIDATION
+ATI_Rage_Pro        4742    SLOW_TEXTURE_DOWNLOAD MAX_TEXTURE_WIDTH 256 MAX_TEXTURE_HEIGHT 256
+ATI_Radeon          5144    FAKE_W_BUFFER SLOW_TEXTURE_DOWNLOAD	NO_TEXTURE_TARGET	
+S3_Savage4          8A22    SLOW_TEXTURE_DOWNLOAD NO_TEXTURE_TARGET ALWAYS_USE_W
+
+
+# now the default - note there is identifier number for 
+# it as I guess it is unknown... must be called  'DEFAULT' 
+# and have no identification number - here is an example
+# also if a match is found earlier then processing of this 
+# file will stop so the default will never be reached
+#DEFAULT		NO_DEVICE_VALIDATION
+
+

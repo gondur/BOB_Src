@@ -1,0 +1,148 @@
+FILE		RESOURCE		Class		Panels	(Child of)
+
+ACALLOC		IDD_ACALLOC		AircraftAllocation	
+ACUNIT		IDD_UNIT		AircraftUnit	
+ACUNITRF	IDD_UNIT_RAF		AcUnitRAF	
+AFDETL		IDD_AIRFIELD_DETAILS	AirfieldDetails	(AirfieldDossier)
+AFDOSSR		IDD_AC_DOSSIER		AirfieldDossier		
+							SquadronDetails		
+							AirfieldDetails		
+							CDamage	
+APILOT		IDD_3dII		CAutoPilot	(fullpane)
+AUTHOR		IDD_TRG_ASSET		CAuthorise		
+							CSupply		
+							CSupply		
+							CSupply		
+							CSupply		
+							CSupply		
+							CSupply	
+BASESLFT	IDD_BASES_LUFTFLOTTE	BasesLuftflotte		
+							GroupGeschwader		
+							GroupGeschwader		
+							GroupGeschwader		
+							GroupGeschwader	
+BOBFRAG		IDD_BOBFRAG		BoBFrag		(fullpane)
+CAMPNAME	IDD_CAMPNAME		CampaignEnterName	(fullpane)
+CLOCK		IDD_CLOCK		Clock	
+CNTRLACL	IDD_CONTROLACCEL	ControlAccel	(ControlTopLevel)
+CNTRLFLY	IDD_CONTROLFLY		ControlFly	(ControlTopLevel)
+CNTRLTOP	IDD_CONTROLTOP		ControlTopLevel		
+							ControlAccel		
+							ControlFly	
+COMMCHAT	IDD_COMMSCHAT		CommsChat	(fullpane)
+CREDITS		IDD_CREDITS		CCredits	(fullpane)
+DAMAGE		IDD_DAMAGE		CDamage
+DIRNORES	IDD_DIRECTIVENORESULTS	DirectivesNoResults	
+DIRRSULT	IDD_DIRECTIVERESULTS	DirectiveResults	
+DOSSDETL	IDD_DOSSIERDETAILS	DossierDetails	
+DOSSIERB	IDD_DOSSIER		Dossier		
+							DossierDetails		
+							CDamage	
+ENDDAYRL	IDD_ENDOFDAYREVIEWLIST	EndOfDayReviewList	(fullpane)
+ENDDAYRV	IDD_ENDOFDAYTEXT	EndOfDayReviewText	(fullpane)
+ENDDYBMP	IDD_ENDOFDAYREVIEWBMP	EndofDayReviewBmp	(fullpane)
+FILING		IDD_FILING		CFiling		
+							CLoad	
+GAMESELT	IDD_GAMESELECT		GameSelect	(fullpane)
+GESCHWDR	IDD_GESCHWADER		Geschwader	
+GRPGESCH	IDD_GROUP_GESCHWADER	SquadronDetails	
+GWADLIST	IDD_LWGESCHWADERLIST	GeschwaderList	
+HOSTILES	IDD_HOSTILESLIST	HostilesList	
+INTELMSG	IDD_INTELLMSG		IntellMessages	
+INTOFF		IDD_INTERCEPTOFFERED	InterceptOffered	
+LOAD		IDD_LOAD		CLoad	
+LOCKER		IDD_LOCKERROOM		CVisitorsBook	
+LUFTFLOT	IDD_LUFTFLOTTE		LuftFlotte		
+							Geschwader	
+LWDIARY		IDD_LWDIARY		LWDiary		
+							LWDiaryList		
+							LWDiaryDetails	
+LWDIARYD	IDD_LWDIARYDETAILS	LWDiaryDetails	
+LWDIARYL	IDD_LWDIARYLIST		LWDiaryList	
+LWDIRECT	IDD_LWDIRECTIVES	LWDirectives	
+LWMSSFR		IDD_LWMISSIONFOLDER	LWMissionFolder	
+LWREVAC		IDD_LWREVIEWAIRCRAFT	LWReviewAircraft	
+LWREVCL		IDD_LWREVIEWCLAIMS	LWReviewClaims	
+LWREVEN		IDD_LWREVIEWENEMY	LWReviewEnemy	
+LWREVST		IDD_LWREVIEWSTRENGTH	LWReviewStrength	
+LWREVTP		IDD_LWREVIEWTOP		LWReviewTop		
+							LWReviewStrength		
+							LWReviewAircraft		
+							RAFReviewAsset		
+							LWReviewClaims		
+							RAFReviewAircraft	
+LWROUTEA	IDD_LWROUTEAIRFIELD	LWRouteAirfield	
+LWROUTEM	IDD_LWROUTEMAIN		LWRouteMain	
+LWROUTET	IDD_LWROUTETOP		LWRouteTop		
+							LWRouteMain	
+LWTASKAC	IDD_LWTASKAIRCRAFT	LWTaskAircraft	
+LWTASKFR	IDD_LWTASKFIGHTER	LWTaskFighter	
+LWTASKSM	IDD_LWTASKSUMMARY	LWTaskSummary	
+LWTASKTP	IDD_LWTASKTOP		LWTaskTop		
+							LWTaskSummary		
+							LWTaskAircraft		
+							LWTaskFighter	
+MAPFLTLW	IDD_MAPFILTERS_RAIDS_LW	MapFiltersRaidsLW	
+MFRAIDS		IDD_MAPFILTERS_RAIDS	MapFiltersRaids	
+MFTARGET	IDD_MAPFILTERS_TRGT	MapFiltersTarget	
+MFTOP		IDD_MAPFILTERS_TOP	MapFiltersTop		
+							MapFiltersTarget		
+							MapFiltersRaidsLW		
+							MapFiltersRaids	
+PHSDSCR		IDD_PHASEDESCRIPTION	PhaseDescription	(fullpane)	
+PLTLOGBK	IDD_PILOTLOGBOOK	PilotLogBook	
+QUICKPAR	IDD_QUICKPARAS		QuickParameters		(fullpane)
+RADCOMMS	IDD_CHAT		RadioComms		(fullpane)
+RAFCOMBT	IDD_RAFCOMBAT		RAFCombat	
+RAFDIARY	IDD_RAFDIARY		RAFDiary		
+							RAFDiaryList		
+							RAFDiaryDetails	
+RAFDIR		IDD_RAFDIRECTIVE	RAFDirectives	
+RAFDRRES	IDD_RAFDIRECTIVERESULTS	RAFDirectiveResults	
+RAFDRYD		IDD_RAFDIARYDETAILS	RAFDiaryDetails	
+RAFDRYL		IDD_RAFDIARYLIST	RAFDiaryList	
+RAFMSSFR	IDD_RAFMISSIONFOLDER	RAFMissionFolder	
+RAFREVAC	IDD_RAFREVIEWAIRCRAFT	RAFReviewAircraft	
+RAFREVAS	IDD_RAFREVIEWASSETS	RAFReviewAsset	
+RAFREVCL	IDD_RAFREVIEWCLAIMS	RAFReviewClaims	
+RAFREVEN	IDD_RAFREVIEWENEMY	RAFReviewEnemy	
+RAFREVST	IDD_RAFREVIEWSTRENGTH	RAFReviewStrength	
+RAFREVTP	IDD_RAFREVIEWTOP	RAFReviewTop		
+							RAFReviewStrength		
+							RAFReviewAircraft		
+							RAFReviewAsset		
+							RAFReviewClaims		
+							LWReviewAircraft	
+RAFROUTT	IDD_RAFROUTETOP		RAFRouteTop		
+							LWRouteMain	
+RAFSQLST	IDD_RAFSQUADLIST	RAFSquadList	
+RAFTASKF	IDD_RAFTASKFIGHTER	RAFTaskFighter	
+RAFTASKS	IDD_RAFTASKSUMMARY	RAFTaskSummary	
+RAFTASKT	IDD_RAFTASKTOP		RAFTaskTop		
+							RAFTaskSummary		
+							RAFTaskFighter		
+							RAFTaskFighter	
+SCAMP		IDD_SCAMPAIGNSELECT	CSCampaign	(fullpane)
+SCONTROL	IDD_SCONTROLLER		SController	(fullpane)
+SDETAIL		IDD_3DI			CSDetail	(fullpane)
+SELTRG		IDD_SELTRG		SelectTarget	
+SFLIGHT		IDD_SFLIGHT		CSFlight	(fullpane)
+SGAME		IDD_SGAME		CSGame		(fullpane)
+SIDESEL		IDD_SIDESELECT		SideSelect	(fullpane)
+SMISSION	IDD_SMISSION		SMissionConfigure	(fullpane)
+SQUADDTL	IDD_SQUADRONDETAILS	SquadronDetails	
+SQUICKUN	IDD_SQUICKSET		CSQuickLine	(fullpane)
+SQVIEW		IDD_QUICKVIEW		CQuickView	(fullpane)
+SSOUND		IDD_SSOUND		CSSound		(fullpane)
+SUPPLY		IDD_TRG_ASSET_LIST	CSupply		(CAuthorise)
+SVIEWER		IDD_SVIEWER		CSViewer	(fullpane)
+THUMNAIL	IDD_THUMBNAIL		CThumbnail
+TLBRCNTL	IDD_TOOLBARCONTROL	ToolBarControl	
+TOOFF		IDD_TAKEOVEROFFERED	TakeOverOffered	
+TOTESECT	IDD_TOTSECTOR		ToteSector	
+TOTETOP		IDD_TOTETOP		ToteTop	
+TWODPREF	IDD_2D			TwoDPref	(fullpane)
+VWQLIST		IDD_VIEWQLIST		CViewQList	(fullpane)
+WEATHER		IDD_WEATHER		CWeather
+WPDIALOG	IDD_WAYPOINT		WayPointDialog	
+ZOOMLEVL	IDD_ZOOMLEVEL		ZoomLevel	

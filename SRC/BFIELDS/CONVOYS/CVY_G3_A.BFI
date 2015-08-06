@@ -1,0 +1,175 @@
+	WayPoint	cvy_g3_a_0100,
+	WayPoint	cvy_g3_a_0101,
+	WayPoint	cvy_g3_a_0102,
+	WayPoint	cvy_g3_a_0103,
+	WayPoint	cvy_g3_a_0104,
+	WayPoint	cvy_g3_a_0105,
+	WayPoint	cvy_g3_a_0106,
+	WayPoint	cvy_g3_a_0107,
+	WayPoint	cvy_g3_a_0108,
+	WayPoint	cvy_g3_a_0109,
+	WayPoint	cvy_g3_a_010a,
+	WayPoint	cvy_g3_a_010b,
+	GroundItem	cvy_g3_a_2aef,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G3_A=cvy_g3_a.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	33412416,
+					Z	35244704
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g3_a_0100=
+				{
+					Posn
+					{
+						Abs
+						{	X	33545216,
+							Z	35310592
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	34062336,
+							Z	34922496
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	35495936,
+							Z	35201024
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0103=
+				{
+					Posn
+					{
+						Abs
+						{	X	38854656,
+							Z	34709504
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0104=
+				{
+					Posn
+					{
+						Abs
+						{	X	39079936,
+							Z	31985664
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	36130816,
+							Z	28585984
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	31952896,
+							Z	26558464
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	26849280,
+							Z	26497024
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0108=
+				{
+					Posn
+					{
+						Abs
+						{	X	21037056,
+							Z	24715264
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	13971456,
+							Z	24121344
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	5922816,
+							Z	21049344
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g3_a_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	208734,
+							Z	20511441
+						}
+					},
+					Action	wpstopno
+				}
+			},
+			NumInForm		10,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g3_a_2aef=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G3_A,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER}
+				//Vel	51477
+		}	}
+	};

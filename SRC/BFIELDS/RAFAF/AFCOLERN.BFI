@@ -1,0 +1,138 @@
+	WayPoint	AFCOLERN_0100,
+	WayPoint	AFCOLERN_0101,
+	WayPoint	AFCOLERN_0102,
+	WayPoint	AFCOLERN_0103,
+	WayPoint	AFCOLERN_0104,
+	SimpleItem	AFCOLERN_0413,
+	SimpleItem	AFCOLERN_0416,
+	SimpleItem	AFCOLERN_0419,
+	GroundItem	AFCOLERN_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFCOLERN=AFCOLERN.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_COLERNE,
+		ItemGroup
+		{
+				SimpleItem	AFCOLERN_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	14870016,
+							Z	34431488
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFCOLERN_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	14947840,
+							Z	34418176
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFCOLERN_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	14889472,
+							Z	34329600
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	14877696,
+						Z	34459648
+					}
+				},
+				Route
+				{
+					WayPoint	AFCOLERN_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	14893568,
+								Z	34468352
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFCOLERN_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	14904320,
+								Z	34449920
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFCOLERN_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	14916608,
+								Z	34429440
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFCOLERN_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	14929408,
+								Z	34420224
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFCOLERN_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	14930432,
+								Z	34403328
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFCOLERN_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

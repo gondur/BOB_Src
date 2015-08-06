@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lspaCln - Win32 Release--------------------
+</h3>
+
+cd
+D:\BOB\SRC\SPANISH
+rem if exist resource.h del resource.h
+if exist resource.h move resource.h ..\mfc\
+for %i in (res\*.*) (del %i)
+for %i in (*.cur) (del %i)
+<h3>
+--------------------Configuration: lspaRes - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'D:\Bob\Src\SPANISH\arrowcop.cur'
+
+Build : warning : failed to (or don't know how to) build 'D:\Bob\Src\SPANISH\nodrop.cur'
+
+Build : warning : failed to (or don't know how to) build 'D:\Bob\Src\SPANISH\arrow.cur'
+
+Build : warning : failed to (or don't know how to) build 'D:\Bob\Src\SPANISH\res\MIG.ico'
+
+Build : warning : failed to (or don't know how to) build 'D:\Bob\Src\SPANISH\res\MIGDoc.ico'
+
+
+
+
+<h3>Results</h3>
+boblang.dll - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

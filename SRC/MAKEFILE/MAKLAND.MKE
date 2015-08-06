@@ -1,0 +1,141 @@
+################################################################################
+##
+##
+##
+################################################################################
+
+##
+## Paths
+##
+projpath=s:\projects\bob
+src8bit=$(projpath)\artsrc\imagemap
+src16bit=$(projpath)\artsrc\image16
+srcbig=$(projpath)\artsrc\bigland
+dst8bit=..\game\landmaps
+dst16bit=..\game\landmap2
+tmppth=..\debug\obj
+
+##
+## Utilities
+##
+mkmap=mtt2
+resfile=$(tmppth)\tt2res.res
+palfile=$(tmppth)\land.pal
+landpal=$(dst8bit)\land.pal
+
+##
+## Palette file for shared palette textures
+##
+sourcepal= $(palfile)
+
+##
+## Shared palette landscape texture maps
+##
+singlepal= $(dst8bit)\img0000.x8\
+           $(dst8bit)\img0001.x8\
+           $(dst8bit)\img0002.x8\
+           $(dst8bit)\img0003.x8\
+           $(dst8bit)\img0004.x8\
+           $(dst8bit)\img0005.x8\
+           $(dst8bit)\img0006.x8\
+           $(dst8bit)\img0007.x8\
+           $(dst8bit)\img0008.x8\
+           $(dst8bit)\img0009.x8\
+           $(dst8bit)\img0010.x8\
+           $(dst8bit)\img0011.x8\
+           $(dst8bit)\img0012.x8\
+           $(dst8bit)\img0013.x8\
+           $(dst8bit)\img0014.x8\
+           $(dst8bit)\img0015.x8\
+           $(dst8bit)\img0016.x8\
+           $(dst8bit)\img0017.x8\
+           $(dst8bit)\img0018.x8\
+           $(dst8bit)\img0019.x8\
+           $(dst8bit)\img0020.x8\
+           $(dst8bit)\img0021.x8\
+           $(dst8bit)\img0022.x8\
+           $(dst8bit)\img0023.x8\
+           $(dst8bit)\img0024.x8\
+           $(dst8bit)\img0025.x8\
+           $(dst8bit)\img0026.x8\
+           $(dst8bit)\img0027.x8\
+           $(dst8bit)\img0028.x8\
+           $(dst8bit)\img0029.x8\
+           $(dst8bit)\img0030.x8\
+           $(dst8bit)\img0031.x8
+
+##
+## Palette per map landscape texture maps single wrap
+##
+multipal=  $(dst16bit)\img0005.x8\
+           $(dst16bit)\img0006.x8\
+           $(dst16bit)\img0007.x8\
+           $(dst16bit)\img0008.x8\
+           $(dst16bit)\img0009.x8\
+           $(dst16bit)\img0010.x8\
+           $(dst16bit)\img0011.x8\
+           $(dst16bit)\img0012.x8\
+           $(dst16bit)\img0013.x8\
+           $(dst16bit)\img0014.x8\
+           $(dst16bit)\img0015.x8\
+           $(dst16bit)\img0016.x8\
+           $(dst16bit)\img0017.x8\
+           $(dst16bit)\img0018.x8\
+           $(dst16bit)\img0019.x8\
+           $(dst16bit)\img0022.x8\
+           $(dst16bit)\img0031.x8
+
+##
+##	Palette per map double wrap textures
+##
+multipaldw=$(dst16bit)\img0000.x8\
+           $(dst16bit)\img0001.x8\
+           $(dst16bit)\img0002.x8\
+           $(dst16bit)\img0003.x8\
+           $(dst16bit)\img0004.x8\
+           $(dst16bit)\img0020.x8\
+           $(dst16bit)\img0021.x8\
+           $(dst16bit)\img0027.x8\
+           $(dst16bit)\img0028.x8\
+           $(dst16bit)\img0029.x8\
+           $(dst16bit)\img0030.x8
+
+biguns=	   $(dst16bit)\img0023.x8\
+           $(dst16bit)\img0024.x8\
+           $(dst16bit)\img0025.x8\
+           $(dst16bit)\img0026.x8
+
+all: $(sourcepal) $(singlepal) $(multipal)  $(multipaldw) $(biguns)
+
+##
+## Make rules for source palette file for shared palette textures
+##
+$(sourcepal): $(src8bit)\img0000.pcx
+              $(mkmap) -r $(src8bit)\img0000.pcx -w $(palfile) -w $(landpal)
+
+##
+## Make rules for singlepal
+##
+$(singlepal): $(src8bit)\$*.pcx $(palfile)
+              echo -ep >$(resfile)
+              echo -r $(src8bit)\$*.pcx -cw256h256 >>$(resfile)
+              echo -r $(palfile) >>$(resfile)
+              echo -w $(dst8bit)\$*.x8 >>$(resfile)
+              $(mkmap) -r $(resfile)
+##
+## Make rules for multipal - single wrap
+##
+$(multipal): $(src16bit)\$*.pcx
+             $(mkmap) -ep -r $(src16bit)\$*.pcx -cw256h256 -bw -w $(dst16bit)\$*.x8
+
+## Make rules for multipal - double wrap
+##
+$(multipaldw): $(src16bit)\$*.pcx
+             $(mkmap) -ep -r $(src16bit)\$*.pcx -cw256h256 -bw2 -w $(dst16bit)\$*.x8
+
+
+##
+## Make rules for biguns
+##
+$(biguns): $(srcbig)\$*.pcx
+             $(mkmap) -ep -r $(srcbig)\$*.pcx -cw512h512 -w $(dst16bit)\$*.x8

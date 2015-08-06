@@ -1,0 +1,6 @@
+	BattleField
+	{
+		FileName	FIL_1_INPURFLE=INPURFLE.BF,
+		Title	{},
+		Comment	{}
+	};

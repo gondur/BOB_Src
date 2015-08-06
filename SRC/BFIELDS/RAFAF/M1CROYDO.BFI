@@ -1,0 +1,188 @@
+	WayPoint	M1CROYDO_0100,
+	WayPoint	M1CROYDO_0101,
+	WayPoint	M1CROYDO_0102,
+	WayPoint	M1CROYDO_0103,
+	WayPoint	M1CROYDO_0104,
+	WayPoint	M1CROYDO_0105,
+	WayPoint	M1CROYDO_0106,
+	WayPoint	M1CROYDO_0107,
+	WayPoint	M1CROYDO_0108,
+	WayPoint	M1CROYDO_010a,
+	WayPoint	M1CROYDO_010b,
+	WayPoint	M1CROYDO_010c,
+	GroundItem	M1CROYDO_2980,
+	BattleField
+	{
+		FileName	FIL_1_M1CROYDO=M1CROYDO.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{rndbluescouts, {Random 6,6,1}},
+
+	ItemGroup
+	{	Target	UID_AF_CROYDON,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	28492288,
+						Z	33563392
+					}
+				},
+				Route
+				{
+					WayPoint	M1CROYDO_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	28478208,
+								Z	33563136
+							}
+						},
+						Action	wpstartloopno
+					},
+					WayPoint	M1CROYDO_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	28445952,
+								Z	33562112
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	28372992,
+								Z	33590272
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	28367872,
+								Z	33679616
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	28411904,
+								Z	33693440
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	28444416,
+								Z	33709312
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	28471808,
+								Z	33715968
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	28485120,
+								Z	33689088
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_010c=
+					{
+						Posn
+						{
+							Abs
+							{	X	28495616,
+								Z	33684480
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_010b=
+					{
+						Posn
+						{
+							Abs
+							{	X	28505856,
+								Z	33650688
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_010a=
+					{
+						Posn
+						{
+							Abs
+							{	X	28512512,
+								Z	33592064
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1CROYDO_0108=
+					{
+						Posn
+						{
+							Abs
+							{	X	28515584,
+								Z	33564672
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint
+					{
+						Posn
+						{
+							Abs
+							{	X	28492288,
+								Z	33563392
+							}
+						},
+						Action	wpstoploopchkno
+					}
+				},
+				NumInForm		rndbluescouts,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1CROYDO_2980=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List BUS,BUS,BUS,CAR,BUS,CAR,CAR,CAR,BUS,BUS,CAR,CAR,BUS,CAR,BUS,CAR,CAR}
+			}	}	}
+	};

@@ -1,0 +1,110 @@
+	WayPoint	cvy_g1_d_0114,
+	WayPoint	cvy_g1_d_0115,
+	WayPoint	cvy_g1_d_0116,
+	WayPoint	cvy_g1_d_0117,
+	WayPoint	cvy_g1_d_0118,
+	WayPoint	cvy_g1_d_011a,
+	GroundItem	cvy_g1_d_2af8,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G1_D=cvy_g1_d.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	14422016,
+					Z	24367104
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g1_d_0114=
+				{
+					Posn
+					{
+						Abs
+						{	X	20996096,
+							Z	24899584
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_d_0115=
+				{
+					Posn
+					{
+						Abs
+						{	X	26808320,
+							Z	26681344
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_d_0116=
+				{
+					Posn
+					{
+						Abs
+						{	X	31911936,
+							Z	26742784
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_d_0117=
+				{
+					Posn
+					{
+						Abs
+						{	X	36089856,
+							Z	28770304
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_d_0118=
+				{
+					Posn
+					{
+						Abs
+						{	X	37810176,
+							Z	30736384
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_d_011a=
+				{
+//DeadCode RJS 26Oct100 					Target	0x2d80,
+					Posn
+					{
+						Abs
+						{	Y	0
+						}
+					},
+					//Vel	145,
+					Action	wpacnoactionno,
+					Range	0
+				}
+			},
+			NumInForm		15,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g1_d_2af8=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G1_D,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List DSTRYR,COLIER,COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,COLIER}
+				//Vel	145
+		}	}
+	};

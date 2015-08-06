@@ -1,0 +1,120 @@
+	WayPoint	cvy_g1_c_011c,
+	WayPoint	cvy_g1_c_011d,
+	WayPoint	cvy_g1_c_011e,
+	WayPoint	cvy_g1_c_011f,
+	WayPoint	cvy_g1_c_0120,
+	GroundItem	cvy_g1_c_2af9,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G1_C=cvy_g1_c.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	9793536,
+					Z	23506944
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g1_c_011c=
+				{
+					Posn
+					{
+						Abs
+						{	X	13930496,
+							Z	24305664
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_c_011d=
+				{
+					Posn
+					{
+						Abs
+						{	X	20996096,
+							Z	24899584
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_c_011e=
+				{
+					Posn
+					{
+						Abs
+						{	X	23392256,
+							Z	25677824
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_c_011f=
+				{
+					Posn
+					{
+						Abs
+						{	X	22798336,
+							Z	27316224
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_c_0120=
+				{
+					Posn
+					{
+						Abs
+						{	X	22306816,
+							Z	27623424
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn	
+						{Abs	{UID_DK_Southampton}, 
+						 Rel	{Bearing	{Select ANGLES_135Deg,4,ANGLES_1Deg},
+								 Pitch	ANGLES_0Deg,
+								 Range	{Select KM10,1,METRES5000}
+								}
+						},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint
+				{
+					Posn	
+						{Abs	{UID_DK_Southampton}, 
+						 Rel	{Bearing	ANGLES_145Deg,
+								 Pitch	ANGLES_0Deg,
+								 Range	METRES2000
+								}
+						},
+					//Vel	145,
+					Action	wpdmbtrkstopno
+				}
+			},
+			NumInForm		15,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g1_c_2af9=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G1_C,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List DSTRYR,COLIER,COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,DSTRYR,TRAWLR,TRAWLR}
+				//Vel	145
+		}	}
+	};

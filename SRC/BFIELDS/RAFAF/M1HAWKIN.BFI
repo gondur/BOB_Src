@@ -1,0 +1,212 @@
+	WayPoint	M1HAWKIN_0100,
+	WayPoint	M1HAWKIN_0101,
+	WayPoint	M1HAWKIN_0102,
+	WayPoint	M1HAWKIN_0103,
+	SimpleItem	M1HAWKIN_3e00,
+	SimpleItem	M1HAWKIN_3e01,
+	SimpleItem	M1HAWKIN_3e02,
+	SimpleItem	M1HAWKIN_3e03,
+	SimpleItem	M1HAWKIN_3e04,
+	SimpleItem	M1HAWKIN_3e05,
+	SimpleItem	M1HAWKIN_3e06,
+	GroundItem	M1HAWKIN_3e07,
+	BattleField
+	{
+		FileName	FIL_1_M1HAWKIN=M1HAWKIN.BF,
+		Title	{},
+		Comment	{}
+,
+//TempCode MS 22Aug00 	Setval	{ParentRand, Int {Random 0,4,1}},
+	Setval	{ParentRand, 0},
+	Setval	{RangeStepSize, {List ParentRand,VEL_MoveTroop,VEL_MoveTank,VEL_MoveTank,VEL_MoveTank}},
+	Setval	{TruckMoveCode, MoveCode {List ParentRand,GROUND_BLOKE,GROUND_TAXI,GROUND_TAXI,GROUND_TAXI}},
+	Setval	{Truck1Shape, Shape {List ParentRand,BLOKE,PLTRUK,TROOPT,PLTRUK}},
+	Setval	{EyeCandyBand, UIDBand {List ParentRand,BlokeBAND,BritMobileBAND,BritMobileBAND,BritMobileBAND}},
+
+	ItemGroup
+	{	Target	UID_AF_HAWKINGE,
+		ItemGroup
+		{
+				SimpleItem	M1HAWKIN_3e00=
+				{
+					Posn
+					{
+						Abs
+						{	X	36632576,
+							Z	31436288
+						}
+					},
+					UIDBand		BlokeBAND,
+					Shape		BLOKE
+				},
+				SimpleItem	M1HAWKIN_3e01=
+				{
+					Posn
+					{
+						Abs
+						{	X	36627968,
+							Z	31421440
+						}
+					},
+					UIDBand		BlokeBAND,
+					Shape		COTTG1
+				},
+				SimpleItem	M1HAWKIN_3e02=
+				{
+					Posn
+					{
+						Abs
+						{	X	36577280,
+							Z	31459840
+						}
+					},
+					UIDBand		BlokeBAND,
+					Shape		BLOKE
+				},
+				SimpleItem	M1HAWKIN_3e03=
+				{
+					Posn
+					{
+						Abs
+						{	X	36600576,
+							Z	31472896
+						}
+					},
+					UIDBand		BlokeBAND,
+					Shape		BLOKE
+				},
+				SimpleItem	M1HAWKIN_3e04=
+				{
+					Posn
+					{
+						Abs
+						{	X	36695296,
+							Z	31469568
+						}
+					},
+					UIDBand		BlokeBAND,
+					Shape		BLOKE
+				},
+				SimpleItem	M1HAWKIN_3e05=
+				{
+					Posn
+					{
+						Abs
+						{	X	36613632,
+							Z	31490048
+						}
+					},
+					UIDBand		BlokeBAND,
+					Shape		BLOKE
+				},
+				SimpleItem	M1HAWKIN_3e06=
+				{
+					Posn
+					{
+						Abs
+						{	X	36676096,
+							Z	31448064
+						}
+					},
+					UIDBand		BlokeBAND,
+					Shape		BLOKE
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	36577024,
+						Z	31471360
+					}
+				},
+				Route
+				{
+					WayPoint	M1HAWKIN_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	36586752,
+								Z	31462656
+							}
+						},
+						Action	wpstartloopno,
+						Range	METRES1000,
+						Vel	RangeStepSize
+					},
+					WayPoint
+					{
+						Posn
+						{
+							Abs
+							{	X	36586752,
+								Z	31462656
+							}
+						},
+						Action	wpdmbtrknoactno,
+						Vel	RangeStepSize
+					},
+					WayPoint	M1HAWKIN_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	36619520,
+								Z	31498240
+							}
+						},
+						Action	wpdmbtrknoactno,
+						Vel	RangeStepSize
+					},
+					WayPoint	M1HAWKIN_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	36610048,
+								Z	31508224
+							}
+						},
+						Action	wpdmbtrknoactno,
+						Vel	RangeStepSize
+					},
+					WayPoint	M1HAWKIN_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	36576000,
+								Z	31472640
+							}
+						},
+						Action	wpdmbtrknoactno,
+						Vel	RangeStepSize
+					},
+					WayPoint
+					{
+						Posn
+						{
+							Abs
+							{	X	36586752,
+								Z	31462656
+							}
+						},
+						Action	wpstoploopchkno,
+						Range	METRES1000,
+						Vel	RangeStepSize
+					}
+				},
+				NumInForm		4,
+				Formation	FTT_BIGV,
+				GroundItem	M1HAWKIN_3e07=
+				{
+					UIDBand	EyeCandyBand,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape,
+					Vel	RangeStepSize,
+					MoveCode	TruckMoveCode
+			}	}	}
+	};

@@ -1,0 +1,55 @@
+	WayPoint	M1FILTON_013b,
+	WayPoint	M1FILTON_013c,
+	GroundItem	M1FILTON_2906,
+	BattleField
+	{
+		FileName	FIL_1_M1FILTON=M1FILTON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_FILTON,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	12956928,
+						Z	35147520
+					}
+				},
+				Route
+				{
+					WayPoint	M1FILTON_013c=
+					{
+						Posn
+						{
+							Abs
+							{	X	12981248,
+								Z	35119360
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1FILTON_013b=
+					{
+						Posn
+						{
+							Abs
+							{	X	13031680,
+								Z	35120896
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1FILTON_2906=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	MEDIC
+			}	}	}
+	};

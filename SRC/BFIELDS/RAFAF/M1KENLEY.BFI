@@ -1,0 +1,94 @@
+	WayPoint	M1KENLEY_011c,
+	WayPoint	M1KENLEY_011d,
+	WayPoint	M1KENLEY_011e,
+	WayPoint	M1KENLEY_011f,
+	WayPoint	M1KENLEY_0120,
+	GroundItem	M1KENLEY_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1KENLEY=M1KENLEY.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{Truck1Shape, Shape {List {Random 0,7,1},PLTRUK,RUNTRK,TRUCK,TROOPT,MEDIC,CAR,VAN}},
+	Setval	{greenstrength, Int {Random 3,6,1}},
+
+	ItemGroup
+	{	Target	UID_AF_KENLEY,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	28655930,
+						Z	33187916
+					}
+				},
+				Route
+				{
+					WayPoint	M1KENLEY_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	28649990,
+								Z	33182796
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1KENLEY_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	28641389,
+								Z	33177471
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1KENLEY_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	28634221,
+								Z	33173580
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1KENLEY_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	28623777,
+								Z	33166617
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1KENLEY_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	28614766,
+								Z	33161906
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1KENLEY_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape
+			}	}	}
+	};

@@ -1,0 +1,203 @@
+	BattleField
+	{
+		FileName	FIL_1_M2TANGME=M2TANGME.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_TANGMERE,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	24795136,
+						Z	28432384
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24824064,
+								Z	28446720
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24844288,
+								Z	28446208
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24860416,
+								Z	28452864
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24873216,
+								Z	28453632
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24893952,
+								Z	28453120
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	PLTRUK,
+					Vel	100
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	24827904,
+						Z	28508928
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24853504,
+								Z	28511488
+							}
+						},
+						Vel		VEL_MoveTroop,
+						Action	wpstartloopno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24832768,
+								Z	28509440
+							}
+						},
+						Vel		VEL_MoveTroop,
+						Action	wpstoploopchkno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24865280,
+								Z	28516096
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					BlokeBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	BLOKE,
+					MoveCode	GROUND_BLOKE,
+					Vel		VEL_MoveTroop
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	24930816,
+						Z	28506368
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24931328,
+								Z	28489472
+							}
+						},
+						Vel		VEL_MoveTroop,
+						Action	wpstartloopno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24930560,
+								Z	28506880
+							}
+						},
+						Vel		VEL_MoveTroop,
+						Action	wpstoploopchkno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	24936448,
+								Z	28487424
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		4,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					BlokeBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	BLOKE,
+					MoveCode	GROUND_BLOKE,
+					Vel		VEL_MoveTroop
+				}	}
+		}	
+	};

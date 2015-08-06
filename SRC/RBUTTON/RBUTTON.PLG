@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RButton - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSPD242.BAT" with contents
+[
+@echo off
+copy ".\Rbutton.lic" "\bob\Release\exe"
+]
+Creating command line "c:\temp\RSPD242.BAT"
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "\bob\Release\exe/RButton.tlb" /mktyplib203 /o "NUL" /win32 "D:\Bob\Src\rbutton\RButton.odl""
+Copying license file...
+D:\BOB\SRC\RBUTTON\RBUTTON.LIC => D:\bob\Release\exe\RBUTTON.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\bob\Release\button/RButton.res" /i "\bob\Release\exe" /d "NDEBUG" /d "_AFXDLL" "D:\Bob\Src\rbutton\RButton.rc"" 
+Creating temporary file "c:\temp\RSPD250.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\button/" /Fd"\bob\Release\button/" /FD /c 
+"D:\Bob\Src\rbutton\all.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSPD250.TMP" 
+Creating temporary file "c:\temp\RSPD251.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/Rbutton.pdb" /machine:I386 /def:".\RButton.def" /out:"\bob\Release\exe/Rbutton.ocx" /implib:"\bob\Release\exe/Rbutton.lib" 
+\bob\Release\button\all.obj
+\bob\Release\button\RButton.res
+]
+Creating command line "link.exe @c:\temp\RSPD251.TMP"
+Creating temporary file "c:\temp\RSPD252.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\Rbutton.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\temp\RSPD252.BAT"
+Creating Type Library...
+RButton.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+all.cpp
+Linking...
+   Creating library \bob\Release\exe/Rbutton.lib and object \bob\Release\exe/Rbutton.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+Rbutton.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

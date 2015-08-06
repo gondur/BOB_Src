@@ -1,0 +1,67 @@
+	WayPoint	M1MIDDLE_011c,
+	WayPoint	M1MIDDLE_011d,
+	WayPoint	M1MIDDLE_011e,
+	GroundItem	M1MIDDLE_2903,
+	BattleField
+	{
+		FileName	FIL_1_M1MIDDLE=M1MIDDLE.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_MIDDLEWALLOP,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	19376128,
+						Z	31421184
+					}
+				},
+				Route
+				{
+					WayPoint	M1MIDDLE_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	19361536,
+								Z	31409152
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MIDDLE_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	19344896,
+								Z	31401728
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MIDDLE_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	19340032,
+								Z	31403008
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1MIDDLE_2903=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

@@ -1,0 +1,6 @@
+RTABS Directory: ActiveX tabbed page list header
+===============
+
+This control organises and draws the text tabs for tabbed sheets.
+In principle it can be used for vertical tabs, but as the text is 
+printed horizontal and there are generally few tabs this wastes a lot of space.

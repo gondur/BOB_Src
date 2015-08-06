@@ -1,0 +1,27 @@
+MISSMAN directory: 2d mission management
+=================
+
+This is a whole grabbag of routines that manage the individual missions 
+created on the 2d map screen.
+
+Structures
+-----------
+There are 7 main data-structures used to drive the campaign:
+
+Campaign:	MISSINIT.CPP	Defines the basic rules for each campaign period
+							Also contains the directives for each side and period.
+
+NodeData	NODEBOB.CPP		All the 'static' information about locations and squadrons
+
+PackageList	PACKAGES.CPP	The aircraft attack packages that are launched
+ Profile
+
+DeadStream	SAVEGAME.CPP	Individual building damage statuses
+SaveData					Various config flags
+
+Diary		SQDDIARY.CPP	The squadron diary system
+
+IntelMsg	UIMSG.CPP		The message screen and speech system
+
+
+

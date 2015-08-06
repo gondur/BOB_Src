@@ -1,0 +1,25 @@
+AI directory:	Artificial Inteligence
+============
+
+These modules process all the non-ACM decision making.
+
+This covers ground detection, ground guns, 
+as well as aircraft initial spotting and approach decisions
+
+Classes
+-------
+
+AaaMainList		AAA.CPP		All Anti Aircraft Artillary,
+LiveList					including the movable guns on bombers
+SleepList
+
+Grid_Base		GRID.CPP	Various datum on the world subdivided into 1.3km squares
+Grid_Bit					Used to represent: horison colour and altitude data,
+Grid_Byte					radar coverage, cloud maps, place names.
+Grid_Word
+Grid_Long
+
+ArtInt			MSGAI.CPP	Main aircraft-aircraft spotting and approach logic
+
+DecisionAI		SPOTTED.CPP	Dialog and decision making between aircarft
+				USERMSG.CPP	User started radio messages

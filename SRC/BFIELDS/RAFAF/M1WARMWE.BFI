@@ -1,0 +1,55 @@
+	WayPoint	M1WARMWE_0119,
+	WayPoint	M1WARMWE_011a,
+	GroundItem	M1WARMWE_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1WARMWE=M1WARMWE.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_WARMWELL,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	14426112,
+						Z	26963456
+					}
+				},
+				Route
+				{
+					WayPoint	M1WARMWE_011a=
+					{
+						Posn
+						{
+							Abs
+							{	X	14444032,
+								Z	26956288
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WARMWE_0119=
+					{
+						Posn
+						{
+							Abs
+							{	X	14518272,
+								Z	26936320
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1WARMWE_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	CAR
+			}	}	}
+	};

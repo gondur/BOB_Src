@@ -1,0 +1,91 @@
+	WayPoint	M1MARTLE_011c,
+	WayPoint	M1MARTLE_011d,
+	WayPoint	M1MARTLE_011e,
+	WayPoint	M1MARTLE_011f,
+	WayPoint	M1MARTLE_0120,
+	GroundItem	M1MARTLE_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1MARTLE=M1MARTLE.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_MARTLESHAM,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	36952320,
+						Z	41067776
+					}
+				},
+				Route
+				{
+					WayPoint	M1MARTLE_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	36946944,
+								Z	41060608
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MARTLE_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	36947200,
+								Z	41041408
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MARTLE_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	36952320,
+								Z	41028352
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MARTLE_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	36954880,
+								Z	41013248
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MARTLE_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	36950272,
+								Z	41013504
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1MARTLE_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	}	}
+	};

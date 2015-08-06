@@ -1,0 +1,68 @@
+	WayPoint	M2FILTON_013d,
+	WayPoint	M2FILTON_013e,
+	WayPoint	M2FILTON_013f,
+	GroundItem	M2FILTON_2907,
+	BattleField
+	{
+		FileName	FIL_1_M2FILTON=M2FILTON.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_FILTON,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	13060864,
+						Z	35152384
+					}
+				},
+				Route
+				{
+					WayPoint	M2FILTON_013f=
+					{
+						Posn
+						{
+							Abs
+							{	X	13044480,
+								Z	35151104
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2FILTON_013e=
+					{
+						Posn
+						{
+							Abs
+							{	X	13038080,
+								Z	35136768
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2FILTON_013d=
+					{
+						Posn
+						{
+							Abs
+							{	X	13038336,
+								Z	35130368
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M2FILTON_2907=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	TROOPT,
+					Vel	2501
+			}	}	}
+	};

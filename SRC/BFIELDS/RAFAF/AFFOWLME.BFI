@@ -1,0 +1,150 @@
+	WayPoint	AFFOWLME_0100,
+	WayPoint	AFFOWLME_0101,
+	WayPoint	AFFOWLME_0102,
+	WayPoint	AFFOWLME_0103,
+	WayPoint	AFFOWLME_0104,
+	WayPoint	AFFOWLME_0105,
+	SimpleItem	AFFOWLME_0414,
+	SimpleItem	AFFOWLME_0417,
+	SimpleItem	AFFOWLME_041e,
+	GroundItem	AFFOWLME_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFFOWLME=AFFOWLME.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_FOWLMERE,
+		ItemGroup
+		{
+				SimpleItem	AFFOWLME_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	29375744,
+							Z	40935936
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFFOWLME_0417=
+				{
+					Posn
+					{
+						Abs
+						{	X	29414656,
+							Z	40917504
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFFOWLME_041e=
+				{
+					Posn
+					{
+						Abs
+						{	X	29432320,
+							Z	40970496
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29387008,
+						Z	40959232
+					}
+				},
+				Route
+				{
+					WayPoint	AFFOWLME_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	29402112,
+								Z	40964608
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFOWLME_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	29419008,
+								Z	40963840
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFOWLME_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	29436160,
+								Z	40966912
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFOWLME_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	29442304,
+								Z	40963328
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFOWLME_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	29443328,
+								Z	40956160
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFOWLME_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	29440768,
+								Z	40952832
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFFOWLME_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

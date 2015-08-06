@@ -1,0 +1,128 @@
+	BattleField
+	{
+		FileName	FIL_1_M3NORTHW=M3NORTHW.BF,
+		Title	{},
+		Comment	{},
+	ItemGroup
+	{	Target	UID_AF_NORTHWEALD,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30135040,
+						Z	37329152
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30134784,
+								Z	37314560
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30125568,
+								Z	37314304
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30126336,
+								Z	37308416
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30121216,
+								Z	37308672
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	},	
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30121216,
+						Z	37308672
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30109952,
+								Z	37312000
+							}
+						},
+						Action	wpacnoactionno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30099712,
+								Z	37314048
+							}
+						},
+						Action	wpacnoactionno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30099712,
+								Z	37307904
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					BlokeBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	BLOKE,
+					MoveCode	GROUND_BLOKE
+			}	}	}
+	};

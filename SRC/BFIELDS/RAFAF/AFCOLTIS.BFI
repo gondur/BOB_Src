@@ -1,0 +1,155 @@
+	WayPoint	AFCOLTIS_0100,
+	WayPoint	AFCOLTIS_0101,
+	WayPoint	AFCOLTIS_0102,
+	WayPoint	AFCOLTIS_0103,
+	WayPoint	AFCOLTIS_0104,
+	WayPoint	AFCOLTIS_0105,
+	SimpleItem	AFCOLTIS_0422,
+	SimpleItem	AFCOLTIS_0425,
+	SimpleItem	AFCOLTIS_0428,
+	GroundItem	AFCOLTIS_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFCOLTIS=AFCOLTIS.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_COLTISHALL,
+		ItemGroup
+		{
+				SimpleItem	AFCOLTIS_0422=
+				{
+					Posn
+					{
+						Abs
+						{	X	37048320,
+							Z	48041984
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFCOLTIS_0425=
+				{
+					Posn
+					{
+						Abs
+						{	X	37097984,
+							Z	47975424
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFCOLTIS_0428=
+				{
+					Posn
+					{
+						Abs
+						{	X	37155840,
+							Z	48071680
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	37083136,
+						Z	48113664
+					}
+				},
+				Route
+				{
+					WayPoint	AFCOLTIS_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	37066240,
+								Z	48116224
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFCOLTIS_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	37063168,
+								Z	48105472
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFCOLTIS_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	37075968,
+								Z	48101888
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFCOLTIS_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	37067264,
+								Z	48084480
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFCOLTIS_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	37058560,
+								Z	48068608
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFCOLTIS_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	37049344,
+								Z	48052224
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFCOLTIS_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

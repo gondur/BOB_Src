@@ -1,0 +1,15 @@
+P :	Phrase Count = 699	Word Count = 1531
+L :	Phrase Count = 509	Word Count = 1047
+O :	Phrase Count = 736	Word Count = 1739
+W :	Phrase Count = 543	Word Count = 1247
+X :	Phrase Count = 296	Word Count = 535
+Y :	Phrase Count = 297	Word Count = 500
+E :	Phrase Count = 322	Word Count = 646
+C :	Phrase Count = 306	Word Count = 594
+G :	Phrase Count = 655	Word Count = 1033
+F :	Phrase Count = 448	Word Count = 792
+S :	Phrase Count = 1410	Word Count = 3531
+T :	Phrase Count = 214	Word Count = 400
+R :	Phrase Count = 226	Word Count = 335
+V :	Phrase Count = 19	Word Count = 52
+B :	Phrase Count = 19	Word Count = 52

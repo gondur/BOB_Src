@@ -1,0 +1,84 @@
+	WayPoint	M3BIGGHI_013e,
+	WayPoint	M3BIGGHI_013f,
+	WayPoint	M3BIGGHI_0140,
+	SimpleItem	M3BIGGHI_04c9,
+	GroundItem	M3BIGGHI_290b,
+	BattleField
+	{
+		FileName	FIL_1_M3BIGGHI=M3BIGGHI.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_BIGGINHILL,
+		ItemGroup
+		{
+				SimpleItem	M3BIGGHI_04c9=
+				{
+					Posn
+					{
+						Abs
+						{	X	29404672,
+							Z	33392640
+						}
+					},
+					UIDBand		CivilianBAND,
+					Shape		CRATES
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29455872,
+						Z	33351680
+					}
+				},
+				Route
+				{
+					WayPoint	M3BIGGHI_0140=
+					{
+						Posn
+						{
+							Abs
+							{	X	29458432,
+								Z	33331200
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3BIGGHI_013f=
+					{
+						Posn
+						{
+							Abs
+							{	X	29468672,
+								Z	33308160
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3BIGGHI_013e=
+					{
+						Posn
+						{
+							Abs
+							{	X	29484544,
+								Z	33277440
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		10,
+				Formation	FTW_FINGER,
+				GroundItem	M3BIGGHI_290b=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	SHEEP,
+					Vel	100
+			}	}	}
+	};

@@ -1,0 +1,985 @@
+	BattleField
+	{
+		FileName	FIL_1_BLLNWLD=bllnwld.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25677824,
+						Y	150000,
+						Z	35008512
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25821184,
+						Y	150000,
+						Z	34992128
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25751552,
+						Y	150000,
+						Z	34873344
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25747456,
+						Y	150000,
+						Z	35143680
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25919488,
+						Y	150000,
+						Z	34856960
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25604096,
+						Y	150000,
+						Z	35135488
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	26193920,
+						Y	150000,
+						Z	35151872
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25550848,
+						Y	150000,
+						Z	34930688
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	25952256,
+						Y	150000,
+						Z	35074048
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	37485568,
+						Y	150000,
+						Z	31725568
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	37624832,
+						Y	150000,
+						Z	31789056
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	37488640,
+						Y	150000,
+						Z	31890432
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	37356544,
+						Y	150000,
+						Z	31893504
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20441088,
+						Y	150000,
+						Z	29129728
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20439040,
+						Y	150000,
+						Z	29006848
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20310016,
+						Y	150000,
+						Z	29097984
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20681728,
+						Y	150000,
+						Z	28971008
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20770816,
+						Y	150000,
+						Z	29066240
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20737024,
+						Y	150000,
+						Z	29209600
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20104192,
+						Y	150000,
+						Z	28845056
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	20218880,
+						Y	150000,
+						Z	29225984
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	22495232,
+						Y	150000,
+						Z	27867136
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	22483968,
+						Y	150000,
+						Z	27964416
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	22629376,
+						Y	150000,
+						Z	27920384
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	22489088,
+						Y	150000,
+						Z	28078080
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	22557696,
+						Y	150000,
+						Z	28185600
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12144640,
+						Y	150000,
+						Z	34770944
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12783616,
+						Y	150000,
+						Z	34586624
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12947456,
+						Y	150000,
+						Z	34746368
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12951552,
+						Y	150000,
+						Z	34578432
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	13139968,
+						Y	150000,
+						Z	34578432
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12935168,
+						Y	150000,
+						Z	34410496
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12775424,
+						Y	150000,
+						Z	34742272
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12783616,
+						Y	150000,
+						Z	34881536
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	12992512,
+						Y	150000,
+						Z	34873344
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	26194944,
+						Y	150000,
+						Z	33547264
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	26386432,
+						Y	150000,
+						Z	33736704
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	26505216,
+						Y	150000,
+						Z	33790976
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28929024,
+						Y	150000,
+						Z	35097600
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29425664,
+						Y	150000,
+						Z	34955264
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29297664,
+						Y	150000,
+						Z	34830336
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29293568,
+						Y	150000,
+						Z	34973696
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28914688,
+						Y	150000,
+						Z	34967552
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29557760,
+						Y	150000,
+						Z	34941952
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29149184,
+						Y	150000,
+						Z	34861056
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29033472,
+						Y	150000,
+						Z	34863104
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29227008,
+						Y	150000,
+						Z	35305472
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29101568,
+						Y	150000,
+						Z	35259392
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28968960,
+						Y	150000,
+						Z	35392512
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29104128,
+						Y	150000,
+						Z	35387392
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28848128,
+						Y	150000,
+						Z	35316736
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28724224,
+						Y	150000,
+						Z	35316736
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28801024,
+						Y	150000,
+						Z	35060736
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29696000,
+						Y	150000,
+						Z	34957312
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29822976,
+						Y	150000,
+						Z	34967552
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29962240,
+						Y	150000,
+						Z	34984960
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29359104,
+						Y	150000,
+						Z	35263488
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29492224,
+						Y	150000,
+						Z	35260416
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29623296,
+						Y	150000,
+						Z	35258368
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29957120,
+						Y	150000,
+						Z	34734080
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28673024,
+						Y	150000,
+						Z	35074048
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28526592,
+						Y	150000,
+						Z	35072000
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28313600,
+						Y	150000,
+						Z	35073024
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28315648,
+						Y	150000,
+						Z	35214336
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28385280,
+						Y	150000,
+						Z	35330048
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28529664,
+						Y	150000,
+						Z	35317760
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	29691904,
+						Y	150000,
+						Z	35405824
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	30797824,
+						Y	150000,
+						Z	35041280
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	30470144,
+						Y	150000,
+						Z	35213312
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	30347264,
+						Y	150000,
+						Z	34811904
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28504064,
+						Y	150000,
+						Z	34787328
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	28794880,
+						Y	150000,
+						Z	34607104
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	31490048,
+						Y	150000,
+						Z	34816000
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	31301632,
+						Y	150000,
+						Z	34500608
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			},
+			SimpleItem	
+			{
+				Posn
+				{
+					Abs
+					{	X	33951744,
+						Y	150000,
+						Z	34631680
+					}
+				},
+				UIDBand		BarrageBalloonBAND,
+				Shape		BALGRP
+			}
+		}
+	};

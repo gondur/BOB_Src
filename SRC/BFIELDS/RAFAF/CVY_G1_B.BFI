@@ -1,0 +1,148 @@
+	WayPoint	cvy_g1_B_0109,
+	WayPoint	cvy_g1_B_010a,
+	WayPoint	cvy_g1_B_010b,
+	WayPoint	cvy_g1_B_010c,
+	WayPoint	cvy_g1_B_010d,
+	WayPoint	cvy_g1_B_010e,
+	WayPoint	cvy_g1_B_010f,
+	WayPoint	cvy_g1_B_0110,
+	WayPoint	cvy_g1_B_0111,
+	GroundItem	cvy_g1_B_2a81,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G1_B=cvy_g1_B.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	167774,
+					Z	20695761
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g1_B_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	5881856,
+							Z	21233664
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	13930496,
+							Z	24305664
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	20996096,
+							Z	24899584
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_010c=
+				{
+					Posn
+					{
+						Abs
+						{	X	26808320,
+							Z	26681344
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_010d=
+				{
+					Posn
+					{
+						Abs
+						{	X	31911936,
+							Z	26742784
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_010e=
+				{
+					Posn
+					{
+						Abs
+						{	X	36089856,
+							Z	28770304
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_010f=
+				{
+					Posn
+					{
+						Abs
+						{	X	39038976,
+							Z	32169984
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_0110=
+				{
+					Posn
+					{
+						Abs
+						{	X	38813696,
+							Z	34893824
+						}
+					},
+					Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g1_B_0111=
+				{
+					Posn
+					{
+						Abs
+						{	X	34062336,
+							Z	35078144
+						}
+					},
+					Vel	145,
+					Action	wpacnoactionno,
+					Range	0
+				}
+			},
+			NumInForm		6,
+			Formation	FTT_BIGV,
+			GroundItem	cvy_g1_B_2a81=
+			{
+				BritBoatBAND,
+				Type	PT_VEHICLES,
+				Side	NAT_RED,
+				Shape	DSTRYR,
+				Vel	145
+		}	}
+	};

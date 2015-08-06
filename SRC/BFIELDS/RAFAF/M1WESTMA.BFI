@@ -1,0 +1,103 @@
+	WayPoint	M1WESTMA_011e,
+	WayPoint	M1WESTMA_011f,
+	WayPoint	M1WESTMA_0120,
+	WayPoint	M1WESTMA_0121,
+	WayPoint	M1WESTMA_0122,
+	WayPoint	M1WESTMA_0123,
+	GroundItem	M1WESTMA_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1WESTMA=M1WESTMA.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_WESTMALLING,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	31760640,
+						Z	32819968
+					}
+				},
+				Route
+				{
+					WayPoint	M1WESTMA_0123=
+					{
+						Posn
+						{
+							Abs
+							{	X	31768320,
+								Z	32823040
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTMA_0122=
+					{
+						Posn
+						{
+							Abs
+							{	X	31774720,
+								Z	32824064
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTMA_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	31786496,
+								Z	32825856
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTMA_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	31799296,
+								Z	32826112
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTMA_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	31811072,
+								Z	32829952
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTMA_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	31820288,
+								Z	32838400
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1WESTMA_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

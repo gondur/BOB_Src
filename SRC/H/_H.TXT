@@ -1,0 +1,1770 @@
+H Directory: All header files and generated header files
+=========== 
+
+This directory contains most of the header files in the project.
+It also contains generated files (.g extension)
+
+Concatinated source file headers
+--------------------------------
+We have found that the program compiles significantly faster if we concatinate
+a number of source files together rather than compiling each file seperately.
+Unfortunately, some of the interdependencies in the header files break down, so
+we have these corrective header files available:
+
+_3D.H		Force correct loading of header files in _3D.CPP	
+_AFX.H		Force correct loading of header files in _AFX.CPP	
+_AI.H		Force correct loading of header files in _AI.CPP	
+_AIRC.H		Force correct loading of header files in _AIRC.CPP	
+_BFIE.H		Force correct loading of header files in _BFIE.CPP	
+_COMM.H		Force correct loading of header files in _COMM.CPP	
+_FILE.H		Force correct loading of header files in _FILE.CPP	
+_GENE.H		Force correct loading of header files in _GENE.CPP	
+_HARD.H		Force correct loading of header files in _HARD.CPP	
+_INPU.H		Force correct loading of header files in _INPU.CPP	
+_MATH.H		Force correct loading of header files in _MATH.CPP	
+_MFC.H		Force correct loading of header files in _MFC.CPP	
+_MISS.H		Force correct loading of header files in _MISS.CPP	
+_MODE.H		Force correct loading of header files in _MODE.CPP	
+_MODEL.H	Force correct loading of header files in _MODEL.CPP
+_MOVE.H		Force correct loading of header files in _MOVE.CPP	
+
+User interface dialogs
+----------------------
+Many of our header files are to do with the user interface
+
+RowanDialog: The following dialogs are based on RowanDoalog
+-----------
+
+ACALLOC.H	AircraftAllocation : RowanDialog	
+					Factory production allocation
+
+ACUNIT.H	AircraftUnit : RowanDialog	List available LW squadrons
+					
+ACUNITRF.H	AcUnitRAF : RowanDialog	List available RAF squadrons
+
+AFDETL.H	AirfieldDetails : RowanDialog	Airfield details panel
+
+AFDOSSR.H       AirfieldDossier : RowanDialog	
+					Airfield dossier tabsheet background
+
+APILOT.H        CAutoPilot : RowanDialog	
+				Prefs screen for display details
+
+AUTHOR.H        CAuthorise : RowanDialog
+				Backdrop for tabsheet
+
+BASESLFT.H	BasesLuftflotte : public RowanDialog
+				Backdrop for tabsheet
+
+BOBFRAG.H       BoBFrag : RowanDialog
+			Frag screen display
+
+CAMPBACK.H      CCampBack : RowanDialog
+			Displays the description for the selected campaign
+
+CAMPNAME.H      CampaignEnterName : RowanDialog
+			Enter your name on the campaign screen
+
+CLOCK.H 19      Clock : RowanDialog
+			Analogue clock
+
+CNTRLACL.H      ControlAccel : RowanDialog
+			Set accel rates and triggers for exitting accel
+
+CNTRLFLY.H      ControlFly : RowanDialog
+			Set triggers for offering take-over
+
+CNTRLTOP.H      ControlTopLevel : RowanDialog
+			Tabsheet dialog containing ControlAccel and ControlFly
+
+COMMCHAT.H      CommsChat : RowanDialog
+			Interplayer chat portion of readyroom
+
+COMMSAC.H       CCommsDeathMatchAc : RowanDialog
+			Select type of aircraft for deathmatch game
+
+COMMSPNT.H      CCommsPaint : RowanDialog
+			Select emblem in MiG
+
+CREDITS.H       CCredits : RowanDialog
+			Credits dialog
+
+CURREMBL.H      18      class CCurrEmblem : public RowanDialog
+				Noseart selection in MiG Alley
+
+DAMAGE.H        CDamage : RowanDialog
+				Damage panel of target dossier
+
+DIRNORES.H      DirectivesNoResults : RowanDialog
+			Says "no missions created"
+
+DIRRSULT.H      DirectiveResults : RowanDialog
+			Lists created missions
+
+DOSSDETL.H      DossierDetails : RowanDialog
+		      	Information about the selected target
+
+DOSSIERB.H      Dossier : RowanDialog
+			Back of dossier dialog tabsheet
+
+ENDDAYRL.H      EndOfDayReviewList : RowanDialog
+			List in end of day review display
+
+ENDDAYRV.H      EndOfDayReviewText : RowanDialog
+			Paragraph in end of day review display
+
+ENDDYBMP.H      EndofDayReviewBmp : RowanDialog
+			Picture in end of day review display
+
+FILING.H        CFiling : RowanDialog
+			Load/Save tabsheet dialog. Implements L/S actions.
+
+FULLPANE.H      FullScreen	One fullscreen display
+FULLPANE.H      Resolutions	Each resolution. Only use 1024 in BoB
+FULLPANE.H      Dial		Position of 3 dialogs
+FULLPANE.H      ListSpec	Entries in big list of options
+FULLPANE.H      RFullPanelDial : RowanDialog
+			The background and big list on full-screen displays
+
+GAMESELT.H      GameSelect : RowanDialog
+			This selects between controller mode and pilot mode.
+			We never finished pilot mode, where full directives are
+			used for both sides
+
+GESCHWDR.H      Geschwader : public RowanDialog
+			Lists all geshwader of certain type
+
+GRPGESCH.H      GroupGeschwader : public RowanDialog
+			Airfields list
+
+GWADLIST.H      GeschwaderList : public RowanDialog
+			Another airfields list
+
+HOSTILES.H      HostilesList : RowanDialog
+			RAF hostiles list
+
+INTELMSG.H      IntellMessages : RowanDialog
+			Lists all messages for the day
+
+INTOFF.H        InterceptOffered : public RowanDialog
+			Do you want to fly?
+
+LOAD.H  63      LoadSaveDescriminate
+			Caller overloadable class to allow file selection to be cleverer
+LOAD.H  76      CLoad : public RowanDialog
+			Load and save dialog driver
+
+LOCKER.H        CLockerRoom : public RowanDialog
+			Comms lockerroom
+
+LUFTFLOT.H      LuftFlotte : public RowanDialog
+			tabsheet background dialog
+
+LWDIARY.H       LWDiary : public RowanDialog
+			luftwaffe diary display dialog back
+LWDIARYD.H      LWDiaryDetails : public RowanDialog
+			specific raid diary details
+LWDIARYL.H      LWDiaryList : public RowanDialog
+			list of all raid diary entries for selectable gruppen
+
+LWDIRECT.H      LWDirectives : public RowanDialog
+			Luftwaffe Directives dialogue
+
+LWMSSFR.H       LWMissionFolder : public RowanDialog
+			Luftwaffe version of mission folder
+
+LWREVAC.H       LWReviewAircraft : public RowanDialog
+			Panel on review dialog
+LWREVCL.H       LWReviewClaims : public RowanDialog
+			Panel on review dialog
+LWREVEN.H       LWReviewEnemy : public RowanDialog
+			Panel on review dialog
+LWREVST.H       LWReviewStrength : public RowanDialog
+			Panel on review dialog
+LWREVTP.H       LWReviewTop : public RowanDialog
+			tabsheet background of review dialog
+
+LWROUTEA.H      OBSOLETE	LWRouteAirfield : public RowanDialog
+
+LWROUTEM.H      LWRouteMain : public RowanDialog
+			ALL Panels on LW route dialog
+LWROUTET.H      LWRouteTop : public RowanDialog
+			Tabsheet back of LW route dialog
+
+LWTASKAC.H      LWTaskAircraft : public RowanDialog
+			Bombers page of LW task dialog
+
+LWTASKFR.H      LWTaskFighter : public RowanDialog
+			Escorts page of LW task dialog
+
+LWTASKSM.H      LWTaskSummary : public RowanDialog
+			Summary page of LW task dialog
+
+LWTASKTP.H      LWTaskTop : public RowanDialog
+			Tabsheet back of LW task dialog
+
+MAPFLTLW.H      MapFiltersRaidsLW : public RowanDialog
+			Filters tab panel for LW
+
+MFRAIDS.H       MapFiltersRaids : public RowanDialog
+			Map filters tab for RAF player
+
+MFTARGET.H      MapFiltersTarget : public RowanDialog
+			Map filters tab for target/asset types
+
+MFTOP.H 19       MapFiltersTop : public RowanDialog
+			Tabsheet dialog backdrop for map filters
+
+MTCHILD.H       EmptyChildWindow : public RowanDialog
+			Holds a dialog panel on a fullpane
+
+NOTES.H 18      OBSOLETE	CNotes : public RowanDialog MiG Dossier notes
+
+PHSDSCR.H       PhaseDescription : public RowanDialog
+			Paragraph of text on campaign selection screen
+
+PLTLOGBK.H      OBSOLETE PilotLogBook : public RowanDialog MiG Alley pilot log
+
+QUICKPAR.H      QuickParameters : public RowanDialog
+			Quick mission parameters sheet
+
+RADCOMMS.H      OBSOLETE RadioComms : public RowanDialog	Orphan
+
+RADIO.H 18      CRadio : public RowanDialog
+			Set your 10 radio messages for use in 3d
+
+RAFCOMBT.H      RAFCombat : public RowanDialog
+			RAF Combat report 
+						
+RAFDIARY.H      RAFDiary : public RowanDialog
+			RAF squadron diary dialog back
+
+RAFDIR.H        RAFDirectives : public RowanDialog
+			RAF directives dialog
+
+RAFDRRES.H      RAFDirectiveResults : public RowanDialog
+
+RAFDRYD.H       RAFDiaryDetails : public RowanDialog
+			Displays one diary entry in detail
+
+RAFDRYL.H       RAFDiaryList : public RowanDialog
+			Displays list of all diary entries for squadron
+
+RAFMSSFR.H      RAFMissionFolder : public RowanDialog
+			RAF version of mission folder
+
+RAFREVAC.H      RAFReviewAircraft : public RowanDialog
+			Aircraft review panel on RAF review
+
+RAFREVAS.H      RAFReviewAsset : public RowanDialog
+			Asset review panel on RAF review
+
+RAFREVCL.H      RAFReviewClaims : public RowanDialog
+			Claims review panel on RAF review
+
+RAFREVEN.H      RAFReviewEnemy : public RowanDialog
+			Enemy strength estimate  on RAF review
+
+RAFREVST.H      RAFReviewStrength : public RowanDialog
+			RAF strength summary  on RAF review
+
+RAFREVTP.H      RAFReviewTop : public RowanDialog
+			Review tabsheet dialog backdrop
+
+RAFROUTT.H      RAFRouteTop : public RowanDialog
+			Back of RAF route tabsheet dialog
+
+RAFSQLST.H      RAFSquadList : public RowanDialog
+			Squadron list dialog
+
+RAFTASKF.H      RAFTaskFighter : public RowanDialog
+			Spit/Hurr Panel on RAF task dialog
+
+RAFTASKS.H      RAFTaskSummary : public RowanDialog
+			Summary panel on RAF task dialog
+
+RAFTASKT.H      RAFTaskTop : public RowanDialog
+			RAF Task tabsheet dialog background
+
+RDEMPTY.H       OBSOLETE	RPEmpty : public RowanDialog
+RDEMPTY.H       OBSOLETE	RDEmpty:public RPEmpty
+
+RDEMPTYD.H      RDEmptyD : public RowanDialog
+			Empty dialog used to hold all floating dialogs
+
+RDEMPTYP.H      OBSOLETE?	RDEmptyP : public RowanDialog
+
+READY.H 18      CReadyRoom : public RowanDialog
+			Comms "ready room"
+
+RTESTSH1.H      Rtestsh1 : public RowanDialog
+			This dialog sheet stands behind the 3d.
+
+SCAMP.H         CSCampaign : public RowanDialog
+			List of campaigns on campaign select
+
+SCONTROL.H      SController: RowanDialog
+			Input device config screen
+
+SDETAIL.H       CSDetail : public RowanDialog
+			Resolutions and detail levels config screen
+
+SELTRG.H        SelectTarget : public RowanDialog
+			"Please select a target"
+
+SERVICE.H       CSelectService : public RowanDialog
+			Comms dialog to select type of network
+
+SESSION.H       CSelectSession : public RowanDialog
+			Comms dialog to join an existing game
+
+SFLIGHT.H       CSFlight : public RowanDialog
+			Flight model config options
+
+SGAME.H 18      CSGame : public RowanDialog
+SGAME.H 20      	Game targetting config options
+
+SGRDCLMS.H      OBSOLETE	CSQuickGroundClaims : public RowanDialog MiG debrief
+
+SIDESEL.H       SideSelect : public RowanDialog
+			Select side in campaign select
+
+SMISSION.H      SMissionConfigure : public RowanDialog
+			Campaign game difficulty options
+
+SQUADDTL.H      SquadronDetails : public RowanDialog
+			Squadron panel on Airfield dossier			
+
+SQUICK1.H       CSQuick1 : public RowanDialog
+			Top panel of quick mission screen
+
+SQUICK2.H       OBSOLETE	CSQuick2 : public RowanDialog	Mig quick mission debrief back
+
+SQUICKP.H       QuickMissionPanel : public RowanDialog
+			Back of flight lists
+
+SQUICKUN.H      CSQuickLine : public RowanDialog
+			One line in flight list
+
+SQVIEW.H        CQuickView : public RowanDialog
+			Non-editable version of flight list line for remote comms player
+
+SSOUND.H        CSSound : public RowanDialog
+			Sound configuration screen
+
+SUPPLY.H        CSupply : public RowanDialog
+			Tab panel on asset list dialog
+
+SVIEWER.H       CSViewer : public RowanDialog
+			Viewer config screen (3dII)
+
+SYSBOX.H        CSystemBox : public RowanDialog
+			Top RH corner of campaign screen
+
+THUMNAIL.H      CThumbnail : public RowanDialog
+			Thumbnail map navigation dialog
+
+TLBRCNTL.H      ToolBarControl : public RowanDialog
+			Toggles individual toolbars on and off
+
+TOOFF.H 19      TakeOverOffered : public RowanDialog
+			"Interesting venet. Would you like to take over?"
+
+TOTESECT.H      ToteSector : public RowanDialog
+			Tote board for one sector.
+			Originally planned to have a super tote diagram for
+			group, but it took up too much space!
+
+TOTETOP.H       OBSOLETE    class ToteTop : public RowanDialog
+			Originally planned to have a super tote diagram for
+			group, but it took up too much space!
+
+TWODPREF.H      TwoDPref : public RowanDialog
+			2D resolution preferences
+
+VISITORS.H      CVisitorsBook : public RowanDialog
+			Comms visitors book
+
+VWQLIST.H       CViewQList : public RowanDialog
+			Uneditable view of quick mission for remote comms player
+
+WEATHER.H       CWeather : public RowanDialog
+			Use this dialog to see whether we should fly today?
+
+WPDIALOG.H      WayPointDialog : public RowanDialog
+			Describes one waypoint on a route
+
+ZOOMLEVL.H      ZoomLevel : public RowanDialog
+			Select default and zoomed in levels
+
+RToolBar: The following are based on RToolBar
+--------
+
+MAPFLTRS.H      CMapFilters : public CRToolBar
+			Mig Alley style map filters toolbar
+
+MSCTLBR.H       CMiscToolbar : public CRToolBar
+			Miscalaneous tool bar - non campaign - more game functions
+
+SCALEBAR.H      CScaleBar : public CRToolBar
+			The zoom control on the map screen
+
+TELETYPE.H      TeleType : public CRToolBar
+			Toolbar intel message list
+
+TITLEBAR.H      TitleBar : public CRToolBar
+			Title tool-bar
+
+MAINTBAR.H      class CMainToolbar : public CRToolBar
+			The main button toolbar
+
+Document/View:	The following were created in the initial project make
+-------------
+
+MAINFRM.H       CMainFrame : public CFrameWnd
+			Document/View architecture.
+			Has toolbar management in it!
+
+MAPDLG.H        DebugLineStats	Storage for debug info
+MAPDLG.H        DebugBoxMem
+MAPDLG.H        CMapDlg : public CDialog
+			Document/View architecture.
+			Has main map drawing routines
+			
+MIG.H   22      class CMIGApp : public CWinApp
+			Document/View architecture.
+			Run() routine
+
+MIGDOC.H        CMIGDoc : public COleDocument
+			Document/View architecture.
+			Ignored
+
+MIGVIEW.H       CSizeF
+MIGVIEW.H       CMIGView : public CView
+			Document/View architecture.
+			Mouse input
+
+STDAFX.H	-	Because windows.h is too big!
+
+CDialog: The following dialogs are bsed on CDialog:
+-------
+
+HINTBOX.H       CHintBox : CDialog
+			Button hints
+
+LISTBX.H        class CListBx : public CDialog
+			List box for open combo box control
+
+RDIALOG.H       RDialog:CDialog		The clever rowan dialog replacement for CDialog
+RDIALOG.H       Rowan			Used to hide the redefinition of CDialog
+RDIALOG.H           CDialog:RDialog	redefinition of CDialog so MFC generated code works
+RDIALOG.H       RowanDialog:Rowan::CDialog	Needed to keep browser happy!
+RDIALOG.H       HideEdgeControl		Namespacing of EdgeCtrl enum
+RDIALOG.H       Edges			Alignment rules for each of 4 sides of dialog
+RDIALOG.H       DialMake		Base class of hierachic sheet linking logic
+RDIALOG.H       DialBox:DialMake	It is a box possibly containing more boxes
+RDIALOG.H       DialList:DialBox	It is an empty box containg a number of boxes
+RDIALOG.H       IdEntry			One tab's title text - either IDS_ or text
+RDIALOG.H       IdList			Full list of tab titles
+RDIALOG.H       HTabBox:DialList	It's a horizontal tab (tweaked constructor)
+RDIALOG.H       VTabBox:HTabBox		No, It's vertical!
+RDIALOG.H       RString			Casting mechanism IDS-->CString! 
+RDIALOG.H       DialogLinks		Inter-dialog hierachy system
+RDIALOG.H       PolyOutLine		One Polygon hit area. Exec buttons or list row num
+RDIALOG.H       PolyList		List of polygon hit areas. Used in campaign select
+
+RMDLDLG.H       RMdlDlg : public CDialog
+			Rowan modal dialog base class
+			Is set up to support a simple message-box, but can be
+			overridden for other purposes
+
+RTOOLBAR.H      CRToolBar : public CDialog
+			Base class for basic toolbar docking functionality
+
+ActiveX:	The following files are ActiveX DLL interfaces
+-------
+
+FONT.H  	COleFont: COleDispatchDriver	Standard ActiveX font handler
+
+PICTURE.H       CPicture : COleDispatchDriver	Standard ActiveX classs we don't appear to use
+
+RBUTTON.H       CRButton : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+REDIT.H 9       CREdit : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RCOMBO.H        CRCombo : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+
+REDTBT.H        CREdtBt : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+
+RLISTBOX.H      CRListBox : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RRADIO.H        CRRadio : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RSCRLBAR.H      CRScrlBar : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RSPINBUT.H      CRSpinBut : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RSPLTBAR.H      CRSpltBar : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RSTATIC.H       CRStatic : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RTABS.H 9       CRTabs : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+
+RTICKBOX.H      CRTickBox : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+RTITLE.H        CRTitle : public CWnd	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+
+ActvieX support:	The following assist the ActiveX control interface:
+---------------
+
+AXCOLORS.H	-	Set of equates for colours we want to use in ActiveX control
+
+Cstring.h	CStringData	Stand-alone compiling copy of MFC CString class
+		CString
+
+FONTLIST.H	-		List of fonts that 2D uses
+
+GLOBDEFS.H      -	An entertaining cludge for our ActiveX callbacks
+			Unfortunately they have all been registered as
+			WPARAM,LPARAM, but they aren't. 
+			This patches release mode
+
+MESSAGES.H(4) 	-	ActiveX callback message IDs
+
+RCOMBOX.H       DlgItem:public CWnd			Simplify standard GetDlgItem()
+RCOMBOX.H       CRComboExtra : public CRCombo  		Extra functionality for lists
+RCOMBOX.H       CRSpinButExtra : public CRSpinBut	Extra functionality for lists
+
+RDIALMSG.H	-	Declaration of handler functions for rowan messages
+			Included into RMDLDLG.H,MIGVIEW.H,RTOOLBAR.H,RDIALOG.H
+			Each of these defines a dialog base class so must be
+			able to service any request made by rowan components.
+
+UIICONS.H       IconPlace	Describes one icon
+UIICONS.H       IconDescUI	Class to access icons
+
+Other User Interface:	Other files that are to do with the user interface
+--------------------
+
+FRMAP2.H	-	Optimisation so that identical map panels are cached and reused
+FRMAP2SK.H	-	Optimisation so that identical map panels are cached and reused
+FRMAP3.H	-	Optimisation so that identical map panels are cached and reused
+FRMAP3SK.H	-	Optimisation so that identical map panels are cached and reused
+MAPEDGE.H	-	Optimisation - edges of highest res map are blanked out
+
+
+Obsolete Source files
+---------------------
+
+The following header files are no longer used.
+
+Batnode.h	OBSOLETE
+
+CONFIG.H        OBSOLETE?
+
+DEBRIEF.H       OBSOLETE
+
+DISKIO.H	OBSOLETE
+
+DOSBUT.H        OBSOLETE	Buttons on dossier in MiG
+
+FRAGPILT.H	OBSOLETE
+
+H2H.H		OBSOLETE
+
+HARDPRIM.H	OBSOLETE
+
+INTTEST.H	OBSOLETE	Dummy temp header to do with cockpit instrument subtitles
+
+MACLIB.H	OBSOLETE
+
+MSN_CTRL.H	OBSOLETE?
+
+NEWFIX.H	OBSOLETE
+
+NODE.H		OBSOLETE	Mig Alley 'gazetteer'
+
+PERSONS.H	OBSOLETE	Pre-Gold FC!! Split into Persons 2,3,4
+
+POLYGON.H       OBSOLETE
+
+RAFROUTA.H	OBSOLETE
+RAFROUTM.H	OBSOLETE
+
+RJOYCFG.H	OBSOLETE	Machine generated IDispatch wrapper class(es) created by Microsoft Visual C++
+
+SAIRCLMS.H	OBSOLETE	MiG Alley Quick mission debrief
+
+SMACK.H		OBSOLETE (and empty) Was the smacker library interface
+
+SREPLAY.H	OBSOLETE
+
+STATBAR.H       OBSOLETE StatusBar : public CRToolBar	Status toolbar - never used
+
+TEXT.H		OBSOLETE	FC text system
+TEXTEF.H	OBSOLETE	FC text system
+
+UIDBAND.H	OBSOLETE
+
+WEAPONS.H       OBSOLETE
+
+WINFILE.H	OBSOLETE?
+
+WINMAIN.H	OBSOLETE
+
+MDISTRUC.H	EMPTY???
+
+SOUND.H		EMPTY
+
+Win3d.h		OBSOLETE
+
+STUB.M		OBSOLETE-	Part of DLL loader for Watcom/DOS
+
+Other header files
+------------------
+
+The following header files are not in the H directory:
+
+C:\bob\SRC\BFIELDS\		       	
+BATUIDS.H,BN_CENT.H,BN_EAST.H,BN_WEST.H
+	MiG Alley ground battle header files
+
+C:\bob\SRC\ENGLISH\HELP\BOB.H		
+	Generated for help compiler
+
+C:\bob\SRC\ITEMGRID\STDAFX.H		
+	Program to generate radar station detection ranges
+
+C:\bob\SRC\LIB3D\	
+ALLOC.H,LIB3D.H,MACS.H,MATSTAK.H,POLYVERT.H,RADIX.H,STDAFX.H
+	Lib3D graphics interface DLL
+
+C:\bob\SRC\MEDITOR\
+ABOUT.H,ACCOLOR.H,ACITEM.H,AFSELECT.H,BFFORM.H,CONFIRM.H,CURRSHP.H
+EVENTSEL.H,EVENTSPN.H,EVENTTXT.H,GAMESTUB.H,GLOBALS.H,GRNDGRP.H
+INFO.H,ITEMCNT.H,LOADSAVE.H,MAPLOAD.H,MEMAIN.H,MEMAIN2.H,MISSCOND.H
+MISSOBJ.H,MISSTEXT.H,MONOTXT2.H,NAMELIST.H,PLAYER.H,PRECOMP.H
+SELTARG.H,SGROUPS.H,SGSELECT.H,SQINFO.H,STATIC.H,STRINGS.H,TPAINTWL.H
+WAYPOINT.H
+	Mission editor. Mainly 1 header per dialog
+
+C:\bob\SRC\MFC\
+	Main program stubs to MFC generated header files which are in H dir
+	Plus:
+AFXAUTO.H
+	List of files included into precompiled header
+RESOURCE.H
+	Resource equates
+
+
+C:\bob\SRC\PLACENAM\STDAFX.H
+	Program to generate entries in radio system for place names to be
+	spoken
+C:\bob\SRC\RANIBUT\ 			
+AFXAUTO.H,RANIBUT.H,RESOURCE.H
+	Obsolete aimated button control. Probably the circle exampe
+C:\bob\SRC\RBUTTON\
+AFXAUTO.H,HINTBOX.H,MINFILE.H,RBUTTON.H,RBUTTONC.H,RBUTTONP.H,RESOURCE.H
+	ActiveX button control
+
+C:\bob\SRC\RCOMBO\
+AFXAUTO.H,LISTBX.H,RCOMBO.H,RCOMBO1.H,RCOMBOC.H,RCOMBOP.H,RESOURCE.H,RLISTBOX.H
+	ActiveX combo box control
+
+C:\bob\SRC\REDIT\
+AFXAUTO.H,REDIT.H,REDITCTL.H,REDITPPG.H,RESOURCE.H
+	ActiveX text editing control
+
+C:\bob\SRC\REDTBT\
+AFXAUTO.H,REDTBT.H,REDTBTC.H,REDTBTP.H,RESOURCE.H
+	ActiveX outlined RHS button control
+
+C:\bob\SRC\RJOYCFG\
+AFXAUTO.H,RESOURCE.H,RJOYCFG.H,RJOYCFGC.H,RJOYCFGP.H
+	Obsolete control for moving icon over background as per
+	joysick calibration in FC
+
+C:\bob\SRC\RLISTBOX\
+AFXAUTO.H,LP2.H,PICTURE.H,RESOURCE.H,RLISTBOX.H,RLISTBXC.H,RLISTBXP.H,RSCRLBAR.H
+	ActiveX String grid control
+
+C:\bob\SRC\RRADIO\
+AFXAUTO.H,RESOURCE.H,RRADIO.H,RRADIOC.H,RRADIOP.H,STDAFX.H
+	ActiveX radio button set control
+
+C:\bob\SRC\RSCRLBAR\
+AFXAUTO.H,RESOURCE.H,RSCRLBAR.H,RSCRLBRC.H,RSCRLBRP.H
+	ActiveX scroll bar implementation
+C:\bob\SRC\RSPINBUT\
+AFXAUTO.H,RESOURCE.H,RSPINBTC.H,RSPINBTP.H,RSPINBUT.H
+	ActiveX spinnable field control
+
+C:\bob\SRC\RSPLTBAR\
+AFXAUTO.H,RESOURCE.H,RSPLTBAR.H,RSPLTBC.H,RSPLTBP.H
+	OBSOLETE ActiveX dialog panel draggable splitter
+
+C:\bob\SRC\RSTATIC\
+AFXAUTO.H,RESOURCE.H,RSTATIC.H,RSTATICC.H,RSTATICP.H
+	ActiveX Static paragraph text display
+
+C:\bob\SRC\RTABS\
+AFXAUTO.H,RESOURCE.H,RTABS.H,RTABSCTL.H,RTABSPPG.H
+	ActiveX control to display tabs on tabsheet
+
+C:\bob\SRC\RTICKBOX\
+AFXAUTO.H,RESOURCE.H,RTICKBOX.H,RTICKBXC.H,RTICKBXP.H
+	OBSOLETE ActiveX control replaced by RButton
+C:\bob\SRC\RTITLE\
+AFXAUTO.H,RESOURCE.H,RTITLE.H,RTITLEC.H,RTITLEP.H
+	OBSOLETE ActiveX control replaced by RButton
+
+C:\bob\SRC\RTREE\
+AFXAUTO.H,RESOURCE.H,RTREE.H,RTREECTL.H,RTREEPPG.H
+	UNUSED ActiveX control
+
+Generated Files
+---------------
+NAME		GEN BY		DESCRIPTION
+ADDR00.G	OBSOLETE	Part of FC text generation system
+BFREFS.G	MakeBf.EXE	Requirements from bfields\globrefs.txt
+CLOUDS.G	OBSOLETE	Something to do with fluffy clouds experiment?
+CONST00.G	OBSOLETE	Part of FC text generation system
+DAMNUM.G	ShapeMake	Equates to access effects built into shapes
+DEATHNUM.G	ShapeMake	Equates to access effects built into shapes
+DUMMYTEX.G	OBSOLETE	Part of FC text generation system
+FADETBL.G	OBSOLETE	To do with shading imagemaps
+FILES.G		FileMake	Top level include for generated file equates
+F_BATTLE.G	FileMake	Subset of file equates: battlefield files
+F_COMMON.G	FileMake	Subset of file equates: general files
+F_GRAFIX.G	FileMake	Subset of file equates: 2D artwork
+F_LOCALS.G	FileMake	Subset of file equates: Localised files
+F_SOUNDS.G	FileMake	Subset of file equates:	Sound and music
+ICONLIST.G	IconMake	Definition of each icon
+ICONLST2.G	IconMake	Alias definitions for some icons
+ICONNUM.G 	IconMake	Equates for referencing icons
+ICONNUM2.G	IconMake	Equates for referencing alias icons
+IMAGEMAP.G	ShapeMake	Image map names for shapes
+NORADTXT.G	MergeLst	Empty.
+OFFS00.G	OBSOLETE	Part of FC text generation system
+RADIO.G		RadioChatter	Equates to access words and scripts
+RADIOXTR.G	RadioChatter	Matches phrase tables to filenames and stringtable entries
+SHAPENUM.G	ShapeMake	Equates to access shapes
+SMKTRL.G	ShapeMake	Equates and definitions of different smoke trail styles
+SNDBOT.G	FileMake??	Bottom of FILES.G 	- never changes
+SNDTOP.G	FileMake??	Top of FILES.G		- never changes
+SOUNDS.G	FileMake??	Concat of SndTop, F_SOUNDS, and SndBot
+TEXT.G		OBSOLETE	Part of FC text generation system
+TEXTENUM.G	OBSOLETE	Part of FC text generation system
+RADTXT.G	OBSOLETE(mergelst)	matches phrase tables to stringtable!
+
+"System" header files
+---------------------
+The following header files have been collected from a number of libraries which
+we have used on and off:
+
+D3D.H		-		Microsoft Direct3D header file
+D3DCAPS.H	-		Microsoft Direct3D header file
+D3DMACS.H	-		Microsoft Direct3D header file
+D3DRM.H		-		Microsoft Direct3D header file
+D3DRMDEF.H	-		Microsoft Direct3D header file
+D3DRMOBJ.H	-		Microsoft Direct3D header file
+D3DRMWIN.H	-		Microsoft Direct3D header file
+D3DTYPES.H	-		Microsoft Direct3D header file
+D3DX.H		-		Microsoft Direct3D header file
+D3DXCORE.H	-		Microsoft Direct3D header file
+D3DXERR.H	-		Microsoft Direct3D header file
+D3DXMATH.H	-		Microsoft Direct3D header file
+DDRAW.H		-		Microsoft DirectX header file
+
+DINPUT.H	-		Microsoft DirectX header file
+
+DLS1.H		-	Written by Sonic Foundry 1996
+DMDLS.H		-- DLS download definitions for DirectMusic API's
+DMERROR.H	-- Error code returned by DirectMusic API's
+DMUSICC.H	-- This module defines the DirectMusic core API's
+DMUSICF.H	-- This module defines the DirectMusic file formats
+DMUSICI.H       -- This module contains the API for the DirectMusic performance layer
+DPLAY.H		-	Microsoft Direct Play header file
+DPLOBBY.H	-	Microsoft Direct Play header file
+
+HTMLHELP.H	-		Standard MS header file
+
+SW_FORCE.H      -       Copyright 1995, 1996, Microsoft Corporation,    All Rights Reserved.
+SW_GUID.HPP	-       Copyright 1995, 1996, Microsoft Corporation,    All Rights Reserved.
+
+
+Low Level Non-specific stuff
+----------------------------
+
+000TOOLS.H	-		Touched by tool makes to force relink
+
+DOSDEFS.H	-	Basic types and error level setup - Included everywhere
+
+BITCOUNT.H      template <class EnumName,class   BaseSize> struct        OnlyField
+			Fit an enum into a smaller atomic data area
+		template <class size>    struct  WrapField
+   		template <class size,class Type,int maxbitnum> struct    FirstField
+   		template <class size,class Type,int minbitnum,int maxbitnum> struct      MidField
+   		template <class size,class Type,int minbitnum,int maxbitnum> struct      LastField
+			Fit a number of enum objects into one atomic data area
+
+BITFIELD.H      template <class  src,int minval,int maxval> class        MakeField
+			Use an enum to index a bit array
+
+BSTREAM.H       BIStream: ifstream	Binary data streaming
+BSTREAM.H       BOStream: ofstream
+
+FASTMATH.H      FastMath	Floating point routines that are faster than library versions
+
+HARDPASM.H	-	Various low level assembler optimised functions
+			Mainly for Watcom/DOS
+
+LBMCPP.H(1) 	-	The middle bit of an LBM decompression routine
+
+Mathasm.h	-	Various math ops that can be done efficiently in assembler
+
+MATRIX.H        matrix
+
+MODFILE.H       struct UFILE
+
+MONOTXT.H       168     struct  ProbeTime
+MONOTXT.H       76      class   MonoText
+
+MSCDEX.H        CDComm		base class for MSCDEX CDROM low level access calls
+MSCDEX.H        DrvBytes : public CDComm
+MSCDEX.H        DevStat : public CDComm
+MSCDEX.H        SectSize : public CDComm
+MSCDEX.H        VolSize : public CDComm
+MSCDEX.H        MedChng : public CDComm
+MSCDEX.H        DiskInfo : public CDComm
+MSCDEX.H        TnoInfo : public CDComm
+MSCDEX.H        QInfo : public CDComm
+MSCDEX.H        SubChanInfo : public CDComm
+MSCDEX.H        UPCCode : public CDComm
+MSCDEX.H        AudStat : public CDComm
+MSCDEX.H        RequestHeader
+MSCDEX.H        IOCTLI : public RequestHeader
+MSCDEX.H        Eject : public CDComm
+MSCDEX.H        LockDoor : public CDComm
+MSCDEX.H        ResetDrv : public CDComm
+MSCDEX.H        AudInfo2 : public CDComm
+MSCDEX.H        DrvBytes2 : public CDComm
+MSCDEX.H        CloseTray : public CDComm
+MSCDEX.H        IOCTLO : public RequestHeader
+MSCDEX.H        SEEKREQ : public RequestHeader
+MSCDEX.H        READLONG : public RequestHeader
+MSCDEX.H        READLPRE : public RequestHeader
+MSCDEX.H        dir_entry
+MSCDEX.H        Raddr : public CDComm
+MSCDEX.H        LocHead : public CDComm
+MSCDEX.H        ErrStat : public CDComm
+MSCDEX.H        AudInfo : public CDComm
+
+MYMATH.H        MathLib		Low level math and trig routines
+
+MYSTACK.H       template<class T>  class   Heap
+MYSTACK.H       template<class T>  class   Stack
+
+MYVECTOR.H      sdlong		64 bit integer
+MYVECTOR.H      vector		3 axis vector class
+
+PROF.H		-	Profiling functions
+
+TGA.H   	TGAHeader
+TGA.H   	TGA		May be used by screenshot?????
+
+VECTOR.H        sdlong
+VECTOR.H        vector
+
+VOLSCALE.H                  Scales linear volume (0 - 511) to 100 x db
+
+INTABLE.H	-		Defines macros to allow math and logic overloading of enums
+
+LINK.H  	template <class ITEM> class LINKEDLIST 
+
+Equate and data definition Files
+--------------------------------
+
+KEYMAPS.H       KeyMapping	Format of file of keymappings
+
+MOVEMENT.H(4) 	-	Equates for movecodes, ACM, and waypoint actions
+
+MYANGLES.H      ANGLESInst			Can be used in C style aggregates
+MYANGLES.H      ANGLES : public ANGLESInst    	Has constructors
+		Angles				Enum that supports equates
+			The Rowan angle system uses 64K to represent 360 deg,
+			so automatically wraps. 
+			The math operators on Angles perform the wrap operations.
+
+MYERROR
+
+MYTIME.H        TimerCode	Used to be the DOS/Windows timer routines
+				Now just holds the equate for Centiseconds per frame
+
+Ranges.h	-	Distance and velocity equates. Distances are measured in cm.
+
+SPEED.H		-	More velocity equates
+
+Uniqueid.h	-	UniqueID and UniqueIDBand values.
+			Each object in world has a uniqueID value.
+			As well as being unique using these bands gives you an
+			idea of it's type
+
+UIDTOPS.G	-	Output from MakeBf.exe to show what permanent UniqueIds
+			have been reserved.
+			Any battlefield object that has a named UniqueID 
+			reserves an UniqueID value which it will always be
+			loaded to, and any intereference to an unnamed object 
+			will give that object a generated name.
+			In FC Gold this system almost broke for LW aircraft
+			such that you could only add 10 new aircraft!
+
+
+Related To 3D display
+---------------------
+
+PALETTE.H	naming of some entries in 256 colour palette
+
+LANDSCAP.H		Classes used for rendering the landscape, the wrapper class LandScape contains the actual drawing routines as well as texture cache and background rendering routines.  There is also the functionality for drawing the background sky fill, clouds and setting of the lighing for daytime effects.  SmkCloudDesc contains records for creating smoke clouds over ruined buildings.
+
+LGHTSHAD.H(1) 	-	256 colour palette entries
+
+LSTREAM.H		Land_Stream		Landscape data streaming from disk.
+
+MIGLAND.H		Functionality for the landscape decompression and chaching of the point/polygon data within the landscape.
+
+OVERLAY.H
+OVERLAY.H       FRect	NOT USED
+OVERLAY.H       ScreenShot	Supports video and panoramic screen shots
+OVERLAY.H       COverlay	Manages in-game menus, text, and progress dialogs
+OVERLAY.H           MapScr	Each in-game menu is represented by one of these
+OVERLAY.H               OptionList	Options on the menu
+OVERLAY.H           AcNameTable	Callsigns of visible aircarft
+OVERLAY.H           IconEntry	Icons instead of text lists
+OVERLAY.H       290  ScrollyText	If text won't fit then bounce it
+OVERLAY.H       357  PBlobStruc
+			The overlay system also auto-fills menus based on the
+			DecisionAI structures.
+SHAPENAM.H	-	Fixes for equate names of special shapes that are launched within the code
+
+SHAPES.H        Shape_Type	base class for shape header
+SHAPES.H        Shape_Desc	full shape header
+SHAPES.H        shapestuff	Class to load shapes and fix relative references
+
+SHPBLD.H        22      ShapeBuild
+
+SHPINSTR.H      _coords		Data structures representing fields for each instruction in each shape
+SHPINSTR.H      _dopoint	
+SHPINSTR.H      _dopolygon
+SHPINSTR.H      _dosetlc
+SHPINSTR.H      _dosetcolour
+SHPINSTR.H      _doline
+SHPINSTR.H      _doifcross
+SHPINSTR.H      _doifeq
+SHPINSTR.H      _doifne
+SHPINSTR.H      _doattitude          
+SHPINSTR.H      _dodot
+SHPINSTR.H      _dovdot
+SHPINSTR.H      _dovdot4
+SHPINSTR.H      _doquikpoly
+SHPINSTR.H      _donpoints
+SHPINSTR.H      _don4cmpnts
+SHPINSTR.H      _do4cmpnt
+SHPINSTR.H      _dosetanim
+SHPINSTR.H      _dosetcolour256
+SHPINSTR.H      _doswitch            
+SHPINSTR.H      _dosetcolourall
+SHPINSTR.H      _dopoint2x
+SHPINSTR.H      _do4cmpt2x
+SHPINSTR.H      _doifcase
+SHPINSTR.H      _donincpnts
+SHPINSTR.H      _doinit
+SHPINSTR.H      _doinc
+SHPINSTR.H      _dosphere
+SHPINSTR.H      _donormal
+SHPINSTR.H      _dosmoothpoly
+SHPINSTR.H      _dovector
+SHPINSTR.H      _dorelpoly
+SHPINSTR.H      _dospin              
+SHPINSTR.H      _dosetcolourh
+SHPINSTR.H      _doquiksmoothpoly
+SHPINSTR.H      _docreateipoly
+SHPINSTR.H      _docreateivert
+SHPINSTR.H      _docopyivert
+SHPINSTR.H      _dosmthrelpoly
+SHPINSTR.H      _doquikrelpoly
+SHPINSTR.H      _donsubs
+SHPINSTR.H      _dobitsofffx         
+SHPINSTR.H      _doondamaged
+SHPINSTR.H      _dosetmipmap         
+SHPINSTR.H      _donvec
+SHPINSTR.H      _nextvec
+SHPINSTR.H      _donpoint2x
+SHPINSTR.H      _docallshape
+SHPINSTR.H      _dosmokepnt
+SHPINSTR.H      _doisphere
+SHPINSTR.H      _dorealisphere
+SHPINSTR.H      _docreaterpoly
+SHPINSTR.H      _docylinder
+SHPINSTR.H      _dontpoints
+SHPINSTR.H      _nextt
+SHPINSTR.H      _nnext
+SHPINSTR.H      _nnext2x
+SHPINSTR.H      _dooffsetpnt
+SHPINSTR.H      _doicylinder
+SHPINSTR.H      _dosetglassrange
+SHPINSTR.H      _doret
+SHPINSTR.H       _dogosub
+SHPINSTR.H       _dogoto
+SHPINSTR.H      _dodrawbetween       
+SHPINSTR.H      _dogroup
+SHPINSTR.H      _dogroup
+SHPINSTR.H      _donop
+SHPINSTR.H      _doend
+SHPINSTR.H      _doradar
+SHPINSTR.H      _donoradar
+SHPINSTR.H      _dondeltapoints      
+SHPINSTR.H      _dotextureoff
+SHPINSTR.H      _dotransparentoff
+SHPINSTR.H      _dotransparenton
+SHPINSTR.H      _dosmokedon
+SHPINSTR.H      _dosmokedoff
+SHPINSTR.H      _dotransformlight
+SHPINSTR.H      _dodrawipoly
+SHPINSTR.H      _dodrawopoly         
+SHPINSTR.H      _dodrawrpoly         
+SHPINSTR.H      _dodrawipolys
+SHPINSTR.H      _doplumepnt
+SHPINSTR.H      _dosetmappingplaner
+SHPINSTR.H      _dosetmappingtan
+SHPINSTR.H      docreatebumppoly     
+SHPINSTR.H      docopybvert          
+SHPINSTR.H      dodrawbpoly          
+SHPINSTR.H      dodrawcloud          
+SHPINSTR.H      LnchrInst
+SHPINSTR.H      Shp2Lnchr
+SHPINSTR.H      dolauncher
+SHPINSTR.H      dodial
+SHPINSTR.H      docompass
+SHPINSTR.H      doiswitch
+SHPINSTR.H      doincln
+SHPINSTR.H      _dosmktrail          
+SHPINSTR.H      dobitsoff
+SHPINSTR.H      dobitsoffcock
+SHPINSTR.H      doanimation
+SHPINSTR.H      docollision
+SHPINSTR.H      doeffect
+SHPINSTR.H      dodamage
+SHPINSTR.H      dodrawstation
+SHPINSTR.H      docaserange
+SHPINSTR.H      doifpiloted
+SHPINSTR.H      doniverts
+SHPINSTR.H      nextmap
+SHPINSTR.H      dotrifan
+SHPINSTR.H      dotrizag
+SHPINSTR.H      dotrifanflat
+SHPINSTR.H      dotrizagflat
+SHPINSTR.H      dostretchpoint
+SHPINSTR.H      dostretchmap
+SHPINSTR.H      doflipvector         
+SHPINSTR.H      doflipnvec           
+SHPINSTR.H      domorphpoint         
+SHPINSTR.H      morphnnext           
+SHPINSTR.H      domorphnpoints       
+SHPINSTR.H      douserealtime        
+SHPINSTR.H      dotimerphase
+SHPINSTR.H      tphasestep
+SHPINSTR.H      doblobline
+SHPINSTR.H      dowheeldamage
+SHPINSTR.H      dolight
+SHPINSTR.H      lightdata
+SHPINSTR.H      dolighttimer
+SHPINSTR.H      dodigitdial
+SHPINSTR.H      donianimverts
+SHPINSTR.H      dosetluminosity
+SHPINSTR.H      domorphsphere
+SHPINSTR.H      domorphcylinderimapd
+SHPINSTR.H      doheathaze
+SHPINSTR.H      doifhard3d
+SHPINSTR.H      domorphnsphrs
+SHPINSTR.H      domorphnsphrsimapd
+SHPINSTR.H      morphsphnext
+SHPINSTR.H      doscalesize
+SHPINSTR.H      dogunsight
+SHPINSTR.H      dowheelspray
+SHPINSTR.H      doifbright           
+SHPINSTR.H      dofadeenvelope       
+SHPINSTR.H      dowhiteout           
+SHPINSTR.H      dowindowdial         
+SHPINSTR.H      dolshadeon
+SHPINSTR.H      dondupvec
+SHPINSTR.H      ndnext3
+SHPINSTR.H      ndnext2
+SHPINSTR.H      ndnext1
+SHPINSTR.H      dodrawsun            
+SHPINSTR.H      donspheres           
+SHPINSTR.H      donspheresimapd
+SHPINSTR.H      spherenext
+SHPINSTR.H      doweaponoff          
+SHPINSTR.H      _dodrawreflectpoly
+SHPINSTR.H      _doresetanim         
+SHPINSTR.H      maxanimnode          
+SHPINSTR.H      maxanimframe
+SHPINSTR.H      maxanimlist
+SHPINSTR.H      dontriangles         
+SHPINSTR.H      trinext
+SHPINSTR.H      donmaxpoints
+SHPINSTR.H      nmaxnext
+SHPINSTR.H      doanimmatrix
+SHPINSTR.H      doenvanim
+SHPINSTR.H      dosetpose
+SHPINSTR.H      dobitsoffbloke
+SHPINSTR.H      dosetmaterialtype
+SHPINSTR.H      _nextsub
+SHPINSTR.H      doanimtransform
+SHPINSTR.H      animpoint
+SHPINSTR.H      docreatemirror
+SHPINSTR.H      dointeractivehitbox
+SHPINSTR.H      tmorphnnext          
+SHPINSTR.H      dotmorphnpoints      
+SHPINSTR.H      doabsolutetimerphase
+SHPINSTR.H      doanimtransformhp
+SHPINSTR.H      doontimer
+SHPINSTR.H      dofinger
+SHPINSTR.H      donanimvec
+SHPINSTR.H      doambienton
+SHPINSTR.H      doambientoff
+SHPINSTR.H      domovegun
+SHPINSTR.H      dobitsoffcockunset
+SHPINSTR.H      doneedle
+SHPINSTR.H      dosetblendtype
+SHPINSTR.H      dousefadeenvelope
+SHPINSTR.H      dorestorealpha
+SHPINSTR.H      _docollisiongoto
+SHPINSTR.H      _dosetzbias
+
+SHPWEAP.H       shptoweaptype	Data to represent weapon packs each a/c can carry
+SHPWEAP.H       weaplist	One pack
+
+SMKTRLS.H       TrailInfo                                                 
+
+
+TILEMAKE.H      Functionality for rendering the landscape texture tiles.
+
+VERTEX.H        vertex
+VERTEX.H        colour
+
+VIEWSEL.H       ViewPoint : mobileitem 	Represents all aspects of viewer camera
+VIEWSEL.H       ViewFlags		Once allowed battlefield scripting engine to control view
+VIEWSEL.H       tagPeripheralViewList	Pheripheral blobs?
+VIEWSEL.H       ViewRec			Angle and zoom memory for each type of view
+VIEWSEL.H       ViewKey			Key mappings to int fns that select ViewRec
+VIEWSEL.H       ZoomKey			Zoom and rotate keys
+VIEWSEL.H       Quickview		"sticky" keys
+VIEWSEL.H       ViewpointDelta
+VIEWSEL.H       RovingStruc
+
+HDATA.H 	CHorizData
+HDATA.H 	CPointList
+HDATA2.H	EMPTY
+
+IMAGEMAP.H      ImageMap	imagemap management
+IMAGEMAP.H      SuperMap	one of these for each imagemap directory, contains table of imagemap offsets
+
+DISPLAY.H       Graphic			FC 2D windowing engine
+DISPLAY.H       Window:Graphic
+DISPLAY.H       Display:Window
+DISPLAY.H       75      struct IFFHunkSearch
+
+AREATYPE.H		Constants to do with landscape area types, naming and test upon them.  Also contained is the classes for pre-calculating the height of various raised area types on the landscape.
+
+BTREE.H 40      btree		The binary tree of all visible objects sorted by distance
+
+
+ANIMDATA.H      MinAnimData	Base class for variable data associated with shape
+		DirectAnimData	Base class for sub-field
+        	WeapAnimData: DirectAnimData
+        	MoveGunAnimData: MinAnimData
+        	TwoGunAnimData:  MinAnimData                                             
+        	AircraftAnimData:MinAnimData                                             
+        	InteractiveAnimData
+        	PolyPitAnimData: AircraftAnimData                                
+        	LauncherAnimData:MinAnimData
+        	WindsocAnimData: MinAnimData
+        	CloneAnimData:   MinAnimData                                             //RJS 01Oct97
+        	GrpMinAnimData
+        	FlareAnimData:   MinAnimData                                             //RJS 21Jan98
+        	ParachuteAnimData:       MinAnimData
+        	ThugAnimData:    MinAnimData
+        	MissileAnimData: MinAnimData
+        	DebrisAnimData:  MinAnimData                                             
+        	SmokeTrailAnimData:      MinAnimData
+        	BlokesAnimData:  MinAnimData
+        	TrainAnimData:   MinAnimData                                             
+        	SimpleAircraftAnimData:  MinAnimData                                             
+        	SunAnimData:     MinAnimData                                                     
+        	BirdLauncherAnimData:    MinAnimData                                             
+        	FingerAnimData
+        	BlastAnimData:MinAnimData
+        	ExplodeAnimData: MinAnimData                                             
+        	FireAnimData:    MinAnimData                                                     
+        	BalloonAnimData: MinAnimData     
+        	BarageAnimData:  MinAnimData                                             
+        	TroopAnimData:   MinAnimData                                             
+
+ANIMMOVE.H      AnimControl
+		ANIMCONTROLSTRUC
+
+
+3DCODE.H	ThreeDee	Top level 3D renderer
+
+3DCOM.H		ColLogStuff	for replay collision logging      
+		ReplayAnimOffsets	for replay anim data patching
+		bumpmapdata	OBSOLETE
+		MYGROUNDVECTOR	same as Coords3D
+		VAPANIMDAT		vapour trail element stuff    
+		Coords3DList	vapour trail management
+		probeinfo		vapour trail death management
+		ColBoxInfo		collision log 
+		shape		Main shape interpretting and general 3D stuff
+		bvert			OBSOLETE
+		ReplayGroupInfo	replay data for groups
+		SPHTREETYPE		OBSOLETE
+
+3DDEFS.H	LandMapDesc                                                                                             //PD 27Aug96
+        	Base_Obj3D
+        	HTEXT
+        	Dropped
+        	Land_Obj
+        	matrix_                                                                                         //PD 23Nov95
+        	fpmatrix_                                                                                               //PD 06Jan97
+        	Vert_Ex
+        	PointType
+        	LineType
+        	PolyType
+        	lightvec                                                                                 //RJS 16Jul97
+        	CockpitBuf
+        	ImageMap_Desc	for imagemap data
+
+
+
+
+Related to SFX/Speech/Music
+---------------------------
+
+SNDFONTS.H      CSFRouterData
+SNDFONTS.H      SndFonts	Sound fonts support for music engine
+
+SFMAN.H		-	Header file for acccesing the SoundFont Master Manager  //
+
+
+SAMPLE.H        134     struct  ListenerStruc	information about the listener inc orientation, DirectSound3D
+SAMPLE.H        155     class   Sample		contains DirectX secondary buffer and stuff
+SAMPLE.H        23      struct  FMT		part .wav file header
+SAMPLE.H        31      struct RIFF		part .wav file header
+SAMPLE.H        39      struct DATA		part .wav file header
+SAMPLE.H        62      struct  SubjectStruc	information about the subject, DirectSound3D
+
+Raddef.h	Used to reduce the number of radio chatter equates so that the browser in Dev Studio doesn't crash!
+
+Radiocht.h	-	Stubbed out all Mig radio messages near start of BoB
+
+RCHATTER.H      118     PhraseBuffer	used to build an array of phrases for the current message
+RCHATTER.H      36      SampListType	used by array of sample data for each phrase, used to build the audio message
+RCHATTER.H      364     MESSAGE_STRUC	new message data... this is what gets passed to the radio chatter engine when we want a new message
+RCHATTER.H      43      TargetIndexes   multi-purpose structure used to pass additional data to the radio chatter engine with new messages
+RCHATTER.H      437     RADIOMESSAGE	this is a message that is to be played, contains all data needed for this message
+RCHATTER.H      499     SECTORNAME	OBSOLETE MiG Alley stuff                                         
+RCHATTER.H      507     SNFileType      OBSOLETE MiG Alley stuff                                                                                        //RJS 14Jul98
+RCHATTER.H      514     ScriptFileType	script binary data block
+RCHATTER.H      537     RadioChatter	Radio Chatter engine, main controller class
+
+RCHATXTR.H      14      SOffsetList	for offset table in concatenated radio chatter sample files
+RCHATXTR.H      22      RadioSampleRec	radio chatter sample master struc for organising the samples
+RCHATXTR.H      3       SIMPLEWAVHEADER cut down, wav-style header for radio chatter sample files
+
+MUSIC.H 19      struct _dmportinfo	OBSOLETE
+MUSIC.H 27      class Music		OBSOLETE
+
+MILES.H 107     class SoundBase		messy base class for the sound engine
+MILES.H 33      struct  SampleRequest	OBSOLETE?
+MILES.H 78      struct  EngineInfo      for passing in aircraft engine info!                                                                                        //RJS 13Jan00
+MILES.H 89      struct  PercRec		OBSOLETE, MiG percussion stuff to dodge Miles thread crash
+
+MILESXTR.H      117     struct StatusRec	daft, ancient record that doesn't really serve much purpose
+MILESXTR.H      126     struct  EnginePlayInfo	playing, aircraft engine record
+MILESXTR.H      16      typedef struct  PlayingRec	log of a sample that is currently resident or active in the sound queue
+MILESXTR.H      4       struct SampleRec		sample data for each loaded sample
+MILESXTR.H      52      struct  SampleLibrary		OBSOLETE wavetable music experiment
+MILESXTR.H      60      typedef struct  SequenceStruct	OBSOLETE music stuff from MiG
+MILESXTR.H      74      struct  SubSound		?????
+MILESXTR.H      87      struct  MusicRequest		OBSOLETE music stuff from MiG
+
+MAPSFX.H	-	Some equates for different effects that play before speech
+
+MESSENGN.H
+MESSENGN.H      MessageBuffer	radio message buffering for 2D map screen and 3D
+
+DIGDRVR.H       _dsportinfo
+		DigitalDriver	contains primary buffer for DirectSound and a bit of channel management
+
+
+
+Related to Movement
+-------------------
+
+SAGMOVE.H       sagmove_REQUIRED	Can define 2 copies of same functions
+	#define	 sagmove_REQUIRED	SAGAirstruc:AirStruc
+	#define	 sagmove_REQUIRED	SAGairgrp:info_airgrp
+			On the campaign map, flying squadrons are represented
+			by info_airgrp objects.
+			In the 3d each flying squadron is represented by and
+			AirStruc object.
+			This header provides a thin cast to provide movement
+			and decision making logic to these two scenarios.
+
+PLANETYP.H      (PlaneInit)		Static integer info for each mobile object type
+PLANETYP.H      (WheeledType,PlaneInit)
+PLANETYP.H      (DumbPlaneType,WheeledType)
+PLANETYP.H      (PlaneType,DumbPlaneType)
+
+MODEL.H 152     class Model {
+MODEL.H 441     struct  TurnData
+MODEL.H 446     struct ThrustData
+MODEL.H 451     struct  DogHouseData
+
+MODINST.H       35      struct  DialSpec
+MODINST.H       60      struct  TimedDialSpec                                                                                   //RJS 29Jun98
+MODINST.H       81      typedef class _instruments
+
+MODINT.H        24      typedef class ModelAnim
+
+MODVEC.H        78      typedef struct _fcrd {
+MODVEC.H        82      typedef struct _fcrdlong {
+MODVEC.H        97      typedef struct _fori {
+
+GEAR.H  34      Gear		Flight model
+
+Flyinit.h	ClassType   		Fixed integer data for each aircraft
+		PlaneType:..ClassType
+
+FLYMODEL.H      ManualPilot		Integer flight model (whats left of it)
+			
+ELMT.H  339     class Surface		Flight Model stuff		
+ELMT.H  467     class Cylinder
+ELMT.H  540     class ThrustPoint
+ELMT.H  59      class MainPlane
+
+ENGINE.H        Engine 		Flight Model
+
+
+CTRL.H  21      class Ctrl	Flight Model?
+CTRL.H  72      class NewCtrl
+
+CURVES.H        CurvePoint	Flight model
+CURVES.H        Curve
+
+
+AI.H    	AcArrayItterator	
+				AirStrucPtr clone that steps through ACArray
+	    	DecisionAI	Decision making state
+	    	OptionRef	Decision making alternative
+	    	ArtInt	 	Main Spotting AI
+	    	trgtype##_##name##_AI:public ArtInt	DECISIONAI() macro
+	    	trgtype##_##name:public DecisionAI	DECISIONAI() macro
+	    	trgtype##_##name##_AI:public ArtInt	OPTIONAI() macro (leaf)
+		trgtype##_##name:public DecisionAI	OPTIONAI() macro (leaf)
+
+
+AAA.H		AaaMainList	    	List of UIDs of AAA capable items
+		SleepList:AaaMainList	Nothing visible so sleep between tests
+		LiveList:AaaMainList	Something visible so test more often
+
+Acmmodel.h	AcmModel	Air Combat Manoeuvres using flight model
+
+AERODEV.H	AeroDevice	Piece of FP flight model
+
+TRANSITE.H      TransObj	Transient object (bullets & explosions) management
+TRANSITE.H      StatTrailItem	for static trails that no longer grow
+TRANSITE.H      RaidElement	air-raid record
+TRANSITE.H      Area		OBSOLETE, Flying Corps
+TRANSXTR.H      DeathTollLink	for automated bullying and bomb exclusion                                   
+
+
+Related to Comms
+----------------
+
+REPLAY.H        110     struct _grentry {
+REPLAY.H        118     struct _grlist {
+REPLAY.H        129     struct _sagglobs
+REPLAY.H        144     struct _sag_values
+REPLAY.H        155     struct _miprim_values
+REPLAY.H        196     struct _asprim_values
+REPLAY.H        329     struct _fm_full_prim_values 
+REPLAY.H        372     struct _prim_engine_vals {
+REPLAY.H        398     struct _prim_elmt_vals {
+REPLAY.H        414     struct _aerodev_vals {
+REPLAY.H        428     struct _surface_vals {
+REPLAY.H        439     struct _thrust_vals {
+REPLAY.H        450     struct _cylinder_vals {
+REPLAY.H        466     struct ReplaySmkCloud
+REPLAY.H        476     struct  ReplaySmkStruc                                                                                  //AMM 04Nov98
+REPLAY.H        493     struct  ReplaySmlSmkStruc                                                                                       //RJS 18Feb99
+REPLAY.H        502     struct  ReplaySmkPoint                                                                                  //RJS 17Feb99
+REPLAY.H        515     struct _markinfo 
+REPLAY.H        535     struct ArmedTransient
+REPLAY.H        555     class Replay {
+REPLAY.H        72      struct _miss_conds {
+REPLAY.H        867             struct  REPLAYPREFS
+
+CTIMEOUT.H      CommsTimeout
+
+WINMOVE.H       100     struct _ac_packet : public _basic_packet
+WINMOVE.H       114     struct agg_send_packet {
+WINMOVE.H       128     struct send_packet_buff {
+WINMOVE.H       1334            struct  NiceColours
+WINMOVE.H       140     struct aggsendpackbuff {
+WINMOVE.H       155     struct acposition {
+WINMOVE.H       170     struct acposentry : public acposition
+WINMOVE.H       186     struct ackbuff {
+WINMOVE.H       195     struct idcode
+WINMOVE.H       210     struct _comms_collision : idcode
+WINMOVE.H       238     struct _delta_record {
+WINMOVE.H       263     struct _buffer_pack
+WINMOVE.H       275     struct _hist_buff 
+WINMOVE.H       300     struct _reclist
+WINMOVE.H       310     struct _bul_entry
+WINMOVE.H       322     struct _enum_service
+WINMOVE.H       338     struct _enum_session
+WINMOVE.H       350     struct _visitor_info
+WINMOVE.H       362     struct _special_packet : idcode
+WINMOVE.H       374     struct uidpacket : idcode
+WINMOVE.H       383     struct _chatmessage
+WINMOVE.H       392     struct _item_info
+WINMOVE.H       40      struct _acstatepacket {
+WINMOVE.H       403     struct _dead_info
+WINMOVE.H       412     struct _playersaggcheck
+WINMOVE.H       423     struct dead_pilot
+WINMOVE.H       440     class DPlay {
+WINMOVE.H       70      struct _basic_packet {
+
+COMMS.H 15      H2HPlayerInfo
+ 		Generic		Base type of comms packet that can be sent
+ 		_savegamep : Generic
+ 		_csstrucpart : Generic
+ 		_messages : Generic
+ 		_prefs_data : Generic
+ 		_miss_conds_packet : Generic
+ 		_gamestuff : Generic
+ 		_chat_dialogue : Generic
+ 		_uiplayerdata : public Generic
+ 		_initinfo : Generic
+ 		_password : Generic
+ 		_slotpos : Generic
+ 		_gamedetails : Generic
+ 		_csquickstruc : Generic
+
+CBUFFER.H       CBuffer		Comms circular buffer of late and early packets
+
+AGGRGTOR.H	Aggregator 	Aggregator object used by host in comms game
+
+
+To do with mission editor and MakeBf
+------------------------------------
+
+BFCOMMON.H	-	Set of common header files between Persons2.CPP and MakeBf.EXE
+			Forces them both to be compiled if there is a change.
+
+Bfenum.h	EnumListNames	Select an enum type that MakeBf knows the member names
+
+BFNUMBER.H      Expr			Base class for expression tree node
+      		BfieldDesc		Top level view of loaded battlefield
+      		EventVal		root node. Holds integer value or points to expression
+      		GlobRefExpr:Expr	Reference globvar variable
+      		UIDExpr:Expr		Reference an item by it's uniqueID
+      		RndExpr:Expr		Random number
+      		SelExpr:Expr		simple maths
+      		ListExpr:Expr		index a list using first member
+      		ListFormExpr:Expr	index list using position in formation
+      		WorldExpr:Expr		position in world
+      		XyzExpr:Expr		use coordinates for position
+      		RotExpr:Expr 		use hdg/pitch/range for position
+      		EventVar:EventVal	eventval that sets a globvar
+		IcptExpr:Expr		use intercet to set hdg, pitch, range
+
+MAKEBF.H        -		Communication between MakeBF.CPP and Persons.CPP
+		GlobalRef	
+
+READENUM.H      EnumStuff	List of all loaded enums in Mission Editor and MakeBf
+READENUM.H      EnumCtrl	One loaded enum, i.e. that program knows names of members
+READENUM.H      enumlinkelt	One member held as sparse link-list
+READENUM.H      enumarrelt	One member held in full array
+
+TOKEN.H 74      DataInst		Word representation in MakeBf interpretter
+TOKEN.H 88          RecurseChk
+TOKEN.H 133     IntegerInst:DataInst	String is an evaluated number
+TOKEN.H 194     TokenSpell:DataInst	String is in the dictionary
+TOKEN.H 25      TokenInit		Predefined punctuation symbols
+TOKEN.H 36      TokenName:TokenInit
+
+
+
+To do with input
+----------------
+
+KEYTEST.H       CommonKeyMap		basic key detection system
+KEYTEST.H       UIKeyQueue:CommonKeyMap	FC UI thing
+KEYTEST.H       KeyMap3d:CommonKeyMap	3D system which maps keys to functions
+KEYTEST.H       keytests		Class for key accessing functions
+KEYTEST.H       RawToHotMapRecord	FC UI thing
+
+ANALOGUE.H      Analogue	Main joystick entrypoint
+      		FF_Push		State of force feedback 'kick' requests
+      		FF_Damp		State of force-feedback damping
+      		FF_Stiff	State of force-feedback stiffness and centering
+      		FF_Shake	State of force-feedback shaking
+      		Tuning		Per axis sensitivity tuning options
+      		AliassingOption	Controls how axes can be displayed twice on       		config screen
+
+
+To do with campaign setup
+-------------------------
+
+MISSMAN2.H      CampaignBase	Campaign overview for each period
+MISSMAN2.H      CampaignPtrs	Hierachy of structures
+MISSMAN2.H      CampaignStatic
+MISSMAN2.H      CampaignBlueSquad
+MISSMAN2.H      CampaignSquad
+MISSMAN2.H      CampaignPackages
+MISSMAN2.H      CampaignPilots
+MISSMAN2.H      CampaignZPilots
+MISSMAN2.H      CampaignZero
+MISSMAN2.H      Campaign
+MISSMAN2.H      Fav
+MISSMAN2.H      MissMan		Holds current instance copy and pointer to all campaigns
+
+Misssub.h
+MISSSUB.H       145     struct FormationPos
+MISSSUB.H       155     struct FormationType
+MISSSUB.H       179     struct  ExtFormationType
+MISSSUB.H       186     struct  WaypointOffsetSub
+MISSSUB.H       192     struct  WayPointOffset
+MISSSUB.H       253     struct PilotHist
+MISSSUB.H       336     struct  Directives
+MISSSUB.H       340             struct  LW      //LUFTWAFFE SPECIFIC DIRECTIVES
+MISSSUB.H       351                     struct  Targ    //Describes one target category
+MISSSUB.H       368                     struct  Miss    //Describes one LW Mission profile
+MISSSUB.H       379                     struct Reconn 
+MISSSUB.H       387                     struct  Dir             //Describes the directives settings
+MISSSUB.H       398                     struct  OneDirResult    //Describes one resultant mission
+MISSSUB.H       419             struct  RAF     //RAF SPECIFIC DIRECTIVES
+MISSSUB.H       438                     struct  Miss    //Describes one response profile
+MISSSUB.H       443                             struct  PerType         
+MISSSUB.H       451                     struct  Dir             //Describes the RAF directives
+MISSSUB.H       471                     struct  DirResult       //Describes one patrol mission profile
+MISSSUB.H       501     struct  LWDirectivesResults
+MISSSUB.H       503             struct  TargetList
+MISSSUB.H       512                     struct FighterSplit
+MISSSUB.H       518                             struct  Targets
+MISSSUB.H       557     struct  RAFDirectivesResults
+MISSSUB.H       559             struct  AvailSquads
+MISSSUB.H       578             struct  TargetList
+MISSSUB.H       585             struct  AirField
+MISSSUB.H       629     struct  PeriodReviewBase
+MISSSUB.H       632             struct  TypeStats
+MISSSUB.H       652     struct  LastWeekReview:PeriodReviewBase
+MISSSUB.H       666     struct  PeriodReview:PeriodReviewBase
+
+NODEBOB.H       Target		Base class for extra info on places in world
+NODEBOB.H       TargetNoDetail,Target)
+NODEBOB.H       TargetGroup,TargetNoDetail)
+NODEBOB.H       TargetConvoy,TargetGroup)
+NODEBOB.H       TargetRadar,TargetGroup)
+NODEBOB.H       TargetFakeFactory,TargetGroup)
+NODEBOB.H       TargetFactory,TargetFakeFactory)
+NODEBOB.H       TargetFighterField,TargetGroup)
+NODEBOB.H       TargetSateliteField,TargetFighterField)
+NODEBOB.H       TargetSectorField,TargetFighterField)
+NODEBOB.H       Squadron	Base class for info on each squadron
+NODEBOB.H       BritSquadron,Squadron)
+NODEBOB.H       Gruppen,Squadron)
+NODEBOB.H       Geshwader	Describes Geshwader which contains 3 Gruppen
+NODEBOB.H       ProductionAC	Production rate info. This is not saved properly
+NODEBOB.H       HistoricInfo	Weather each period.
+NODEBOB.H       	Day
+NODEBOB.H       IntelMsg	A single message on the 2d campaign map
+NODEBOB.H       PVA		Shortcut for setting priority, vioce, and category
+NODEBOB.H       IntelBuffer	Buffering system for messages on 2d campaign map
+NODEBOB.H       ReviewBuffer:IntelBuffer	Mods for end of day review
+NODEBOB.H       UnrepeatableScripts	namespaces the enum for blocking script repeats
+NODEBOB.H       NodeData	Bag for all above objects
+
+PACKAGE.H       PackageList	List of all packages in the day (both sides)
+PACKAGE.H           Profile     One package
+PACKAGE.H               TargetDesc	All targets assigned to package
+PACKAGE.H       	RaidNumEntry	Grouping squadrons into raids
+PACKAGE.H       	SquadListRef    List of a squads in raid
+PACKAGE.H       	    Squad	One squad
+PACKAGE.H       	        SquadSetFormType:Squad	Get/Set FormType fn wrapper
+PACKAGE.H       	AMType		Temp structure used by some dialogs
+PACKAGE.H       	TaskData	Temp structure used by some dialogs
+
+SAVEGAME.H      DistanceFactors	Scaling and naming of distance units
+SAVEGAME.H      AltitudeFactors	Scaling and naming of altitude units
+SAVEGAME.H      SpeedFactors	Scaling and naming of altitude units
+SAVEGAME.H      MoneyFactors	Scaling and naming of currency. Never used.
+SAVEGAME.H      MassFactors	Scaling and naming of weight. Never used.
+SAVEGAME.H      VolumeFactors	Scaling and naming of volume. Never used.
+SAVEGAME.H      SaveDataSoftware		Settings that are saved in campaign record
+SAVEGAME.H      SaveDataLoad:SaveDataSoftware	Additional settings that are only saved globally
+SAVEGAME.H      SaveDataNoLoad:SaveDataLoad	Fields that can't be saved with a simple binary image
+SAVEGAME.H          DialPosMem	Memory of dialog positions
+SAVEGAME.H          Vol		Volume settings
+SAVEGAME.H      DeadStream	Element damage information
+SAVEGAME.H      DeadBlock	2K of damage information
+SAVEGAME.H      DeadStream::DeadBlockItterator	steps through the stream
+
+SQDDIARY.H      Diary			Wrapper class for all diary information
+SQDDIARY.H          Master		Wrapper for lists of all these types:
+SQDDIARY.H          	Player		Player specific info about 1 mission
+SQDDIARY.H          	Intercept	RAF package intercepts LW
+SQDDIARY.H          	SquadronBase	What one squadron did
+SQDDIARY.H          	Gruppen:SquadronBase	
+SQDDIARY.H          	Squadron:SquadronBase
+SQDDIARY.H          	RaidPack	LW package
+SQDDIARY.H     		RaidGroup	LW raid in package
+
+The Grab-bag of left-over stuff
+-------------------------------
+
+I couldn't honestly put these files in any one or in just one of the above
+categories. Call me a wimp...
+
+
+AIRSTRUC.H      ACMAirStruc:	AirStruc	Thin layer cast to access ACM routines
+		MoveAirStruc:   AirStruc	Thin layer cast to access movecode routines
+
+ANMRADIO.H      DamageChat
+
+BOXCOL.H        BoxCol		Box based collision system
+
+CEDITOR.H       Main  		Curve editor program for setting up flight model
+CEDITOR.H       EditorFunction
+CEDITOR.H       View
+CEDITOR.H       Editor
+
+COLLIDED.H      Collide
+			Tests how we hit the ground
+
+CONTLIST.H      ContourList	Used in MiG to buffer road altitudes
+
+FILEMAN.H       fileblock	       		visible object that holds a loaded file
+FILEMAN.H       fileman				file management class
+FILEMAN.H       OpenFileBase			landscape file management
+FILEMAN.H       OpenFile : OpenFileBase
+FILEMAN.H       CDOpenFile : OpenFileBase
+FILEMAN.H       CDCurrOpenFile : CDOpenFile
+FILEMAN.H       dirfileentry			naming and caching info for each directory
+FILEMAN.H       FileMan:protected fileman       multitask protection for fileman
+FILEMAN.H       dirlist		OBSOLETE?	Wildcard system from FC/Watcom?
+FILEMAN.H       bilist				bidirectional list
+FILEMAN.H       fileblocklink			cache holder for loaded file
+
+
+GAMESET.H       GameSettings	Commandline options
+
+GLOBREFS.H	in-game access to the battlefield variables via 
+		integer references to array entries. 
+		For once #defines might have been preferable!
+
+GRID.H  	Grid_Base
+GRID.H  	Grid_Bit :Grid_Base
+GRID.H  	Grid_Byte :Grid_Base
+GRID.H  	Grid_Word :Grid_Base
+GRID.H  	Grid_Long :Grid_Base
+
+GROUPITT.H      DamageDef
+GROUPITT.H      _dogroup
+GROUPITT.H      DeadStream::DeadBlockItterator;
+GROUPITT.H      GroupItterator
+
+IMPACT.H        Impact		Special impact test for ballooon wires
+
+INFOITEM.H      info_base	battlefield item base
+INFOITEM.H      info_itemS	fields are held in expression format
+INFOITEM.H      info_waypoint	
+INFOITEM.H      info_grndgrp	represents a group of vehicles
+INFOITEM.H      info_airgrp 	represents a squad of aircraft
+INFOITEM.H      info_event_suicide_ptr
+INFOITEM.H      info_event	FC event trigger
+
+
+INTCOCK.H       InstTableMap	Maps hot key triggers to interactive cockpit enums
+INTCOCK.H       InteractiveCockpit	interactive cockpit stuff management
+
+
+LNCHRDAT.H      LaunchInfo	Burst animation structure and data instance
+
+MAIN.H  	Main : public   GetSet
+
+MYERROR.H       Error  		Prints error message box before fatal exit
+
+PERSONS2.H      UnresolvedNodeData	Represents one forward reference between objects
+PERSONS2.H      UnresolvedUidNode	Build a tree of forward references
+PERSONS2.H      Persons2		Battlefield object loading class. Creates temporary info_xxx objects
+PERSONS2.H      Persons3:Persons2	Converts info_xxx to individual items
+PERSONS2.H      PosCtrl			Intermediate position representation
+PERSONS2.H      SagExpansionCounter	Manages how SAGs are converted into individual aircraft
+PERSONS2.H      Persons4:Persons2	Copies info_xxx to permanent instance
+
+PROPDIAL.H      ComboTexts	Something in mission editor????
+
+ROWTASKS.H      StackTimes
+ROWTASKS.H      RowanTasks  	Class for monitoring which thread calls which function
+
+Sg2combo.h	-	Macros to perform similar task as DoDataExchange
+			but with any variable
+
+SKY.H   15      Gust
+SKY.H   31      Cloud
+SKY.H   47      AtmosphereData
+
+STRUCM.INC	-	Wow!
+
+STUB3D.H        Mast3d	Manages the 3d thread(s)
+STUB3D.H        Inst3d	One instance of the 3d environment
+STUB3D.H        View3d	One window on it
+STUB3D.H        WorldRef
+STUB3D.H        WinMode
+
+W3DTMPLT.H      template<class Obj> class IHeap			
+W3DTMPLT.H      template<class Obj> class SameDifference	...send your emails to the usual address...
+W3DTMPLT.H      template<class Obj> class PList
+
+WEAPPAK.H	WeapPakType	More conversions of shapes to weapons
+
+WORLD.H 103     WorldSearch	Itterates through world
+WORLD.H 29      RouteHdr	To manage deleting of waypoint sets shared
+				by a number of aircraft
+WORLD.H 36      WorldStuff	The world - access all the items when in the 3d
+
+WORLDINC.H      19      struct  GunnerInfo                                                                                              
+WORLDINC.H      93      class   animptr
+WORLDINC.H      210     struct  WEAPCLASS
+WORLDINC.H      245     struct  UNIQUE_ID
+WORLDINC.H      294     struct  ITEM_STATUS
+WORLDINC.H      337     struct  EventLog
+WORLDINC.H      352     struct  EventLogPtr:EventLog
+WORLDINC.H      ItemBase	Base class for positioned object representation
+WORLDINC.H      InfoItemFlag:ItemBase	if this has value -1 then info_xxx object
+WORLDINC.H      WPOverlayItem:ItemBase	overlayed with pointer
+WORLDINC.H      ItemOverlayWP:ItemBase	overlayed with pointer
+WORLDINC.H      WayPoint:WPOverlayItem	A point on a route in 3D
+WORLDINC.H      item:ItemOverlayWP	Base class for visible item in 2d/3d
+WORLDINC.H      hdgitem:item		Improved item
+WORLDINC.H      hpitem:hdgitem		Parked aircraft
+WORLDINC.H      rotitem:hpitem		Fully rotated item
+WORLDINC.H      MovingItem:rotitem      Base class for moving objects in 3D
+WORLDINC.H      mobileitem:MovingItem	
+WORLDINC.H      TransientItem:mobileitem	Bullets/bombs
+WORLDINC.H      formationitem:mobileitem	Most vehicles
+WORLDINC.H      shipitem:formationitem		Intended for intelligent ships, but got none
+WORLDINC.H      AirStruc:shipitem		Aircraft representation in 3D
+WORLDINC.H      	ai_info                 
+WORLDINC.H      	weap_info               
+WORLDINC.H      	weap_ctl                
+WORLDINC.H      	flight_ctl              
+WORLDINC.H      	RequiredBankDataElement Part of PlaneType
+
+

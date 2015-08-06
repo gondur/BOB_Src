@@ -1,0 +1,58 @@
+	BattleField
+	{
+		FileName	FIL_1_M1FORD=M1FORD.BF,
+		ItemGroup
+		{	Target	UID_AF_FORD,
+			ItemGroup
+			{
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_FORD}, 
+						 	Rel	{Bearing	ANGLES_225Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES50
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					},
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_FORD}, 
+						 	Rel	{Bearing	ANGLES_225Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES100
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					},
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_FORD}, 
+						 	Rel	{Bearing	ANGLES_225Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES150
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					},
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_FORD}, 
+						 	Rel	{Bearing	ANGLES_225Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES150
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					}
+			}
+		}
+	};

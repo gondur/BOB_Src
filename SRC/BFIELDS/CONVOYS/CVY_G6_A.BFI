@@ -1,0 +1,103 @@
+	WayPoint	cvy_g6_a_0105,
+	WayPoint	cvy_g6_a_0106,
+	WayPoint	cvy_g6_a_0107,
+	WayPoint	cvy_g6_a_0108,
+	WayPoint	cvy_g6_a_0109,
+	WayPoint	cvy_g6_a_010a,
+	GroundItem	cvy_g6_a_2900,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G6_A=cvy_g6_a.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	33775616,
+					Z	35426304
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g6_a_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	36151296,
+							Z	35549184
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_a_0106=
+				{
+					Posn
+					{
+						Abs
+						{	X	40390656,
+							Z	39583744
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_a_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	41373696,
+							Z	46628864
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_a_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	38977536,
+							Z	50991104
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_a_0108=
+				{
+					Posn
+					{
+						Abs
+						{	X	32382976,
+							Z	53428224
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_a_0105=
+				{
+					Posn
+					{
+						Abs
+						{	X	30928896,
+							Z	56008704
+						}
+					},
+					Action	wpstopno
+				}
+			},
+			NumInForm		12,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g6_a_2900=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G6_A,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR,TRAWLR}
+				//Vel	2501
+		}	}
+	};

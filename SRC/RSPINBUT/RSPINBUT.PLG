@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RSpinBut - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSP12C0.BAT" with contents
+[
+@echo off
+copy ".\Rspinbut.lic" "\BOB\Release\exe"
+]
+Creating command line "c:\temp\RSP12C0.BAT"
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "\BOB\Release\exe/RSpinBut.tlb" /mktyplib203 /o "NUL" /win32 "D:\Bob\Src\RSPINBUT\RSpinBut.odl""
+Copying license file...
+D:\BOB\SRC\RSPINBUT\RSPINBUT.LIC => D:\BOB\Release\exe\RSPINBUT.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\BOB\Release\RspinBut/RSpinBut.res" /i "\BOB\Release\exe" /d "NDEBUG" /d "_AFXDLL" "D:\Bob\Src\RSPINBUT\RSpinBut.rc"" 
+Creating temporary file "c:\temp\RSP12C3.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\BOB\Release\RspinBut/" /Fd"\BOB\Release\RspinBut/" /FD /c 
+"D:\Bob\Src\Mfc\Getshadw.cpp"
+"D:\Bob\Src\RSPINBUT\Rspinbtc.cpp"
+"D:\Bob\Src\RSPINBUT\Rspinbtp.cpp"
+"D:\Bob\Src\RSPINBUT\RSpinBut.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSP12C3.TMP" 
+Creating temporary file "c:\temp\RSP12C4.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"\BOB\Release\exe/Rspinbut.pdb" /machine:I386 /def:".\RSpinBut.def" /out:"\BOB\Release\exe/Rspinbut.ocx" /implib:"\BOB\Release\exe/Rspinbut.lib" 
+\BOB\Release\RspinBut\Getshadw.obj
+\BOB\Release\RspinBut\Rspinbtc.obj
+\BOB\Release\RspinBut\Rspinbtp.obj
+\BOB\Release\RspinBut\RSpinBut.obj
+\BOB\Release\RspinBut\RSpinBut.res
+]
+Creating command line "link.exe @c:\temp\RSP12C4.TMP"
+Creating temporary file "c:\temp\RSP12C5.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\Release\exe\Rspinbut.ocx"
+echo regsvr32 exec. time > "\BOB\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\temp\RSP12C5.BAT"
+Creating Type Library...
+RSpinBut.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+Getshadw.cpp
+Rspinbtc.cpp
+Rspinbtp.cpp
+RSpinBut.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\Release\exe/Rspinbut.lib and object \BOB\Release\exe/Rspinbut.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+Rspinbut.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

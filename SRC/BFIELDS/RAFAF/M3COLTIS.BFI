@@ -1,0 +1,80 @@
+	WayPoint	M3COLTIS_0127,
+	WayPoint	M3COLTIS_0128,
+	WayPoint	M3COLTIS_0129,
+	WayPoint	M3COLTIS_012a,
+	GroundItem	M3COLTIS_2908,
+	BattleField
+	{
+		FileName	FIL_1_M3COLTIS=M3COLTIS.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_COLTISHALL,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	37096448,
+						Z	47984640
+					}
+				},
+				Route
+				{
+					WayPoint	M3COLTIS_012a=
+					{
+						Posn
+						{
+							Abs
+							{	X	37113344,
+								Z	47995904
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3COLTIS_0129=
+					{
+						Posn
+						{
+							Abs
+							{	X	37127168,
+								Z	47998976
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3COLTIS_0128=
+					{
+						Posn
+						{
+							Abs
+							{	X	37131264,
+								Z	48006144
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3COLTIS_0127=
+					{
+						Posn
+						{
+							Abs
+							{	X	37148160,
+								Z	48016896
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M3COLTIS_2908=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	CAR,
+					Vel	100
+			}	}	}
+	};

@@ -1,0 +1,86 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGEMAP
+DEST = ..\GAME\cockmask
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\CPT1GUN.x8\
+	$(DEST)\FADEPROP.x8\
+	$(DEST)\CPT1GLS1.x8\
+	$(DEST)\CPT1GLS2.x8\
+	$(DEST)\CPT1GLS3.x8\
+	$(DEST)\CPT2GUN.x8\
+	$(DEST)\CPT2GLS1.x8\
+	$(DEST)\CPT2GLS2.x8\
+	$(DEST)\CPT2GLS3.x8\
+
+
+MAPS64X64	=	$(DEST)\CPT1EXH.x8\
+	$(DEST)\MG15BIT.x8\
+	$(DEST)\MG15MSK.x8\
+	$(DEST)\HOLE.x8\
+
+
+MAPS128X128	=	$(DEST)\CPT1D23.x8\
+	$(DEST)\SIGHT.x8\
+	$(DEST)\HUDGLASS.x8\
+	$(DEST)\DIALGLS.x8\
+	$(DEST)\CPT2D28.x8\
+	$(DEST)\CPT2LVR.x8\
+	$(DEST)\CPT2WHL.x8\
+	$(DEST)\HUD109.x8\
+	$(DEST)\SIGHT2.x8\
+	$(DEST)\CPT2GLS4.x8\
+	$(DEST)\GLASS1.x8\
+	$(DEST)\CPT3D3.x8\
+
+
+MAPS32X32	=
+
+MAPS64X128	=
+
+MAPS16X256	=
+
+MAPS128X16	=
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT256X256) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+
+$(MAPS64X64):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT64X64) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT128X128) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+

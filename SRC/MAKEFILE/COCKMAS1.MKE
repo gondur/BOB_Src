@@ -1,0 +1,71 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGEMAP
+DEST = ..\GAME\cockmask
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\CPT3GUN.x8\
+	$(DEST)\CPT3GLS1.x8\
+	$(DEST)\CPT3GLS2.x8\
+	$(DEST)\CPT3GLS3.x8\
+	$(DEST)\CPT4GLS1.x8\
+	$(DEST)\CPT4GLS3.x8\
+	$(DEST)\CPT5GLS1.x8\
+	$(DEST)\GLSBREAK.x8\
+
+
+MAPS64X64	=
+
+MAPS128X128	=	$(DEST)\CPT3CMPS.x8\
+	$(DEST)\CPT4D23.x8\
+	$(DEST)\CPT4GLS2.x8\
+	$(DEST)\CPT5D23.x8\
+	$(DEST)\CPT5D45.x8\
+	$(DEST)\CPT5CPSS.x8\
+	$(DEST)\CPT5GLS2.x8\
+	$(DEST)\CPT5GLS3.x8\
+
+
+MAPS32X32	=
+
+MAPS64X128	=
+
+MAPS16X256	=
+
+MAPS128X16	=
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT256X256) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+	echo -r $(SRC)\$*.PCX $(TT128X128) > domap.res
+	echo -t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254 >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+		mtt2 -dr domap.res
+

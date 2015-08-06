@@ -1,0 +1,169 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGEMAP
+DEST = ..\GAME\imagemap
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\PARA.x8\
+	$(DEST)\SPOT.x8\
+	$(DEST)\DEFBWING.x8\
+	$(DEST)\DEFWING.x8\
+	$(DEST)\DOBOD.x8\
+	$(DEST)\DOLW.x8\
+	$(DEST)\DORW.x8\
+	$(DEST)\HE111FU.x8\
+	$(DEST)\HELWING.x8\
+	$(DEST)\HERWING.x8\
+	$(DEST)\JU52.x8\
+	$(DEST)\JU52LWG.x8\
+	$(DEST)\JU52RWG.x8\
+	$(DEST)\JU52BIT.x8\
+	$(DEST)\JU52BOT.x8\
+	$(DEST)\JU88FUSE.x8\
+	$(DEST)\JU88LWIN.x8\
+	$(DEST)\JU88RWIN.x8\
+	$(DEST)\ME109TOP.x8\
+	$(DEST)\ME110BW.x8\
+	$(DEST)\ME110FS.x8\
+	$(DEST)\ME110F2.x8\
+	$(DEST)\ME110TW.x8\
+	$(DEST)\CLOUD.x8\
+	$(DEST)\THUMBTOP.x8\
+	$(DEST)\THUMBBOT.x8\
+	$(DEST)\BALL01.x8\
+	$(DEST)\BLOCK.x8\
+	$(DEST)\MESS.x8\
+	$(DEST)\BRISBIT.x8\
+	$(DEST)\BRISTLW.x8\
+	$(DEST)\BRISTRW.x8\
+	$(DEST)\BRIST.x8\
+	$(DEST)\DEFBOD.x8\
+	$(DEST)\BBBITS.x8\
+	$(DEST)\BBFUSEL.x8\
+	$(DEST)\FLAP.x8\
+	$(DEST)\HURRBOD.x8\
+	$(DEST)\HURRBODR.x8\
+	$(DEST)\HWINGL.x8\
+	$(DEST)\HWINGR.x8\
+	$(DEST)\JU87BOD.x8\
+	$(DEST)\JU87LWNG.x8\
+	$(DEST)\JU87RWNG.x8\
+	$(DEST)\JU87ULWN.x8\
+	$(DEST)\JU87URWN.x8\
+	$(DEST)\PILOTTRK.x8\
+	$(DEST)\SPITB2.x8\
+	$(DEST)\SPITLWNG.x8\
+	$(DEST)\SPITRWNG.x8\
+	$(DEST)\WTOWER.x8\
+	$(DEST)\FUELTRK.x8\
+	$(DEST)\TENTS.x8\
+	$(DEST)\OFFMESS.x8\
+	$(DEST)\TRUCK.x8\
+	$(DEST)\BRICKB.x8\
+	$(DEST)\BLOCKS.x8\
+	$(DEST)\FOODT.x8\
+	$(DEST)\RUNTRK.x8\
+	$(DEST)\HANGR4.x8\
+	$(DEST)\SPITB3.x8\
+	$(DEST)\M109FUS1.x8\
+	$(DEST)\M109TLW.x8\
+	$(DEST)\M109TRW.x8\
+	$(DEST)\LBGUN.x8\
+	$(DEST)\ME110TR.x8\
+	$(DEST)\BALLON.x8\
+	$(DEST)\CHURCH.x8\
+	$(DEST)\LGHTHSE.x8\
+	$(DEST)\TERRH.x8\
+	$(DEST)\COTTAGE.x8\
+	$(DEST)\BARN.x8\
+	$(DEST)\GOLFCH.x8\
+	$(DEST)\PARBITS.x8\
+	$(DEST)\BELFAST.x8\
+	$(DEST)\DTYPE.x8\
+	$(DEST)\LAW.x8\
+	$(DEST)\FTANK.x8\
+	$(DEST)\TANGMESS.x8\
+	$(DEST)\DAMHNG4.x8\
+	$(DEST)\NISHUT.x8\
+	$(DEST)\WATCHO.x8\
+	$(DEST)\OPPS.x8\
+	$(DEST)\B26FREN.x8\
+
+
+MAPS64X64	=	$(DEST)\TPIPE.x8\
+	$(DEST)\TSTRAW.x8\
+	$(DEST)\CAMO.x8\
+	$(DEST)\TCRATE.x8\
+	$(DEST)\TCRATE2.x8\
+	$(DEST)\CANVAS.x8\
+	$(DEST)\SGAR.x8\
+	$(DEST)\TILEBRK.x8\
+	$(DEST)\BOXD.x8\
+	$(DEST)\BOXL.x8\
+	$(DEST)\BOXM.x8\
+
+
+MAPS128X128	=	$(DEST)\JU88NSE.x8\
+	$(DEST)\ME109BIT.x8\
+	$(DEST)\WOOD.x8\
+	$(DEST)\MAPICNS.x8\
+	$(DEST)\MAPICN2.x8\
+	$(DEST)\RPLYICNS.x8\
+	$(DEST)\RPLYICN2.x8\
+	$(DEST)\BALL02.x8\
+	$(DEST)\BALL03.x8\
+	$(DEST)\DITHER1.x8\
+	$(DEST)\BRISNSE.x8\
+	$(DEST)\AIRBARAC.x8\
+	$(DEST)\HANGR2.x8\
+	$(DEST)\SPITBITS.x8\
+	$(DEST)\HAY.x8\
+	$(DEST)\BOTTHAY.x8\
+	$(DEST)\HAYSD.x8\
+	$(DEST)\HAYTOP.x8\
+
+
+MAPS32X32	=	$(DEST)\TPOLE.x8\
+
+
+MAPS64X128	=
+
+MAPS16X256	=
+
+MAPS128X16	=
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT256X256) -dw $(DEST)\$*.x8
+
+$(MAPS64X64):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT64X64) -dw $(DEST)\$*.x8
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X128) -dw $(DEST)\$*.x8
+
+$(MAPS32X32):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT32X32) -dw $(DEST)\$*.x8
+

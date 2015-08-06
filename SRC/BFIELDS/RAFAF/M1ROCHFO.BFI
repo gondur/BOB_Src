@@ -1,0 +1,79 @@
+	WayPoint	M1ROCHFO_011a,
+	WayPoint	M1ROCHFO_011b,
+	WayPoint	M1ROCHFO_011c,
+	WayPoint	M1ROCHFO_011d,
+	GroundItem	M1ROCHFO_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1ROCHFO=M1ROCHFO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_ROCHFORD,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	33544192,
+						Z	36020736
+					}
+				},
+				Route
+				{
+					WayPoint	M1ROCHFO_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	33537536,
+								Z	36014592
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1ROCHFO_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	33520128,
+								Z	36005888
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1ROCHFO_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	33502720,
+								Z	35985920
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1ROCHFO_011a=
+					{
+						Posn
+						{
+							Abs
+							{	X	33489920,
+								Z	35969024
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1ROCHFO_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

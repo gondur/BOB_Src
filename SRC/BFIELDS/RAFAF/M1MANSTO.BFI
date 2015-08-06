@@ -1,0 +1,103 @@
+	WayPoint	M1MANSTO_011c,
+	WayPoint	M1MANSTO_011d,
+	WayPoint	M1MANSTO_011e,
+	WayPoint	M1MANSTO_011f,
+	WayPoint	M1MANSTO_0120,
+	WayPoint	M1MANSTO_0121,
+	GroundItem	M1MANSTO_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1MANSTO=M1MANSTO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_MANSTON,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	37737472,
+						Z	33871360
+					}
+				},
+				Route
+				{
+					WayPoint	M1MANSTO_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	37738496,
+								Z	33865472
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MANSTO_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	37749504,
+								Z	33863168
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MANSTO_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	37761792,
+								Z	33870336
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MANSTO_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	37772800,
+								Z	33876736
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MANSTO_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	37775616,
+								Z	33894656
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1MANSTO_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	37757696,
+								Z	33898496
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1MANSTO_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

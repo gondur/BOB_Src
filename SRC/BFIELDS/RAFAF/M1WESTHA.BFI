@@ -1,0 +1,79 @@
+	WayPoint	M1WESTHA_011a,
+	WayPoint	M1WESTHA_011b,
+	WayPoint	M1WESTHA_011c,
+	WayPoint	M1WESTHA_011d,
+	GroundItem	M1WESTHA_2900,
+	BattleField
+	{
+		FileName	FIL_1_M1WESTHA=M1WESTHA.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_WESTHAMPNETT,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	24584192,
+						Z	28552960
+					}
+				},
+				Route
+				{
+					WayPoint	M1WESTHA_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	24575232,
+								Z	28549376
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTHA_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	24551936,
+								Z	28553728
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTHA_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	24533248,
+								Z	28559616
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1WESTHA_011a=
+					{
+						Posn
+						{
+							Abs
+							{	X	24526080,
+								Z	28565760
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1WESTHA_2900=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	}	}
+	};

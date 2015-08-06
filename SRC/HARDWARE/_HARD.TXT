@@ -1,0 +1,60 @@
+HARDWARE Directory:	Interfaces to output hardware
+==================
+
+This used to be the repository for the old display hardware interface DLLs
+Mostly this is junk now, and all 3d drawing operations go through LIB3D, 
+and the Mast3D/Inst3D/View3D hierachy in MFC\STUB3D.CPP.
+
+An instance of class Display is still created for each 3d session.
+
+The timer hardwarwe used to be set up here in DOS. 
+The TimerCode class now contains no actual functionality, but still 
+contains a few reference values.
+
+Sound output, and therefore the radio chatter engine, are in this directory.
+
+Classes:
+-------
+
+Display				CONFIG.CPP		(dead)
+					DDRWINIT.CPP	(dead)
+					HARD320.CPP		(dead)	320x200 loadable library
+					HARD320D.CPP	(dead)	debug 1-screen version
+					HARDGAP.CPP		(dead)	space for loadable library
+					HARDINIT.CPP	(dead)	mode selection
+					HARDPUB.CPP		(dead)	DLL interface
+					HARDVBE1.CPP	(dead)	640x400+ vesa 1 memory copying 
+					HARDVBE2.CPP	(dead)	640x400	vesa 2 flat flipping
+					HARDVBED.CPP	(dead)	debug 1-screen version
+					HARDWIN.CPP		(dead)  DirectDraw version
+					WIN3D.CPP		(dead)	MiG Alley Direct3D implementation
+
+			
+TimerCode			DOSTIME.CPP		(dead)
+					WINTIME.CPP		(dead)
+
+DigitalDriver		DIGDRVR.CPP		Sfx channel management layer
+
+MESSAGE_STRUC		MESSENGN.CPP	One message
+MessageBuffer						Buffer for messages
+
+Music				MUSIC.CPP		Miles music engine from MiG Alley
+
+RadioChatter		RCHATTER.CPP	Sample stringing and voice selection
+
+Sample				SAMPLE.CPP		Managining one individual sample
+
+SndFonts			SFONTS.CPP		Sound fonts for music in MiG Alley
+
+Sound				SOUND.CPP		General sfx and music setup
+
+Miles				WINMILES.CPP	(dead) MiG Alley Miles Sound System interface
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+	WayPoint	M1FOWLME_011e,
+	WayPoint	M1FOWLME_011f,
+	WayPoint	M1FOWLME_0120,
+	WayPoint	M1FOWLME_0121,
+	GroundItem	M1FOWLME_2905,
+	BattleField
+	{
+		FileName	FIL_1_M1FOWLME=M1FOWLME.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_FOWLMERE,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29424896,
+						Z	40931328
+					}
+				},
+				Route
+				{
+					WayPoint	M1FOWLME_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	29415936,
+								Z	40926464
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1FOWLME_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	29387264,
+								Z	40906752
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1FOWLME_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	29370112,
+								Z	40920064
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1FOWLME_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	29375488,
+								Z	40926464
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1FOWLME_2905=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

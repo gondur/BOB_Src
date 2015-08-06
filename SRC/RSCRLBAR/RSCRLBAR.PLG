@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RScrlBar - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSP1135.BAT" with contents
+[
+@echo off
+copy ".\Rscrlbar.lic" "\bob\Release\exe"
+]
+Creating command line "c:\temp\RSP1135.BAT"
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "\bob\Release\exe/RScrlBar.tlb" /mktyplib203 /o "NUL" /win32 "D:\Bob\Src\RSCRLBAR\RScrlBar.odl""
+Copying license file...
+D:\BOB\SRC\RSCRLBAR\RSCRLBAR.LIC => D:\bob\Release\exe\RSCRLBAR.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\bob\Release\Rscroll/RScrlBar.res" /i "\bob\Release\exe" /d "NDEBUG" /d "_AFXDLL" "D:\Bob\Src\RSCRLBAR\RScrlBar.rc"" 
+Creating temporary file "c:\temp\RSP1143.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\Rscroll/" /Fd"\bob\Release\Rscroll/" /FD /c 
+"D:\Bob\Src\RSCRLBAR\RScrlBar.cpp"
+"D:\Bob\Src\RSCRLBAR\rscrlbrc.cpp"
+"D:\Bob\Src\RSCRLBAR\rscrlbrp.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSP1143.TMP" 
+Creating temporary file "c:\temp\RSP1144.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/Rscrlbar.pdb" /machine:I386 /def:".\RScrlBar.def" /out:"\bob\Release\exe/Rscrlbar.ocx" /implib:"\bob\Release\exe/Rscrlbar.lib" 
+\bob\Release\Rscroll\RScrlBar.obj
+\bob\Release\Rscroll\rscrlbrc.obj
+\bob\Release\Rscroll\rscrlbrp.obj
+\bob\Release\Rscroll\RScrlBar.res
+]
+Creating command line "link.exe @c:\temp\RSP1144.TMP"
+Creating temporary file "c:\temp\RSP1145.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\Rscrlbar.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\temp\RSP1145.BAT"
+Creating Type Library...
+RScrlBar.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+RScrlBar.cpp
+rscrlbrc.cpp
+rscrlbrp.cpp
+Generating Code...
+Linking...
+   Creating library \bob\Release\exe/Rscrlbar.lib and object \bob\Release\exe/Rscrlbar.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+Rscrlbar.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

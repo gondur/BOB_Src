@@ -1,0 +1,169 @@
+	BattleField
+	{
+		FileName	FIL_1_CVY_G3_B=cvy_g3_B.BF,
+		Title	{},
+		Comment	{},
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	34164736,
+					Z	35078144
+				}
+			},
+			Route
+			{
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	38854656,
+							Z	34709504
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	39079936,
+							Z	31985664
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	36130816,
+							Z	28585984
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	31952896,
+							Z	26558464
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	26849280,
+							Z	26497024
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	21037056,
+							Z	24715264
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	13971456,
+							Z	24121344
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	5922816,
+							Z	21049344
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	
+				{
+					Posn
+					{
+						Abs
+						{	X	208734,
+							Z	20511441
+						}
+					},
+					//Vel	145,
+					Action	wpacnoactionno,
+					Range	0
+				}
+			},
+			NumInForm		10,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G3_B,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List COLIER,COLIER,COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER}
+				//Vel	145
+		}	}
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

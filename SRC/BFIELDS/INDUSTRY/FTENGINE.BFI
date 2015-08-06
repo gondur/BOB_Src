@@ -1,0 +1,6 @@
+	BattleField
+	{
+		FileName	FIL_1_FTENGINE=FTENGINE.BF,
+		Title	{},
+		Comment	{}
+	};

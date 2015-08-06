@@ -1,0 +1,63 @@
+[OPTIONS]
+Auto TOC=9
+Compatibility=1.1
+Compiled file=..\..\..\game\ENGLISH\text\bob.chm
+Default topic=html\bob5sfi.htm
+Display compile progress=Yes
+Index file=bob.hhk
+Language=0x809 English (United Kingdom)
+
+
+[FILES]
+html\bob5sfi.htm
+html\bob5bn3.htm
+html\bob135f.htm
+html\bob3oz2.htm
+html\bob2ztx.htm
+html\bob2zcf.htm
+html\bob80c0.htm
+html\bob4soi.htm
+html\bob8lv6.htm
+html\bob6uk2.htm
+html\bob91rm.htm
+html\bob4q0i.htm
+html\bob9wbp.htm
+html\bob8hgz.htm
+html\bob5d5x.htm
+html\bob9gvm.htm
+html\bob96ur.htm
+html\bob12wj.htm
+html\bob059s.htm
+html\bob3m7o.htm
+html\bob2qpe.htm
+html\bob51rn.htm
+html\bob4rar.htm
+html\bob0coe.htm
+html\bob3a0j.htm
+html\bob9orp.htm
+html\bob6uno.htm
+html\bob9noy.htm
+html\bob6rsn.htm
+html\bob7183.htm
+html\bob25d3.htm
+html\bob6bos.htm
+html\bob0ep3.htm
+html\bob5t9h.htm
+html\bob29k5.htm
+html\bob2ixx.htm
+html\bob7o1g.htm
+html\bob0cxf.htm
+html\bob4gf8.htm
+html\bob2q04.htm
+html\bob5e9f.htm
+html\bob4cf9.htm
+html\bob0i7a.htm
+
+[ALIAS]
+hidd_rafdirective=html\bob9orp.htm
+
+[MAP]
+#include bob.h
+
+[TEXT POPUPS]
+bob.h

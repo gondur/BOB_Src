@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RCombo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSPD393.BAT" with contents
+[
+@echo off
+copy ".\RCombo.lic" "\bob\Release\exe"
+]
+Creating command line "c:\temp\RSPD393.BAT"
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "\bob\Release\exe/RCombo.tlb" /mktyplib203 /o "NUL" /win32 "D:\Bob\Src\RCOMBO\RCombo.odl""
+Copying license file...
+D:\BOB\SRC\RCOMBO\RCOMBO.LIC => D:\bob\Release\exe\RCOMBO.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\bob\Release\combo/RCombo.res" /i "\bob\Release\exe" /d "NDEBUG" /d "_AFXDLL" "D:\Bob\Src\RCOMBO\RCombo.rc"" 
+Creating temporary file "c:\temp\RSPD3A2.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\combo/" /Fd"\bob\Release\combo/" /FD /c 
+"D:\Bob\Src\RCOMBO\all.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSPD3A2.TMP" 
+Creating temporary file "c:\temp\RSPD3A3.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/RCombo.pdb" /machine:I386 /def:".\RCombo.def" /out:"\bob\Release\exe/RCombo.ocx" /implib:"\bob\Release\exe/RCombo.lib" 
+\bob\Release\combo\all.obj
+\bob\Release\combo\RCombo.res
+\BOB\release\exe\RListBox.lib
+]
+Creating command line "link.exe @c:\temp\RSPD3A3.TMP"
+Creating temporary file "c:\temp\RSPD3A4.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\RCombo.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\temp\RSPD3A4.BAT"
+Creating Type Library...
+RCombo.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+all.cpp
+Linking...
+LINK : fatal error LNK1181: cannot open input file "\BOB\release\exe\RListBox.lib"
+Error executing link.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+RCombo.ocx - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

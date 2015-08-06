@@ -1,0 +1,5 @@
+REDITBT Directory: ActiveX primative button
+=================
+
+This is a button with an outline and an icon on the RHS.
+It is quite primative and used a lot less than in MiG

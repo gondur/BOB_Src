@@ -1,0 +1,33 @@
+{
+		Angle		Angles,
+		UIDBand		UniqueIDBand,
+		Shape		ShapeNum,
+		Action		BFieldWaypointActions,
+		Side		Nationality,
+		Type		PlaneTypeSelect,
+		Duty		AttackMethod,
+		MoveCode	AutoMoveCodeTypeSelect,
+		Skill		SkillType,
+		Morale		MoraleType,
+		Character	CharacterType,
+		Damage		QuickMissDamageTypes,
+//DeadCode DAW 08Apr96 		Event		BFieldEvents,
+//DEADCODE DAW 22/03/00 		Int		ranges,
+		Int		Velocities,
+		Int		Ranges,
+		Int		QuitGameConditions,		//RDH 09Sep96
+		Int		ViewTarg,		
+		Int		ViewMode,	
+		Int		ViewSpec,
+		Int		ZmRtFlags,
+		Int		ViewPanRate,
+		Int		ViewCutType,
+		Int		DeathType,
+		Int		FileNum,
+		Int		ForceType,
+//DEADCODE JIM 04/03/99 		PaintScheme	PaintSchemes,
+//DEADCODE JIM 04/03/99 		Squadron	SquadNames,
+		Squadron	CallNames,
+		Formation	FormationTypeIndex,		//MS 16Aug96
+		Formation	SquadronTypeIndex		//MS 16Aug96
+}

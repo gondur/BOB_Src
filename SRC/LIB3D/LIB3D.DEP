@@ -1,0 +1,24 @@
+# Microsoft Developer Studio Generated Dependency File, included by Lib3D.mak
+
+.\alloc.c : \
+	".\alloc.h"\
+	
+
+.\l3dguid.cpp : \
+	".\Lib3D.h"\
+	"C:\Program Files\Microsoft Visual Studio\Vc98\Include\Basetsd.h"\
+	
+
+.\Lib3D.cpp : \
+	"..\H\Dosdefs.h"\
+	".\alloc.h"\
+	".\Lib3D.h"\
+	".\Macs.h"\
+	".\polyvert.h"\
+	".\radix.h"\
+	"C:\Program Files\Microsoft Visual Studio\Vc98\Include\Basetsd.h"\
+	
+
+.\radix.c : \
+	".\radix.h"\
+	

@@ -1,0 +1,2470 @@
+#Master file for file equates. The file is brought in from master.res if it
+exists. Master.res is just a list of .fil files and it allows no comments.
+
+Can you make sure that the Groups section has the file names in the format of
+F_~ with no .dir at the end
+
+DAW 25Sep96 if you add a Directory group item - you need to add a file in that
+directory - at the very least the dir.dir file should be named see enteries 50
+/ 52 videos / savegame
+
+
+Directory Bases :- roots.dir
+0	- smallest install
+1	- medium install
+2	- large install
+3	- never installed - CD data / smackers
+
+smackers are now going to be called .avi's
+
+4-15	- in roots.dir. Can be based on 0-3 or be full specifications
+16-255	- must be based on 0-3
+
+
+# ; // can be used as comment blocks after this area
+
+
+File name	list of .dir files										  //RDH 15/11/99
+[Groups]
+F_COMMON	common
+F_GRAFIX	res640
+F_SOUNDS	sounds
+F_BATTLE	battle
+
+
+# num	name of .dir	directory name
+[Directories]
+
+50	common		4	videos
+51	common		4	stills
+52	common		4	savegame
+55	common		11	stdprof
+53	common		11	stdprof
+54	common		4	userprof
+
+70	common		4	meditor
+71	common		4	h
+72	battle		4	usersrc
+
+174	sounds		4	player
+175	sounds		4	plyext
+176	sounds		4	lwplayer
+177	sounds		4	lwplyext
+178	sounds		4	other
+179	sounds		4	othext
+180	sounds		4	lwother
+181	sounds		4	lwothext
+182	sounds		4	ground
+183	sounds		4	ground2
+184	sounds		4	female
+185	sounds		4	tower0
+186	sounds		4	tower1
+187	sounds		4	tower2
+188	sounds		4	lwvoice2
+
+118	sounds		4	musicmed
+119	sounds		4	musiclow
+
+
+//I have reserved blocks 120..129 and 130..139 for the battlefield system!!!
+138	battle		4	bfields	//remaining source files
+139	battle		7	userobj
+137	battle		139	default
+136	battle		138	gengrnd
+135	battle		138	batnode
+
+120	battle		138	rafaf
+121	battle		138	lufaf
+122	battle		138	industry
+123	battle		138	radar
+124	battle		138	convoys
+125	battle		138	nodes
+126	battle		138	spare1
+127	battle		138	spare2
+128	battle		138	spare3
+129	battle		138	spare4
+130	battle		138	prepack
+131	battle		138	userpack
+132	battle		138 	runpack
+133 	battle		138 	prepack
+
+113	common		11	text
+
+140	common		12	landscap
+143 common		4	griddata
+150	common		4	landmaps
+151	common		4	imagemap
+152	common		4	maskmap
+153	common		4	cockpits
+154	common		4	imgmap16
+155	common		4	mskmap16
+156	common		4	cockmask
+157	common		4	cockpt16
+158	common		4	cockpm16
+160	common		4	landmap2
+
+170	common		4	shpbin
+171	common		4	shpbin2
+172	common		4	grpbin
+173	common		4	grpbin2
+
+
+141	common		10	frontmap
+142	common		10	frbigmap
+
+
+200	res640		13	avi
+201	common		4	libcode
+
+101	res640		9	scrn640
+102	res640		9	axart2
+104	res640		9	water2
+106	res640		9	axart
+107	res640		9	dial640
+108	res640		9	dial800
+109	res640		9	dial1024
+110	res640		9	dial1280
+111 res640		9	nosestd
+112 res640		9	noseuser
+
+114	sounds		4	miles
+115	sounds		4	samples
+116	sounds		4	samplehi
+117	common		4	keyboard
+240	common		4	map_16a
+241	common		4	map_16b
+242	common		4	map_16c
+243	common		4	map_16d
+244	common		4	map_32a
+247	common		4	map_64p
+
+[files]
+15
+	dir.dir
+	roots.dir
+	common.dir	FIL_CommonDIR
+	res320.dir	FIL_320resDIR
+	res640.dir	FIL_640resDIR
+	res800.dir	FIL_800resDIR
+	sounds.dir	FIL_soundsDIR
+	battle.dir	FIL_battleDIR
+	
+50	dir.dir		FIL_VIDEOS_START_DIR
+
+51	dir.dir	   FIL_STILLS_START_DIR
+	screen00.lbm	FIL_STILLS_START
+
+52	dir.dir		FIL_SAVEGAMEDIR
+
+55	dir.dir		FIL_STANDARD_PROFILES_DIR_LONG
+
+53	dir.dir		FIL_STANDARD_PROFILES_DIR_SHORT
+	alphastr.prd	FIL_ALPHASTRIKE
+	fbstrike.prd	FIL_FBSTRIKE
+	mbstrike.prd	FIL_MEDBSTRIKE
+	npstrike.prd	FIL_NAPALMSTRIKE
+	crack.prd	FIL_CRACKNBURN
+	cas.prd		FIL_CAS
+	barcap.prd	FIL_BARCAP
+	arconn.prd 	FIL_ARMEDRECONN
+	choke.prd	FIL_CHOKESTRIKE
+	minstrike.prd	FIL_SINGLEFLIGHTSTRIKE
+	caspusan.prd	FIL_CASPUSAN
+	c1m1.prd	FIL_C1M1
+	c1m3.prd	FIL_C1M3
+
+54	dir.dir		FIL_USER_PROFILES_DIR
+
+
+201	dir.dir
+	hard320.bin	LIB_320_COPY
+	hard320d.bin	LIB_320_DEBUG
+	hardvbe1.bin	LIB_VBE_COPY
+	hardvbe2.bin	LIB_VBE_SWAP2
+	hardvbe3.bin	LIB_VBE_SWAP3
+	hardvbed.bin	LIB_VBE_DEBUG
+	hardwin1.bin	LIB_WING_COPY
+	hardwin2.bin	LIB_WING_SWAP
+
+	analmous.bin	FILLIB_ANALOGUE_MOUSE
+	analjoy.bin	FILLIB_ANALOGUE_JOYSTICK
+	analjoy.dll	FILLIB_JOYSTICK_DLL
+	preload.txt	FIL_PRELOAD_LIST
+
+101	
+	dir.dir
+
+
+104	dir.dir		FIL_SIDEARTDIR					
+	xresource.bmp	FIL_MAP_xRESOURCE
+	resourcex.bmp	FIL_MAP_xSABRESQUADRON
+	resourcxe.bmp	FIL_MAP_xMUSTANGSQUADRON
+	resourxce.bmp	FIL_MAP_xTHUNDERJETSQUADRON
+	resouxrce.bmp	FIL_MAP_xSHOOTINGSTARSQUADRON
+	resoxurce.bmp	FIL_MAP_xPILOTDETAILS
+	resxource.bmp	FIL_MAP_xPILOTLOSSES
+	rexsource.bmp	FIL_MAP_xTACTICS_xxxx
+	rxesource.bmp	FIL_MAP_xCLOUD1
+	xresource.bmp	FIL_MAP_xCLOUD2
+	resourcex.bmp	FIL_MAP_xCLOUD3
+	resourcxe.bmp	FIL_MAP_xCLOUD4
+	resourxce.bmp	FIL_MAP_xINTELLIGENCE
+	resouxrce.bmp	FIL_MAP_xDIRECTIVES
+	resoxurce.bmp	FIL_MAP_xCHOKEPOINTS
+	resxource.bmp	FIL_MAP_xTRAFFIC
+	rexsource.bmp	FIL_MAP_xSUPPLY
+	rxesource.bmp	FIL_MAP_xAIRFIELD
+	xresource.bmp	FIL_MAP_xARMY
+	resourcex.bmp	FIL_MAP_xMIGS_xxxx
+	resourcxe.bmp	FIL_MAP_xPROFILESLIBRARY
+	resourxce.bmp	FIL_MAP_xREQUESTS_xxxx
+	resouxrce.bmp	FIL_MAP_xMISSIONFOLDER
+	resoxurce.bmp	FIL_MAP_xPROFILE
+	resxource.bmp	FIL_MAP_xROUTE
+	rexsource.bmp	FIL_MAP_xMIGCAP
+	rxesource.bmp	FIL_MAP_xSTRIKE
+	xresource.bmp	FIL_MAP_xAAA
+	xresource.bmp	FIL_MAP_xAIMPOINTS_xxxx
+	xresource.bmp	FIL_MAP_xPAYLOAD
+	xresource.bmp	FIL_MAP_xMISSIONRESULTS
+	xresource.bmp	FIL_MAP_xPLAYER_LOG
+	xresource.bmp	FIL_MAP_xWAYPOINT_xxxx
+	xresource.bmp	FIL_MAP_x100MISSIONS_xxxx
+	xresource.bmp	FIL_MAP_xOVERVIEW
+	xresource.bmp	FIL_MAP_xWARNING_xxxx
+	xxcontr2.bmp	FIL_xxLOADERART
+	xresource.bmp	FIL_xPHOTOART
+	alloc.bmp		FIL_D_AIRCRAFTALLOC
+ 	squad.bmp		FIL_D_SQUADDETAILS								  //RDH 23/11/99
+ 	gruppe.bmp		FIL_D_GRUPPEDETAILS
+	bases.bmp		FIL_D_GROUPS
+	lufdir.bmp		FIL_D_LWDIRECTIVES
+	rafdir.bmp		FIL_D_RAFDIRECTIVES
+	jagges.bmp		FIL_D_GESCH
+	damage.bmp		FIL_D_DAMAGE
+	airfield.bmp		FIL_D_DOSSIER_AIRFIELD
+	docks.bmp		FIL_D_DOSSIER_DOCKS
+	convoys.bmp		FIL_D_DOSSIER_CONVOYS
+	factory.bmp		FIL_D_DOSSIER_FACTORIES
+	radar.bmp		FIL_D_DOSSIER_RADAR
+	london.bmp		FIL_D_DOSSIER_LONDON
+	lairfld.bmp		FIL_D_LIST_AIRFIELD
+	ldocks.bmp		FIL_D_LIST_DOCKS
+	lconvy.bmp		FIL_D_LIST_CONVOYS
+	lfactory.bmp		FIL_D_LIST_FACTORIES
+	llondon.bmp		FIL_D_LIST_LONDON
+	lradar.bmp		FIL_D_LIST_RADAR
+	hostile.bmp		FIL_D_HOSTILELIST
+	lufmissn.bmp		FIL_D_LWMISSONFOLDER
+	rafmissn.bmp		FIL_D_RAFMISSONFOLDER
+	raflog.bmp		FIL_D_RAFLOGBOOK
+	luflog.bmp		FIL_D_LWLOGBOOK
+	rafcmbt.bmp		FIL_D_RAFCOMBAT
+	lufcmbt.bmp		FIL_D_LWCOMBAT
+	route.bmp		FIL_D_ROUTE
+	waypoint.bmp		FIL_D_WAYPOINT
+	weather.bmp		FIL_D_WEATHER
+	review1.bmp		FIL_D_REVIEWRAFFORCE
+	review2.bmp		FIL_D_REVIEWLWFORCE
+	review3.bmp		FIL_D_REVIEWTARGETDAMAGE
+	raftask1.bmp		FIL_D_RAFTASK_SUMMARY
+	raftask2.bmp		FIL_D_RAFTASK_HURRICANE
+	raftask3.bmp		FIL_D_RAFTASK_SPITFIRE
+	luftask1.bmp		FIL_D_LWTASK_SUMMARY
+	luftask2.bmp		FIL_D_LWTASK_BOMBER
+	luftask3.bmp		FIL_D_LWTASK_ATTACHEDESCORT
+	luftask4.bmp		FIL_D_LWTASK_FREEESCORT
+	luftask5.bmp		FIL_D_LWTASK_RETURNESCORT
+	unit.bmp		FIL_D_UNIT
+	blank.bmp		FIL_D_BLANK
+	blank2.bmp			FIL_D_BLANKNOHEADER
+	squadlst.bmp		FIL_D_SQUADRONLIST
+	tote.bmp		FIL_D_TOTEBOARD
+	logsquad.bmp		FIL_D_SQUADRON_LOGBOOK
+	loggrupn.bmp		FIL_D_GRUPPEN_LOGBOOK
+	clock.bmp		FIL_D_CLOCK
+	gswdrlst.bmp		FIL_D_GESCHWADER_LIST
+	lufalloc.bmp		FIL_D_LUFTWAFFE_ALLOC
+	headon.bmp	FIL_SNAP_HEADON
+	rafpac.bmp	FIL_SNAP_RAFPAC
+	rconvoy.bmp	FIL_SNAP_REDIRECTCONVOYS
+	spitshrt.bmp	FIL_SNAP_SPITFIRESHORTAGEPREDICTED
+	hurishrt.bmp	FIL_SNAP_HURICANESHORTAGEPREDICTED
+	rdfholes.bmp	FIL_SNAP_RDFHOLES
+	winston.bmp	FIL_SNAP_WINSTON
+	royal.bmp	FIL_SNAP_ROYAL
+	cannon.bmp	FIL_SNAP_CANNON
+	rafmsc1.bmp		FIL_SNAP_RAFMSC1
+	rafmsc2.bmp		FIL_SNAP_RAFMSC2
+	rafmsc3.bmp		FIL_SNAP_RAFMSC3
+	rafmsc4.bmp		FIL_SNAP_RAFMSC4
+	rafmsc5.bmp		FIL_SNAP_RAFMSC5
+	rafmsc6.bmp		FIL_SNAP_RAFMSC6
+	rafmsc7.bmp		FIL_SNAP_RAFMSC7
+	rafmsc8.bmp		FIL_SNAP_RAFMSC8
+	rafmsc9.bmp		FIL_SNAP_RAFMSC9
+	Radionet.bmp	FIL_SNAP_RAFRADIONET
+	Radionet.bmp	FIL_SNAP_RAFRADIONETSUCCESS
+	lufpac.bmp		FIL_SNAP_LUFPAC
+	lufmsc1.bmp		FIL_SNAP_LUFMSC1
+	lufmsc2.bmp		FIL_SNAP_LUFMSC2
+	lufmsc3.bmp		FIL_SNAP_LUFMSC3
+	lufmsc4.bmp		FIL_SNAP_LUFMSC4
+	lufmsc5.bmp		FIL_SNAP_LUFMSC5
+	lufmsc6.bmp		FIL_SNAP_LUFMSC6
+	lufmsc7.bmp		FIL_SNAP_LUFMSC7
+	lufmsc8.bmp		FIL_SNAP_LUFMSC8
+	lufmsc9.bmp		FIL_SNAP_LUFMSC9
+	kills.bmp	FIL_SNAP_KILLS	
+	kills.bmp	FIL_SNAP_KILLS2	
+	losses.bmp		FIL_SNAP_LOSSES
+	losses.bmp		FIL_SNAP_LOSSES2
+	Kills1.bmp		FIL_SNAP_KILLS1
+
+
+
+
+
+
+
+
+
+
+
+106	dir.dir		DIR_ICONS_1
+	titleb.bmp     			FIL_TITLEB_BMP
+	xtitleb.bmp     		FIL_xFORTY_BMP
+	txitleb.bmp     		FIL_xFORTY2_BMP
+	buxtton1.bmp			FIL_xMAP_BUTTON1
+	butxton2.bmp			FIL_xMAP_BUTTON2
+	toolside.bmp			FIL_TOOL_VERTICAL
+	tooltop.bmp			FIL_TOOL_HORIZONTAL
+	gripx.bmp			FIL_xMAP_GRIP
+	xb_all1.bmp 	FIL_xICON_B_AIRCRAFT_ON
+	bx_all2.bmp 	FIL_xICON_B_AIRCRAFT_OFF1
+	b_xall3.bmp 	FIL_xICON_B_AIRCRAFT_OFF2
+	b_axll1.bmp 	FIL_xICON_B_AIRFIELD_ON
+	b_alxl2.bmp 	FIL_xICON_B_AIRFIELD_OFF1
+	b_allx3.bmp 	FIL_xICON_B_AIRFIELD_OFF2
+	b_all1x.bmp 	FIL_xICON_B_ARTILLERY_ON
+	xb_all2.bmp 	FIL_xICON_B_ARTILLERY_OFF1
+	bx_all3.bmp 	FIL_xICON_B_ARTILLERY_OFF2
+	b_xall1.bmp FIL_xICON_B_BRIDGE_ON
+	b_axll2.bmp FIL_xICON_B_BRIDGE_OFF1
+	b_alxl3.bmp FIL_xICON_B_BRIDGE_OFF2
+	b_allx1.bmp 	FIL_xICON_B_CIVILIAN_ON
+	b_all2x.bmp 	FIL_xICON_B_CIVILIAN_OFF
+	xb_all3.bmp 	FIL_xICON_B_CIVILIAN_OFF2
+	bx_all1.bmp 	FIL_xICON_B_MARSHALLINGYARD_ON
+	b_xall2.bmp 	FIL_xICON_B_MARSHALLINGYARD_OFF1
+	b_axll3.bmp 	FIL_xICON_B_MARSHALLINGYARD_OFF2
+	b_alxl1.bmp 	FIL_xICON_B_RAILLINK_ON
+	b_allx2.bmp 	FIL_xICON_B_RAILLINK_OFF1
+	b_all3x.bmp 	FIL_xICON_B_RAILLINK_OFF2
+	xb_all1.bmp 	FIL_xICON_B_ROADLINK_ON
+	bx_all2.bmp 	FIL_xICON_B_ROADLINK_OFF1
+	b_xall3.bmp 	FIL_xICON_B_ROADLINK_OFF2
+	b_axll1.bmp FIL_xICON_B_SUPPLY_ON
+	b_alxl2.bmp FIL_xICON_B_SUPPLY_OFF1
+	b_allx3.bmp FIL_xICON_B_SUPPLY_OFF2
+	b_all1x.bmp 	FIL_xICON_B_TANK_ON
+	xb_all2.bmp 	FIL_xICON_B_TANK_OFF1
+	bx_all3.bmp 	FIL_xICON_B_TANK_OFF2
+	b_xall1.bmp 	FIL_xICON_B_TRAIN_ON
+	b_axll2.bmp 	FIL_xICON_B_TRAIN_OFF1
+	b_alxl3.bmp 	FIL_xICON_B_TRAIN_OFF2
+	b_allx1.bmp 	FIL_xICON_B_TROOP_ON
+	b_all2x.bmp 	FIL_xICON_B_TROOP_OFF1
+	xb_all3.bmp 	FIL_xICON_B_TROOP_OFF2
+	bx_all1.bmp 	FIL_xICON_B_TRUCK_ON
+	b_xall2.bmp 	FIL_xICON_B_TRUCK_OFF1
+	b_axll3.bmp 	FIL_xICON_B_TRUCK_OFF2
+	r_alxl1.bmp 	FIL_xICON_R_AIRCRAFT_ON
+	r_allx2.bmp FIL_xICON_R_AIRCRAFT_OFF1
+	r_all3x.bmp 	FIL_xICON_R_AIRCRAFT_OFF2
+	xr_all1.bmp 	FIL_xICON_R_AIRFIELD_ON
+	rx_all2.bmp 	FIL_xICON_R_AIRFIELD_OFF1
+	r_xall3.bmp 	FIL_xICON_R_AIRFIELD_OFF2
+	r_axll1.bmp 	FIL_xICON_R_ARTILLERY_ON
+	r_alxl2.bmp 	FIL_xICON_R_ARTILLERY_OFF1
+	r_allx3.bmp 	FIL_xICON_R_ARTILLERY_OFF2
+	r_all1x.bmp FIL_xICON_R_BRIDGE_ON
+	xr_all2.bmp FIL_xICON_R_BRIDGE_OFF1
+	rx_all3.bmp FIL_xICON_R_BRIDGE_OFF2
+	r_xall1.bmp 	FIL_xICON_R_CIVILIAN_ON
+	r_axll2.bmp 	FIL_xICON_R_CIVILIAN_OFF1
+	r_alxl3.bmp 	FIL_xICON_R_CIVILIAN_OFF2
+	r_allx1.bmp 	FIL_xICON_R_MARSHALLINGYARD_ON
+	r_all2x.bmp 	FIL_xICON_R_MARSHALLINGYARD_OFF1
+	xr_all3.bmp 	FIL_xICON_R_MARSHALLINGYARD_OFF2
+	rx_all1.bmp 	FIL_xICON_R_RAILLINK_ON
+	r_xall2.bmp 	FIL_xICON_R_RAILLINK_OFF1
+	r_axll3.bmp 	FIL_xICON_R_RAILLINK_OFF2
+	r_alxl1.bmp 	FIL_xICON_R_ROADLINK_ON
+	r_allx2.bmp 	FIL_xICON_R_ROADLINK_OFF1
+	r_all3x.bmp 	FIL_xICON_R_ROADLINK_OFF2
+	xr_all1.bmp FIL_xICON_R_SUPPLY_ON
+	rx_all2.bmp FIL_xICON_R_SUPPLY_OFF1
+	r_xall3.bmp FIL_xICON_R_SUPPLY_OFF2
+	r_axll1.bmp 	FIL_xICON_R_TANK_ON
+	r_alxl2.bmp 	FIL_xICON_R_TANK_OFF1
+	r_allx3.bmp 	FIL_xICON_R_TANK_OFF2
+	r_all1x.bmp 	FIL_xICON_R_TRAIN_ON
+	xr_all2.bmp 	FIL_xICON_R_TRAIN_OFF1
+	rx_all3.bmp 	FIL_xICON_R_TRAIN_OFF2
+	r_xall1.bmp 	FIL_xICON_R_TROOP_ON
+	r_axll2.bmp 	FIL_xICON_R_TROOP_OFF1
+	r_alxl3.bmp 	FIL_xICON_R_TROOP_OFF2
+	r_allx1.bmp 	FIL_xICON_R_TRUCK_ON
+	r_all2x.bmp 	FIL_xICON_R_TRUCK_OFF1
+	xr_all3.bmp 	FIL_xICON_R_TRUCK_OFF2
+	rx_all1.bmp 			FIL_xICON_R_ALL_ON
+	r_xall2.bmp 			FIL_xICON_R_ALL_OFF1
+	r_axll3.bmp 			FIL_xICON_R_ALL_OFF2
+	b_alxl1.bmp 			FIL_xICON_B_ALL_ON
+	b_allx2.bmp 			FIL_xICON_B_ALL_OFF1
+	b_all3x.bmp 			FIL_xICON_B_ALL_OFF2
+	xr_all1.bmp 		FIL_xICON_N_WP_NAV
+	rx_all2.bmp 		FIL_xICON_N_WP_NOFF1
+	r_xall3.bmp 		FIL_xICON_N_WP_NOFF2
+	r_axll1.bmp 		FIL_xICON_N_WP_TGT
+	r_alxl2.bmp 		FIL_xICON_N_WP_TOFF1
+	r_allx3.bmp 		FIL_xICON_N_WP_TOFF2
+	i_basexs.bmp			FIL_xICON_BASES
+	i_basesx2.bmp			FIL_xICON_BASOFF1
+	i_bases2x.bmp			FIL_xICON_BASOFF2
+	xi_bases.bmp			FIL_xICON_SQUADRONS
+	ix_bases2.bmp			FIL_xICON_SQUADROOFF1
+	i_xbases2.bmp			FIL_xICON_SQUADROOFF2
+	i_bxases.bmp			FIL_xICON_WEATHER
+	i_baxses2.bmp			FIL_xICON_WEATHOFF1
+	i_basxes2.bmp			FIL_xICON_WEATHOFF2
+	i_basexs.bmp			FIL_xICON_DIS
+	i_basesx2.bmp	
+	i_bases2x.bmp	
+	xi_bases.bmp			FIL_xICON_INTELLIGENCE
+	ix_bases2.bmp	
+	i_xbases2.bmp	
+	i_bxases.bmp			FIL_xICON_SPARESPARE
+	i_baxses2.bmp	
+	i_basxes2.bmp	
+	i_basexs.bmp			FIL_xICON_MISSIONFOLDER
+	i_basesx2.bmp	
+	i_bases2x.bmp	
+	xi_bases.bmp			FIL_xICON_MISSIONRESULTS
+	ix_bases2.bmp	
+	i_xbases2.bmp	
+	i_bxases.bmp			FIL_xICON_PLAYERLOG
+	i_baxses2.bmp	
+	i_basxes2.bmp	
+	i_basexs.bmp			FIL_xICON_OVERVIEW
+	i_basesx2.bmp	
+	i_bases2x.bmp	
+	xtickbox1.bmp			FIL_xICON_TICKBOX1
+	txickbox2.bmp			FIL_xICON_TICKBOX2
+	tixckbox3.bmp			FIL_xICON_TICKBOX3
+	i_bxases.bmp			FIL_xICON_THUMBNAIL
+	i_baxses2.bmp	
+	i_basxes2.bmp	
+	i_basexs.bmp			FIL_xICON_ZOOMIN
+	i_basesx2.bmp	
+	i_bases2x.bmp	
+	xi_bases.bmp			FIL_xICON_ZOOMOUT
+	ix_bases2.bmp	
+	i_xbases2.bmp	
+	i_bxases.bmp			FIL_xICON_FILES_LOADSAVE
+	i_baxses2.bmp	
+	i_basxes2.bmp	
+	i_basexs.bmp			FIL_xICON_COMMS
+	i_basesx2.bmp		  
+	i_bases2x.bmp	
+	xi_bases.bmp			FIL_xICON_SPARE
+	ix_bases2.bmp		  
+	i_xbases2.bmp	
+	i_bxases.bmp			FIL_xICON_FRAG
+	i_baxses2.bmp		  
+	i_basxes2.bmp	
+	i_basexs.bmp			FIL_xICON_TOOLBAR_HIDE
+	i_basesx2.bmp	
+	i_bases2x.bmp	
+	xi_bases.bmp			FIL_xICON_SCREENSIZE
+	ix_bases2.bmp	
+	i_xbases.bmp	
+	i_bxases2.bmp	
+	i_baxses.bmp			FIL_xICON_CLOSE1	
+	i_basxes2.bmp			FIL_xICON_CLOSE2
+	i_gap.xbmp			FIL_xGAP
+	button1x.bmp			FIL_xMAP_DIS_BUTTON
+	xutton2.bmp	
+	bxtton1.bmp	
+	dbxtt1.bmp	
+	dbuxt2.bmp	
+	i_baxes.bmp			FIL_xICON_NEXT_PERIOD
+	i_basxs2.bmp		  
+	i_basex2.bmp	
+	x_all1.bmp FIL_xICON_MAINWP
+	rxall2.bmp FIL_xICON_MAINWP_OFF1
+	r_xll1.bmp FIL_xICON_MAINWP_OFF2
+	r_axl2.bmp 
+	r_alx3.bmp 
+	r_allx.bmp 	FIL_xICON_SUBWP
+	x_all2.bmp 	FIL_xICON_SUBOFF1
+	rxall1.bmp 	FIL_xICON_SUBOFF2
+	r_xll2.bmp 
+	r_axl3.bmp 
+	i_baxes.bmp	FIL_xBUTTON_PILOT
+	i_basxs2.bmp	
+	i_basex.bmp	
+	i_basesx.bmp	
+	x_bases.bmp	
+	scrlhorz.bmp			FIL_HORZ_SCROLLBAR
+	scrlvert.bmp			FIL_VERT_SCROLLBAR
+	pucktop.bmp			FIL_PUCK_TOP
+	puckbot.bmp			FIL_PUCK_BOTTOM
+	puckvert.bmp			FIL_PUCK_MIDDLE_VERT
+	puckleft.bmp			FIL_PUCK_LEFT
+	puckrght.bmp			FIL_PUCK_RIGHT
+	puckhorz.bmp			FIL_PUCK_MIDDLE_HORZ
+	radioup.bmp			FIL_RADIO_BUTTON_UP
+	radiodn.bmp			FIL_RADIO_BUTTON_DOWN
+	radioupd.bmp			FIL_RADIO_BUTTON_UP_DISABLED
+	radiodnd.bmp			FIL_RADIO_BUTTON_DOWN_DISABLED
+	combo.bmp			FIL_COMBO_BUTTON
+	spinup.bmp			FIL_SPIN_UP
+	spindown.bmp			FIL_SPIN_DOWN
+	scrlbutu.bmp			FIL_SCROLLBAR_BUTTON_UP
+	scrlbutd.bmp			FIL_SCROLLBAR_BUTTON_DOWN
+	xarge1.bmp			FIL_xLARGE_BUTTON
+	lxrge2.bmp	
+	laxge1.bmp	
+	larxe3.bmp	
+	largx4.bmp	
+	xed1.bmp 			FIL_xICON_RED_ON
+	rxd2.bmp 			FIL_xICON_RED_OFF1
+	rex2.bmp 			FIL_xICON_RED_OFF2
+	xlue1.bmp 			FIL_xICON_BLUE_ON
+	bxue2.bmp 			FIL_xICON_BLUE_OFF1
+	blxe2.bmp 			FIL_xICON_BLUE_OFF2
+	yelxow1.bmp 			FIL_xICON_YELLOW_ON
+	yellxw2.bmp 			FIL_xICON_YELLOW_OFF1
+	yellox2.bmp 			FIL_xICON_YELLOW_OFF2
+	i_basex.bmp	 			FIL_xICON_F51_0_3
+	i_basesx.bmp		FIL_xICON_F51_1_2
+	x_bases.bmp		FIL_xICON_F51_2_1
+	ixbases2.bmp		FIL_xICON_F51_3_0
+	i_xases.bmp	 			FIL_xICON_F86_0_3
+	i_bxses.bmp				FIL_xICON_F86_1_2
+	i_baxes.bmp				FIL_xICON_F86_2_1
+	i_basxs.bmp				FIL_xICON_F86_3_0
+	arrow.xmp			FIL_xICON_ARROW
+	x_bases.bmp		FIL_xICON_ROUTES
+	ixbases2.bmp		FIL_xICON_ROUTES_OFF1
+	i_xases2.bmp		FIL_xICON_ROUTES_OFF2
+	i_bxses.bmp		FIL_xICON_FRONTLINE
+	i_baxes2.bmp		FIL_xICON_FRONTLINE_OFF1
+	i_basxs2.bmp		FIL_xICON_FRONTLINE_OFF2
+	yellowx.bmp			FIL_xICON_SMALL_FRONTLINE
+	xellow2.bmp			FIL_xICON_SMALL_FRONTLINE_OFF1
+	yxllow2.bmp			FIL_xICON_SMALL_FRONTLINE_OFF2
+	grxen1.bmp			FIL_xICON_GREEN_ON
+	grexn2.bmp			FIL_xICON_GREEN_OFF
+	redtxt.bmp			FIL_xEDIT_BUTTON
+	ccombx.bmp			FIL_xCIRCULAR_COMBO_BUTTON
+	x_bases.bmp			FIL_xICON_FLIGHT1
+	ixbases2.bmp			FIL_xICON_FLIGHT1D
+	i_xases2.bmp			FIL_xICON_FLIGHT2
+	i_bxses.bmp			FIL_xICON_FLIGHT2D
+	i_baxes2.bmp			FIL_xICON_FLIGHT3
+	i_basxs2.bmp			FIL_xICON_FLIGHT3D
+	i_basex.bmp			FIL_xICON_FLIGHT4
+	i_basesx.bmp			FIL_xICON_FLIGHT4D
+	x_bases2.bmp			FIL_xICON_FLIGHT5
+	ixbases.bmp			FIL_xICON_FLIGHT5D
+	i_xases2.bmp			FIL_xICON_FLIGHT6
+	i_bxses2.bmp			FIL_xICON_FLIGHT6D
+	i_baxes.bmp			FIL_xICON_ELEMENT1
+	i_basxs2.bmp			FIL_xICON_ELEMENT1D
+	i_basex2.bmp			FIL_xICON_ELEMENT2
+	x_bases.bmp			FIL_xICON_ELEMENT2D
+
+	
+
+107	dir.dir
+#	title.bmp	FIL_TITLE_640
+	title.bmp	FIL_AUTOPILOT_640_xxxx
+	title.bmp	FIL_3DDISPLAY_640
+	title.bmp	FIL_FLIGHTCONFIG_640
+	title.bmp	FIL_GAMESETUP_640
+	title.bmp	FIL_QUICKMISSION_640
+	title.bmp	FIL_REPLAY_640
+	title.bmp	FIL_SOUNDSETUP_640
+	title.bmp	FIL_VIEWOPTIONS_640
+	title.bmp	FIL_LOCKERROOM_640
+	title.bmp	FIL_CAMPAIGNSELECT_640
+	title.bmp	FIL_READYROOM_640
+	title.bmp	FIL_PAINTSHOP_640
+	title.bmp	FIL_LOADSAVE_640
+
+108	dir.dir
+#	title.bmp	FIL_TITLE_800
+	title.bmp	FIL_AUTOPILOT_800_xxxx
+	title.bmp	FIL_3DDISPLAY_800
+ 	title.bmp	FIL_FLIGHTCONFIG_800
+	title.bmp	FIL_GAMESETUP_800
+	title.bmp	FIL_QUICKMISSION_800
+	title.bmp	FIL_REPLAY_800
+	title.bmp	FIL_SOUNDSETUP_800
+	title.bmp	FIL_VIEWOPTIONS_800
+	title.bmp	FIL_LOCKERROOM_800
+	title.bmp	FIL_CAMPAIGNSELECT_800
+	title.bmp	FIL_READYROOM_800
+	title.bmp	FIL_PAINTSHOP_800
+	title.bmp	FIL_LOADSAVE_800
+
+109	dir.dir
+#	title.bmp	FIL_TITLE_1024
+	title.bmp	FIL_AUTOPILOT_1024_xxxx
+	mc_3d.bmp	FIL_MCPREF_3D
+	mc_3dii.bmp	FIL_MCPREF_3DII
+	mc_2d.bmp	FIL_MCPREF_2D
+	mc_cntrl.bmp	FIL_MCPREF_CONTROLLER
+	mc_sound.bmp	FIL_MCPREF_SOUNDSETUP
+	sm_flt.bmp	FIL_SMPREF_FLIGHTOPTIONS
+	sm_game.bmp	FIL_SMPREF_GAMESETUP
+	sm_miss.bmp	FIL_SMPREF_MISSION
+	sm_views.bmp	FIL_SMPREF_VIEW
+	radio.bmp	FIL_RADIO
+	visitors.bmp	FIL_VISITORS
+	lwfrag.bmp	FIL_LWFRAG
+	raffrag.bmp	FIL_RAFFRAG
+	ready.bmp	FIL_READYROOM
+	locker.bmp	FIL_LOCKERROOM
+	multiply.bmp	FIL_MULTIPLAYER
+	phases.bmp	FIL_PHASESELECT
+	quikshts.bmp	FIL_QUICKSHOTMAIN
+	quikdbrf.bmp	FIL_QUICKSHOTDEBRIEF
+	diary1.bmp	FIL_GRUPPENDIARY
+	diary2.bmp	FIL_SQUADRONDIARY
+	incident.bmp	FIL_INCIDENT
+	replay.bmp	FIL_REPLAY
+	sideslct.bmp	FIL_SIDESELECT
+	gameslct.bmp	FIL_GAMESELECT
+	credits.bmp	FIL_CREDITS
+	loadsave.bmp	FIL_LOADSAVE
+	loading.bmp	FIL_LOADING
+	endday.bmp	FIL_ENDOFDAYREVIEW
+
+110	dir.dir
+	title.bmp	FIL_TITLE_1280
+	title.bmp	FIL_AUTOPILOT_1280_xxxx
+	title.bmp	FIL_3DDISPLAY_1280
+	title.bmp	FIL_FLIGHTCONFIG_1280
+	title.bmp	FIL_GAMESETUP_1280
+	title.bmp	FIL_QUICKMISSION_1280
+	title.bmp	FIL_REPLAY_1280
+	title.bmp	FIL_SOUNDSETUP_1280
+	title.bmp	FIL_VIEWOPTIONS_1280
+	title.bmp	FIL_LOCKERROOM_1280
+	title.bmp	FIL_CAMPAIGNSELECT_1280
+	title.bmp	FIL_READYROOM_1280
+	title.bmp	FIL_PAINTSHOP_1280
+	title.bmp	FIL_LOADSAVE_1280
+
+111 dir.dir			DIR_NOSE_STD
+	nose1.bmp		FIL_NOSE_STD_1
+	nose2.bmp		FIL_NOSE_STD_2
+	nose3.bmp		FIL_NOSE_STD_3
+	nose4.bmp		FIL_NOSE_STD_4
+	nose5.bmp		FIL_NOSE_STD_5
+	nose6.bmp		FIL_NOSE_STD_6
+	nose7.bmp		FIL_NOSE_STD_7
+	nose8.bmp		FIL_NOSE_STD_8
+	nose9.bmp		FIL_NOSE_STD_9
+	nose10.bmp		FIL_NOSE_STD_10
+	nose11.bmp		FIL_NOSE_STD_11
+	nose12.bmp		FIL_NOSE_STD_12
+	nose13.bmp		FIL_NOSE_STD_13
+	nose14.bmp		FIL_NOSE_STD_14
+	nose15.bmp		FIL_NOSE_STD_15
+	nose16.bmp	     	FIL_NOSE_STD_16
+
+112 dir.dir			DIR_NOSE_USER
+	nose1.bmp		FIL_NOSE_USER_1
+	nose2.bmp		FIL_NOSE_USER_2
+	nose3.bmp		FIL_NOSE_USER_3
+	nose4.bmp		FIL_NOSE_USER_4
+	nose5.bmp		FIL_NOSE_USER_5
+	nose6.bmp		FIL_NOSE_USER_6
+	nose7.bmp		FIL_NOSE_USER_7
+	nose8.bmp		FIL_NOSE_USER_8
+	nose9.bmp		FIL_NOSE_USER_9
+	nose10.bmp		FIL_NOSE_USER_10
+	nose11.bmp		FIL_NOSE_USER_11
+	nose12.bmp		FIL_NOSE_USER_12
+	nose13.bmp		FIL_NOSE_USER_13
+	nose14.bmp		FIL_NOSE_USER_14
+	nose15.bmp		FIL_NOSE_USER_15
+	nose16.bmp		FIL_NOSE_USER_16
+
+102	dir.dir		DIR_ICONS_2
+	i_ready1.bmp	FIL_ICON_READYROOM
+	i_ready1.bmp	FIL_ICON_DEAD_ON
+	i_ready1.bmp	FIL_ICON_DEAD_OFF 	  
+	i_ready1.bmp	FIL_ICON_DIRECTIVES
+	i_ready1.bmp	FIL_ICON_REPLAY
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	i_ready1.bmp
+	iconset1.bmp	ICON_SET_1
+	teleback.bmp	FIL_TELEBACK
+	iconsLW1.bmp	ICON_SET_1_LW
+	lwtlside.bmp		FIL_TOOL_VERTICAL_LW
+	lwtltop.bmp			FIL_TOOL_HORIZONTAL_LW
+	siderule.bmp		FIL_TOOL_SIDERULE
+	toprule.bmp		FIL_TOOL_TOPRULE
+
+
+113
+	dir.dir		FIL_TEXTBLOCKSTART
+	boblang.dll	FIL_LANGRESOURCEDLL	
+	bob.chm		FIL_LANGRESOURCEHELP
+	radnames.bin	FIL_RCHAT_NAMEGRID
+	radscrpt.bin	FIL_RCHAT_SCRIPT_TABLE
+	bobtabs.chm	FIL_LANGRESOURCEHELPSEPARATETABS
+	bobpanes.chm	FIL_LANGRESOURCEHELPPANELS
+	boball.chm	FIL_LANGRESOURCEHELPTABSANDPANELS
+	radvoice.bin	FIL_RCHAT_SCRIPT_VOICES
+	title.bmp	FIL_TITLE_1024
+
+114	dir.dir		
+	dig.ini		FIL_DIG_INI
+	mdi.ini		FIL_MDI_INI
+	*.dig		FIL_WILD_DIG
+	*.mdi		FIL_WILD_MDI
+	AILDRVR.LST	FIL_AIL_DRIVER_LIST
+	sample		FIL_GTL_PREFIX
+	adrv688.dig	FIL_FIRST_DIG
+	jammer.dig
+	proaudio.dig
+	rap10.dig
+	sb16.dig
+	sblaster.dig
+	sbpro.dig
+	sndscape.dig
+	ultra.dig	FIL_LAST_DIG
+	adlib.mdi	FIL_FIRST_MDI
+	adlibg.mdi
+	mpu401.mdi
+	mt32mpu.mdi
+	null.mdi
+	opl3.mdi
+	pas.mdi
+	pasplus.mdi
+	pcspkr.mdi
+	sbawe32.mdi
+	sblaster.mdi
+	sbpro1.mdi
+	sbpro2.mdi
+	sndscape.mdi
+	tandy.mdi
+	ultra.mdi	FIL_LAST_MDI
+
+118	dir.dir		FIL_DIR_MUSICMED
+	comba2.xmi	FIL_MUSIC_MAIN
+	combat.xmi	FIL_MUSIC_MAIN_RHYTHM
+	STANDALONE	FIL_MUSIC_STAND_ALONE
+	anxiou2.xmi	FIL_MUSIC_SPOTTED_UNKNOWN
+	anxious.xmi	FIL_MUSIC_SPOTTED_UNKNOWN_RHYTHM
+	apath2.xmi	FIL_MUSIC_SNEAKING_AWAY
+	apath3.xmi	FIL_MUSIC_SNEAKING_AWAY_RHYTHM
+	fla2.xmi	FIL_MUSIC_FLAK
+	flak.xmi	FIL_MUSIC_FLAK_RHYTHM
+	init2.xmi	FIL_MUSIC_INIT
+	init.xmi	FIL_MUSIC_INIT_RHYTHM
+	relie2.xmi	FIL_MUSIC_FRIENDLY_SEEN
+	relief.xmi	FIL_MUSIC_FRIENDLY_SEEN_RHYTHM
+	sadsnst2.xmi	FIL_MUSIC_SAD
+	sadsnstr.xmi	FIL_MUSIC_SAD_RHYTHM
+	spira2.xmi	FIL_MUSIC_SPIRALLING
+	spiral.xmi	FIL_MUSIC_SPIRALLING_RHYTHM
+	HIGHPRI		FIL_MUSIC_PRIORITY
+	objcomp2.xmi	FIL_MUSIC_OBJECTIVE_COMPLETED
+	objcompl.xmi	FIL_MUSIC_OBJECTIVE_COMPLETED_RHYTHM
+	objfail2.xmi	FIL_MUSIC_OBJECTIVE_FAILED
+	objfaild.xmi	FIL_MUSIC_OBJECTIVE_FAILED_RHYTHM
+	objsigh2.xmi	FIL_MUSIC_OBJECTIVE_SIGHTED
+	objsight.xmi	FIL_MUSIC_OBJECTIVE_SIGHTED_RHYTHM
+	parachu2.xmi	FIL_MUSIC_PARACHUTE
+	parachut.xmi	FIL_MUSIC_PARACHUTE_RHYTHM
+	LASTTUNE	FIL_MUSIC_LAST_TUNE
+	wavetab.wvl	FIL_MUSIC_WAVETABLE
+	fieldsnr.sf2	FIL_SFONT_SNARES
+	sama.wav	FIL_MUSIC_FIRST_SAMPLE
+	samb.wav
+	samc.wav
+	samd.wav
+	same.wav
+	samf.wav
+	samg.wav
+	samh.wav
+	sami.wav
+	LASTMSAMP	FIL_MUSIC_LAST_SAMPLE
+
+
+119	dir.dir		FIL_DIR_MUSICLOW
+	comba2.xmi	
+	combat.xmi	
+	STANDALONE	
+	anxiou2.xmi	
+	anxious.xmi	
+	apath2.xmi	
+	apath3.xmi	
+	fla2.xmi	
+	flak.xmi	
+	init2.xmi	
+	init.xmi	
+	relie2.xmi	
+	relief.xmi	
+	sadsnst2.xmi	
+	sadsnstr.xmi	
+	spira2.xmi	
+	spiral.xmi	
+	HIGHPRI	    
+	objcomp2.xmi
+	objcompl.xmi
+	objfail2.xmi
+	objfaild.xmi
+	objsigh2.xmi
+	objsight.xmi
+	parachu2.xmi
+	parachut.xmi
+	LASTTUNE
+	wavetab.wvl
+	fieldsnr.sf2
+	sama.wav
+	samb.wav
+	samc.wav
+	samd.wav
+	same.wav
+	samf.wav
+	samg.wav
+	samh.wav
+	sami.wav
+	LASTMSAMP
+
+
+117	dir.dir
+	keyb3d.bin	FIL_3D_KEYBOARD_TABLE	
+
+
+70	dir.dir
+	set.bmp		FIL_BUTTONSET
+71	dir.dir
+139	dir.dir		DIR_USEROBJ
+	dummy		FIL_USERMISSION1
+	german.plt
+	english.plt
+	american.plt
+	french.plt
+
+132	dir.dir		DIR_RUNTIMEPACKAGES
+	runpack0.bf	FIL_RUNTIMEPACK0
+	runpack1.bf
+	runpack2.bf
+	runpack3.bf
+	runpack4.bf
+	runpack5.bf
+	runpack6.bf
+	runpack7.bf
+	runpack8.bf
+	runpack9.bf
+	runpack10.bf
+	runpack11.bf
+	runpack12.bf
+	runpack13.bf
+	runpack14.bf
+	runpack15.bf
+	runpack16.bf
+	runpack17.bf
+	runpack18.bf
+	runpack19.bf
+	runpack20.bf
+	runpack21.bf
+	runpack22.bf
+	runpack23.bf
+	runpack24.bf
+	runpack25.bf
+	runpack26.bf
+	runpack27.bf
+	runpack28.bf
+	runpack29.bf
+	runpack30.bf
+	runpack31.bf
+	runpack32.bf
+	runpack33.bf
+	runpack34.bf
+	runpack35.bf
+	runpack36.bf
+	runpack37.bf
+	runpack38.bf
+	runpack39.bf
+	runpack40.bf
+	runpack41.bf
+	runpack42.bf
+	runpack43.bf
+	runpack44.bf
+	runpack45.bf
+	runpack46.bf
+	runpack47.bf
+	runpack48.bf
+	runpack49.bf
+	runpack50.bf
+	runpack51.bf
+	runpack52.bf
+	runpack53.bf
+	runpack54.bf
+	runpack55.bf
+	runpack56.bf
+	runpack57.bf
+	runpack58.bf
+	runpack59.bf
+	runpack60.bf
+	runpack61.bf
+	runpack62.bf
+	runpack63.bf
+	runpack64.bf
+	runpack65.bf
+	runpack66.bf
+	runpack67.bf
+	runpack68.bf
+	runpack69.bf
+	runpack70.bf
+	runpack71.bf
+	runpack72.bf
+	runpack73.bf
+	runpack74.bf
+	runpack75.bf
+	runpack76.bf
+	runpack77.bf
+	runpack78.bf
+	runpack79.bf
+	runpack80.bf
+	runpack81.bf
+	runpack82.bf
+	runpack83.bf
+	runpack84.bf
+	runpack85.bf
+	runpack86.bf
+	runpack87.bf
+	runpack88.bf
+	runpack89.bf
+	runpack90.bf
+	runpack91.bf
+	runpack92.bf
+	runpack93.bf
+	runpack94.bf
+	runpack95.bf
+	runpack96.bf
+	runpack97.bf
+	runpack98.bf
+	runpack99.bf
+	runpack100.bf
+	runpack101.bf
+	runpack102.bf
+	runpack103.bf
+	runpack104.bf
+	runpack105.bf
+	runpack106.bf
+	runpack107.bf
+	runpack108.bf
+	runpack109.bf
+	runpack110.bf
+	runpack111.bf
+	runpack112.bf
+	runpack113.bf
+	runpack114.bf
+	runpack115.bf
+	runpack116.bf
+	runpack117.bf
+	runpack118.bf
+	runpack119.bf
+	runpack120.bf
+	runpack121.bf
+	runpack122.bf
+	runpack123.bf
+	runpack124.bf
+	runpack125.bf
+	runpack126.bf
+	runpack127.bf
+
+200	dir.dir
+	INTRO.avi		FIL_VID_INTRO
+	NOVICE.avi		FIL_VID_NOVICE	
+//DeadCode MS 13Jul00 	TRAINING.avi		FIL_VID_TRAINING
+	TRAINING.avi		FIL_VID_FAMILIARISATION
+	DOGFIGHT.avi		FIL_VID_DOGFIGHT
+	DIVEBOMB.avi		FIL_VID_DIVEBOMB
+	INTERCPT.avi		FIL_VID_INTERCEPT
+	HISTORY.avi		FIL_VID_HISTORY
+	monument.avi		FIL_VID_MONUMENTSURVIVES
+	monument.avi		FIL_VID_MONUMENTDESTROYED
+	lion1wk.avi		FIL_VID_BARGESBUILDUP
+	london.avi		FIL_VID_LUFTWAFFEBOMBLONDON
+	berlin.avi		FIL_VID_RAFBOMBBERLIN
+	rafkills.avi		FIL_VID_RAFRECORDKILLS
+	thousand.avi		FIL_VID_THOUSANDBOMBER
+	phase1.avi		FIL_VID_PHASE1BEGINS
+	phase2.avi		FIL_VID_PHASE2BEGINS
+	phase3.avi		FIL_VID_PHASE3BEGINS
+	phase4.avi		FIL_VID_PHASE4BEGINS
+	close.avi		FIL_VID_CLOSEESCORTTACTIC
+	big.avi			FIL_VID_BIGESCORT
+	shipping.avi		FIL_VID_CRITICALSHIPPINGLOSS
+	shipping.avi		FIL_VID_CRITICALSHIPPINGLOSS2
+	shipping.avi		FIL_VID_SHIPPINGLOSS_SACK
+	targets.avi		FIL_VID_CRITICALTARGETS
+	pilots.avi		FIL_VID_PILOTSHORTAGE
+	factory.avi		FIL_VID_ACFACTORYOUTGOOD
+	Factory.avi		FIL_VID_ACFACTORYOUTBAD
+	pilots.avi		FIL_VID_PILOTSHORTAGEPREDICTED
+	category.avi		FIL_VID_FIGHTERCOMMANDEXHAUSTED
+	category.avi		FIL_VID_FIGHTERCOMMANDNEARLYEXHAUSTED
+	category.avi		FIL_VID_FIGHTERCOMMANDUNFIT
+	lufkills.avi		FIL_VID_LWRECORDKILLS
+	rafkills.avi		FIL_VID_RECORDLOSSES
+	bigwing.avi		FIL_VID_BIGWINGUSED
+	lion2wk.avi		FIL_VID_SEALION
+	lion1wk.avi		FIL_VID_SEALIONDOUBTS
+	lion1wk.avi		FIL_VID_SEALIONONCOURSE
+	lufwin.avi		FIL_VID_LUFWIN1
+	lufwin.avi		FIL_VID_LUFWIN2
+	lufwin.avi		FIL_VID_LUFWIN3
+	lufwin.avi		FIL_VID_LUFWIN4
+	lion1wk.avi		FIL_VID_SEALIONPOSTPONED
+	rafwin.avi		FIL_VID_SEALIONCANCELLED
+	category.avi		FIL_VID_RAFDECIMATED
+	phase2.avi		FIL_VID_LWPHASE2BEGINS
+	phase3.avi		FIL_VID_LWPHASE3BEGINS
+	phase4.avi		FIL_VID_LWPHASE4BEGINS
+	rafwin.avi		FIL_VID_RAFWIN 
+
+
+130	dir.dir		//dummy bfields directory
+131	dir.dir		//dummy bfields directory
+132	dir.dir		//dummy bfields directory
+
+
+240	dir.dir  	DIR_map_16a
+	MAP_1111.bmp	MAP_1111
+	MAP_1131.bmp	MAP_1131
+	MAP_1151.bmp	MAP_1151
+	MAP_1171.bmp	MAP_1171
+	MAP_2111.bmp	MAP_2111
+	MAP_2131.bmp	MAP_2131
+	MAP_2151.bmp	MAP_2151
+	MAP_2171.bmp	MAP_2171
+	MAP_3111.bmp	MAP_3111
+	MAP_3131.bmp	MAP_3131
+	MAP_3151.bmp	MAP_3151
+	MAP_3171.bmp	MAP_3171
+	MAP_4111.bmp	MAP_4111
+	MAP_4131.bmp	MAP_4131
+	MAP_4151.bmp	MAP_4151
+	MAP_4171.bmp	MAP_4171
+	MAP_5111.bmp	MAP_5111
+	MAP_5131.bmp	MAP_5131
+	MAP_5151.bmp	MAP_5151
+	MAP_5171.bmp	MAP_5171
+	MAP_6111.bmp	MAP_6111
+	MAP_6131.bmp	MAP_6131
+	MAP_6151.bmp	MAP_6151
+	MAP_6171.bmp	MAP_6171
+	MAP_7111.bmp	MAP_7111
+	MAP_7131.bmp	MAP_7131
+	MAP_7151.bmp	MAP_7151
+	MAP_7171.bmp	MAP_7171
+	MAP_8111.bmp	MAP_8111
+	MAP_8131.bmp	MAP_8131
+	MAP_8151.bmp	MAP_8151
+
+	MAP_1113.bmp	MAP_1113
+	MAP_1133.bmp	MAP_1133
+	MAP_1153.bmp	MAP_1153
+	MAP_1173.bmp	MAP_1173
+	MAP_2113.bmp	MAP_2113
+	MAP_2133.bmp	MAP_2133
+	MAP_2153.bmp	MAP_2153
+	MAP_2173.bmp	MAP_2173
+	MAP_3113.bmp	MAP_3113
+	MAP_3133.bmp	MAP_3133
+	MAP_3153.bmp	MAP_3153
+	MAP_3173.bmp	MAP_3173
+	MAP_4113.bmp	MAP_4113
+	MAP_4133.bmp	MAP_4133
+	MAP_4153.bmp	MAP_4153
+	MAP_4173.bmp	MAP_4173
+	MAP_5113.bmp	MAP_5113
+	MAP_5133.bmp	MAP_5133
+	MAP_5153.bmp	MAP_5153
+	MAP_5173.bmp	MAP_5173
+	MAP_6113.bmp	MAP_6113
+	MAP_6133.bmp	MAP_6133
+	MAP_6153.bmp	MAP_6153
+	MAP_6173.bmp	MAP_6173
+	MAP_7113.bmp	MAP_7113
+	MAP_7133.bmp	MAP_7133
+	MAP_7153.bmp	MAP_7153
+	MAP_7173.bmp	MAP_7173
+	MAP_8113.bmp	MAP_8113
+	MAP_8133.bmp	MAP_8133
+	MAP_8153.bmp	MAP_8153
+
+	MAP_1115.bmp	MAP_1115
+	MAP_1135.bmp	MAP_1135
+	MAP_1155.bmp	MAP_1155
+	MAP_1175.bmp	MAP_1175
+	MAP_2115.bmp	MAP_2115
+	MAP_2135.bmp	MAP_2135
+	MAP_2155.bmp	MAP_2155
+	MAP_2175.bmp	MAP_2175
+	MAP_3115.bmp	MAP_3115
+	MAP_3135.bmp	MAP_3135
+	MAP_3155.bmp	MAP_3155
+	MAP_3175.bmp	MAP_3175
+	MAP_4115.bmp	MAP_4115
+	MAP_4135.bmp	MAP_4135
+	MAP_4155.bmp	MAP_4155
+	MAP_4175.bmp	MAP_4175
+	MAP_5115.bmp	MAP_5115
+	MAP_5135.bmp	MAP_5135
+	MAP_5155.bmp	MAP_5155
+	MAP_5175.bmp	MAP_5175
+	MAP_6115.bmp	MAP_6115
+	MAP_6135.bmp	MAP_6135
+	MAP_6155.bmp	MAP_6155
+	MAP_6175.bmp	MAP_6175
+	MAP_7115.bmp	MAP_7115
+	MAP_7135.bmp	MAP_7135
+	MAP_7155.bmp	MAP_7155
+	MAP_7175.bmp	MAP_7175
+	MAP_8115.bmp	MAP_8115
+	MAP_8135.bmp	MAP_8135
+	MAP_8155.bmp	MAP_8155
+
+	MAP_1117.bmp	MAP_1117
+	MAP_1137.bmp	MAP_1137
+	MAP_1157.bmp	MAP_1157
+	MAP_1177.bmp	MAP_1177
+	MAP_2117.bmp	MAP_2117
+	MAP_2137.bmp	MAP_2137
+	MAP_2157.bmp	MAP_2157
+	MAP_2177.bmp	MAP_2177
+	MAP_3117.bmp	MAP_3117
+	MAP_3137.bmp	MAP_3137
+	MAP_3157.bmp	MAP_3157
+	MAP_3177.bmp	MAP_3177
+	MAP_4117.bmp	MAP_4117
+	MAP_4137.bmp	MAP_4137
+	MAP_4157.bmp	MAP_4157
+	MAP_4177.bmp	MAP_4177
+	MAP_5117.bmp	MAP_5117
+	MAP_5137.bmp	MAP_5137
+	MAP_5157.bmp	MAP_5157
+	MAP_5177.bmp	MAP_5177
+	MAP_6117.bmp	MAP_6117
+	MAP_6137.bmp	MAP_6137
+	MAP_6157.bmp	MAP_6157
+	MAP_6177.bmp	MAP_6177
+	MAP_7117.bmp	MAP_7117
+	MAP_7137.bmp	MAP_7137
+	MAP_7157.bmp	MAP_7157
+	MAP_7177.bmp	MAP_7177
+	MAP_8117.bmp	MAP_8117
+	MAP_8137.bmp	MAP_8137
+	MAP_8157.bmp	MAP_8157
+
+	MAP_1211.bmp	MAP_1211
+	MAP_1231.bmp	MAP_1231
+	MAP_1251.bmp	MAP_1251
+	MAP_1271.bmp	MAP_1271
+	MAP_2211.bmp	MAP_2211
+	MAP_2231.bmp	MAP_2231
+	MAP_2251.bmp	MAP_2251
+	MAP_2271.bmp	MAP_2271
+	MAP_3211.bmp	MAP_3211
+	MAP_3231.bmp	MAP_3231
+	MAP_3251.bmp	MAP_3251
+	MAP_3271.bmp	MAP_3271
+	MAP_4211.bmp	MAP_4211
+	MAP_4231.bmp	MAP_4231
+	MAP_4251.bmp	MAP_4251
+	MAP_4271.bmp	MAP_4271
+	MAP_5211.bmp	MAP_5211
+	MAP_5231.bmp	MAP_5231
+	MAP_5251.bmp	MAP_5251
+	MAP_5271.bmp	MAP_5271
+	MAP_6211.bmp	MAP_6211
+	MAP_6231.bmp	MAP_6231
+	MAP_6251.bmp	MAP_6251
+	MAP_6271.bmp	MAP_6271
+	MAP_7211.bmp	MAP_7211
+	MAP_7231.bmp	MAP_7231
+	MAP_7251.bmp	MAP_7251
+	MAP_7271.bmp	MAP_7271
+	MAP_8211.bmp	MAP_8211
+	MAP_8231.bmp	MAP_8231
+	MAP_8251.bmp	MAP_8251
+
+	MAP_1213.bmp	MAP_1213
+	MAP_1233.bmp	MAP_1233
+	MAP_1253.bmp	MAP_1253
+	MAP_1273.bmp	MAP_1273
+	MAP_2213.bmp	MAP_2213
+	MAP_2233.bmp	MAP_2233
+	MAP_2253.bmp	MAP_2253
+	MAP_2273.bmp	MAP_2273
+	MAP_3213.bmp	MAP_3213
+	MAP_3233.bmp	MAP_3233
+	MAP_3253.bmp	MAP_3253
+	MAP_3273.bmp	MAP_3273
+	MAP_4213.bmp	MAP_4213
+	MAP_4233.bmp	MAP_4233
+	MAP_4253.bmp	MAP_4253
+	MAP_4273.bmp	MAP_4273
+	MAP_5213.bmp	MAP_5213
+	MAP_5233.bmp	MAP_5233
+	MAP_5253.bmp	MAP_5253
+	MAP_5273.bmp	MAP_5273
+	MAP_6213.bmp	MAP_6213
+	MAP_6233.bmp	MAP_6233
+	MAP_6253.bmp	MAP_6253
+	MAP_6273.bmp	MAP_6273
+	MAP_7213.bmp	MAP_7213
+	MAP_7233.bmp	MAP_7233
+	MAP_7253.bmp	MAP_7253
+	MAP_7273.bmp	MAP_7273
+	MAP_8213.bmp	MAP_8213
+	MAP_8233.bmp	MAP_8233
+	MAP_8253.bmp	MAP_8253
+
+	MAP_1215.bmp	MAP_1215
+	MAP_1235.bmp	MAP_1235
+	MAP_1255.bmp	MAP_1255
+	MAP_1275.bmp	MAP_1275
+	MAP_2215.bmp	MAP_2215
+	MAP_2235.bmp	MAP_2235
+	MAP_2255.bmp	MAP_2255
+	MAP_2275.bmp	MAP_2275
+	MAP_3215.bmp	MAP_3215
+	MAP_3235.bmp	MAP_3235
+	MAP_3255.bmp	MAP_3255
+	MAP_3275.bmp	MAP_3275
+	MAP_4215.bmp	MAP_4215
+	MAP_4235.bmp	MAP_4235
+	MAP_4255.bmp	MAP_4255
+	MAP_4275.bmp	MAP_4275
+	MAP_5215.bmp	MAP_5215
+	MAP_5235.bmp	MAP_5235
+	MAP_5255.bmp	MAP_5255
+	MAP_5275.bmp	MAP_5275
+	MAP_6215.bmp	MAP_6215
+	MAP_6235.bmp	MAP_6235
+	MAP_6255.bmp	MAP_6255
+	MAP_6275.bmp	MAP_6275
+	MAP_7215.bmp	MAP_7215
+	MAP_7235.bmp	MAP_7235
+	MAP_7255.bmp	MAP_7255
+	MAP_7275.bmp	MAP_7275
+	MAP_8215.bmp	MAP_8215
+	MAP_8235.bmp	MAP_8235
+	MAP_8255.bmp	MAP_8255
+
+	MAP_1217.bmp	MAP_1217
+	MAP_1237.bmp	MAP_1237
+	MAP_1257.bmp	MAP_1257
+	MAP_1277.bmp	MAP_1277
+	MAP_2217.bmp	MAP_2217
+	MAP_2237.bmp	MAP_2237
+	MAP_2257.bmp	MAP_2257
+	MAP_2277.bmp	MAP_2277
+	MAP_3217.bmp	MAP_3217
+	MAP_3237.bmp	MAP_3237
+	MAP_3257.bmp	MAP_3257
+	MAP_3277.bmp	MAP_3277
+	MAP_4217.bmp	MAP_4217
+	MAP_4237.bmp	MAP_4237
+	MAP_4257.bmp	MAP_4257
+	MAP_4277.bmp	MAP_4277
+	MAP_5217.bmp	MAP_5217
+	MAP_5237.bmp	MAP_5237
+	MAP_5257.bmp	MAP_5257
+	MAP_5277.bmp	MAP_5277
+	MAP_6217.bmp	MAP_6217
+	MAP_6237.bmp	MAP_6237
+	MAP_6257.bmp	MAP_6257
+	MAP_6277.bmp	MAP_6277
+	MAP_7217.bmp	MAP_7217
+	MAP_7237.bmp	MAP_7237
+	MAP_7257.bmp	MAP_7257
+	MAP_7277.bmp	MAP_7277
+	MAP_8217.bmp	MAP_8217
+	MAP_8237.bmp	MAP_8237
+	MAP_8257.bmp	MAP_8257
+
+
+241	dir.dir 	DIR_map_16b
+	MAP_1311.bmp	MAP_1311
+	MAP_1331.bmp	MAP_1331
+	MAP_1351.bmp	MAP_1351
+	MAP_1371.bmp	MAP_1371
+	MAP_2311.bmp	MAP_2311
+	MAP_2331.bmp	MAP_2331
+	MAP_2351.bmp	MAP_2351
+	MAP_2371.bmp	MAP_2371
+	MAP_3311.bmp	MAP_3311
+	MAP_3331.bmp	MAP_3331
+	MAP_3351.bmp	MAP_3351
+	MAP_3371.bmp	MAP_3371
+	MAP_4311.bmp	MAP_4311
+	MAP_4331.bmp	MAP_4331
+	MAP_4351.bmp	MAP_4351
+	MAP_4371.bmp	MAP_4371
+	MAP_5311.bmp	MAP_5311
+	MAP_5331.bmp	MAP_5331
+	MAP_5351.bmp	MAP_5351
+	MAP_5371.bmp	MAP_5371
+	MAP_6311.bmp	MAP_6311
+	MAP_6331.bmp	MAP_6331
+	MAP_6351.bmp	MAP_6351
+	MAP_6371.bmp	MAP_6371
+	MAP_7311.bmp	MAP_7311
+	MAP_7331.bmp	MAP_7331
+	MAP_7351.bmp	MAP_7351
+	MAP_7371.bmp	MAP_7371
+	MAP_8311.bmp	MAP_8311
+	MAP_8331.bmp	MAP_8331
+	MAP_8351.bmp	MAP_8351
+
+	MAP_1313.bmp	MAP_1313
+	MAP_1333.bmp	MAP_1333
+	MAP_1353.bmp	MAP_1353
+	MAP_1373.bmp	MAP_1373
+	MAP_2313.bmp	MAP_2313
+	MAP_2333.bmp	MAP_2333
+	MAP_2353.bmp	MAP_2353
+	MAP_2373.bmp	MAP_2373
+	MAP_3313.bmp	MAP_3313
+	MAP_3333.bmp	MAP_3333
+	MAP_3353.bmp	MAP_3353
+	MAP_3373.bmp	MAP_3373
+	MAP_4313.bmp	MAP_4313
+	MAP_4333.bmp	MAP_4333
+	MAP_4353.bmp	MAP_4353
+	MAP_4373.bmp	MAP_4373
+	MAP_5313.bmp	MAP_5313
+	MAP_5333.bmp	MAP_5333
+	MAP_5353.bmp	MAP_5353
+	MAP_5373.bmp	MAP_5373
+	MAP_6313.bmp	MAP_6313
+	MAP_6333.bmp	MAP_6333
+	MAP_6353.bmp	MAP_6353
+	MAP_6373.bmp	MAP_6373
+	MAP_7313.bmp	MAP_7313
+	MAP_7333.bmp	MAP_7333
+	MAP_7353.bmp	MAP_7353
+	MAP_7373.bmp	MAP_7373
+	MAP_8313.bmp	MAP_8313
+	MAP_8333.bmp	MAP_8333
+	MAP_8353.bmp	MAP_8353
+
+	MAP_1315.bmp	MAP_1315
+	MAP_1335.bmp	MAP_1335
+	MAP_1355.bmp	MAP_1355
+	MAP_1375.bmp	MAP_1375
+	MAP_2315.bmp	MAP_2315
+	MAP_2335.bmp	MAP_2335
+	MAP_2355.bmp	MAP_2355
+	MAP_2375.bmp	MAP_2375
+	MAP_3315.bmp	MAP_3315
+	MAP_3335.bmp	MAP_3335
+	MAP_3355.bmp	MAP_3355
+	MAP_3375.bmp	MAP_3375
+	MAP_4315.bmp	MAP_4315
+	MAP_4335.bmp	MAP_4335
+	MAP_4355.bmp	MAP_4355
+	MAP_4375.bmp	MAP_4375
+	MAP_5315.bmp	MAP_5315
+	MAP_5335.bmp	MAP_5335
+	MAP_5355.bmp	MAP_5355
+	MAP_5375.bmp	MAP_5375
+	MAP_6315.bmp	MAP_6315
+	MAP_6335.bmp	MAP_6335
+	MAP_6355.bmp	MAP_6355
+	MAP_6375.bmp	MAP_6375
+	MAP_7315.bmp	MAP_7315
+	MAP_7335.bmp	MAP_7335
+	MAP_7355.bmp	MAP_7355
+	MAP_7375.bmp	MAP_7375
+	MAP_8315.bmp	MAP_8315
+	MAP_8335.bmp	MAP_8335
+	MAP_8355.bmp	MAP_8355
+
+	MAP_1317.bmp	MAP_1317
+	MAP_1337.bmp	MAP_1337
+	MAP_1357.bmp	MAP_1357
+	MAP_1377.bmp	MAP_1377
+	MAP_2317.bmp	MAP_2317
+	MAP_2337.bmp	MAP_2337
+	MAP_2357.bmp	MAP_2357
+	MAP_2377.bmp	MAP_2377
+	MAP_3317.bmp	MAP_3317
+	MAP_3337.bmp	MAP_3337
+	MAP_3357.bmp	MAP_3357
+	MAP_3377.bmp	MAP_3377
+	MAP_4317.bmp	MAP_4317
+	MAP_4337.bmp	MAP_4337
+	MAP_4357.bmp	MAP_4357
+	MAP_4377.bmp	MAP_4377
+	MAP_5317.bmp	MAP_5317
+	MAP_5337.bmp	MAP_5337
+	MAP_5357.bmp	MAP_5357
+	MAP_5377.bmp	MAP_5377
+	MAP_6317.bmp	MAP_6317
+	MAP_6337.bmp	MAP_6337
+	MAP_6357.bmp	MAP_6357
+	MAP_6377.bmp	MAP_6377
+	MAP_7317.bmp	MAP_7317
+	MAP_7337.bmp	MAP_7337
+	MAP_7357.bmp	MAP_7357
+	MAP_7377.bmp	MAP_7377
+	MAP_8317.bmp	MAP_8317
+	MAP_8337.bmp	MAP_8337
+	MAP_8357.bmp	MAP_8357
+
+	MAP_1411.bmp	MAP_1411
+	MAP_1431.bmp	MAP_1431
+	MAP_1451.bmp	MAP_1451
+	MAP_1471.bmp	MAP_1471
+	MAP_2411.bmp	MAP_2411
+	MAP_2431.bmp	MAP_2431
+	MAP_2451.bmp	MAP_2451
+	MAP_2471.bmp	MAP_2471
+	MAP_3411.bmp	MAP_3411
+	MAP_3431.bmp	MAP_3431
+	MAP_3451.bmp	MAP_3451
+	MAP_3471.bmp	MAP_3471
+	MAP_4411.bmp	MAP_4411
+	MAP_4431.bmp	MAP_4431
+	MAP_4451.bmp	MAP_4451
+	MAP_4471.bmp	MAP_4471
+	MAP_5411.bmp	MAP_5411
+	MAP_5431.bmp	MAP_5431
+	MAP_5451.bmp	MAP_5451
+	MAP_5471.bmp	MAP_5471
+	MAP_6411.bmp	MAP_6411
+	MAP_6431.bmp	MAP_6431
+	MAP_6451.bmp	MAP_6451
+	MAP_6471.bmp	MAP_6471
+	MAP_7411.bmp	MAP_7411
+	MAP_7431.bmp	MAP_7431
+	MAP_7451.bmp	MAP_7451
+	MAP_7471.bmp	MAP_7471
+	MAP_8411.bmp	MAP_8411
+	MAP_8431.bmp	MAP_8431
+	MAP_8451.bmp	MAP_8451
+
+	MAP_1413.bmp	MAP_1413
+	MAP_1433.bmp	MAP_1433
+	MAP_1453.bmp	MAP_1453
+	MAP_1473.bmp	MAP_1473
+	MAP_2413.bmp	MAP_2413
+	MAP_2433.bmp	MAP_2433
+	MAP_2453.bmp	MAP_2453
+	MAP_2473.bmp	MAP_2473
+	MAP_3413.bmp	MAP_3413
+	MAP_3433.bmp	MAP_3433
+	MAP_3453.bmp	MAP_3453
+	MAP_3473.bmp	MAP_3473
+	MAP_4413.bmp	MAP_4413
+	MAP_4433.bmp	MAP_4433
+	MAP_4453.bmp	MAP_4453
+	MAP_4473.bmp	MAP_4473
+	MAP_5413.bmp	MAP_5413
+	MAP_5433.bmp	MAP_5433
+	MAP_5453.bmp	MAP_5453
+	MAP_5473.bmp	MAP_5473
+	MAP_6413.bmp	MAP_6413
+	MAP_6433.bmp	MAP_6433
+	MAP_6453.bmp	MAP_6453
+	MAP_6473.bmp	MAP_6473
+	MAP_7413.bmp	MAP_7413
+	MAP_7433.bmp	MAP_7433
+	MAP_7453.bmp	MAP_7453
+	MAP_7473.bmp	MAP_7473
+	MAP_8413.bmp	MAP_8413
+	MAP_8433.bmp	MAP_8433
+	MAP_8453.bmp	MAP_8453
+
+	MAP_1415.bmp	MAP_1415
+	MAP_1435.bmp	MAP_1435
+	MAP_1455.bmp	MAP_1455
+	MAP_1475.bmp	MAP_1475
+	MAP_2415.bmp	MAP_2415
+	MAP_2435.bmp	MAP_2435
+	MAP_2455.bmp	MAP_2455
+	MAP_2475.bmp	MAP_2475
+	MAP_3415.bmp	MAP_3415
+	MAP_3435.bmp	MAP_3435
+	MAP_3455.bmp	MAP_3455
+	MAP_3475.bmp	MAP_3475
+	MAP_4415.bmp	MAP_4415
+	MAP_4435.bmp	MAP_4435
+	MAP_4455.bmp	MAP_4455
+	MAP_4475.bmp	MAP_4475
+	MAP_5415.bmp	MAP_5415
+	MAP_5435.bmp	MAP_5435
+	MAP_5455.bmp	MAP_5455
+	MAP_5475.bmp	MAP_5475
+	MAP_6415.bmp	MAP_6415
+	MAP_6435.bmp	MAP_6435
+	MAP_6455.bmp	MAP_6455
+	MAP_6475.bmp	MAP_6475
+	MAP_7415.bmp	MAP_7415
+	MAP_7435.bmp	MAP_7435
+	MAP_7455.bmp	MAP_7455
+	MAP_7475.bmp	MAP_7475
+	MAP_8415.bmp	MAP_8415
+	MAP_8435.bmp	MAP_8435
+	MAP_8455.bmp	MAP_8455
+
+	MAP_1417.bmp	MAP_1417
+	MAP_1437.bmp	MAP_1437
+	MAP_1457.bmp	MAP_1457
+	MAP_1477.bmp	MAP_1477
+	MAP_2417.bmp	MAP_2417
+	MAP_2437.bmp	MAP_2437
+	MAP_2457.bmp	MAP_2457
+	MAP_2477.bmp	MAP_2477
+	MAP_3417.bmp	MAP_3417
+	MAP_3437.bmp	MAP_3437
+	MAP_3457.bmp	MAP_3457
+	MAP_3477.bmp	MAP_3477
+	MAP_4417.bmp	MAP_4417
+	MAP_4437.bmp	MAP_4437
+	MAP_4457.bmp	MAP_4457
+	MAP_4477.bmp	MAP_4477
+	MAP_5417.bmp	MAP_5417
+	MAP_5437.bmp	MAP_5437
+	MAP_5457.bmp	MAP_5457
+	MAP_5477.bmp	MAP_5477
+	MAP_6417.bmp	MAP_6417
+	MAP_6437.bmp	MAP_6437
+	MAP_6457.bmp	MAP_6457
+	MAP_6477.bmp	MAP_6477
+	MAP_7417.bmp	MAP_7417
+	MAP_7437.bmp	MAP_7437
+	MAP_7457.bmp	MAP_7457
+	MAP_7477.bmp	MAP_7477
+	MAP_8417.bmp	MAP_8417
+	MAP_8437.bmp	MAP_8437
+	MAP_8457.bmp	MAP_8457
+
+242	dir.dir 	DIR_map_16c
+	MAP_1511.bmp	MAP_1511
+	MAP_1531.bmp	MAP_1531
+	MAP_1551.bmp	MAP_1551
+	MAP_1571.bmp	MAP_1571
+	MAP_2511.bmp	MAP_2511
+	MAP_2531.bmp	MAP_2531
+	MAP_2551.bmp	MAP_2551
+	MAP_2571.bmp	MAP_2571
+	MAP_3511.bmp	MAP_3511
+	MAP_3531.bmp	MAP_3531
+	MAP_3551.bmp	MAP_3551
+	MAP_3571.bmp	MAP_3571
+	MAP_4511.bmp	MAP_4511
+	MAP_4531.bmp	MAP_4531
+	MAP_4551.bmp	MAP_4551
+	MAP_4571.bmp	MAP_4571
+	MAP_5511.bmp	MAP_5511
+	MAP_5531.bmp	MAP_5531
+	MAP_5551.bmp	MAP_5551
+	MAP_5571.bmp	MAP_5571
+	MAP_6511.bmp	MAP_6511
+	MAP_6531.bmp	MAP_6531
+	MAP_6551.bmp	MAP_6551
+	MAP_6571.bmp	MAP_6571
+	MAP_7511.bmp	MAP_7511
+	MAP_7531.bmp	MAP_7531
+	MAP_7551.bmp	MAP_7551
+	MAP_7571.bmp	MAP_7571
+	MAP_8511.bmp	MAP_8511
+	MAP_8531.bmp	MAP_8531
+	MAP_8551.bmp	MAP_8551
+
+	MAP_1513.bmp	MAP_1513
+	MAP_1533.bmp	MAP_1533
+	MAP_1553.bmp	MAP_1553
+	MAP_1573.bmp	MAP_1573
+	MAP_2513.bmp	MAP_2513
+	MAP_2533.bmp	MAP_2533
+	MAP_2553.bmp	MAP_2553
+	MAP_2573.bmp	MAP_2573
+	MAP_3513.bmp	MAP_3513
+	MAP_3533.bmp	MAP_3533
+	MAP_3553.bmp	MAP_3553
+	MAP_3573.bmp	MAP_3573
+	MAP_4513.bmp	MAP_4513
+	MAP_4533.bmp	MAP_4533
+	MAP_4553.bmp	MAP_4553
+	MAP_4573.bmp	MAP_4573
+	MAP_5513.bmp	MAP_5513
+	MAP_5533.bmp	MAP_5533
+	MAP_5553.bmp	MAP_5553
+	MAP_5573.bmp	MAP_5573
+	MAP_6513.bmp	MAP_6513
+	MAP_6533.bmp	MAP_6533
+	MAP_6553.bmp	MAP_6553
+	MAP_6573.bmp	MAP_6573
+	MAP_7513.bmp	MAP_7513
+	MAP_7533.bmp	MAP_7533
+	MAP_7553.bmp	MAP_7553
+	MAP_7573.bmp	MAP_7573
+	MAP_8513.bmp	MAP_8513
+	MAP_8533.bmp	MAP_8533
+	MAP_8553.bmp	MAP_8553
+
+	MAP_1515.bmp	MAP_1515
+	MAP_1535.bmp	MAP_1535
+	MAP_1555.bmp	MAP_1555
+	MAP_1575.bmp	MAP_1575
+	MAP_2515.bmp	MAP_2515
+	MAP_2535.bmp	MAP_2535
+	MAP_2555.bmp	MAP_2555
+	MAP_2575.bmp	MAP_2575
+	MAP_3515.bmp	MAP_3515
+	MAP_3535.bmp	MAP_3535
+	MAP_3555.bmp	MAP_3555
+	MAP_3575.bmp	MAP_3575
+	MAP_4515.bmp	MAP_4515
+	MAP_4535.bmp	MAP_4535
+	MAP_4555.bmp	MAP_4555
+	MAP_4575.bmp	MAP_4575
+	MAP_5515.bmp	MAP_5515
+	MAP_5535.bmp	MAP_5535
+	MAP_5555.bmp	MAP_5555
+	MAP_5575.bmp	MAP_5575
+	MAP_6515.bmp	MAP_6515
+	MAP_6535.bmp	MAP_6535
+	MAP_6555.bmp	MAP_6555
+	MAP_6575.bmp	MAP_6575
+	MAP_7515.bmp	MAP_7515
+	MAP_7535.bmp	MAP_7535
+	MAP_7555.bmp	MAP_7555
+	MAP_7575.bmp	MAP_7575
+	MAP_8515.bmp	MAP_8515
+	MAP_8535.bmp	MAP_8535
+	MAP_8555.bmp	MAP_8555
+
+	MAP_1517.bmp	MAP_1517
+	MAP_1537.bmp	MAP_1537
+	MAP_1557.bmp	MAP_1557
+	MAP_1577.bmp	MAP_1577
+	MAP_2517.bmp	MAP_2517
+	MAP_2537.bmp	MAP_2537
+	MAP_2557.bmp	MAP_2557
+	MAP_2577.bmp	MAP_2577
+	MAP_3517.bmp	MAP_3517
+	MAP_3537.bmp	MAP_3537
+	MAP_3557.bmp	MAP_3557
+	MAP_3577.bmp	MAP_3577
+	MAP_4517.bmp	MAP_4517
+	MAP_4537.bmp	MAP_4537
+	MAP_4557.bmp	MAP_4557
+	MAP_4577.bmp	MAP_4577
+	MAP_5517.bmp	MAP_5517
+	MAP_5537.bmp	MAP_5537
+	MAP_5557.bmp	MAP_5557
+	MAP_5577.bmp	MAP_5577
+	MAP_6517.bmp	MAP_6517
+	MAP_6537.bmp	MAP_6537
+	MAP_6557.bmp	MAP_6557
+	MAP_6577.bmp	MAP_6577
+	MAP_7517.bmp	MAP_7517
+	MAP_7537.bmp	MAP_7537
+	MAP_7557.bmp	MAP_7557
+	MAP_7577.bmp	MAP_7577
+	MAP_8517.bmp	MAP_8517
+	MAP_8537.bmp	MAP_8537
+	MAP_8557.bmp	MAP_8557
+
+	MAP_1611.bmp	MAP_1611
+	MAP_1631.bmp	MAP_1631
+	MAP_1651.bmp	MAP_1651
+	MAP_1671.bmp	MAP_1671
+	MAP_2611.bmp	MAP_2611
+	MAP_2631.bmp	MAP_2631
+	MAP_2651.bmp	MAP_2651
+	MAP_2671.bmp	MAP_2671
+	MAP_3611.bmp	MAP_3611
+	MAP_3631.bmp	MAP_3631
+	MAP_3651.bmp	MAP_3651
+	MAP_3671.bmp	MAP_3671
+	MAP_4611.bmp	MAP_4611
+	MAP_4631.bmp	MAP_4631
+	MAP_4651.bmp	MAP_4651
+	MAP_4671.bmp	MAP_4671
+	MAP_5611.bmp	MAP_5611
+	MAP_5631.bmp	MAP_5631
+	MAP_5651.bmp	MAP_5651
+	MAP_5671.bmp	MAP_5671
+	MAP_6611.bmp	MAP_6611
+	MAP_6631.bmp	MAP_6631
+	MAP_6651.bmp	MAP_6651
+	MAP_6671.bmp	MAP_6671
+	MAP_7611.bmp	MAP_7611
+	MAP_7631.bmp	MAP_7631
+	MAP_7651.bmp	MAP_7651
+	MAP_7671.bmp	MAP_7671
+	MAP_8611.bmp	MAP_8611
+	MAP_8631.bmp	MAP_8631
+	MAP_8651.bmp	MAP_8651
+
+	MAP_1613.bmp	MAP_1613
+	MAP_1633.bmp	MAP_1633
+	MAP_1653.bmp	MAP_1653
+	MAP_1673.bmp	MAP_1673
+	MAP_2613.bmp	MAP_2613
+	MAP_2633.bmp	MAP_2633
+	MAP_2653.bmp	MAP_2653
+	MAP_2673.bmp	MAP_2673
+	MAP_3613.bmp	MAP_3613
+	MAP_3633.bmp	MAP_3633
+	MAP_3653.bmp	MAP_3653
+	MAP_3673.bmp	MAP_3673
+	MAP_4613.bmp	MAP_4613
+	MAP_4633.bmp	MAP_4633
+	MAP_4653.bmp	MAP_4653
+	MAP_4673.bmp	MAP_4673
+	MAP_5613.bmp	MAP_5613
+	MAP_5633.bmp	MAP_5633
+	MAP_5653.bmp	MAP_5653
+	MAP_5673.bmp	MAP_5673
+	MAP_6613.bmp	MAP_6613
+	MAP_6633.bmp	MAP_6633
+	MAP_6653.bmp	MAP_6653
+	MAP_6673.bmp	MAP_6673
+	MAP_7613.bmp	MAP_7613
+	MAP_7633.bmp	MAP_7633
+	MAP_7653.bmp	MAP_7653
+	MAP_7673.bmp	MAP_7673
+	MAP_8613.bmp	MAP_8613
+	MAP_8633.bmp	MAP_8633
+	MAP_8653.bmp	MAP_8653
+
+	MAP_1615.bmp	MAP_1615
+	MAP_1635.bmp	MAP_1635
+	MAP_1655.bmp	MAP_1655
+	MAP_1675.bmp	MAP_1675
+	MAP_2615.bmp	MAP_2615
+	MAP_2635.bmp	MAP_2635
+	MAP_2655.bmp	MAP_2655
+	MAP_2675.bmp	MAP_2675
+	MAP_3615.bmp	MAP_3615
+	MAP_3635.bmp	MAP_3635
+	MAP_3655.bmp	MAP_3655
+	MAP_3675.bmp	MAP_3675
+	MAP_4615.bmp	MAP_4615
+	MAP_4635.bmp	MAP_4635
+	MAP_4655.bmp	MAP_4655
+	MAP_4675.bmp	MAP_4675
+	MAP_5615.bmp	MAP_5615
+	MAP_5635.bmp	MAP_5635
+	MAP_5655.bmp	MAP_5655
+	MAP_5675.bmp	MAP_5675
+	MAP_6615.bmp	MAP_6615
+	MAP_6635.bmp	MAP_6635
+	MAP_6655.bmp	MAP_6655
+	MAP_6675.bmp	MAP_6675
+	MAP_7615.bmp	MAP_7615
+	MAP_7635.bmp	MAP_7635
+	MAP_7655.bmp	MAP_7655
+	MAP_7675.bmp	MAP_7675
+	MAP_8615.bmp	MAP_8615
+	MAP_8635.bmp	MAP_8635
+	MAP_8655.bmp	MAP_8655
+
+	MAP_1617.bmp	MAP_1617
+	MAP_1637.bmp	MAP_1637
+	MAP_1657.bmp	MAP_1657
+	MAP_1677.bmp	MAP_1677
+	MAP_2617.bmp	MAP_2617
+	MAP_2637.bmp	MAP_2637
+	MAP_2657.bmp	MAP_2657
+	MAP_2677.bmp	MAP_2677
+	MAP_3617.bmp	MAP_3617
+	MAP_3637.bmp	MAP_3637
+	MAP_3657.bmp	MAP_3657
+	MAP_3677.bmp	MAP_3677
+	MAP_4617.bmp	MAP_4617
+	MAP_4637.bmp	MAP_4637
+	MAP_4657.bmp	MAP_4657
+	MAP_4677.bmp	MAP_4677
+	MAP_5617.bmp	MAP_5617
+	MAP_5637.bmp	MAP_5637
+	MAP_5657.bmp	MAP_5657
+	MAP_5677.bmp	MAP_5677
+	MAP_6617.bmp	MAP_6617
+	MAP_6637.bmp	MAP_6637
+	MAP_6657.bmp	MAP_6657
+	MAP_6677.bmp	MAP_6677
+	MAP_7617.bmp	MAP_7617
+	MAP_7637.bmp	MAP_7637
+	MAP_7657.bmp	MAP_7657
+	MAP_7677.bmp	MAP_7677
+	MAP_8617.bmp	MAP_8617
+	MAP_8637.bmp	MAP_8637
+	MAP_8657.bmp	MAP_8657
+
+243	dir.dir 	DIR_map_16d
+	MAP_1711.bmp	MAP_1711
+	MAP_1731.bmp	MAP_1731
+	MAP_1751.bmp	MAP_1751
+	MAP_1771.bmp	MAP_1771
+	MAP_2711.bmp	MAP_2711
+	MAP_2731.bmp	MAP_2731
+	MAP_2751.bmp	MAP_2751
+	MAP_2771.bmp	MAP_2771
+	MAP_3711.bmp	MAP_3711
+	MAP_3731.bmp	MAP_3731
+	MAP_3751.bmp	MAP_3751
+	MAP_3771.bmp	MAP_3771
+	MAP_4711.bmp	MAP_4711
+	MAP_4731.bmp	MAP_4731
+	MAP_4751.bmp	MAP_4751
+	MAP_4771.bmp	MAP_4771
+	MAP_5711.bmp	MAP_5711
+	MAP_5731.bmp	MAP_5731
+	MAP_5751.bmp	MAP_5751
+	MAP_5771.bmp	MAP_5771
+	MAP_6711.bmp	MAP_6711
+	MAP_6731.bmp	MAP_6731
+	MAP_6751.bmp	MAP_6751
+	MAP_6771.bmp	MAP_6771
+	MAP_7711.bmp	MAP_7711
+	MAP_7731.bmp	MAP_7731
+	MAP_7751.bmp	MAP_7751
+	MAP_7771.bmp	MAP_7771
+	MAP_8711.bmp	MAP_8711
+	MAP_8731.bmp	MAP_8731
+	MAP_8751.bmp	MAP_8751
+
+	MAP_1713.bmp	MAP_1713
+	MAP_1733.bmp	MAP_1733
+	MAP_1753.bmp	MAP_1753
+	MAP_1773.bmp	MAP_1773
+	MAP_2713.bmp	MAP_2713
+	MAP_2733.bmp	MAP_2733
+	MAP_2753.bmp	MAP_2753
+	MAP_2773.bmp	MAP_2773
+	MAP_3713.bmp	MAP_3713
+	MAP_3733.bmp	MAP_3733
+	MAP_3753.bmp	MAP_3753
+	MAP_3773.bmp	MAP_3773
+	MAP_4713.bmp	MAP_4713
+	MAP_4733.bmp	MAP_4733
+	MAP_4753.bmp	MAP_4753
+	MAP_4773.bmp	MAP_4773
+	MAP_5713.bmp	MAP_5713
+	MAP_5733.bmp	MAP_5733
+	MAP_5753.bmp	MAP_5753
+	MAP_5773.bmp	MAP_5773
+	MAP_6713.bmp	MAP_6713
+	MAP_6733.bmp	MAP_6733
+	MAP_6753.bmp	MAP_6753
+	MAP_6773.bmp	MAP_6773
+	MAP_7713.bmp	MAP_7713
+	MAP_7733.bmp	MAP_7733
+	MAP_7753.bmp	MAP_7753
+	MAP_7773.bmp	MAP_7773
+	MAP_8713.bmp	MAP_8713
+	MAP_8733.bmp	MAP_8733
+	MAP_8753.bmp	MAP_8753
+
+	MAP_1715.bmp	MAP_1715
+	MAP_1735.bmp	MAP_1735
+	MAP_1755.bmp	MAP_1755
+	MAP_1775.bmp	MAP_1775
+	MAP_2715.bmp	MAP_2715
+	MAP_2735.bmp	MAP_2735
+	MAP_2755.bmp	MAP_2755
+	MAP_2775.bmp	MAP_2775
+	MAP_3715.bmp	MAP_3715
+	MAP_3735.bmp	MAP_3735
+	MAP_3755.bmp	MAP_3755
+	MAP_3775.bmp	MAP_3775
+	MAP_4715.bmp	MAP_4715
+	MAP_4735.bmp	MAP_4735
+	MAP_4755.bmp	MAP_4755
+	MAP_4775.bmp	MAP_4775
+	MAP_5715.bmp	MAP_5715
+	MAP_5735.bmp	MAP_5735
+	MAP_5755.bmp	MAP_5755
+	MAP_5775.bmp	MAP_5775
+	MAP_6715.bmp	MAP_6715
+	MAP_6735.bmp	MAP_6735
+	MAP_6755.bmp	MAP_6755
+	MAP_6775.bmp	MAP_6775
+	MAP_7715.bmp	MAP_7715
+	MAP_7735.bmp	MAP_7735
+	MAP_7755.bmp	MAP_7755
+	MAP_7775.bmp	MAP_7775
+	MAP_8715.bmp	MAP_8715
+	MAP_8735.bmp	MAP_8735
+	MAP_8755.bmp	MAP_8755
+
+	MAP_1717.bmp	MAP_1717
+	MAP_1737.bmp	MAP_1737
+	MAP_1757.bmp	MAP_1757
+	MAP_1777.bmp	MAP_1777
+	MAP_2717.bmp	MAP_2717
+	MAP_2737.bmp	MAP_2737
+	MAP_2757.bmp	MAP_2757
+	MAP_2777.bmp	MAP_2777
+	MAP_3717.bmp	MAP_3717
+	MAP_3737.bmp	MAP_3737
+	MAP_3757.bmp	MAP_3757
+	MAP_3777.bmp	MAP_3777
+	MAP_4717.bmp	MAP_4717
+	MAP_4737.bmp	MAP_4737
+	MAP_4757.bmp	MAP_4757
+	MAP_4777.bmp	MAP_4777
+	MAP_5717.bmp	MAP_5717
+	MAP_5737.bmp	MAP_5737
+	MAP_5757.bmp	MAP_5757
+	MAP_5777.bmp	MAP_5777
+	MAP_6717.bmp	MAP_6717
+	MAP_6737.bmp	MAP_6737
+	MAP_6757.bmp	MAP_6757
+	MAP_6777.bmp	MAP_6777
+	MAP_7717.bmp	MAP_7717
+	MAP_7737.bmp	MAP_7737
+	MAP_7757.bmp	MAP_7757
+	MAP_7777.bmp	MAP_7777
+	MAP_8717.bmp	MAP_8717
+	MAP_8737.bmp	MAP_8737
+	MAP_8757.bmp	MAP_8757
+
+	MAP_1811.bmp	MAP_1811
+	MAP_1831.bmp	MAP_1831
+	MAP_1851.bmp	MAP_1851
+	MAP_1871.bmp	MAP_1871
+	MAP_2811.bmp	MAP_2811
+	MAP_2831.bmp	MAP_2831
+	MAP_2851.bmp	MAP_2851
+	MAP_2871.bmp	MAP_2871
+	MAP_3811.bmp	MAP_3811
+	MAP_3831.bmp	MAP_3831
+	MAP_3851.bmp	MAP_3851
+	MAP_3871.bmp	MAP_3871
+	MAP_4811.bmp	MAP_4811
+	MAP_4831.bmp	MAP_4831
+	MAP_4851.bmp	MAP_4851
+	MAP_4871.bmp	MAP_4871
+	MAP_5811.bmp	MAP_5811
+	MAP_5831.bmp	MAP_5831
+	MAP_5851.bmp	MAP_5851
+	MAP_5871.bmp	MAP_5871
+	MAP_6811.bmp	MAP_6811
+	MAP_6831.bmp	MAP_6831
+	MAP_6851.bmp	MAP_6851
+	MAP_6871.bmp	MAP_6871
+	MAP_7811.bmp	MAP_7811
+	MAP_7831.bmp	MAP_7831
+	MAP_7851.bmp	MAP_7851
+	MAP_7871.bmp	MAP_7871
+	MAP_8811.bmp	MAP_8811
+	MAP_8831.bmp	MAP_8831
+	MAP_8851.bmp	MAP_8851
+
+	MAP_1813.bmp	MAP_1813
+	MAP_1833.bmp	MAP_1833
+	MAP_1853.bmp	MAP_1853
+	MAP_1873.bmp	MAP_1873
+	MAP_2813.bmp	MAP_2813
+	MAP_2833.bmp	MAP_2833
+	MAP_2853.bmp	MAP_2853
+	MAP_2873.bmp	MAP_2873
+	MAP_3813.bmp	MAP_3813
+	MAP_3833.bmp	MAP_3833
+	MAP_3853.bmp	MAP_3853
+	MAP_3873.bmp	MAP_3873
+	MAP_4813.bmp	MAP_4813
+	MAP_4833.bmp	MAP_4833
+	MAP_4853.bmp	MAP_4853
+	MAP_4873.bmp	MAP_4873
+	MAP_5813.bmp	MAP_5813
+	MAP_5833.bmp	MAP_5833
+	MAP_5853.bmp	MAP_5853
+	MAP_5873.bmp	MAP_5873
+	MAP_6813.bmp	MAP_6813
+	MAP_6833.bmp	MAP_6833
+	MAP_6853.bmp	MAP_6853
+	MAP_6873.bmp	MAP_6873
+	MAP_7813.bmp	MAP_7813
+	MAP_7833.bmp	MAP_7833
+	MAP_7853.bmp	MAP_7853
+	MAP_7873.bmp	MAP_7873
+	MAP_8813.bmp	MAP_8813
+	MAP_8833.bmp	MAP_8833
+	MAP_8853.bmp	MAP_8853
+
+	MAP_1815.bmp	MAP_1815
+	MAP_1835.bmp	MAP_1835
+	MAP_1855.bmp	MAP_1855
+	MAP_1875.bmp	MAP_1875
+	MAP_2815.bmp	MAP_2815
+	MAP_2835.bmp	MAP_2835
+	MAP_2855.bmp	MAP_2855
+	MAP_2875.bmp	MAP_2875
+	MAP_3815.bmp	MAP_3815
+	MAP_3835.bmp	MAP_3835
+	MAP_3855.bmp	MAP_3855
+	MAP_3875.bmp	MAP_3875
+	MAP_4815.bmp	MAP_4815
+	MAP_4835.bmp	MAP_4835
+	MAP_4855.bmp	MAP_4855
+	MAP_4875.bmp	MAP_4875
+	MAP_5815.bmp	MAP_5815
+	MAP_5835.bmp	MAP_5835
+	MAP_5855.bmp	MAP_5855
+	MAP_5875.bmp	MAP_5875
+	MAP_6815.bmp	MAP_6815
+	MAP_6835.bmp	MAP_6835
+	MAP_6855.bmp	MAP_6855
+	MAP_6875.bmp	MAP_6875
+	MAP_7815.bmp	MAP_7815
+	MAP_7835.bmp	MAP_7835
+	MAP_7855.bmp	MAP_7855
+	MAP_7875.bmp	MAP_7875
+	MAP_8815.bmp	MAP_8815
+	MAP_8835.bmp	MAP_8835
+	MAP_8855.bmp	MAP_8855
+
+	MAP_1817.bmp	MAP_1817
+	MAP_1837.bmp	MAP_1837
+	MAP_1857.bmp	MAP_1857
+	MAP_1877.bmp	MAP_1877
+	MAP_2817.bmp	MAP_2817
+	MAP_2837.bmp	MAP_2837
+	MAP_2857.bmp	MAP_2857
+	MAP_2877.bmp	MAP_2877
+	MAP_3817.bmp	MAP_3817
+	MAP_3837.bmp	MAP_3837
+	MAP_3857.bmp	MAP_3857
+	MAP_3877.bmp	MAP_3877
+	MAP_4817.bmp	MAP_4817
+	MAP_4837.bmp	MAP_4837
+	MAP_4857.bmp	MAP_4857
+	MAP_4877.bmp	MAP_4877
+	MAP_5817.bmp	MAP_5817
+	MAP_5837.bmp	MAP_5837
+	MAP_5857.bmp	MAP_5857
+	MAP_5877.bmp	MAP_5877
+	MAP_6817.bmp	MAP_6817
+	MAP_6837.bmp	MAP_6837
+	MAP_6857.bmp	MAP_6857
+	MAP_6877.bmp	MAP_6877
+	MAP_7817.bmp	MAP_7817
+	MAP_7837.bmp	MAP_7837
+	MAP_7857.bmp	MAP_7857
+	MAP_7877.bmp	MAP_7877
+	MAP_8817.bmp	MAP_8817
+	MAP_8837.bmp	MAP_8837
+	MAP_8857.bmp	MAP_8857
+
+244	dir.dir 	DIR_map_32
+	map_1111.bmp	FIL_MAP32_1111
+	map_1151.bmp	FIL_MAP32_1151
+	map_2111.bmp	FIL_MAP32_2111
+	map_2151.bmp	FIL_MAP32_2151
+	map_3111.bmp	FIL_MAP32_3111
+	map_3151.bmp	FIL_MAP32_3151
+	map_4111.bmp	FIL_MAP32_4111
+	map_4151.bmp	FIL_MAP32_4151
+	map_5111.bmp	FIL_MAP32_5111
+	map_5151.bmp	FIL_MAP32_5151
+	map_6111.bmp	FIL_MAP32_6111
+	map_6151.bmp	FIL_MAP32_6151
+	map_7111.bmp	FIL_MAP32_7111
+	map_7151.bmp	FIL_MAP32_7151
+	map_8111.bmp	FIL_MAP32_8111
+	map_8151.bmp	FIL_MAP32_8151
+	map_1115.bmp	FIL_MAP32_1115
+	map_1155.bmp	FIL_MAP32_1155
+	map_2115.bmp	FIL_MAP32_2115
+	map_2155.bmp	FIL_MAP32_2155
+	map_3115.bmp	FIL_MAP32_3115
+	map_3155.bmp	FIL_MAP32_3155
+	map_4115.bmp	FIL_MAP32_4115
+	map_4155.bmp	FIL_MAP32_4155
+	map_5115.bmp	FIL_MAP32_5115
+	map_5155.bmp	FIL_MAP32_5155
+	map_6115.bmp	FIL_MAP32_6115
+	map_6155.bmp	FIL_MAP32_6155
+	map_7115.bmp	FIL_MAP32_7115
+	map_7155.bmp	FIL_MAP32_7155
+	map_8115.bmp	FIL_MAP32_8115
+	map_8155.bmp	FIL_MAP32_8155
+
+	map_1211.bmp	FIL_MAP32_1211
+	map_1251.bmp	FIL_MAP32_1251
+	map_2211.bmp	FIL_MAP32_2211
+	map_2251.bmp	FIL_MAP32_2251
+	map_3211.bmp	FIL_MAP32_3211
+	map_3251.bmp	FIL_MAP32_3251
+	map_4211.bmp	FIL_MAP32_4211
+	map_4251.bmp	FIL_MAP32_4251
+	map_5211.bmp	FIL_MAP32_5211
+	map_5251.bmp	FIL_MAP32_5251
+	map_6211.bmp	FIL_MAP32_6211
+	map_6251.bmp	FIL_MAP32_6251
+	map_7211.bmp	FIL_MAP32_7211
+	map_7251.bmp	FIL_MAP32_7251
+	map_8211.bmp	FIL_MAP32_8211
+	map_8251.bmp	FIL_MAP32_8251
+	map_1215.bmp	FIL_MAP32_1215
+	map_1255.bmp	FIL_MAP32_1255
+	map_2215.bmp	FIL_MAP32_2215
+	map_2255.bmp	FIL_MAP32_2255
+	map_3215.bmp	FIL_MAP32_3215
+	map_3255.bmp	FIL_MAP32_3255
+	map_4215.bmp	FIL_MAP32_4215
+	map_4255.bmp	FIL_MAP32_4255
+	map_5215.bmp	FIL_MAP32_5215
+	map_5255.bmp	FIL_MAP32_5255
+	map_6215.bmp	FIL_MAP32_6215
+	map_6255.bmp	FIL_MAP32_6255
+	map_7215.bmp	FIL_MAP32_7215
+	map_7255.bmp	FIL_MAP32_7255
+	map_8215.bmp	FIL_MAP32_8215
+	map_8255.bmp	FIL_MAP32_8255
+
+	map_1311.bmp	FIL_MAP32_1311
+	map_1351.bmp	FIL_MAP32_1351
+	map_2311.bmp	FIL_MAP32_2311
+	map_2351.bmp	FIL_MAP32_2351
+	map_3311.bmp	FIL_MAP32_3311
+	map_3351.bmp	FIL_MAP32_3351
+	map_4311.bmp	FIL_MAP32_4311
+	map_4351.bmp	FIL_MAP32_4351
+	map_5311.bmp	FIL_MAP32_5311
+	map_5351.bmp	FIL_MAP32_5351
+	map_6311.bmp	FIL_MAP32_6311
+	map_6351.bmp	FIL_MAP32_6351
+	map_7311.bmp	FIL_MAP32_7311
+	map_7351.bmp	FIL_MAP32_7351
+	map_8311.bmp	FIL_MAP32_8311
+	map_8351.bmp	FIL_MAP32_8351
+	map_1315.bmp	FIL_MAP32_1315
+	map_1355.bmp	FIL_MAP32_1355
+	map_2315.bmp	FIL_MAP32_2315
+	map_2355.bmp	FIL_MAP32_2355
+	map_3315.bmp	FIL_MAP32_3315
+	map_3355.bmp	FIL_MAP32_3355
+	map_4315.bmp	FIL_MAP32_4315
+	map_4355.bmp	FIL_MAP32_4355
+	map_5315.bmp	FIL_MAP32_5315
+	map_5355.bmp	FIL_MAP32_5355
+	map_6315.bmp	FIL_MAP32_6315
+	map_6355.bmp	FIL_MAP32_6355
+	map_7315.bmp	FIL_MAP32_7315
+	map_7355.bmp	FIL_MAP32_7355
+	map_8315.bmp	FIL_MAP32_8315
+	map_8355.bmp	FIL_MAP32_8355
+
+	map_1411.bmp	FIL_MAP32_1411
+	map_1451.bmp	FIL_MAP32_1451
+	map_2411.bmp	FIL_MAP32_2411
+	map_2451.bmp	FIL_MAP32_2451
+	map_3411.bmp	FIL_MAP32_3411
+	map_3451.bmp	FIL_MAP32_3451
+	map_4411.bmp	FIL_MAP32_4411
+	map_4451.bmp	FIL_MAP32_4451
+	map_5411.bmp	FIL_MAP32_5411
+	map_5451.bmp	FIL_MAP32_5451
+	map_6411.bmp	FIL_MAP32_6411
+	map_6451.bmp	FIL_MAP32_6451
+	map_7411.bmp	FIL_MAP32_7411
+	map_7451.bmp	FIL_MAP32_7451
+	map_8411.bmp	FIL_MAP32_8411
+	map_8451.bmp	FIL_MAP32_8451
+	map_1415.bmp	FIL_MAP32_1415
+	map_1455.bmp	FIL_MAP32_1455
+	map_2415.bmp	FIL_MAP32_2415
+	map_2455.bmp	FIL_MAP32_2455
+	map_3415.bmp	FIL_MAP32_3415
+	map_3455.bmp	FIL_MAP32_3455
+	map_4415.bmp	FIL_MAP32_4415
+	map_4455.bmp	FIL_MAP32_4455
+	map_5415.bmp	FIL_MAP32_5415
+	map_5455.bmp	FIL_MAP32_5455
+	map_6415.bmp	FIL_MAP32_6415
+	map_6455.bmp	FIL_MAP32_6455
+	map_7415.bmp	FIL_MAP32_7415
+	map_7455.bmp	FIL_MAP32_7455
+	map_8415.bmp	FIL_MAP32_8415
+	map_8455.bmp	FIL_MAP32_8455
+
+	map_1511.bmp	FIL_MAP32_1511
+	map_1551.bmp	FIL_MAP32_1551
+	map_2511.bmp	FIL_MAP32_2511
+	map_2551.bmp	FIL_MAP32_2551
+	map_3511.bmp	FIL_MAP32_3511
+	map_3551.bmp	FIL_MAP32_3551
+	map_4511.bmp	FIL_MAP32_4511
+	map_4551.bmp	FIL_MAP32_4551
+	map_5511.bmp	FIL_MAP32_5511
+	map_5551.bmp	FIL_MAP32_5551
+	map_6511.bmp	FIL_MAP32_6511
+	map_6551.bmp	FIL_MAP32_6551
+	map_7511.bmp	FIL_MAP32_7511
+	map_7551.bmp	FIL_MAP32_7551
+	map_8511.bmp	FIL_MAP32_8511
+	map_8551.bmp	FIL_MAP32_8551
+	map_1515.bmp	FIL_MAP32_1515
+	map_1555.bmp	FIL_MAP32_1555
+	map_2515.bmp	FIL_MAP32_2515
+	map_2555.bmp	FIL_MAP32_2555
+	map_3515.bmp	FIL_MAP32_3515
+	map_3555.bmp	FIL_MAP32_3555
+	map_4515.bmp	FIL_MAP32_4515
+	map_4555.bmp	FIL_MAP32_4555
+	map_5515.bmp	FIL_MAP32_5515
+	map_5555.bmp	FIL_MAP32_5555
+	map_6515.bmp	FIL_MAP32_6515
+	map_6555.bmp	FIL_MAP32_6555
+	map_7515.bmp	FIL_MAP32_7515
+	map_7555.bmp	FIL_MAP32_7555
+	map_8515.bmp	FIL_MAP32_8515
+	map_8555.bmp	FIL_MAP32_8555
+
+	map_1611.bmp	FIL_MAP32_1611
+	map_1651.bmp	FIL_MAP32_1651
+	map_2611.bmp	FIL_MAP32_2611
+	map_2651.bmp	FIL_MAP32_2651
+	map_3611.bmp	FIL_MAP32_3611
+	map_3651.bmp	FIL_MAP32_3651
+	map_4611.bmp	FIL_MAP32_4611
+	map_4651.bmp	FIL_MAP32_4651
+	map_5611.bmp	FIL_MAP32_5611
+	map_5651.bmp	FIL_MAP32_5651
+	map_6611.bmp	FIL_MAP32_6611
+	map_6651.bmp	FIL_MAP32_6651
+	map_7611.bmp	FIL_MAP32_7611
+	map_7651.bmp	FIL_MAP32_7651
+	map_8611.bmp	FIL_MAP32_8611
+	map_8651.bmp	FIL_MAP32_8651
+	map_1615.bmp	FIL_MAP32_1615
+	map_1655.bmp	FIL_MAP32_1655
+	map_2615.bmp	FIL_MAP32_2615
+	map_2655.bmp	FIL_MAP32_2655
+	map_3615.bmp	FIL_MAP32_3615
+	map_3655.bmp	FIL_MAP32_3655
+	map_4615.bmp	FIL_MAP32_4615
+	map_4655.bmp	FIL_MAP32_4655
+	map_5615.bmp	FIL_MAP32_5615
+	map_5655.bmp	FIL_MAP32_5655
+	map_6615.bmp	FIL_MAP32_6615
+	map_6655.bmp	FIL_MAP32_6655
+	map_7615.bmp	FIL_MAP32_7615
+	map_7655.bmp	FIL_MAP32_7655
+	map_8615.bmp	FIL_MAP32_8615
+	map_8655.bmp	FIL_MAP32_8655
+
+	map_1711.bmp	FIL_MAP32_1711
+	map_1751.bmp	FIL_MAP32_1751
+	map_2711.bmp	FIL_MAP32_2711
+	map_2751.bmp	FIL_MAP32_2751
+	map_3711.bmp	FIL_MAP32_3711
+	map_3751.bmp	FIL_MAP32_3751
+	map_4711.bmp	FIL_MAP32_4711
+	map_4751.bmp	FIL_MAP32_4751
+	map_5711.bmp	FIL_MAP32_5711
+	map_5751.bmp	FIL_MAP32_5751
+	map_6711.bmp	FIL_MAP32_6711
+	map_6751.bmp	FIL_MAP32_6751
+	map_7711.bmp	FIL_MAP32_7711
+	map_7751.bmp	FIL_MAP32_7751
+	map_8711.bmp	FIL_MAP32_8711
+	map_8751.bmp	FIL_MAP32_8751
+	map_1715.bmp	FIL_MAP32_1715
+	map_1755.bmp	FIL_MAP32_1755
+	map_2715.bmp	FIL_MAP32_2715
+	map_2755.bmp	FIL_MAP32_2755
+	map_3715.bmp	FIL_MAP32_3715
+	map_3755.bmp	FIL_MAP32_3755
+	map_4715.bmp	FIL_MAP32_4715
+	map_4755.bmp	FIL_MAP32_4755
+	map_5715.bmp	FIL_MAP32_5715
+	map_5755.bmp	FIL_MAP32_5755
+	map_6715.bmp	FIL_MAP32_6715
+	map_6755.bmp	FIL_MAP32_6755
+	map_7715.bmp	FIL_MAP32_7715
+	map_7755.bmp	FIL_MAP32_7755
+	map_8715.bmp	FIL_MAP32_8715
+	map_8755.bmp	FIL_MAP32_8755
+
+	map_1811.bmp	FIL_MAP32_1811
+	map_1851.bmp	FIL_MAP32_1851
+	map_2811.bmp	FIL_MAP32_2811
+	map_2851.bmp	FIL_MAP32_2851
+	map_3811.bmp	FIL_MAP32_3811
+	map_3851.bmp	FIL_MAP32_3851
+	map_4811.bmp	FIL_MAP32_4811
+	map_4851.bmp	FIL_MAP32_4851
+	map_5811.bmp	FIL_MAP32_5811
+	map_5851.bmp	FIL_MAP32_5851
+	map_6811.bmp	FIL_MAP32_6811
+	map_6851.bmp	FIL_MAP32_6851
+	map_7811.bmp	FIL_MAP32_7811
+	map_7851.bmp	FIL_MAP32_7851
+	map_8811.bmp	FIL_MAP32_8811
+	map_8851.bmp	FIL_MAP32_8851
+	map_1815.bmp	FIL_MAP32_1815
+	map_1855.bmp	FIL_MAP32_1855
+	map_2815.bmp	FIL_MAP32_2815
+	map_2855.bmp	FIL_MAP32_2855
+	map_3815.bmp	FIL_MAP32_3815
+	map_3855.bmp	FIL_MAP32_3855
+	map_4815.bmp	FIL_MAP32_4815
+	map_4855.bmp	FIL_MAP32_4855
+	map_5815.bmp	FIL_MAP32_5815
+	map_5855.bmp	FIL_MAP32_5855
+	map_6815.bmp	FIL_MAP32_6815
+	map_6855.bmp	FIL_MAP32_6855
+	map_7815.bmp	FIL_MAP32_7815
+	map_7855.bmp	FIL_MAP32_7855
+	map_8855.bmp	FIL_MAP32_8855
+
+
+247	dir.dir 	DIR_map_64p
+	map8_11.bmp	FIL_MAP512_11
+
+	map4_11.bmp	FIL_MAP256_11
+	map4_51.bmp	FIL_MAP256_51
+	map4_15.bmp	FIL_MAP256_15
+	map4_55.bmp	FIL_MAP256_55
+
+	map2_11.bmp	FIL_MAP128_11
+	map2_31.bmp	
+	map2_51.bmp	FIL_MAP2_51
+	map2_71.bmp	
+	map2_13.bmp	
+	map2_33.bmp	
+	map2_53.bmp	
+	map2_73.bmp	
+	map2_15.bmp	
+	map2_35.bmp	
+	map2_55.bmp	
+	map2_75.bmp	
+	map2_17.bmp	
+	map2_37.bmp	
+	map2_57.bmp	FIL_MAP2_57
+	map2_77.bmp	
+
+	map1_11.bmp	FIL_MAP64_11
+	map1_21.bmp	FIL_MAP64_21
+	map1_31.bmp
+	map1_41.bmp	FIL_MAPX_WATER
+	map1_51.bmp
+	map1_61.bmp
+	map1_71.bmp
+	map1_81.bmp
+	map1_12.bmp	FIL_MAP64_12
+	map1_22.bmp
+	map1_32.bmp
+	map1_42.bmp
+	map1_52.bmp
+	map1_62.bmp
+	map1_72.bmp
+	map1_82.bmp
+	map1_13.bmp	FIL_MAP64_13
+	map1_23.bmp
+	map1_33.bmp
+	map1_43.bmp
+	map1_53.bmp
+	map1_63.bmp
+	map1_73.bmp
+	map1_83.bmp
+	map1_14.bmp	FIL_MAP64_14
+	map1_24.bmp
+	map1_34.bmp
+	map1_44.bmp
+	map1_54.bmp
+	map1_64.bmp
+	map1_74.bmp
+	map1_84.bmp
+	map1_15.bmp	FIL_MAP64_15
+	map1_25.bmp
+	map1_35.bmp
+	map1_45.bmp
+	map1_55.bmp
+	map1_65.bmp
+	map1_75.bmp
+	map1_85.bmp
+	map1_16.bmp	FIL_MAP64_16
+	map1_26.bmp
+	map1_36.bmp
+	map1_46.bmp
+	map1_56.bmp
+	map1_66.bmp
+	map1_76.bmp
+	map1_86.bmp
+	map1_17.bmp	FIL_MAP64_17
+	map1_27.bmp
+	map1_37.bmp
+	map1_47.bmp
+	map1_57.bmp
+	map1_67.bmp
+	map1_77.bmp
+	map1_87.bmp
+	map1_18.bmp	FIL_MAP64_18
+	map1_28.bmp
+	map1_38.bmp
+	map1_48.bmp
+	map1_58.bmp	FIL_MAP1_58
+	map1_68.bmp
+	map1_78.bmp
+	map1_88.bmp
+
+	maptable.bmp FIL_MAP_TABLE
+
+143	dir.dir		FIL_GRIDDATA_DIR
+	cloud00.grd	FIL_CLOUDGRID_00
+	cloud01.grd	FIL_CLOUDGRID_01
+	cloud02.grd	FIL_CLOUDGRID_02
+	radar.grd	FIL_RADARGRID
+	minalt.grd	FIL_MINALT
+	maxalt.grd	FIL_MAXALT
+	avgalt.grd	FIL_AVGALT
+	highcol.grd	FIL_4COLGRID
+	lowcol.grd	FIL_LOWCOLGRID
+	closest.grd FIL_CLOSEST_UID
+	cornalt.grd FIL_CORNERALT
+
+138	dir.dir		DIR_BFIELDS
+	quick.dat	FIL_QUICKMISSION_DATA
+	quick.txt	FIL_QUICKMISSION_TEXT
+	dquick.dat	FIL_QUICKMISSIONDEMO_DATA

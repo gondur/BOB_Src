@@ -1,0 +1,9 @@
+RSCRLBAR Directory: ActiveX scroll bar
+==================
+
+The scroll bar can be horizontal or vertical
+
+The decrease, increase, and 2 ends of the puck are icons with on and off state.
+The middle of the puck and the background are artwork strips.
+
+The puck self-scales based on the range of values entered.

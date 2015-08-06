@@ -1,0 +1,22 @@
+MATH Directory: Low level maths routines
+==============
+
+Math.cpp contains the implementation of the Math_Lib class.
+
+The Angle class we use represents 360 degrees in a 16 byte word, 
+which therefore automatically wraps to stay in range.
+
+The next version was going to use a long word for local angle variables which 
+would not wrap internally, but would be automatically trimmed before division 
+operations, and comparrison operations would actually simply test bit 15, 
+providing the same functionality, but with processor optimisation.
+
+Some functions have been converted to use floats as these have become faster.
+For example, it is fractionally faster to multiply an integer by a float and 
+convert back to integer than to do an integer divide. If you continue to use 
+the float for a few more calculation steps the saving becomes significant.
+
+We have also recently invested in floating point distance squared comparrisons 
+rather than using an approximation for distance to avoid the square root.
+
+Matrix.cpp contains the old matrix code, which is probably unused, now.

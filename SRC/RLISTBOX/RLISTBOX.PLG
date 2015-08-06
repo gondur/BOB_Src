@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RListBox - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSPF1C5.BAT" with contents
+[
+@echo off
+copy ".\RListBox.lic" "\BOB\release\exe"
+]
+Creating command line "c:\temp\RSPF1C5.BAT"
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "\BOB\release\exe/RListBox.tlb" /mktyplib203 /o "NUL" /win32 "D:\Bob\Src\rlistbox\RListBox.odl""
+Copying license file...
+D:\BOB\SRC\RLISTBOX\RLISTBOX.LIC => D:\BOB\release\exe\RLISTBOX.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\BOB\Release\list/RListBox.res" /i "\BOB\release\exe" /d "NDEBUG" /d "_AFXDLL" "D:\Bob\Src\rlistbox\RListBox.rc"" 
+Creating temporary file "c:\temp\RSPF1D3.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /FR"\BOB\Release\list/" /Fo"\BOB\Release\list/" /Fd"\BOB\Release\list/" /FD /c 
+"D:\Bob\Src\Mfc\Getshadw.cpp"
+"D:\Bob\Src\rlistbox\LP2.cpp"
+"D:\Bob\Src\rlistbox\picture.cpp"
+"D:\Bob\Src\rlistbox\RListBox.cpp"
+"D:\Bob\Src\rlistbox\rlistbxc.cpp"
+"D:\Bob\Src\rlistbox\rlistbxp.cpp"
+"D:\Bob\Src\rlistbox\rscrlbar.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSPF1D3.TMP" 
+Creating temporary file "c:\temp\RSPF1D4.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"\BOB\release\exe/RListBox.pdb" /machine:I386 /def:".\RListBox.def" /out:"\BOB\release\exe/RListBox.ocx" /implib:"\BOB\release\exe/RListBox.lib" 
+\BOB\Release\list\Getshadw.obj
+\BOB\Release\list\LP2.obj
+\BOB\Release\list\picture.obj
+\BOB\Release\list\RListBox.obj
+\BOB\Release\list\rlistbxc.obj
+\BOB\Release\list\rlistbxp.obj
+\BOB\Release\list\rscrlbar.obj
+\BOB\Release\list\RListBox.res
+\bob\Release\exe\Rscrlbar.lib
+]
+Creating command line "link.exe @c:\temp\RSPF1D4.TMP"
+Creating temporary file "c:\temp\RSPF1D5.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\release\exe\RListBox.ocx"
+echo regsvr32 exec. time > "\BOB\release\exe\regsvr32.trg"
+]
+Creating command line "c:\temp\RSPF1D5.BAT"
+Creating Type Library...
+RListBox.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+Getshadw.cpp
+LP2.cpp
+picture.cpp
+RListBox.cpp
+rlistbxc.cpp
+rlistbxp.cpp
+rscrlbar.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1181: cannot open input file "\bob\Release\exe\Rscrlbar.lib"
+Error executing link.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+RListBox.ocx - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

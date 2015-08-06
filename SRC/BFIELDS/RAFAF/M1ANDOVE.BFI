@@ -1,0 +1,36 @@
+	BattleField
+	{
+		FileName	FIL_1_M1ANDOVE=M1ANDOVE.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_AF_ANDOVER,
+			ItemGroup
+			{
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_ANDOVER}, 
+						 	Rel	{Bearing	ANGLES_35Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES50
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					},
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_ANDOVER}, 
+						 	Rel	{Bearing	ANGLES_135Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES50
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					}
+			}
+		}
+	};

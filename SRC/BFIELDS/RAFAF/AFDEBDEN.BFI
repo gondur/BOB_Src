@@ -1,0 +1,227 @@
+	WayPoint	AFDEBDEN_0100,
+	WayPoint	AFDEBDEN_0101,
+	WayPoint	AFDEBDEN_0102,
+	WayPoint	AFDEBDEN_0103,
+	WayPoint	AFDEBDEN_0104,
+	WayPoint	AFDEBDEN_0105,
+	WayPoint	AFDEBDEN_0106,
+	WayPoint	AFDEBDEN_0107,
+	WayPoint	AFDEBDEN_0108,
+	WayPoint	AFDEBDEN_0109,
+	SimpleItem	AFDEBDEN_1503,
+	SimpleItem	AFDEBDEN_1504,
+	SimpleItem	AFDEBDEN_1505,
+	SimpleItem	AFDEBDEN_1506,
+	SimpleItem	AFDEBDEN_1900,
+	GroundItem	AFDEBDEN_2980,
+	BattleField
+	{
+		FileName	FIL_1_AFDEBDEN=AFDEBDEN.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_DEBDEN,
+		ItemGroup
+		{
+				SimpleItem	AFDEBDEN_1503=	
+				{
+					Posn
+					{
+						Abs	     
+						{	X	30817792,
+							Z	40129536
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFDEBDEN_1504=
+				{
+					Posn
+					{
+						Abs
+						{	X	30803456,
+							Z	40058624
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFDEBDEN_1505=
+				{
+					Posn
+					{
+						Abs
+						{	X	30733312,
+							Z	40086016
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFDEBDEN_1506=
+				{
+					Posn
+					{
+						Abs
+						{	X	30902784,
+							Z	40096256
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFDEBDEN_1900=
+				{
+					Posn
+					{
+						Abs
+						{	X	30818048,
+							Z	40028160
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30807808,
+						Z	40061952
+					}
+				},
+				Route
+				{
+					WayPoint	AFDEBDEN_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	30807680,
+								Z	40068608
+							}
+						},
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	AFDEBDEN_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	30801408,
+								Z	40074752
+							}
+						},
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	AFDEBDEN_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	30795520,
+								Z	40092544
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFDEBDEN_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	30803584,
+								Z	40112640
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFDEBDEN_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	30811776,
+								Z	40117248
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFDEBDEN_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	30816384,
+								Z	40110976
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFDEBDEN_0106=
+					{
+						Posn
+						{
+							Abs
+							{	X	30821504,
+								Z	40110848
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFDEBDEN_0107=
+					{
+						Posn
+						{
+							Abs
+							{	X	30821248,
+								Z	40099712
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFDEBDEN_0108=
+					{
+						Posn
+						{
+							Abs
+							{	X	30821760,
+								Z	40085120
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFDEBDEN_0109=
+					{
+						Posn
+						{
+							Abs
+							{	X	30821888,
+								Z	40072576
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFDEBDEN_2980=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

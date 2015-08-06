@@ -1,0 +1,96 @@
+	WayPoint	cvy_g2_c_011c,
+	WayPoint	cvy_g2_c_011d,
+	WayPoint	cvy_g2_c_011e,
+	WayPoint	cvy_g2_c_011f,
+	WayPoint	cvy_g2_c_0120,
+	GroundItem	cvy_g2_c_2af9,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G2_C=cvy_g2_c.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	9793536,
+					Z	23506944
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g2_c_011c=
+				{
+					Posn
+					{
+						Abs
+						{	X	13930496,
+							Z	24305664
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_c_011d=
+				{
+					Posn
+					{
+						Abs
+						{	X	20996096,
+							Z	24899584
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_c_011e=
+				{
+					Posn
+					{
+						Abs
+						{	X	23392256,
+							Z	25677824
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_c_011f=
+				{
+					Posn
+					{
+						Abs
+						{	X	22798336,
+							Z	27316224
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_c_0120=
+				{
+					Posn
+					{
+						Abs
+						{	X	22306816,
+							Z	27623424
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrkstopno
+				}
+			},
+			NumInForm		15,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g2_c_2af9=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G2_C,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List DSTRYR,COLIER,COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,DSTRYR}
+				//Vel	145
+		}	}
+	};

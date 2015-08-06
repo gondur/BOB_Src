@@ -1,0 +1,47 @@
+MEDITOR Directory:	The Mission Editor
+==================
+
+All the files in this directory are part of the mission editor. 
+It also uses modules in other directories including fileman, bfields and H.
+
+The mission editor is actually a C++ BUILDER project, 
+compiled with C++ BUILDER version 1
+If you have a later version of builder you are on your own!
+
+This mission editor is a derivative of the version that shipped with FC Gold
+in the sense that anything not pertinent to the development of MiG Alley or BoB
+has been stripped down to a compilable state.
+
+The major change is the handling of the much larger continuous worlds that both
+these products use, and this is your first problem, as we use a 10GB database
+to read the landscape from, which you don't have access to.
+
+It would not be impossible to rewrite the interface in TT2 so that it decodes 
+the landscape directly from the ingame compressed format, but this is left as an 
+excersize for the reader, sorry.
+
+The mission editor communicates with TT2 through the scratchpad and 
+via shared memory blocks.
+
+I never got the mouse wheel working so zooming is by right-clicking on 
+the scroll-bar at present.
+
+The other problem is that Borland still haven't fixed their enum operator overloading (AFAICT)
+The following 3-line program won't compile, and so neither will our stuff without careful ordering.
+The trick is to use unary operator + on any parameter that won't compile.
+To allow this I have had to remove the 2 unary + ops I had!
+
+enum	Oranges	{JAFFA,TANGERINE};
+enum	Apples	{GRANNY,GOLDEN};
+Oranges operator+(Oranges,Oranges);
+int i=GRANNY+GOLDEN;		//compile error
+int j=+GRANNY + +GOLDEN;	//fixed
+
+
+
+
+
+
+
+
+

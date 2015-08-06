@@ -1,0 +1,56 @@
+MOVECODE directory:	Movement Routines
+==================
+
+This directory contains most automatic point-to-point movement code.
+
+The main functions are AutoFollowWp and AutoFollowWpWing
+These functions arwe called once every 4cs for any aircraft not in ACM
+
+Statistically most aircraft spend most of their time performing these simple
+take-off, waypoint following, bombing, and landing manoeuvres, 
+and very little time in combat.
+
+By minimising the overhead of this code we leave move processor cycles free 
+for combat and allow a higher rate of accelerated time.
+
+Even this is not fast enough for the front-end map screen. On there we have 
+an even simpler movecode model which is only called once every 20 seconds!
+
+Worldinc.h:
+-----------
+Objects in the world are in the following class hierachy (only hilights):
+
+XxxAirStruc								- thin wrapper casts
+AirStruc								- 3D aircraft
+FormationItem							- ground vehicles
+				TransientItem			- missiles and effects
+MobileItem								- basic movement
+Item									- static objects
+				WayPoint				- waypoints
+							info_XXX	- missioneditor and map screen objects
+ItemBase								- core
+
+
+Classes defined:
+----------------
+
+AirStruc			AUTOMOVE.CPP	low level movement routines
+
+MoveCodeAirStruc	AUTOMOVE.CPP	A thin layer cast on AirStruc. Point-to-point functions
+
+formationitem		AUTOMOVE.CPP	Movement routines for ground vehicles
+mobileitem			MOVEALL.CPP		Select correct novecode and waypoint actions
+
+item				AUTOMOVE.CPP	very low level intercept calculations
+
+ManualPilot			FLYMODEL.CPP	What is left of the integer flight model
+					KEYFLY.CPP		Keyboard input to flight controls
+
+
+SAGAirstruc			SAGMOVE.CPP		A thin layer cast on AirStruc.		20 second decision making to match front end
+SAGairgrp							A thin layer cast on info_airgrp.	20 second movecode and decision making
+
+
+WayPoint			WPACTION.CPP	Waypoint actions and fuel checks
+mobileitem
+AirStruc

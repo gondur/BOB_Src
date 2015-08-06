@@ -1,0 +1,151 @@
+	WayPoint	AFMIDDLE_0100,
+	WayPoint	AFMIDDLE_0101,
+	WayPoint	AFMIDDLE_0102,
+	WayPoint	AFMIDDLE_0103,
+	WayPoint	AFMIDDLE_0104,
+	SimpleItem	AFMIDDLE_042c,
+	SimpleItem	AFMIDDLE_042f,
+	SimpleItem	AFMIDDLE_0431,
+	SimpleItem	AFMIDDLE_0433,
+	GroundItem	AFMIDDLE_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFMIDDLE=AFMIDDLE.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_MIDDLEWALLOP,
+		ItemGroup
+		{
+				SimpleItem	AFMIDDLE_042c=
+				{
+					Posn
+					{
+						Abs
+						{	X	19367936,
+							Z	31418368
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFMIDDLE_042f=
+				{
+					Posn
+					{
+						Abs
+						{	X	19375872,
+							Z	31368960
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFMIDDLE_0431=
+				{
+					Posn
+					{
+						Abs
+						{	X	19311104,
+							Z	31339520
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFMIDDLE_0433=
+				{
+					Posn
+					{
+						Abs
+						{	X	19316480,
+							Z	31386368
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	19361024,
+						Z	31415808
+					}
+				},
+				Route
+				{
+					WayPoint	AFMIDDLE_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	19366400,
+								Z	31428608
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFMIDDLE_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	19355904,
+								Z	31430400
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFMIDDLE_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	19348992,
+								Z	31416064
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFMIDDLE_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	19341824,
+								Z	31415296
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFMIDDLE_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	19340032,
+								Z	31403520
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFMIDDLE_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

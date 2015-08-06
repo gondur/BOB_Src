@@ -1,0 +1,131 @@
+	WayPoint	M1NORTHW_012a,
+	WayPoint	M1NORTHW_012b,
+	WayPoint	M1NORTHW_012c,
+	WayPoint	M1NORTHW_012d,
+	WayPoint	M1NORTHW_012e,
+	WayPoint	M1NORTHW_012f,
+	WayPoint	M1NORTHW_0130,
+	SimpleItem	M1NORTHW_046b,
+	GroundItem	M1NORTHW_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1NORTHW=M1NORTHW.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_NORTHWEALD,
+		ItemGroup
+		{
+				SimpleItem	M1NORTHW_046b=
+				{
+					Posn
+					{
+						Abs
+						{	X	30092544,
+							Z	37328128
+						}
+					},
+					UIDBand		CivilianBAND,
+					Shape		TROOPT
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30135040,
+						Z	37329152
+					}
+				},
+				Route
+				{
+					WayPoint	M1NORTHW_012f=
+					{
+						Posn
+						{
+							Abs
+							{	X	30134784,
+								Z	37314560
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1NORTHW_012e=
+					{
+						Posn
+						{
+							Abs
+							{	X	30125568,
+								Z	37314304
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1NORTHW_0130=
+					{
+						Posn
+						{
+							Abs
+							{	X	30126336,
+								Z	37308416
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1NORTHW_012d=
+					{
+						Posn
+						{
+							Abs
+							{	X	30121216,
+								Z	37308672
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1NORTHW_012c=
+					{
+						Posn
+						{
+							Abs
+							{	X	30109952,
+								Z	37312000
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1NORTHW_012b=
+					{
+						Posn
+						{
+							Abs
+							{	X	30099712,
+								Z	37314048
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1NORTHW_012a=
+					{
+						Posn
+						{
+							Abs
+							{	X	30099712,
+								Z	37307904
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1NORTHW_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	}	}
+	};

@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RStatic - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSP22A1.BAT" with contents
+[
+@echo off
+copy ".\RStatic.lic" "\BOB\Release\exe"
+]
+Creating command line "c:\temp\RSP22A1.BAT"
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "\BOB\Release\exe/RStatic.tlb" /mktyplib203 /o "NUL" /win32 "D:\Bob\Src\RStatic\RStatic.odl""
+Copying license file...
+D:\BOB\SRC\RSTATIC\RSTATIC.LIC => D:\BOB\Release\exe\RSTATIC.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\BOB\Release\Rstatic/RStatic.res" /i "\BOB\Release\exe" /d "NDEBUG" /d "_AFXDLL" "D:\Bob\Src\RStatic\RStatic.rc"" 
+Creating temporary file "c:\temp\RSP22A4.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\BOB\Release\Rstatic/" /Fd"\BOB\Release\Rstatic/" /FD /c 
+"D:\Bob\Src\Mfc\Getresrc.cpp"
+"D:\Bob\Src\Mfc\Getshadw.cpp"
+"D:\Bob\Src\RStatic\RStatic.cpp"
+"D:\Bob\Src\RStatic\RStaticC.cpp"
+"D:\Bob\Src\RStatic\RStaticP.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSP22A4.TMP" 
+Creating temporary file "c:\temp\RSP22A5.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"\BOB\Release\exe/RStatic.pdb" /machine:I386 /def:".\RStatic.def" /out:"\BOB\Release\exe/RStatic.ocx" /implib:"\BOB\Release\exe/RStatic.lib" 
+\BOB\Release\Rstatic\Getresrc.obj
+\BOB\Release\Rstatic\Getshadw.obj
+\BOB\Release\Rstatic\RStatic.obj
+\BOB\Release\Rstatic\RStaticC.obj
+\BOB\Release\Rstatic\RStaticP.obj
+\BOB\Release\Rstatic\RStatic.res
+]
+Creating command line "link.exe @c:\temp\RSP22A5.TMP"
+Creating temporary file "c:\temp\RSP22A6.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\BOB\Release\exe\RStatic.ocx"
+echo regsvr32 exec. time > "\BOB\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\temp\RSP22A6.BAT"
+Creating Type Library...
+RStatic.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+Getresrc.cpp
+Getshadw.cpp
+Processing UI includes
+\bob\src\h\BitField.h(37):                   Assert is non functional!!!
+D:\Bob\Src\Mfc\..\h\myError.h(73):                   assert redefined
+RStatic.cpp
+RStaticC.cpp
+RStaticP.cpp
+Generating Code...
+Linking...
+   Creating library \BOB\Release\exe/RStatic.lib and object \BOB\Release\exe/RStatic.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+RStatic.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

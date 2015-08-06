@@ -1,0 +1,175 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGEMAP
+DEST = ..\GAME\imagemap
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\HQ.x8\
+	$(DEST)\MUSHYPEA.x8\
+	$(DEST)\OMQTRS.x8\
+	$(DEST)\DINNER.x8\
+	$(DEST)\GROOM.x8\
+	$(DEST)\GDHSE.x8\
+	$(DEST)\RANGE.x8\
+	$(DEST)\MSTORE.x8\
+	$(DEST)\ALBERT3.x8\
+	$(DEST)\BLENDMAP.x8\
+	$(DEST)\TROOPT.x8\
+	$(DEST)\FIREN.x8\
+	$(DEST)\CROYDON.x8\
+	$(DEST)\BIGB.x8\
+	$(DEST)\DESTROY.x8\
+	$(DEST)\PAULS.x8\
+	$(DEST)\PALACE.x8\
+	$(DEST)\COLIER.x8\
+	$(DEST)\ME110FUS.x8\
+	$(DEST)\MESFUS.x8\
+
+
+MAPS64X64	=	$(DEST)\WOOL1.x8\
+	$(DEST)\WOOL2.x8\
+	$(DEST)\WOOL3.x8\
+	$(DEST)\WOOL4.x8\
+	$(DEST)\WOOL5.x8\
+	$(DEST)\WOOL6.x8\
+	$(DEST)\WOOL7.x8\
+	$(DEST)\WOOL8.x8\
+	$(DEST)\FACTORY1.x8\
+	$(DEST)\FACTORY2.x8\
+	$(DEST)\FACTORY3.x8\
+	$(DEST)\FACTORY4.x8\
+	$(DEST)\FACTORY5.x8\
+	$(DEST)\FACTORY6.x8\
+	$(DEST)\FACTORY7.x8\
+	$(DEST)\ALBERT2.x8\
+	$(DEST)\TOLRW.x8\
+	$(DEST)\TOLIW.x8\
+	$(DEST)\PALCOW.x8\
+	$(DEST)\PALCIW.x8\
+	$(DEST)\PALCBK.x8\
+	$(DEST)\SPITLFLP.x8\
+	$(DEST)\SPITRFLP.x8\
+	$(DEST)\SPITUFLP.x8\
+	$(DEST)\MESTME.x8\
+	$(DEST)\M109LFLP.x8\
+	$(DEST)\M109RFLP.x8\
+	$(DEST)\M109URF.x8\
+	$(DEST)\M109ULF.x8\
+	$(DEST)\M110UBTL.x8\
+	$(DEST)\M110LFIN.x8\
+	$(DEST)\M110RFIN.x8\
+	$(DEST)\ME110TTL.x8\
+	$(DEST)\HP.x8\
+	$(DEST)\JU87TELV.x8\
+	$(DEST)\JU87BELV.x8\
+	$(DEST)\JU87TAIL.x8\
+	$(DEST)\HUCLFLP.x8\
+	$(DEST)\HUCRFLP.x8\
+	$(DEST)\HUCRTAIL.x8\
+	$(DEST)\HUCLTAIL.x8\
+	$(DEST)\HUCUTAIL.x8\
+	$(DEST)\D17ULFLP.x8\
+	$(DEST)\D17ENG.x8\
+	$(DEST)\D17LFLAP.x8\
+	$(DEST)\D17RFLAP.x8\
+	$(DEST)\D17VTAIL.x8\
+	$(DEST)\JU88VTAL.x8\
+	$(DEST)\JU88LFLP.x8\
+	$(DEST)\JU88RFLP.x8\
+	$(DEST)\JU88UFLP.x8\
+	$(DEST)\HE11TLF.x8\
+	$(DEST)\HE11TRF.x8\
+	$(DEST)\HE11TUF.x8\
+	$(DEST)\HE11VTAL.x8\
+	$(DEST)\DEFUFLP.x8\
+	$(DEST)\DEFLFLP.x8\
+	$(DEST)\DEFRFLP.x8\
+	$(DEST)\DEFVTAL.x8\
+	$(DEST)\PACK.x8\
+	$(DEST)\BRIUFLP.x8\
+	$(DEST)\BRILFLP.x8\
+	$(DEST)\BRIRFLP.x8\
+	$(DEST)\BRIVTAL.x8\
+	$(DEST)\BRIRENG.x8\
+	$(DEST)\BRILENG.x8\
+	$(DEST)\INENG.x8\
+
+
+MAPS128X128	=	$(DEST)\FACT1.x8\
+	$(DEST)\STACK.x8\
+	$(DEST)\ALBERT1.x8\
+	$(DEST)\RHUT.x8\
+	$(DEST)\LBUS.x8\
+	$(DEST)\LVAN.x8\
+	$(DEST)\CAR.x8\
+	$(DEST)\WARHS.x8\
+	$(DEST)\TOWNA.x8\
+	$(DEST)\TOWNB.x8\
+	$(DEST)\PAULSID.x8\
+	$(DEST)\CITYA.x8\
+	$(DEST)\CITYB.x8\
+	$(DEST)\CLIFF.x8\
+	$(DEST)\M110ENG.x8\
+	$(DEST)\D17TBOD.x8\
+	$(DEST)\JU88ENG.x8\
+	$(DEST)\HE11ENG.x8\
+	$(DEST)\RAFPILOT.x8\
+	$(DEST)\LWPILOT.x8\
+	$(DEST)\RAFCREW.x8\
+	$(DEST)\STONE.x8\
+
+
+MAPS32X32	=	$(DEST)\SPILOT.x8\
+	$(DEST)\TPILOT.x8\
+	$(DEST)\GPILOT.x8\
+
+
+MAPS64X128	=	$(DEST)\CONAIR.x8\
+
+
+MAPS16X256	=	$(DEST)\NUMS.x8\
+
+
+MAPS128X16	=
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT256X256) -dw $(DEST)\$*.x8
+
+$(MAPS64X64):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT64X64) -dw $(DEST)\$*.x8
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X128) -dw $(DEST)\$*.x8
+
+$(MAPS32X32):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT32X32) -dw $(DEST)\$*.x8
+
+$(MAPS64X128):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT64X128) -dw $(DEST)\$*.x8
+
+$(MAPS16X256):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT16X256) -dw $(DEST)\$*.x8
+

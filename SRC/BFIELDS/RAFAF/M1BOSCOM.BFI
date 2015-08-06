@@ -1,0 +1,48 @@
+	BattleField
+	{
+		FileName	FIL_1_M1BOSCOM=M1BOSCOM.BF,
+		Title	{},
+		Comment	{},
+		ItemGroup
+		{	Target	UID_AF_BOSCOMBEDOWN,
+			ItemGroup
+			{
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_BOSCOMBEDOWN}, 
+						 	Rel	{Bearing	ANGLES_35Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES50
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					},
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_BOSCOMBEDOWN}, 
+						 	Rel	{Bearing	ANGLES_90Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES50
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					},
+					SimpleItem 
+					{
+						Posn	
+							{Abs	{UID_AF_BOSCOMBEDOWN}, 
+						 	Rel	{Bearing	ANGLES_35Deg,
+								 	Pitch	ANGLES_0Deg,
+								 	Range	METRES100
+									}
+							},
+						UIDBand		CivilianBAND,
+						Shape		GBRIST
+					}
+			}
+		}
+	};

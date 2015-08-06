@@ -1,0 +1,8 @@
+RCOMBO Directory: ActiveX Combo box control
+================
+
+This is the drop down list control. 
+Text cannot be specified using the component editor
+The style of box cannot be specified
+The font can be specified.
+Negative numbered fonts have a shadow.

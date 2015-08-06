@@ -1,0 +1,163 @@
+	WayPoint	AFDUXFOR_0100,
+	WayPoint	AFDUXFOR_0101,
+	WayPoint	AFDUXFOR_0102,
+	WayPoint	AFDUXFOR_0103,
+	WayPoint	AFDUXFOR_0104,
+	WayPoint	AFDUXFOR_0105,
+	SimpleItem	AFDUXFOR_0413,
+	SimpleItem	AFDUXFOR_0416,
+	SimpleItem	AFDUXFOR_0418,
+	SimpleItem	AFDUXFOR_041a,
+	GroundItem	AFDUXFOR_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFDUXFOR=AFDUXFOR.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_DUXFORD,
+		ItemGroup
+		{
+				SimpleItem	AFDUXFOR_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	29856256,
+							Z	41155584
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFDUXFOR_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	29804544,
+							Z	41114368
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFDUXFOR_0418=
+				{
+					Posn
+					{
+						Abs
+						{	X	29920768,
+							Z	41104128
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFDUXFOR_041a=
+				{
+					Posn
+					{
+						Abs
+						{	X	29838592,
+							Z	41060352
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29854208,
+						Z	41150464
+					}
+				},
+				Route
+				{
+					WayPoint	AFDUXFOR_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	29836032,
+								Z	41140480
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFDUXFOR_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	29832192,
+								Z	41147392
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFDUXFOR_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	29829376,
+								Z	41149952
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFDUXFOR_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	29823744,
+								Z	41145600
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFDUXFOR_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	29830144,
+								Z	41136384
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFDUXFOR_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	29814272,
+								Z	41120768
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFDUXFOR_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

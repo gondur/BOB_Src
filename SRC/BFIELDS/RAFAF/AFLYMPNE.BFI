@@ -1,0 +1,150 @@
+	WayPoint	AFLYMPNE_0100,
+	WayPoint	AFLYMPNE_0101,
+	WayPoint	AFLYMPNE_0102,
+	WayPoint	AFLYMPNE_0103,
+	WayPoint	AFLYMPNE_0104,
+	WayPoint	AFLYMPNE_0105,
+	SimpleItem	AFLYMPNE_0416,
+	SimpleItem	AFLYMPNE_0419,
+	SimpleItem	AFLYMPNE_041c,
+	GroundItem	AFLYMPNE_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFLYMPNE=AFLYMPNE.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_LYMPNE,
+		ItemGroup
+		{
+				SimpleItem	AFLYMPNE_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	35709440,
+							Z	31149568
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFLYMPNE_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	35748864,
+							Z	31077632
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFLYMPNE_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	35680768,
+							Z	31090176
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	35631360,
+						Z	31092480
+					}
+				},
+				Route
+				{
+					WayPoint	AFLYMPNE_0105=
+					{
+						Posn
+						{
+							Abs
+							{	X	35650816,
+								Z	31092480
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFLYMPNE_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	35662848,
+								Z	31095040
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFLYMPNE_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	35679744,
+								Z	31100416
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFLYMPNE_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	35691008,
+								Z	31099904
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFLYMPNE_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	35692544,
+								Z	31108864
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFLYMPNE_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	35703040,
+								Z	31109120
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFLYMPNE_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

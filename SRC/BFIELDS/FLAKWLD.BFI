@@ -1,0 +1,634 @@
+	SimpleItem	flakwld_1900,
+	SimpleItem	flakwld_1901,
+	SimpleItem	flakwld_1902,
+	SimpleItem	flakwld_1903,
+	SimpleItem	flakwld_1904,
+	SimpleItem	flakwld_1905,
+	SimpleItem	flakwld_1906,
+	SimpleItem	flakwld_1907,
+	SimpleItem	flakwld_1908,
+	SimpleItem	flakwld_1909,
+	SimpleItem	flakwld_190a,
+	SimpleItem	flakwld_190b,
+	SimpleItem	flakwld_190c,
+	SimpleItem	flakwld_190d,
+	SimpleItem	flakwld_190e,
+	SimpleItem	flakwld_190f,
+	SimpleItem	flakwld_1910,
+	SimpleItem	flakwld_1911,
+	SimpleItem	flakwld_1912,
+	SimpleItem	flakwld_1913,
+	SimpleItem	flakwld_1914,
+	SimpleItem	flakwld_1915,
+	SimpleItem	flakwld_1916,
+	SimpleItem	flakwld_1917,
+	SimpleItem	flakwld_1918,
+	SimpleItem	flakwld_1919,
+	SimpleItem	flakwld_191a,
+	SimpleItem	flakwld_191b,
+	SimpleItem	flakwld_191c,
+	SimpleItem	flakwld_191d,
+	SimpleItem	flakwld_191e,
+	SimpleItem	flakwld_191f,
+	SimpleItem	flakwld_1920,
+	SimpleItem	flakwld_1921,
+	SimpleItem	flakwld_1922,
+	SimpleItem	flakwld_1923,
+	SimpleItem	flakwld_1924,
+	SimpleItem	flakwld_1925,
+	SimpleItem	flakwld_1926,
+	SimpleItem	flakwld_1927,
+	SimpleItem	flakwld_1928,
+	SimpleItem	flakwld_1929,
+	SimpleItem	flakwld_192a,
+	SimpleItem	flakwld_192b,
+	SimpleItem	flakwld_192c,
+	SimpleItem	flakwld_192d,
+	SimpleItem	flakwld_192e,
+	SimpleItem	flakwld_192f,
+	BattleField
+	{
+		FileName	FIL_1_FLAKWLD=flakwld.BF,
+		Title	{},
+		Comment	{}
+,
+		ItemGroup
+		{
+			SimpleItem	flakwld_1900=
+			{
+				Posn
+				{
+					Abs
+					{	X	30193664,
+						Z	34678784
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1901=
+			{
+				Posn
+				{
+					Abs
+					{	X	31498240,
+						Z	34183168
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1902=
+			{
+				Posn
+				{
+					Abs
+					{	X	29325312,
+						Z	34813952
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1903=
+			{
+				Posn
+				{
+					Abs
+					{	X	28635136,
+						Z	34947072
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1904=
+			{
+				Posn
+				{
+					Abs
+					{	X	29523968,
+						Z	35399680
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1905=
+			{
+				Posn
+				{
+					Abs
+					{	X	29030400,
+						Z	35411968
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1906=
+			{
+				Posn
+				{
+					Abs
+					{	X	28432384,
+						Z	35436544
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1907=
+			{
+				Posn
+				{
+					Abs
+					{	X	28219392,
+						Z	34258944
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1908=
+			{
+				Posn
+				{
+					Abs
+					{	X	30091264,
+						Z	35219456
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1909=
+			{
+				Posn
+				{
+					Abs
+					{	X	25925632,
+						Z	34779136
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_190a=
+			{
+				Posn
+				{
+					Abs
+					{	X	25507840,
+						Z	35094528
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_190b=
+			{
+				Posn
+				{
+					Abs
+					{	X	25880576,
+						Z	35221504
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_190c=
+			{
+				Posn
+				{
+					Abs
+					{	X	25597952,
+						Z	34801664
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_190d=
+			{
+				Posn
+				{
+					Abs
+					{	X	37050368,
+						Z	46577664
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_190e=
+			{
+				Posn
+				{
+					Abs
+					{	X	36874240,
+						Z	46946304
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_190f=
+			{
+				Posn
+				{
+					Abs
+					{	X	19832832,
+						Z	44199936
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1910=
+			{
+				Posn
+				{
+					Abs
+					{	X	19601408,
+						Z	43993088
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1911=
+			{
+				Posn
+				{
+					Abs
+					{	X	12206080,
+						Z	34883584
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1912=
+			{
+				Posn
+				{
+					Abs
+					{	X	12982272,
+						Z	34269184
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1913=
+			{
+				Posn
+				{
+					Abs
+					{	X	13152256,
+						Z	35209216
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1914=
+			{
+				Posn
+				{
+					Abs
+					{	X	13326336,
+						Z	34807808
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1915=
+			{
+				Posn
+				{
+					Abs
+					{	X	12687360,
+						Z	29302784
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1916=
+			{
+				Posn
+				{
+					Abs
+					{	X	13862912,
+						Z	25532416
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1917=
+			{
+				Posn
+				{
+					Abs
+					{	X	20396032,
+						Z	29057024
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1918=
+			{
+				Posn
+				{
+					Abs
+					{	X	20686848,
+						Z	28819456
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1919=
+			{
+				Posn
+				{
+					Abs
+					{	X	20340736,
+						Z	28663808
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_191a=
+			{
+				Posn
+				{
+					Abs
+					{	X	20783104,
+						Z	28995584
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_191b=
+			{
+				Posn
+				{
+					Abs
+					{	X	22427648,
+						Z	28073984
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_191c=
+			{
+				Posn
+				{
+					Abs
+					{	X	26208256,
+						Z	33456128
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_191d=
+			{
+				Posn
+				{
+					Abs
+					{	X	26386432,
+						Z	33624064
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_191e=
+			{
+				Posn
+				{
+					Abs
+					{	X	37353472,
+						Z	31602688
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_191f=
+			{
+				Posn
+				{
+					Abs
+					{	X	38012928,
+						Z	32108544
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1920=
+			{
+				Posn
+				{
+					Abs
+					{	X	32585728,
+						Z	34066432
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1921=
+			{
+				Posn
+				{
+					Abs
+					{	X	27312128,
+						Z	35430400
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1922=
+			{
+				Posn
+				{
+					Abs
+					{	X	26042368,
+						Z	34351104
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1923=
+			{
+				Posn
+				{
+					Abs
+					{	X	32911360,
+						Z	34985984
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1924=
+			{
+				Posn
+				{
+					Abs
+					{	X	32917504,
+						Z	35475456
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1925=
+			{
+				Posn
+				{
+					Abs
+					{	X	32083968,
+						Z	34703360
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1926=
+			{
+				Posn
+				{
+					Abs
+					{	X	33814528,
+						Z	35792896
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1927=
+			{
+				Posn
+				{
+					Abs
+					{	X	34805760,
+						Z	36333568
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1928=
+			{
+				Posn
+				{
+					Abs
+					{	X	35794944,
+						Z	33828864
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_1929=
+			{
+				Posn
+				{
+					Abs
+					{	X	38019072,
+						Z	34080768
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_192a=
+			{
+				Posn
+				{
+					Abs
+					{	X	37791744,
+						Z	31844352
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_192b=
+			{
+				Posn
+				{
+					Abs
+					{	X	34869248,
+						Z	30795776
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_192c=
+			{
+				Posn
+				{
+					Abs
+					{	X	28717056,
+						Z	33574912
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_192d=
+			{
+				Posn
+				{
+					Abs
+					{	X	29601792,
+						Z	34043904
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_192e=
+			{
+				Posn
+				{
+					Abs
+					{	X	27574272,
+						Z	34957312
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			},
+			SimpleItem	flakwld_192f=
+			{
+				Posn
+				{
+					Abs
+					{	X	26370048,
+						Z	34428928
+					}
+				},
+				UIDBand		BritAAALargeBAND,
+				Shape		LBGUN
+			}
+		}
+	};

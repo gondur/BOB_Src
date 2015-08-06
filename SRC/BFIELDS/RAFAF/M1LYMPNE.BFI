@@ -1,0 +1,91 @@
+	WayPoint	M1LYMPNE_011d,
+	WayPoint	M1LYMPNE_011e,
+	WayPoint	M1LYMPNE_011f,
+	WayPoint	M1LYMPNE_0120,
+	WayPoint	M1LYMPNE_0121,
+	GroundItem	M1LYMPNE_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1LYMPNE=M1LYMPNE.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_LYMPNE,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	35703296,
+						Z	31093248
+					}
+				},
+				Route
+				{
+					WayPoint	M1LYMPNE_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	35703552,
+								Z	31113728
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1LYMPNE_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	35706880,
+								Z	31121408
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1LYMPNE_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	35710976,
+								Z	31136512
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1LYMPNE_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	35712000,
+								Z	31146240
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1LYMPNE_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	35712512,
+								Z	31181312
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1LYMPNE_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	}	}
+	};

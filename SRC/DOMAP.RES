@@ -1,0 +1,3 @@
+-r s:\projects\bob\artsrc\IMAGEMAP\FONT.PCX -cw256h256
+-t254 -mmPR -mmTP -mt255x0 -mmPT -mmRP -fm254
+-w ..\GAME\maskmap\FONT.x8

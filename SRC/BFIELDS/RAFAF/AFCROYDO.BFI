@@ -1,0 +1,139 @@
+	WayPoint	AFCROYDO_0100,
+	WayPoint	AFCROYDO_0101,
+	WayPoint	AFCROYDO_0102,
+	WayPoint	AFCROYDO_0103,
+	SimpleItem	AFCROYDO_0411,
+	SimpleItem	AFCROYDO_0414,
+	SimpleItem	AFCROYDO_0416,
+	SimpleItem	AFCROYDO_0418,
+	GroundItem	AFCROYDO_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFCROYDO=AFCROYDO.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_CROYDON,
+		ItemGroup
+		{
+				SimpleItem	AFCROYDO_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	28498944,
+							Z	33626624
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFCROYDO_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	28413952,
+							Z	33614336
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFCROYDO_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	28417536,
+							Z	33664000
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFCROYDO_0418=
+				{
+					Posn
+					{
+						Abs
+						{	X	28481536,
+							Z	33691136
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	28492800,
+						Z	33657344
+					}
+				},
+				Route
+				{
+					WayPoint	AFCROYDO_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	28486656,
+								Z	33682432
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFCROYDO_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	28479488,
+								Z	33682432
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFCROYDO_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	28479488,
+								Z	33658880
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFCROYDO_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	28487168,
+								Z	33632768
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFCROYDO_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

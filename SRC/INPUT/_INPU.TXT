@@ -1,0 +1,28 @@
+INPUT Directory:	All input functionality
+================
+
+This directory used to contain all the custom joystick and mouse drivers in FC,
+but since switching exclusively to DirectX, I have put all the functionality 
+directly into Analogue.CPP (class Analogue)
+
+The file KeyStub.CPP is also active, although it is actually compiled as part of _MFC.CPP
+
+The joystick system also makes heavy use of the routines in 
+MFC\SCONTROL.CPP (class SController) for attaching the detected 
+devices and axes to game inputs.
+
+KEYLIST.CPP compiles to produce all the keyboard and device button assignments
+for the game in on of 8 different shift states:
+
+ Normal:	No shift or lock keys pressed
+ Shift:		Left or Right shift key pressed
+ Ctrl:		Left or Right control keys pressed
+ Alt:		Left or Right alt keys pressed
+ Menu:		On a menu or map screen or the polygon cockpit
+ Text:		Caps lock key toggled
+ Shift Text	Left or Right shift key pressed while in Text mode
+
+This is a change from MiG or FC, and unlike these earlier products, the key definitions
+for setting these shift and lock keys is also listed in the table!
+
+

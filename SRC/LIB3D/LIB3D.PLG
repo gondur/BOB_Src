@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lib3D - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSP1F1.TMP" with contents
+[
+/nologo /G6 /Zp1 /MTd /W3 /Gm- /GX /Zi /O2 /Ob2 /I "\bob\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIB3D_EXPORTS" /FR"\bob\Debug\Lib3D/" /Fo"\bob\Debug\Lib3D/" /Fd"\bob\Debug\Lib3D/" /FD /c 
+"D:\Bob\Src\Lib3D\alloc.c"
+"D:\Bob\Src\Lib3D\Getdxver.cpp"
+"D:\Bob\Src\Lib3D\l3dguid.cpp"
+"D:\Bob\Src\Lib3D\Lib3D.cpp"
+"D:\Bob\Src\Lib3D\radix.c"
+]
+Creating command line "cl.exe @c:\temp\RSP1F1.TMP" 
+Creating temporary file "c:\temp\RSP1F2.TMP" with contents
+[
+/nologo /G6 /Zp1 /MTd /W3 /Gm /GX /Zi /O2 /Ob2 /I "\bob\src\h" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIB3D_EXPORTS" /FR"\bob\Debug\Lib3D/" /Fo"\bob\Debug\Lib3D/" /Fd"\bob\Debug\Lib3D/" /FD /c 
+"D:\Bob\Src\3d\Monotxt.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSP1F2.TMP" 
+Creating temporary file "c:\temp\RSP01F3.TMP" with contents
+[
+winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib dxguid.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ddraw.lib /nologo /base:"0x10000000" /dll /incremental:yes /pdb:"\bob\Debug\exe/Lib3D.pdb" /map:"\bob\Debug\Lib3D/Lib3D.map" /debug /machine:I386 /out:"\bob\Debug\exe/Lib3D.dll" /implib:"\bob\Debug\exe/Lib3D.lib" /pdbtype:sept /libpath:"\bob\src\lib" 
+\bob\Debug\Lib3D\alloc.obj
+\bob\Debug\Lib3D\Getdxver.obj
+\bob\Debug\Lib3D\l3dguid.obj
+\bob\Debug\Lib3D\Lib3D.obj
+\bob\Debug\Lib3D\Monotxt.obj
+\bob\Debug\Lib3D\radix.obj
+]
+Creating command line "link.exe @c:\temp\RSP01F3.TMP"
+<h3>Output Window</h3>
+Compiling...
+alloc.c
+Generating Code...
+Compiling...
+Getdxver.cpp
+l3dguid.cpp
+Lib3D.cpp
+D:\Bob\Src\Lib3D\lib3d.h(1274):                  defining GUIDs
+D:\Bob\Src\Lib3D\Lib3D.cpp(188):                   Look at these equates...
+D:\Bob\Src\Lib3D\Lib3D.cpp(774):                   many of these functions don't need this ptr. 4035 will only squelch at TOP l
+D:\Bob\Src\Lib3D\Lib3D.cpp(1351):                   mask and shift can be quicker
+D:\Bob\Src\Lib3D\Lib3D.cpp(784) : warning C4035: 'SetToTopBit' : no return value
+Generating Code...
+D:\Bob\Src\Lib3D\Lib3D.cpp(7654):                   please tweak these values to max out the 64mb+ cards
+D:\Bob\Src\Lib3D\Lib3D.cpp(7967):                   should be a const not a constant....
+D:\Bob\Src\Lib3D\Lib3D.cpp(12225): drawline can be further optimised by moving the projection to the render
+D:\Bob\Src\Lib3D\Lib3D.cpp(12400): drawpoint can be further optimised by moving the projection to the render
+D:\Bob\Src\Lib3D\Lib3D.cpp(14390):                   I believe that this should be redundant- however it doesn't work without it
+D:\Bob\Src\Lib3D\Lib3D.cpp(14391):                      -Note in SetUpRenderBlocks() this is set to mirror to force the switch
+Compiling...
+radix.c
+Generating Code...
+Compiling...
+Monotxt.cpp
+D:\Bob\Src\3d\Monotxt.cpp(24): Mono debugs enabled!!!!
+Linking...
+   Creating library \bob\Debug\exe/Lib3D.lib and object \bob\Debug\exe/Lib3D.exp
+Creating temporary file "c:\temp\RSP1184.BAT" with contents
+[
+@echo off
+copy .\cardbase.txt ..\..\game\cardbase.rc
+]
+Creating command line "c:\temp\RSP1184.BAT"
+
+D:\BOB\SRC\LIB3D\Cardbase.txt => D:\BOB\game\cardbase.rc
+     1 file copied
+
+
+
+<h3>Results</h3>
+Lib3D.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

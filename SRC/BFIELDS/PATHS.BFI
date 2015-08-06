@@ -1,0 +1,37 @@
+	Level		138,FileName	..\game\bfields,
+	#INCLUDE	bfields\subinc.bfi,
+
+	Level		120,FileName	..\game\bfields\rafaf,
+	#INCLUDE	bfields\rafaf\subinc.bfi,
+
+	Level		121,FileName	..\game\bfields\lufaf,
+	#INCLUDE	bfields\lufaf\subinc.bfi,
+
+	Level		122,FileName	..\game\bfields\industry,
+	#INCLUDE	bfields\industry\subinc.bfi,
+
+	Level		123,FileName	..\game\bfields\radar,
+	#INCLUDE	bfields\radar\subinc.bfi,
+		
+	Level		124,FileName	..\game\bfields\convoys,
+	#INCLUDE	bfields\convoys\subinc.bfi,
+
+	Level		125,FileName	..\game\bfields\nodes,
+	#INCLUDE	bfields\nodes\subinc.bfi,
+
+	Level		126,FileName	..\game\bfields\spare1,
+	#INCLUDE	bfields\spare1\subinc.bfi,
+
+	Level		127,FileName	..\game\bfields\spare2,
+	#INCLUDE	bfields\spare2\subinc.bfi,
+
+	Level		128,FileName	..\game\bfields\spare3,
+	#INCLUDE	bfields\spare3\subinc.bfi,
+
+	Level		129,FileName	..\game\bfields\spare4,
+	#INCLUDE	bfields\spare4\subinc.bfi,
+
+	Level		136,FileName	..\game\bfields\gengrnd,
+//	#INCLUDE	BFIELDS\generic.bfi,
+	
+//	#INCLUDE	userobj\subinc.bfi,

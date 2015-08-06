@@ -1,0 +1,112 @@
+Instructions for Battle of Britain (BoB) text translation
+=========================================================
+
+Line numbers are "correct at time of writing these instructions", but
+there may be minor changes to the files before you get them... 
+
+We have provided the following files:
+
+BOB.RC	   	- miscellaneous in-game text
+SHAPE_GM.TXT	- item names
+UIDNAMES.TXT	- item names
+UIDDESCS.TXT	- item names
+RADMAST.RES	- radio chatter
+[actors.TXT	- this file is for reference only. DO NOT TRANSLATE!]
+
+These files are all 8 bit plain text files. 
+Please use the 8bit Windows (ANSI) font for the language locale. 
+For Oriental versions we will want to use the locale M/S Multibyte character set.
+
+BOB.RC
+
+	Translate everything in quotes 
+		after STRINGTABLE 	(line 19953)
+		before APSTUDIO_INVOKED (line 22914)
+		2112 pieces of text
+	
+	Most single words have a limited space, but should be able to
+	take a couple of extra characters.
+	Many pieces of text will be converted into hints if they do not
+	fit.
+	Lists begin IDS_L_??_. 
+	All the entries in the list will have the
+	largest width available, allowing a little extra flexibility
+	for the shorter entries.
+
+SHAPE_GM.TXT
+	Translate everything in quotes 
+	These are generic item names. 280 total
+	The SHP_A/B/C/D are intentionally repeated and are identical.
+
+UIDNAMES.TXT
+UIDDESCS.TXT
+	Translate everything in quotes 
+	These are specific target names
+	Many of the entries in these 2 files are identical, but a few
+	are different.
+
+RADMAST.RES
+	There are 3 columns: file name, label, and quoted text.
+	Translate everything in quotes in the first half of this file.
+	The first 2332 lines out of 4885. 2158 phrases.
+	The first half of this file is phrases which will be
+	concatentated together to make statments.
+	The use of leading and trailing spaces and punctuation are 
+	important. Please don't change them.
+	Some of the phrases are target names repeated from
+	UIDNAMES.TXT. You can copy them, but please insert the leading spaces.
+
+For reference in identifying context for the radio chatter we have provided:
+1)	The second half of RADMAST.RES lists the sequences used to 
+	concatenate the phrases.
+	This consists of a list of the labels that are in the middle column
+	of the first part of the file.
+
+2)	The file actors.TXT contains many example fully
+	complete statements. Some instances of each phrase are
+	hilighted with the filenames, but there are other instances as
+	well. DO NOT TRANSLATE ACTORS.TXT
+
+3)	If you are confused... phone us.
+
+To use the actors.TXT file to find an example:
+
+Get the file-name part after the underscore "_" 
+	- ignore the underscore and the letters before.
+Search for this filename in the actors.txt.
+The line above this should contain the phrase in square brackets.
+
+Example 1: 
+
+Find examples of " Panther I" in
+	LW_CALLG000.WAV	CALLEEGLW000	" Panther I"
+
+Search for:
+	"CALLG000.WAV" in actors.TXT: 2 identical examples
+[ Panther I]. Approaching waypoint.[ New heading ][3][4][5].
+CALLG000.WAV	NEWHDG.WAV	N3.WAV	N4.WAV	N5.WAV	
+
+Exampe 2: 
+Find examples of "Tiger Leader" in
+	LWYCGSR_CALLSL71.WAV	CALLEE_LWSN71	" Tiger Leader"
+
+Search for: 
+	"CALLSL71.WAV" in actors.TXT: 5 unique examples:
+
+ This is[ Tiger Leader].[ Friendlies]. Bearing 231. Range 200 yards, below.
+CALLSL71.WAV	FRIENDLS.WAV	
+[ Tiger Leader].[ My gauge reads zero!]
+CALLSL71.WAV	GAUGZERO.WAV	
+[ Tiger Leader]. Bandit at 6 O'clock. Break right!
+CALLSL71.WAV	
+ Hello[ Tiger Leader]. Understood. I have a fix on you.
+CALLSL71.WAV	
+[ Tiger Leader]. Permission to pancake granted.
+CALLSL71.WAV	
+
+
+	
+
+
+
+

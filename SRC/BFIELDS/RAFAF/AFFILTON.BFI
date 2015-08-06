@@ -1,0 +1,138 @@
+	WayPoint	AFFILTON_011e,
+	WayPoint	AFFILTON_011f,
+	WayPoint	AFFILTON_0120,
+	WayPoint	AFFILTON_0121,
+	WayPoint	AFFILTON_0122,
+	SimpleItem	AFFILTON_0440,
+	SimpleItem	AFFILTON_0443,
+	SimpleItem	AFFILTON_0446,
+	GroundItem	AFFILTON_2901,
+	BattleField
+	{
+		FileName	FIL_1_AFFILTON=AFFILTON.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_FILTON,
+		ItemGroup
+		{
+				SimpleItem	AFFILTON_0440=
+				{
+					Posn
+					{
+						Abs
+						{	X	12944896,
+							Z	35150848
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFFILTON_0443=
+				{
+					Posn
+					{
+						Abs
+						{	X	13027840,
+							Z	35114752
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFFILTON_0446=
+				{
+					Posn
+					{
+						Abs
+						{	X	13064960,
+							Z	35225344
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	13064704,
+						Z	35151872
+					}
+				},
+				Route
+				{
+					WayPoint	AFFILTON_0122=
+					{
+						Posn
+						{
+							Abs
+							{	X	13063424,
+								Z	35144448
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFILTON_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	13058816,
+								Z	35144448
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFILTON_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	13058816,
+								Z	35130112
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFILTON_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	13042176,
+								Z	35130112
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFFILTON_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	13041920,
+								Z	35123968
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFFILTON_2901=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

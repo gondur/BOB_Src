@@ -1,0 +1,6 @@
+	BattleField
+	{
+		FileName	FIL_1_MBSWITCH=MBSWITCH.BF,
+		Title	{},
+		Comment	{}
+	};

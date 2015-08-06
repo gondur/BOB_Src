@@ -1,0 +1,61 @@
+// RowanDialog: // Messages.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "bob.h"
+#include "Messages.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// Messages dialog
+
+
+RDialog*	Messages::Make()
+{
+	return
+		MakeTopDialog(::Place(POSN_CENTRE,POSN_CENTRE),
+			DialBox(FIL_D_INTELL,new Messages())
+			);
+}
+
+
+Messages::Messages(CWnd* pParent /*=NULL*/)
+	: RowanDialog(Messages::IDD, pParent)
+{
+	//{{AFX_DATA_INIT(Messages)
+		// NOTE: the ClassWizard will add member initialization here
+	//}}AFX_DATA_INIT
+}
+
+
+void Messages::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(Messages)
+		// NOTE: the ClassWizard will add DDX and DDV calls here
+	//}}AFX_DATA_MAP
+}
+
+
+BEGIN_MESSAGE_MAP(Messages, CDialog)
+	//{{AFX_MSG_MAP(Messages)
+	//}}AFX_MSG_MAP
+END_MESSAGE_MAP()
+
+/////////////////////////////////////////////////////////////////////////////
+// Messages message handlers
+
+BOOL Messages::OnInitDialog() 
+{
+	CDialog::OnInitDialog();
+	
+	// TODO: Add extra initialization here
+	
+	return TRUE;  // return TRUE unless you set the focus to a control
+	              // EXCEPTION: OCX Property Pages should return FALSE
+}

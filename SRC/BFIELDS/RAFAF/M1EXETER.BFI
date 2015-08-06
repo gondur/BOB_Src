@@ -1,0 +1,115 @@
+	WayPoint	M1EXETER_0120,
+	WayPoint	M1EXETER_0121,
+	WayPoint	M1EXETER_0122,
+	WayPoint	M1EXETER_0123,
+	WayPoint	M1EXETER_0124,
+	WayPoint	M1EXETER_0125,
+	WayPoint	M1EXETER_0126,
+	GroundItem	M1EXETER_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1EXETER=M1EXETER.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_EXETER,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	7149312,
+						Z	26999296
+					}
+				},
+				Route
+				{
+					WayPoint	M1EXETER_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	7165696,
+								Z	26995968
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1EXETER_0122=
+					{
+						Posn
+						{
+							Abs
+							{	X	7174144,
+								Z	26999296
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1EXETER_0123=
+					{
+						Posn
+						{
+							Abs
+							{	X	7180032,
+								Z	27005440
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1EXETER_0124=
+					{
+						Posn
+						{
+							Abs
+							{	X	7184896,
+								Z	27006464
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1EXETER_0125=
+					{
+						Posn
+						{
+							Abs
+							{	X	7198464,
+								Z	27005440
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1EXETER_0126=
+					{
+						Posn
+						{
+							Abs
+							{	X	7206656,
+								Z	27008000
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1EXETER_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	7208704,
+								Z	27014144
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1EXETER_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	}	}
+	};

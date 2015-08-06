@@ -1,0 +1,127 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGEMAP
+DEST = ..\GAME\cockpits
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\CPT1NW.x8\
+	$(DEST)\CPT1NE.x8\
+	$(DEST)\CPT1SE.x8\
+	$(DEST)\CPT1SW.x8\
+	$(DEST)\CPT1MIDL.x8\
+	$(DEST)\CPT1MIDR.x8\
+	$(DEST)\CPT1OXY.x8\
+	$(DEST)\CPT1CLIK.x8\
+	$(DEST)\CPT1SID1.x8\
+	$(DEST)\CPT1SID2.x8\
+	$(DEST)\CPT1CLK2.x8\
+	$(DEST)\CPT1SID3.x8\
+	$(DEST)\CPT1CLK3.x8\
+	$(DEST)\CPT2NW.x8\
+	$(DEST)\CPT2NE.x8\
+	$(DEST)\CPT2SE.x8\
+	$(DEST)\CPT2SW.x8\
+	$(DEST)\CPT2SID1.x8\
+	$(DEST)\CPT2SID2.x8\
+	$(DEST)\CPT2CLIK.x8\
+	$(DEST)\MG15.x8\
+	$(DEST)\CPT3NE.x8\
+	$(DEST)\CPT3SE.x8\
+	$(DEST)\CPT3SW.x8\
+	$(DEST)\CPT3NW.x8\
+
+
+MAPS64X64	=	$(DEST)\CPT1RIM1.x8\
+	$(DEST)\CPT1RIM2.x8\
+	$(DEST)\CPT1RIM3.x8\
+	$(DEST)\CPT1RIM4.x8\
+	$(DEST)\CPT1RIM5.x8\
+	$(DEST)\CPT1RIM6.x8\
+	$(DEST)\ARTHORIZ.x8\
+	$(DEST)\CPT2RIM1.x8\
+	$(DEST)\CPT2RIM2.x8\
+	$(DEST)\CPT2RIM3.x8\
+	$(DEST)\CPT2RIM4.x8\
+	$(DEST)\CPT2RIM5.x8\
+
+
+MAPS128X128	=	$(DEST)\CPT1D22.x8\
+	$(DEST)\CPT1D25.x8\
+	$(DEST)\CPT1D26.x8\
+	$(DEST)\CPT1D28.x8\
+	$(DEST)\CPT1D29.x8\
+	$(DEST)\CPT1D30.x8\
+	$(DEST)\CPT1D31.x8\
+	$(DEST)\CPT1D33.x8\
+	$(DEST)\CPT1D34.x8\
+	$(DEST)\CPT1D39.x8\
+	$(DEST)\CPT1D41.x8\
+	$(DEST)\CPT1D42.x8\
+	$(DEST)\CPT1D43.x8\
+	$(DEST)\CPT1D44.x8\
+	$(DEST)\MIRROR.x8\
+	$(DEST)\CPT2D22.x8\
+	$(DEST)\CPT2D26.x8\
+	$(DEST)\CPT2D29.x8\
+	$(DEST)\CPT2D30.x8\
+	$(DEST)\CPT2D31.x8\
+	$(DEST)\CPT2D34.x8\
+	$(DEST)\CPT2D39.x8\
+	$(DEST)\CPT2D40.x8\
+	$(DEST)\CPT2D41.x8\
+	$(DEST)\CPT2D42.x8\
+	$(DEST)\CPT2D43.x8\
+	$(DEST)\CPT2D45.x8\
+	$(DEST)\CPT2WEAP.x8\
+	$(DEST)\STRUTS.x8\
+	$(DEST)\CPT3D1.x8\
+	$(DEST)\CPT3D2.x8\
+	$(DEST)\CPT3D4.x8\
+	$(DEST)\CPT3D5.x8\
+	$(DEST)\CPT3D6.x8\
+
+
+MAPS32X32	=
+
+MAPS64X128	=
+
+MAPS16X256	=
+
+MAPS128X16	=	$(DEST)\COMPASS.x8\
+
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT256X256) -dw $(DEST)\$*.x8
+
+$(MAPS64X64):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT64X64) -dw $(DEST)\$*.x8
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X128) -dw $(DEST)\$*.x8
+
+$(MAPS128X16):	$(SRC)\$*.PCX
+		tt2 -dr $(SRC)\$*.PCX $(TT128X16) -dw $(DEST)\$*.x8
+

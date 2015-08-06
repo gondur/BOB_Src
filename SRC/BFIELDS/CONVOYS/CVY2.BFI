@@ -1,0 +1,123 @@
+	WayPoint	cvy2_0107,
+	WayPoint	cvy2_0108,
+	WayPoint	cvy2_0109,
+	WayPoint	cvy2_010a,
+	WayPoint	cvy2_010b,
+	WayPoint	cvy2_010c,
+	WayPoint	cvy2_010d,
+	GroundItem	cvy2_2a81,
+	BattleField
+	{
+		FileName	FIL_1_CVY2=cvy2.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	32286009,
+					Z	35061410
+				}
+			},
+			Route
+			{
+				WayPoint	cvy2_0107=
+				{
+					Posn
+					{
+						Abs
+						{	X	39322031,
+							Z	34757319
+						}
+					},
+					////Vel	145,
+					Action	wpdmbtrknoactno,
+					Range	0
+				},
+				WayPoint	cvy2_0108=
+				{
+					Posn
+					{
+						Abs
+						{	X	39133285,
+							Z	31789817
+						}
+					},
+					////Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy2_0109=
+				{
+					Posn
+					{
+						Abs
+						{	X	35945579,
+							Z	28832800
+						}
+					},
+					////Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy2_010a=
+				{
+					Posn
+					{
+						Abs
+						{	X	31929489,
+							Z	26756597
+						}
+					},
+					////Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy2_010b=
+				{
+					Posn
+					{
+						Abs
+						{	X	24862009,
+							Z	26473478
+						}
+					},
+					////Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy2_010c=
+				{
+					Posn
+					{
+						Abs
+						{	X	18580971,
+							Z	23264800
+						}
+					},
+					////Vel	145,
+					Action	wpdmbtrknoactno,
+					Range	0
+				},
+				WayPoint	cvy2_010d=
+				{
+					Posn
+					{
+						Abs
+						{	X	196608,
+							Z	19791872
+						}
+					},
+					Action	wpstopno
+				}
+			},
+			NumInForm		3,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy2_2a81=
+			{
+				BritBoatBAND,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List DSTRYR,COASTR,COASTR,COASTR,COASTR,DSTRYR,COASTR,COASTR,COASTR,COASTR,DSTRYR,COASTR,COASTR,COASTR,COASTR,DSTRYR},
+				////Vel	2501,
+				SetUID	UID_CONV_2
+		}	}
+	};

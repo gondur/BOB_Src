@@ -1,0 +1,127 @@
+	WayPoint	AFGRAVES_0100,
+	WayPoint	AFGRAVES_0101,
+	WayPoint	AFGRAVES_0102,
+	SimpleItem	AFGRAVES_0413,
+	SimpleItem	AFGRAVES_0416,
+	SimpleItem	AFGRAVES_0419,
+	SimpleItem	AFGRAVES_041c,
+	GroundItem	AFGRAVES_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFGRAVES=AFGRAVES.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_GRAVESEND,
+		ItemGroup
+		{
+				SimpleItem	AFGRAVES_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	31681792,
+							Z	34433792
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFGRAVES_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	31626496,
+							Z	34409728
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFGRAVES_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	31660032,
+							Z	34370304
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFGRAVES_041c=
+				{
+					Posn
+					{
+						Abs
+						{	X	31706368,
+							Z	34397696
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	31691520,
+						Z	34414592
+					}
+				},
+				Route
+				{
+					WayPoint	AFGRAVES_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	31686400,
+								Z	34415360
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFGRAVES_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	31683584,
+								Z	34420992
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFGRAVES_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	31678976,
+								Z	34425600
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFGRAVES_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

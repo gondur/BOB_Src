@@ -1,0 +1,79 @@
+	WayPoint	cvy_g6_c_0110,
+	WayPoint	cvy_g6_c_0111,
+	WayPoint	cvy_g6_c_0112,
+	WayPoint	cvy_g6_c_0113,
+	GroundItem	cvy_g6_c_2902,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G6_C=cvy_g6_c.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	40902656,
+					Z	43393024
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g6_c_0113=
+				{
+					Posn
+					{
+						Abs
+						{	X	41353216,
+							Z	46628864
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_c_0112=
+				{
+					Posn
+					{
+						Abs
+						{	X	38977536,
+							Z	50991104
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_c_0111=
+				{
+					Posn
+					{
+						Abs
+						{	X	32423936,
+							Z	53428224
+						}
+					},
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g6_c_0110=
+				{
+					Posn
+					{
+						Abs
+						{	X	30846976,
+							Z	57421824
+						}
+					},
+					Action	wpstopno
+				}
+			},
+			NumInForm		10,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g6_c_2902=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G6_C,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER,COLIER}
+				//Vel	2501
+		}	}
+	};

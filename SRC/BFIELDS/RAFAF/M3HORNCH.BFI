@@ -1,0 +1,63 @@
+	WayPoint	M3HORNCH_0122,
+	WayPoint	M3HORNCH_0123,
+	GroundItem	M3HORNCH_2906,
+	BattleField
+	{
+		FileName	FIL_1_M3HORNCH=M3HORNCH.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{ParentRand, Int {Random 0,4,1}},
+	Setval	{RangeStepSize, {List ParentRand,VEL_MoveTroop,VEL_MoveTank,VEL_MoveVehicle,VEL_MoveVehicle}},
+	Setval	{TruckMoveCode, MoveCode {List ParentRand,GROUND_BLOKE,GROUND_TAXI,GROUND_TAXI,GROUND_TAXI}},
+	Setval	{Truck1Shape, Shape {List ParentRand,BLOKE,PLTRUK,PLTRUK,PLTRUK}},
+	ItemGroup
+	{	Target	UID_AF_HORNCHURCH,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30412544,
+						Z	35551744
+					}
+				},
+				Route
+				{
+					WayPoint	M3HORNCH_0123=
+					{
+						Posn
+						{
+							Abs
+							{	X	30433280,
+								Z	35534848
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3HORNCH_0122=
+					{
+						Posn
+						{
+							Abs
+							{	X	30467584,
+								Z	35503360
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M3HORNCH_2906=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape,
+					Vel	RangeStepSize,
+					MoveCode	TruckMoveCode
+			}	}	}
+	};

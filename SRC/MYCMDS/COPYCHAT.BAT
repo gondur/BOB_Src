@@ -1,0 +1,15 @@
+copy ..\game\player\*.wav t:\game\player\
+copy ..\game\plyext\*.wav t:\game\plyext\
+copy ..\game\lwplayer\*.wav t:\game\lwplayer\
+copy ..\game\lwplyext\*.wav t:\game\lwplyext\
+copy ..\game\other\*.wav t:\game\other\
+copy ..\game\othext\*.wav t:\game\othext\
+copy ..\game\lwother\*.wav t:\game\lwother\
+copy ..\game\lwothext\*.wav t:\game\lwothext\
+copy ..\game\ground\*.wav t:\game\ground\
+copy ..\game\ground2\*.wav t:\game\ground2\
+copy ..\game\female\*.wav t:\game\female\
+copy ..\game\tower0\*.wav t:\game\tower0\
+copy ..\game\tower1\*.wav t:\game\tower1\
+copy ..\game\tower2\*.wav t:\game\tower2\
+copy ..\game\lwvoice2\*.wav t:\game\lwvoice2\

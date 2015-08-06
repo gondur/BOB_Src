@@ -1,0 +1,614 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""RListBox.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "RowanSoftware\0"
+            VALUE "FileDescription", "RListBox ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RLISTBOX\0"
+            VALUE "LegalCopyright", "Copyright (C) 1997-1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RLISTBOX.OCX\0"
+            VALUE "ProductName", "RListBox ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_RLISTBOX            BITMAP  DISCARDABLE     "RListBxC.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_RLISTBOX DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Stripes style",IDC_IS_STRIPEY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,5,53,10
+    CONTROL         "Column Seperators",IDC_LINES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,65,75,10
+    CONTROL         "Lock left Column",IDC_LOCK_LEFT_COLUMN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,115,5,69,10
+    CONTROL         "Lock top Row",IDC_LOCK_TOP_ROW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,20,61,10
+    CONTROL         "Drag and Drop row headers",IDC_DRAG_AND_DROP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,35,103,10
+    EDITTEXT        IDC_FONT_NUMBER,185,45,40,14,ES_AUTOHSCROLL
+    LTEXT           "Data Font",IDC_STATIC,120,50,32,8
+    CONTROL         "Blackboard style",IDC_BLACKBOARD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,68,10
+    EDITTEXT        IDC_FONT_NUMBER2,185,60,40,14,ES_AUTOHSCROLL
+    LTEXT           "Header Font",IDC_STATIC,120,65,40,8
+    CONTROL         "Row Seperators",IDC_LINES2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,50,67,10
+    CONTROL         "Select Whole Rows",IDC_SELECT_WHOLE_ROWS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,80,75,8
+    CONTROL         "Border",IDC_SELECT_WHOLE_ROWS2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,94,75,8
+    EDITTEXT        IDC_HORZ_SEPERATION,185,75,40,14,ES_AUTOHSCROLL
+    LTEXT           "Horz Seperation",IDC_STATIC,120,80,52,8
+    EDITTEXT        IDC_VERT_SEPERATION,185,90,40,14,ES_AUTOHSCROLL
+    LTEXT           "Vert Seperation",IDC_STATIC,120,95,50,8
+    CONTROL         "Centred",IDC_CENTRED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,115,35,41,10
+END
+
+IDD_PROPPAGE_RLIST_2 DIALOG DISCARDABLE  0, 0, 250, 110
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "     0          1            2           3          4           5           6            7            8",
+                    IDC_STATIC,9,4,234,11
+    COMBOBOX        IDC_ALIGNMENT0,7,31,25,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT1,33,31,25,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT2,59,31,25,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT3,85,31,25,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT4,111,31,25,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT5,137,31,25,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT6,163,31,25,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT7,189,31,25,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ALIGNMENT8,215,31,25,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ICON0,7,44,95,143,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON1,31,50,90,135,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON2,57,57,92,123,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON3,86,65,88,125,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON4,112,73,86,124,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON5,139,79,89,120,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON6,163,84,84,126,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON7,125,44,91,123,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ICON8,149,52,91,123,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDITCOLUMN0,7,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN0,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,22,13,7,14
+    EDITTEXT        IDC_EDITCOLUMN1,33,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,48,12,7,14
+    EDITTEXT        IDC_EDITCOLUMN2,59,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,74,12,7,14
+    EDITTEXT        IDC_EDITCOLUMN3,85,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,100,12,7,14
+    EDITTEXT        IDC_EDITCOLUMN4,111,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,126,12,7,14
+    EDITTEXT        IDC_EDITCOLUMN5,137,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,152,12,7,14
+    EDITTEXT        IDC_EDITCOLUMN6,163,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN6,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,178,12,7,14
+    EDITTEXT        IDC_EDITCOLUMN7,190,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN7,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,205,13,7,14
+    EDITTEXT        IDC_EDITCOLUMN8,216,16,24,13,ES_NUMBER
+    CONTROL         "Spin1",IDC_COLUMN8,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,231,13,7,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_RLISTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_PROPPAGE_RLIST_2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPPAGE_RLIST_2 DLGINIT
+BEGIN
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT0, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT1, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT2, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT3, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT4, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT5, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT6, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT7, 0x403, 2, 0
+0x0049, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x004c, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0052, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0043, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0078, 
+    IDC_ALIGNMENT8, 0x403, 2, 0
+0x0049, 
+    IDC_ICON0, 0x403, 2, 0
+0x004c, 
+    IDC_ICON0, 0x403, 2, 0
+0x0052, 
+    IDC_ICON0, 0x403, 2, 0
+0x0043, 
+    IDC_ICON0, 0x403, 2, 0
+0x0078, 
+    IDC_ICON0, 0x403, 2, 0
+0x0078, 
+    IDC_ICON0, 0x403, 2, 0
+0x0078, 
+    IDC_ICON0, 0x403, 2, 0
+0x0078, 
+    IDC_ICON0, 0x403, 2, 0
+0x0078, 
+    IDC_ICON0, 0x403, 2, 0
+0x0049, 
+    IDC_ICON1, 0x403, 2, 0
+0x004c, 
+    IDC_ICON1, 0x403, 2, 0
+0x0052, 
+    IDC_ICON1, 0x403, 2, 0
+0x0043, 
+    IDC_ICON1, 0x403, 2, 0
+0x0078, 
+    IDC_ICON1, 0x403, 2, 0
+0x0078, 
+    IDC_ICON1, 0x403, 2, 0
+0x0078, 
+    IDC_ICON1, 0x403, 2, 0
+0x0078, 
+    IDC_ICON1, 0x403, 2, 0
+0x0078, 
+    IDC_ICON1, 0x403, 2, 0
+0x0049, 
+    IDC_ICON2, 0x403, 2, 0
+0x004c, 
+    IDC_ICON2, 0x403, 2, 0
+0x0052, 
+    IDC_ICON2, 0x403, 2, 0
+0x0043, 
+    IDC_ICON2, 0x403, 2, 0
+0x0078, 
+    IDC_ICON2, 0x403, 2, 0
+0x0078, 
+    IDC_ICON2, 0x403, 2, 0
+0x0078, 
+    IDC_ICON2, 0x403, 2, 0
+0x0078, 
+    IDC_ICON2, 0x403, 2, 0
+0x0078, 
+    IDC_ICON2, 0x403, 2, 0
+0x0049, 
+    IDC_ICON3, 0x403, 2, 0
+0x004c, 
+    IDC_ICON3, 0x403, 2, 0
+0x0052, 
+    IDC_ICON3, 0x403, 2, 0
+0x0043, 
+    IDC_ICON3, 0x403, 2, 0
+0x0078, 
+    IDC_ICON3, 0x403, 2, 0
+0x0078, 
+    IDC_ICON3, 0x403, 2, 0
+0x0078, 
+    IDC_ICON3, 0x403, 2, 0
+0x0078, 
+    IDC_ICON3, 0x403, 2, 0
+0x0078, 
+    IDC_ICON3, 0x403, 2, 0
+0x0049, 
+    IDC_ICON4, 0x403, 2, 0
+0x004c, 
+    IDC_ICON4, 0x403, 2, 0
+0x0052, 
+    IDC_ICON4, 0x403, 2, 0
+0x0043, 
+    IDC_ICON4, 0x403, 2, 0
+0x0078, 
+    IDC_ICON4, 0x403, 2, 0
+0x0078, 
+    IDC_ICON4, 0x403, 2, 0
+0x0078, 
+    IDC_ICON4, 0x403, 2, 0
+0x0078, 
+    IDC_ICON4, 0x403, 2, 0
+0x0078, 
+    IDC_ICON4, 0x403, 2, 0
+0x0049, 
+    IDC_ICON5, 0x403, 2, 0
+0x004c, 
+    IDC_ICON5, 0x403, 2, 0
+0x0052, 
+    IDC_ICON5, 0x403, 2, 0
+0x0043, 
+    IDC_ICON5, 0x403, 2, 0
+0x0078, 
+    IDC_ICON5, 0x403, 2, 0
+0x0078, 
+    IDC_ICON5, 0x403, 2, 0
+0x0078, 
+    IDC_ICON5, 0x403, 2, 0
+0x0078, 
+    IDC_ICON5, 0x403, 2, 0
+0x0078, 
+    IDC_ICON5, 0x403, 2, 0
+0x0049, 
+    IDC_ICON6, 0x403, 2, 0
+0x004c, 
+    IDC_ICON6, 0x403, 2, 0
+0x0052, 
+    IDC_ICON6, 0x403, 2, 0
+0x0043, 
+    IDC_ICON6, 0x403, 2, 0
+0x0078, 
+    IDC_ICON6, 0x403, 2, 0
+0x0078, 
+    IDC_ICON6, 0x403, 2, 0
+0x0078, 
+    IDC_ICON6, 0x403, 2, 0
+0x0078, 
+    IDC_ICON6, 0x403, 2, 0
+0x0078, 
+    IDC_ICON6, 0x403, 2, 0
+0x0049, 
+    IDC_ICON7, 0x403, 2, 0
+0x004c, 
+    IDC_ICON7, 0x403, 2, 0
+0x0052, 
+    IDC_ICON7, 0x403, 2, 0
+0x0043, 
+    IDC_ICON7, 0x403, 2, 0
+0x0078, 
+    IDC_ICON7, 0x403, 2, 0
+0x0078, 
+    IDC_ICON7, 0x403, 2, 0
+0x0078, 
+    IDC_ICON7, 0x403, 2, 0
+0x0078, 
+    IDC_ICON7, 0x403, 2, 0
+0x0078, 
+    IDC_ICON7, 0x403, 2, 0
+0x0049, 
+    IDC_ICON8, 0x403, 2, 0
+0x004c, 
+    IDC_ICON8, 0x403, 2, 0
+0x0052, 
+    IDC_ICON8, 0x403, 2, 0
+0x0043, 
+    IDC_ICON8, 0x403, 2, 0
+0x0078, 
+    IDC_ICON8, 0x403, 2, 0
+0x0078, 
+    IDC_ICON8, 0x403, 2, 0
+0x0078, 
+    IDC_ICON8, 0x403, 2, 0
+0x0078, 
+    IDC_ICON8, 0x403, 2, 0
+0x0078, 
+    IDC_ICON8, 0x403, 2, 0
+0x0049, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RLISTBOX            "RListBox Control"
+    IDS_RLISTBOX_PPG        "RListBox Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RLISTBOX_PPG_CAPTION "RListBox"
+    IDS_PPG2_CAPTION        "Columns"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "RListBox.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

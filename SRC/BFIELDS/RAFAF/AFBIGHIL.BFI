@@ -1,0 +1,192 @@
+	WayPoint	AFBIGHIL_011b,
+	WayPoint	AFBIGHIL_011c,
+	WayPoint	AFBIGHIL_011d,
+	WayPoint	AFBIGHIL_011e,
+	WayPoint	AFBIGHIL_011f,
+	WayPoint	AFBIGHIL_0120,
+	WayPoint	AFBIGHIL_0121,
+	SimpleItem	AFBIGHIL_045c,
+	SimpleItem	AFBIGHIL_045f,
+	SimpleItem	AFBIGHIL_0462,
+	SimpleItem	AFBIGHIL_0465,
+	GroundItem	AFBIGHIL_2905,
+	BattleField
+	{
+		FileName	FIL_1_AFBIGHIL=AFBIGHIL.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_BIGGINHILL,
+		ItemGroup
+		{
+				SimpleItem	AFBIGHIL_045c=
+				{
+					Posn
+					{
+						Abs
+						{	X	29479424,
+							Z	33338880
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFBIGHIL_045f=
+				{
+					Posn
+					{
+						Abs
+						{	X	29401088,
+							Z	33348608
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFBIGHIL_0462=
+				{
+					Posn
+					{
+						Abs
+						{	X	29450240,
+							Z	33271808
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFBIGHIL_0465=
+				{
+					Posn
+					{
+						Abs
+						{	X	29390336,
+							Z	33398272
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29458432,
+						Z	33315328
+					}
+				},
+				Route
+				{
+					WayPoint	AFBIGHIL_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	29464064,
+								Z	33306112
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFBIGHIL_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	29458432,
+								Z	33293312
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFBIGHIL_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	29451264,
+								Z	33283072
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFBIGHIL_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	29457920,
+								Z	33283584
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFBIGHIL_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	29472256,
+								Z	33290240
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFBIGHIL_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	29476352,
+								Z	33283072
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	29476352,
+								Z	33283072
+							}
+						},
+						Action	wpcheckfordamage,
+						Range	0
+					},
+					WayPoint	AFBIGHIL_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	29478400,
+								Z	33272320
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFBIGHIL_2905=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

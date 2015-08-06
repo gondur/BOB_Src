@@ -1,0 +1,70 @@
+	WayPoint	M1HORNCH_011b,
+	WayPoint	M1HORNCH_011c,
+	WayPoint	M1HORNCH_011d,
+	GroundItem	M1HORNCH_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1HORNCH=M1HORNCH.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{Truck1Shape, Shape {List {Random 0,7,1},PLTRUK,RUNTRK,TRUCK,TROOPT,MEDIC,CAR,VAN}},
+	Setval	{greenstrength, Int {Random 3,6,1}},
+
+	ItemGroup
+	{	Target	UID_AF_HORNCHURCH,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30514432,
+						Z	35569920
+					}
+				},
+				Route
+				{
+					WayPoint	M1HORNCH_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	30505472,
+								Z	35554048
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1HORNCH_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	30496512,
+								Z	35533824
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1HORNCH_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	30486528,
+								Z	35505408
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1HORNCH_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape
+			}	}	}
+	};

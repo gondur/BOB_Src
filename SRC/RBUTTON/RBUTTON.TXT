@@ -1,0 +1,10 @@
+RBUTTON Directory: ActiveX button control
+=================
+
+This is our workhorse control, providing text and graphics buttons, tickboxes, 
+and title strip functionality.
+
+During design time the control accesses various include files to identify file names, 
+string equate names, and font names.
+
+During runtime the actual values are used and the names are ignored.

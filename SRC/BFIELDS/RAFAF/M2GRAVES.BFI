@@ -1,0 +1,77 @@
+	BattleField
+	{
+		FileName	FIL_1_M2GRAVES=M2GRAVES.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 1,8,1}},
+
+	ItemGroup
+	{	Target	UID_AF_GRAVESEND,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	31665920,
+						Z	34433792
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	31670016,
+								Z	34427648
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	31674368,
+								Z	34420224
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	31677696,
+								Z	34408960
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	31682048,
+								Z	34409728
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					BlokeBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	BLOKE,
+					MoveCode	GROUND_BLOKE
+			}	}	}
+	};

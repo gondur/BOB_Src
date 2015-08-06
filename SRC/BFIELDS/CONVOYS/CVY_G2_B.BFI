@@ -1,0 +1,149 @@
+	WayPoint	cvy_g2_B_0124,
+	WayPoint	cvy_g2_B_0125,
+	WayPoint	cvy_g2_B_0126,
+	WayPoint	cvy_g2_B_0127,
+	WayPoint	cvy_g2_B_0128,
+	WayPoint	cvy_g2_B_0129,
+	WayPoint	cvy_g2_B_012a,
+	WayPoint	cvy_g2_B_012b,
+	WayPoint	cvy_g2_B_012c,
+	GroundItem	cvy_g2_B_2afa,
+	BattleField
+	{
+		FileName	FIL_1_CVY_G2_B=cvy_g2_B.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	2973696,
+					Z	20946944
+				}
+			},
+			Route
+			{
+				WayPoint	cvy_g2_B_0124=
+				{
+					Posn
+					{
+						Abs
+						{	X	5881856,
+							Z	21233664
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_0125=
+				{
+					Posn
+					{
+						Abs
+						{	X	13930496,
+							Z	24305664
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_0126=
+				{
+					Posn
+					{
+						Abs
+						{	X	20996096,
+							Z	24899584
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_0127=
+				{
+					Posn
+					{
+						Abs
+						{	X	26808320,
+							Z	26681344
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_0128=
+				{
+					Posn
+					{
+						Abs
+						{	X	31911936,
+							Z	26742784
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_0129=
+				{
+					Posn
+					{
+						Abs
+						{	X	36089856,
+							Z	28770304
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_012a=
+				{
+					Posn
+					{
+						Abs
+						{	X	39038976,
+							Z	32169984
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_012b=
+				{
+					Posn
+					{
+						Abs
+						{	X	38813696,
+							Z	34893824
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy_g2_B_012c=
+				{
+					Posn
+					{
+						Abs
+						{	X	33751297,
+							Z	35214434
+						}
+					},
+					//Vel	145,
+					Action	wpacnoactionno,
+					Range	0
+				}
+			},
+			NumInForm		15,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy_g2_B_2afa=
+			{
+				BritBoatBAND,
+				SetUID	UID_CVY_G2_B,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List DSTRYR,COLIER,COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,DSTRYR,COLIER,COLIER,COLIER,COLIER,COLIER}
+				//Vel	145
+		}	}
+	};

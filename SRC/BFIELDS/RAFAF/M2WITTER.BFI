@@ -1,0 +1,68 @@
+	WayPoint	M2WITTER_011c,
+	WayPoint	M2WITTER_011d,
+	WayPoint	M2WITTER_011e,
+	GroundItem	M2WITTER_2905,
+	BattleField
+	{
+		FileName	FIL_1_M2WITTER=M2WITTER.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_WITTERING,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	25940224,
+						Z	46279168
+					}
+				},
+				Route
+				{
+					WayPoint	M2WITTER_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	25950464,
+								Z	46280192
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2WITTER_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	25961728,
+								Z	46284288
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2WITTER_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	25977600,
+								Z	46274816
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M2WITTER_2905=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	TROOPT,
+					Vel	2501
+			}	}	}
+	};

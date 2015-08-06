@@ -1,0 +1,138 @@
+	WayPoint	AFMARTLE_0100,
+	WayPoint	AFMARTLE_0101,
+	WayPoint	AFMARTLE_0102,
+	WayPoint	AFMARTLE_0103,
+	WayPoint	AFMARTLE_0104,
+	SimpleItem	AFMARTLE_041a,
+	SimpleItem	AFMARTLE_041d,
+	SimpleItem	AFMARTLE_0420,
+	GroundItem	AFMARTLE_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFMARTLE=AFMARTLE.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_MARTLESHAM,
+		ItemGroup
+		{
+				SimpleItem	AFMARTLE_041a=
+				{
+					Posn
+					{
+						Abs
+						{	X	36879616,
+							Z	40981504
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFMARTLE_041d=
+				{
+					Posn
+					{
+						Abs
+						{	X	36875008,
+							Z	41044736
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFMARTLE_0420=
+				{
+					Posn
+					{
+						Abs
+						{	X	36941568,
+							Z	41045248
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	36988672,
+						Z	41041408
+					}
+				},
+				Route
+				{
+					WayPoint	AFMARTLE_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	36976640,
+								Z	41051904
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFMARTLE_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	36958464,
+								Z	41048320
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFMARTLE_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	36958464,
+								Z	41060352
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFMARTLE_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	36954112,
+								Z	41061376
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFMARTLE_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	36955904,
+								Z	41071104
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFMARTLE_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

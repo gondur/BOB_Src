@@ -1,0 +1,155 @@
+	BattleField
+	{
+		FileName	FIL_1_M1DEBDEN=M1DEBDEN.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{ParentRand, Int {Select 0,0,0}},
+//WARNING PUT BACK
+//TempCode MS 08May00 	Setval	{ParentRand, Int {Random 0,4,1}},
+	Setval	{RangeStepSize, {List ParentRand,VEL_MoveTroop,VEL_MoveTank,VEL_MoveVehicle,VEL_MoveVehicle}},
+	Setval	{TruckMoveCode, MoveCode {List ParentRand,GROUND_BLOKE,GROUND_TAXI,GROUND_TAXI,GROUND_TAXI}},
+	Setval	{Truck1Shape, Shape {List ParentRand,BLOKE,PLTRUK,PLTRUK,PLTRUK}},
+					 
+	ItemGroup
+	{	Target	UID_AF_DEBDEN,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30806912,
+						Z	40003968
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30796288,
+								Z	40014464
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpstartloopno,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30793472,
+								Z	40034944
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30806528,
+								Z	40052096
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30816000,
+								Z	40045696
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30806016,
+								Z	40036736
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30805248,
+								Z	40016128
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30812544,
+								Z	40008704
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30807680,
+								Z	40003456
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpstoploopchkno,
+						Range	0
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	30807936,
+								Z	39996416
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpacnoactionno,
+						Range	0
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	
+				{
+					BlokeBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape,
+					Vel	RangeStepSize,
+					MoveCode	TruckMoveCode
+			}	}	}
+	};

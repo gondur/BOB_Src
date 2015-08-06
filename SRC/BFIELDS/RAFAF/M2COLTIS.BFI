@@ -1,0 +1,115 @@
+	WayPoint	M2COLTIS_0122,
+	WayPoint	M2COLTIS_0123,
+	WayPoint	M2COLTIS_0124,
+	WayPoint	M2COLTIS_0125,
+	WayPoint	M2COLTIS_0126,
+	GroundItem	M2COLTIS_2906,
+	GroundItem	M2COLTIS_2907,
+	BattleField
+	{
+		FileName	FIL_1_M2COLTIS=M2COLTIS.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_COLTISHALL,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	37050368,
+						Z	48030720
+					}
+				},
+				Route
+				{
+					WayPoint	M2COLTIS_0124=
+					{
+						Posn
+						{
+							Abs
+							{	X	37064192,
+								Z	48015872
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2COLTIS_0123=
+					{
+						Posn
+						{
+							Abs
+							{	X	37084672,
+								Z	47992832
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2COLTIS_0122=
+					{
+						Posn
+						{
+							Abs
+							{	X	37096448,
+								Z	47984128
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M2COLTIS_2906=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	FOOD,
+					Vel	100
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	37136384,
+						Z	48030720
+					}
+				},
+				Route
+				{
+					WayPoint	M2COLTIS_0126=
+					{
+						Posn
+						{
+							Abs
+							{	X	37114368,
+								Z	48067072
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2COLTIS_0125=
+					{
+						Posn
+						{
+							Abs
+							{	X	37073920,
+								Z	48099840
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M2COLTIS_2907=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	MEDIC,
+					Vel	100
+			}	}	}
+	};

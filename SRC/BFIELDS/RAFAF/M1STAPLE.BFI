@@ -1,0 +1,107 @@
+	WayPoint	M1STAPLE_011b,
+	WayPoint	M1STAPLE_011c,
+	WayPoint	M1STAPLE_011d,
+	WayPoint	M1STAPLE_011e,
+	WayPoint	M1STAPLE_011f,
+	SimpleItem	M1STAPLE_0456,
+	GroundItem	M1STAPLE_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1STAPLE=M1STAPLE.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_STAPLEFORD,
+		ItemGroup
+		{
+				SimpleItem	M1STAPLE_0456=
+				{
+					Posn
+					{
+						Abs
+						{	X	30143232,
+							Z	36676864
+						}
+					},
+					UIDBand		NeutMiscBAND,
+					Shape		MEDIC
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30113536,
+						Z	36731136
+					}
+				},
+				Route
+				{
+					WayPoint	M1STAPLE_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	30112256,
+								Z	36710656
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1STAPLE_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	30117376,
+								Z	36707328
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1STAPLE_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	30119168,
+								Z	36699648
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1STAPLE_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	30111232,
+								Z	36691968
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1STAPLE_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	30108928,
+								Z	36685056
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1STAPLE_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	RUNTRK
+			}	}	}
+	};

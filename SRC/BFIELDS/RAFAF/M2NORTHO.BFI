@@ -1,0 +1,72 @@
+	WayPoint	M2NORTHO_011b,
+	WayPoint	M2NORTHO_011c,
+	SimpleItem	M2NORTHO_0414,
+	GroundItem	M2NORTHO_2902,
+	BattleField
+	{
+		FileName	FIL_1_M2NORTHO=M2NORTHO.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_NORTHOLT,
+		ItemGroup
+		{
+				SimpleItem	M2NORTHO_0414=
+				{
+					Posn
+					{
+						Abs
+						{	X	26536448,
+							Z	35616000
+						}
+					},
+					UIDBand		BritMobileBAND,
+					Shape		TRUCK
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	26587392,
+						Z	35559424
+					}
+				},
+				Route
+				{
+					WayPoint	M2NORTHO_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	26563328,
+								Z	35562240
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2NORTHO_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	26539264,
+								Z	35561216
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M2NORTHO_2902=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	RUNTRK,
+					Vel	2501
+			}	}	}
+	};

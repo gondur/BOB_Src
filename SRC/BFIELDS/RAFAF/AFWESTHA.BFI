@@ -1,0 +1,138 @@
+	WayPoint	AFWESTHA_0100,
+	WayPoint	AFWESTHA_0101,
+	WayPoint	AFWESTHA_0102,
+	WayPoint	AFWESTHA_0103,
+	WayPoint	AFWESTHA_0104,
+	SimpleItem	AFWESTHA_040b,
+	SimpleItem	AFWESTHA_040e,
+	SimpleItem	AFWESTHA_0411,
+	GroundItem	AFWESTHA_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFWESTHA=AFWESTHA.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_WESTHAMPNETT,
+		ItemGroup
+		{
+				SimpleItem	AFWESTHA_040b=
+				{
+					Posn
+					{
+						Abs
+						{	X	24511488,
+							Z	28609280
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFWESTHA_040e=
+				{
+					Posn
+					{
+						Abs
+						{	X	24544768,
+							Z	28636928
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFWESTHA_0411=
+				{
+					Posn
+					{
+						Abs
+						{	X	24575232,
+							Z	28545024
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	24587776,
+						Z	28611840
+					}
+				},
+				Route
+				{
+					WayPoint	AFWESTHA_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	24587328,
+								Z	28599552
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFWESTHA_0104=
+					{
+						Posn
+						{
+							Abs
+							{	X	24574208,
+								Z	28601600
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFWESTHA_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	24578560,
+								Z	28583936
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFWESTHA_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	24585216,
+								Z	28579584
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFWESTHA_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	24587008,
+								Z	28568064
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFWESTHA_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

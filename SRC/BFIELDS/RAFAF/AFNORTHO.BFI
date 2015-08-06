@@ -1,0 +1,139 @@
+	WayPoint	AFNORTHO_0100,
+	WayPoint	AFNORTHO_0101,
+	WayPoint	AFNORTHO_0102,
+	WayPoint	AFNORTHO_0103,
+	SimpleItem	AFNORTHO_0413,
+	SimpleItem	AFNORTHO_0416,
+	SimpleItem	AFNORTHO_0419,
+	SimpleItem	AFNORTHO_041b,
+	GroundItem	AFNORTHO_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFNORTHO=AFNORTHO.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_NORTHOLT,
+		ItemGroup
+		{
+				SimpleItem	AFNORTHO_0413=
+				{
+					Posn
+					{
+						Abs
+						{	X	26548992,
+							Z	35622656
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFNORTHO_0416=
+				{
+					Posn
+					{
+						Abs
+						{	X	26538496,
+							Z	35555328
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFNORTHO_0419=
+				{
+					Posn
+					{
+						Abs
+						{	X	26632960,
+							Z	35549952
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	AFNORTHO_041b=
+				{
+					Posn
+					{
+						Abs
+						{	X	26602240,
+							Z	35637760
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+		},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	26609408,
+						Z	35645952
+					}
+				},
+				Route
+				{
+					WayPoint	AFNORTHO_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	26590976,
+								Z	35638784
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFNORTHO_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	26575360,
+								Z	35632640
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFNORTHO_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	26571520,
+								Z	35628288
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFNORTHO_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	26566912,
+								Z	35622144
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFNORTHO_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

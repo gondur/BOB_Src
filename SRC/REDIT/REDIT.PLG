@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: REdit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\temp\RSPE0B2.BAT" with contents
+[
+@echo off
+copy ".\Redit.lic" "\bob\Release\exe"
+]
+Creating command line "c:\temp\RSPE0B2.BAT"
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "\bob\Release\exe/REdit.tlb" /mktyplib203 /o "NUL" /win32 "D:\Bob\Src\redit\REdit.odl""
+Copying license file...
+D:\BOB\SRC\REDIT\REDIT.LIC => D:\bob\Release\exe\REDIT.LIC
+     1 file copied
+Creating command line "rc.exe /l 0x809 /fo"\bob\Release\edit/REdit.res" /i "\bob\Release\exe" /d "NDEBUG" /d "_AFXDLL" "D:\Bob\Src\redit\REdit.rc"" 
+Creating temporary file "c:\temp\RSPE0B6.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\bob\src\h" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_USRDLL" /Fo"\bob\Release\edit/" /Fd"\bob\Release\edit/" /FD /c 
+"D:\Bob\Src\Mfc\Getshadw.cpp"
+"D:\Bob\Src\redit\REdit.cpp"
+"D:\Bob\Src\redit\REditCtl.cpp"
+"D:\Bob\Src\redit\REditPpg.cpp"
+]
+Creating command line "cl.exe @c:\temp\RSPE0B6.TMP" 
+Creating temporary file "c:\temp\RSPE0C0.TMP" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"\bob\Release\exe/Redit.pdb" /machine:I386 /def:".\REdit.def" /out:"\bob\Release\exe/Redit.ocx" /implib:"\bob\Release\exe/Redit.lib" 
+\bob\Release\edit\Getshadw.obj
+\bob\Release\edit\REdit.obj
+\bob\Release\edit\REditCtl.obj
+\bob\Release\edit\REditPpg.obj
+\bob\Release\edit\REdit.res
+]
+Creating command line "link.exe @c:\temp\RSPE0C0.TMP"
+Creating temporary file "c:\temp\RSPE0C1.BAT" with contents
+[
+@echo off
+regsvr32 /s /c "\bob\Release\exe\Redit.ocx"
+echo regsvr32 exec. time > "\bob\Release\exe\regsvr32.trg"
+]
+Creating command line "c:\temp\RSPE0C1.BAT"
+Creating Type Library...
+REdit.odl
+oaidl.idl
+objidl.idl
+unknwn.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+Getshadw.cpp
+REdit.cpp
+REditCtl.cpp
+REditPpg.cpp
+\bob\src\h\bitfield.h(37):                   Assert is non functional!!!
+\bob\src\h\myError.h(73):                   assert redefined
+Generating Code...
+Linking...
+   Creating library \bob\Release\exe/Redit.lib and object \bob\Release\exe/Redit.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+RegSvr32: DllRegisterServer in \bob\Release\exe\Redit.ocx succeeded.
+
+
+
+
+<h3>Results</h3>
+Redit.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

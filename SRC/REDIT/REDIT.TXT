@@ -1,0 +1,6 @@
+REDIT Directory: ActiveX type-in component
+===============
+
+This is a basic text editing component. 
+It is somewhat more advanced than in MiG.
+It does not generate a scroll bar, or limit the number of characters.

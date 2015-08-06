@@ -1,0 +1,112 @@
+###################################################################################
+##
+##		AUTO-GENERATED IMAGEMAP MAKEFILE : Jun 12 2000
+##
+###################################################################################
+
+SRC  = s:\projects\bob\artsrc\IMAGE16
+DEST = ..\GAME\mskmap16
+SRC2 = s:\projects\bob\artsrc\TRANS16
+DEST_DAT = ..\GAME\LANDMAPS
+TT256X256 = -cw256h256
+TT64X64 = -cw64h64
+TT128X128 = -cw128h128
+TT32X32 = -cw32h32
+TT64X128 = -cw64h128
+TT16X256 = -cw16h256
+TT128X16 = -cw128h16
+TT32X64 = -cw32h64
+
+
+MAPS256X256	=	$(DEST)\DOMSK.x8\
+	$(DEST)\PSPIN.x8\
+	$(DEST)\CLOUD2.x8\
+	$(DEST)\BIGEX.x8\
+	$(DEST)\PLUME1.x8\
+	$(DEST)\PLUME1A.x8\
+	$(DEST)\PLUME2.x8\
+	$(DEST)\PLUME3.x8\
+	$(DEST)\GFIRE2.x8\
+	$(DEST)\FIRE2.x8\
+	$(DEST)\FIREFAD1.x8\
+
+
+MAPS64X64	=	$(DEST)\BALFIRE.x8\
+	$(DEST)\EXPFLASH.x8\
+
+
+MAPS128X128	=	$(DEST)\JU88CANO.x8\
+	$(DEST)\ME110MSK.x8\
+	$(DEST)\FONT.x8\
+	$(DEST)\RADIO.x8\
+	$(DEST)\THREAT01.x8\
+	$(DEST)\CANNOP.x8\
+	$(DEST)\HURBITS2.x8\
+	$(DEST)\JU87CANN.x8\
+	$(DEST)\SPLUME1.x8\
+	$(DEST)\SPLUME2.x8\
+	$(DEST)\SPLUME3.x8\
+	$(DEST)\SPLUME4.x8\
+	$(DEST)\SMKMAPDK.x8\
+	$(DEST)\SMKMAPMD.x8\
+	$(DEST)\DUSTMAP.x8\
+	$(DEST)\FIRE.x8\
+
+
+MAPS32X32	=	$(DEST)\DITHER.x8\
+	$(DEST)\DITHER2.x8\
+	$(DEST)\DITHER3.x8\
+	$(DEST)\DITHER4.x8\
+	$(DEST)\DITHER5.x8\
+	$(DEST)\DITHER6.x8\
+	$(DEST)\DITHER7.x8\
+	$(DEST)\DITHER8.x8\
+	$(DEST)\PERIPH.x8\
+	$(DEST)\GUNGLOW.x8\
+
+
+MAPS64X128	=
+
+MAPS16X256	=
+
+MAPS128X16	=
+
+MAPS32X64	=
+
+ALLMAPS:	$(MAPS256X256)\
+	$(MAPS64X64)\
+	$(MAPS128X128)\
+	$(MAPS32X32)\
+	$(MAPS64X128)\
+	$(MAPS16X256)\
+	$(MAPS128X16)\
+	$(MAPS32X64)
+
+$(MAPS256X256):	$(SRC)\$*.PCX
+	echo -es -r $(DEST_DAT)\palclust.x8 > domap.res
+	echo -r $(SRC)\$*.PCX $(TT256X256) >> domap.res
+	echo -ept -r $(SRC2)\$*.PCX >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+	tt2 -d -r domap.res
+
+$(MAPS64X64):	$(SRC)\$*.PCX
+	echo -es -r $(DEST_DAT)\palclust.x8 > domap.res
+	echo -r $(SRC)\$*.PCX $(TT64X64) >> domap.res
+	echo -ept -r $(SRC2)\$*.PCX >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+	tt2 -d -r domap.res
+
+$(MAPS128X128):	$(SRC)\$*.PCX
+	echo -es -r $(DEST_DAT)\palclust.x8 > domap.res
+	echo -r $(SRC)\$*.PCX $(TT128X128) >> domap.res
+	echo -ept -r $(SRC2)\$*.PCX >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+	tt2 -d -r domap.res
+
+$(MAPS32X32):	$(SRC)\$*.PCX
+	echo -es -r $(DEST_DAT)\palclust.x8 > domap.res
+	echo -r $(SRC)\$*.PCX $(TT32X32) >> domap.res
+	echo -ept -r $(SRC2)\$*.PCX >> domap.res
+	echo -w $(DEST)\$*.x8 >> domap.res
+	tt2 -d -r domap.res
+

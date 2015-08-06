@@ -1,0 +1,107 @@
+	WayPoint	M1COLTIS_011d,
+	WayPoint	M1COLTIS_011e,
+	WayPoint	M1COLTIS_0120,
+	WayPoint	M1COLTIS_0121,
+	GroundItem	M1COLTIS_2904,
+	GroundItem	M1COLTIS_2905,
+	BattleField
+	{
+		FileName	FIL_1_M1COLTIS=M1COLTIS.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_COLTISHALL,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	37160448,
+						Z	48041472
+					}
+				},
+				Route
+				{
+					WayPoint	M1COLTIS_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	37156352,
+								Z	48017408
+							}
+						},
+						Action	wpacnoactionno,
+						Vel	100
+					},
+					WayPoint	M1COLTIS_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	37136896,
+								Z	48004096
+							}
+						},
+						Action	wpdmbtrkstopno,
+						Vel	100
+					}
+				},
+				NumInForm		6,
+				Formation	FTT_BIGV,
+				GroundItem	M1COLTIS_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	SHEEP,
+					Vel	100
+			}	},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	37160960,
+						Z	48046592
+					}
+				},
+				Route
+				{
+					WayPoint	M1COLTIS_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	37158400,
+								Z	48023552
+							}
+						},
+						Action	wpacnoactionno,
+						Vel 	100
+					},
+					WayPoint	M1COLTIS_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	37142528,
+								Z	48004096
+							}
+						},
+						Action	wpstopno,
+						Vel	100
+					}
+				},
+				NumInForm		6,
+				Formation	FTT_BIGV,
+				GroundItem	M1COLTIS_2905=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	COW,
+					Vel	100
+			}	}	}
+	};

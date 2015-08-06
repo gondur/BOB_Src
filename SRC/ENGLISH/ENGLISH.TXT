@@ -1,0 +1,25 @@
+ENGLISH Directory: English-language specific files
+-----------------
+
+Each language has its own language specific directory:
+ENGLISH
+FRENCH
+GERMAN
+ITALIAN
+SPANISH
+RUSSIAN
+etcetera...
+
+The only really useful file in here is bob.rc. Eveything else is either an
+input to bob.rc via the utility mergelst.exe or is old Mig Alley stuff.
+For example, the help is now HTML and driven from an "uncle" directory: 
+(C:BOB\HELP)
+I don't recommend you run mergelst.exe unless you fully understand the
+consequences!
+
+If you edit the resource using the Dev Studio environment it will regenerate
+RESOURCE.H and the icons in the language directory.
+They need removing before you build (by the XxxCln project) so that the master
+versions in the MFC directory are used.
+
+

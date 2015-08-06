@@ -1,0 +1,89 @@
+	WayPoint	M2HORNCH_011e,
+	WayPoint	M2HORNCH_011f,
+	WayPoint	M2HORNCH_0120,
+	WayPoint	M2HORNCH_0121,
+	GroundItem	M2HORNCH_2905,
+	BattleField
+	{
+		FileName	FIL_1_M2HORNCH=M2HORNCH.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{ParentRand, Int {Random 0,4,1}},
+	Setval	{RangeStepSize, {List ParentRand,VEL_MoveTroop,VEL_MoveTank,VEL_MoveVehicle,VEL_MoveVehicle}},
+	Setval	{TruckMoveCode, MoveCode {List ParentRand,GROUND_BLOKE,GROUND_TAXI,GROUND_TAXI,GROUND_TAXI}},
+	Setval	{Truck1Shape, Shape {List ParentRand,BLOKE,PLTRUK,PLTRUK,PLTRUK}},
+	ItemGroup
+	{	Target	UID_AF_HORNCHURCH,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	30469632,
+						Z	35593472
+					}
+				},
+				Route
+				{
+					WayPoint	M2HORNCH_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	30459904,
+								Z	35586048
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2HORNCH_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	30452736,
+								Z	35579392
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2HORNCH_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	30444032,
+								Z	35575296
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M2HORNCH_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	30428672,
+								Z	35569664
+							}
+						},
+						Vel	RangeStepSize,
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M2HORNCH_2905=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape,
+					Vel	RangeStepSize,
+					MoveCode	TruckMoveCode
+			}	}	}
+	};

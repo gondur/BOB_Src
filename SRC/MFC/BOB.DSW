@@ -1,0 +1,477 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "BOB"=.\bob.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Projects
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ItemGrid"=..\itemgrid\Itemgrid.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LEngCln"=..\ENGLISH\LENGCLN.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LEngRes"=..\ENGLISH\LENGRES.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name LEngCln
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "LFreCln"=..\FRENCH\LFRECLN.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LFreRes"=..\FRENCH\LFRERES.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name LFreCln
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "LRusCln"=..\russian\LRusCLN.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LRusRes"=..\russian\LRusRES.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Lib3D"=..\Lib3D\Lib3D.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LitaCln"=..\ITALIAN\LITACLN.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "LitaRes"=..\ITALIAN\LITARES.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "PLACENAM"=..\placenam\PLACENAM.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Projects"=.\Projects.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Lib3D
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RButton
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RCombo
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name REdit
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name REdtBt
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RScrlBar
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RSpltBar
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RStatic
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RTabs
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name UBfields
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RRadio
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ukeylist
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RSpinBut
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name miglang
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name quickmis
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ItemGrid
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LEngRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LFreRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LItaRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lgerRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lspaRes
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name LRusRes
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RButton"=..\rbutton\Rbutton.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RCombo"=..\RCOMBO\RCombo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name RListBox
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "REdit"=..\redit\Redit.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "REdtBt"=..\REdtBt\REdtBt.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RListBox"=..\rlistbox\RListBox.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name RScrlBar
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RRadio"=..\RRadio\RRadio.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RScrlBar"=..\RSCRLBAR\Rscrlbar.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RSpinBut"=..\RSPINBUT\Rspinbut.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RSpltBar"=..\RSpltBar\RSpltBar.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RStatic"=..\RStatic\RStatic.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "RTabs"=..\RTabs\RTabs.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "UBfields"=..\UBfields\UBfields.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "lgerCln"=..\GERMAN\LGERCLN.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "lgerRes"=..\GERMAN\LGERRES.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name lgerCln
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "lspaCln"=..\SPANISH\lSPACLN.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "lspaRes"=..\SPANISH\lSPARES.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name lspaCln
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "quickmis"=..\quickmis\QUICKMIS.DSP - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ukeylist"=..\INPUT\Ukeylist.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {461A1FE3-B81B-11D1-A1F0-444553540000}
+}}}
+
+###############################################################################
+

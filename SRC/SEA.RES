@@ -1,0 +1,6 @@
+-dep -r S:IMAGEMAP\DITHER6.pcx -cw256h256 -mx -bs -mg
+-w ..\GAME\LANDMAPS\DITHER6.x8
+-mx -sx128y128 -bc0.7 -bs -mg -w ..\GAME\LANDMAPS\DITHER6_1.x8
+-mx -sx64y64 -bc0.5 -bs -mg -w ..\GAME\LANDMAPS\DITHER6_2.x8
+-mx -sx32y32 -bc0.8 -bs -mg -w ..\GAME\LANDMAPS\DITHER6_3.x8
+-mx -sx16y16 -bc0.0 -bs -mg -w ..\GAME\LANDMAPS\DITHER6_4.x8

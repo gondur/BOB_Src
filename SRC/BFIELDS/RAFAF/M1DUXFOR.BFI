@@ -1,0 +1,67 @@
+	WayPoint	M1DUXFOR_011d,
+	WayPoint	M1DUXFOR_011e,
+	WayPoint	M1DUXFOR_011f,
+	GroundItem	M1DUXFOR_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1DUXFOR=M1DUXFOR.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_DUXFORD,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	29822208,
+						Z	41159680
+					}
+				},
+				Route
+				{
+					WayPoint	M1DUXFOR_011e=
+					{
+						Posn
+						{
+							Abs
+							{	X	29815808,
+								Z	41155328
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1DUXFOR_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	29826816,
+								Z	41141248
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1DUXFOR_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	29817600,
+								Z	41131520
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1DUXFOR_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

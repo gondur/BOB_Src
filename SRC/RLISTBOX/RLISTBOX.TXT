@@ -1,0 +1,15 @@
+RLISTBOX Directory: ActiveX string grid control
+==================
+
+A basic string grid with row and column headers and scrolling.
+Columns can be made iconic.
+Column widths can be set in the component editor, 
+but there is only one Clear() function 
+which deletes all the data and can delete column withs.
+To handle this at a late date in the project, 
+column widths will only be deleted if the grid contains no text.
+Thus, in the code I insert an empty string in 0,0 during initialisation
+to force the Clear() to not delete the columns.
+
+There is other functionality in here associated with the 
+ill-fated football game.

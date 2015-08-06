@@ -1,0 +1,84 @@
+	BattleField
+	{
+		FileName	FIL_1_M2KENLEY=M2KENLEY.BF,
+		Title	{},
+		Comment	{},
+	ItemGroup
+	{	Target	UID_AF_KENLEY,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	28655930,
+						Z	33187916
+					}
+				},
+				Route
+				{
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	28649990,
+								Z	33182796
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	28641389,
+								Z	33177471
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	28634221,
+								Z	33173580
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	28623777,
+								Z	33166617
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	
+					{
+						Posn
+						{
+							Abs
+							{	X	28614766,
+								Z	33161906
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_LONGLINE,
+				GroundItem	
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	TROOPT
+			}	}	}
+	};

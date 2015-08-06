@@ -1,0 +1,127 @@
+//Filename       battle.src
+//System
+//Author         Mark 'I hate battlefields more than pain' Shaw
+//Date           Thu 30 Nov 1995
+//Description    Source data to generate battlefields
+//------------------------------------------------------------------------------
+{
+	#INCLUDE	BFIELDS\BATTLE.INC ,
+
+	#INCLUDE	bfields\paths.bfi,
+	
+
+	Level		138,
+//	#INCLUDE	BFIELDS\statics.bfi,
+//	#INCLUDE	BFIELDS\INTROBF.INC,
+	#INCLUDE	BFIELDS\SCRAMBLE.INC,
+//TempCode MS 08Mar99 	#INCLUDE	BFIELDS\H2H.INC,
+//TempCode MS 08Mar99 	#INCLUDE	BFIELDS\EVENT.INC,
+
+
+
+//DEADCODE CSB 10/01/00 	BattleField
+//DEADCODE CSB 10/01/00 	{
+//DEADCODE CSB 10/01/00 		FileName	SUBPLOT0=subplot0.BF
+//DEADCODE CSB 10/01/00 	};
+//DEADCODE CSB 10/01/00 
+//DEADCODE CSB 10/01/00 	BattleField
+//DEADCODE CSB 10/01/00 	{
+//DEADCODE CSB 10/01/00 		FileName	SUBPLOT1=subplot1.BF
+//DEADCODE CSB 10/01/00 	};
+//DEADCODE CSB 10/01/00 
+//DEADCODE CSB 10/01/00 	BattleField
+//DEADCODE CSB 10/01/00 	{
+//DEADCODE CSB 10/01/00 		FileName	SUBPLOT2=subplot2.BF
+//DEADCODE CSB 10/01/00 	};
+//DEADCODE CSB 10/01/00 
+//DEADCODE CSB 10/01/00 	BattleField
+//DEADCODE CSB 10/01/00 	{
+//DEADCODE CSB 10/01/00 		FileName	SUBPLOT3=subplot3.BF
+//DEADCODE CSB 10/01/00 	};
+//DEADCODE CSB 10/01/00 
+//DEADCODE CSB 10/01/00 	BattleField
+//DEADCODE CSB 10/01/00 	{
+//DEADCODE CSB 10/01/00 		FileName	MAINEVENT=mainevnt.BF
+//DEADCODE CSB 10/01/00 	};
+//DEADCODE CSB 10/01/00 
+//DEADCODE CSB 10/01/00 	BattleField
+//DEADCODE CSB 10/01/00 	{
+//DEADCODE CSB 10/01/00 		FileName	BOMBEREVENT=BFTEMP_0.BF
+//DEADCODE CSB 10/01/00 	};
+
+
+//DEADCODE CSB 10/01/00 	BattleField
+//DEADCODE CSB 10/01/00 	{
+//DEADCODE CSB 10/01/00 		FileName	FIL_MainWorld=MainWld.BF
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		Douai,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		Albert,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		InnerCambraiTowns,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		TankArtillery,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		InnerCambraiMilitary,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		Cambrai,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		Arras,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		MidSomme,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		NotRight,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfBOLLOX,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		AfCambrai17,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfArras17,		 //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfMidSomme17,	 //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfBruay17,		 //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfDouai17,		 //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfAmiens17,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfDouai18,		   //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfCambrai18,	   //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //DeadCode RDH 08Dec96 		AfArras18,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfMidSomme18,	  //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfAmiens18,		 //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		AfNotRight,	   //
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		SOMar24Onwards,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		SOMar27Onwards,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		SOApr12Onwards,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		SOBeforeMar24,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		SOBeforeMar26,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		FCFrontArras_P1,
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		FCFrontCambraiAllied_P1,								//MS 25Nov96
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		FCFrontCambraiGerman_P1,								//MS 25Nov96
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		FCFrontStQuentinAllied_P1,								//MS 25Nov96
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		FCFrontStQuentinGerman_P1,								//MS 25Nov96
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 //		FCFrontSouth_P1,										//MS 25Nov96
+//DEADCODE CSB 10/01/00 //DeadCode MS 11May98 		Specials
+//DEADCODE CSB 10/01/00 	};
+
+
+//--------------------------------
+	BattleField
+	{
+		FileName	FIL_PaintShop = Paintshp.BF,
+		AirGroup
+		{
+			Route
+			{
+				WayPoint
+				{
+					Posn	{X 100000,Y FT_1000,Z 100000};
+					Action	wpatakeoffno
+				}
+			},
+			NumInWing	1,
+			NumInForm	1,
+//			DUTYMIGCAP,
+			Posn	{X 100000,Y MILES02,Z 100000};
+		   	AirItem
+			{
+				Attitude	{Heading ANGLES_0Deg,Pitch ANGLES_0Deg,Roll	ANGLES_0Deg},
+//DeadCode JIM 04Mar99 				PS_PAINTSHOP,
+				Scram_G0_Squad,
+				EMPTY,
+				NAT_RED,
+				AUTO_NOPPILOT
+			}
+
+		}
+	},
+	Level		139,FileName	..\src\userobj
+//#INCLUDE	usersrc\custom.bfi
+
+}	//end of File!
+}}}}}}}}}}

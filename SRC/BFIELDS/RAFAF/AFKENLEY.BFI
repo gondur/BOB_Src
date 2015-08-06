@@ -1,0 +1,135 @@
+	WayPoint	AFKENLEY_0100,
+	WayPoint	AFKENLEY_0101,
+	WayPoint	AFKENLEY_0102,
+	WayPoint	AFKENLEY_0103,
+	GroundItem	AFKENLEY_2900,
+	BattleField
+	{
+		FileName	FIL_1_AFKENLEY=AFKENLEY.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{greenstrength, Int {Random 2,5,1}},
+	Setval	{Truck1Shape, Shape {List {Random 3},FIREN,TROOPT,PLTRUK}},
+	Setval	{TankShape, Shape {List {Random 3},PLTRUK,TROOPT,RUNTRK}},
+
+	ItemGroup
+	{	Target	UID_AF_KENLEY,
+			ItemGroup
+			{
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	28684544,
+							Z	33206784
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	28644864,
+							Z	33106176
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	28683520,
+							Z	33120256
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				},
+				SimpleItem	
+				{
+					Posn
+					{
+						Abs
+						{	X	28600320,
+							Z	33163264
+						}
+					},
+					UIDBand		BritAAASiteBAND,
+					Shape		BOFORS
+				}
+			},
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	28679424,
+						Z	33075200
+					}
+				},
+				Route
+				{
+					WayPoint	AFKENLEY_0103=
+					{
+						Posn
+						{
+							Abs
+							{	X	28668160,
+								Z	33098752
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFKENLEY_0102=
+					{
+						Posn
+						{
+							Abs
+							{	X	28659712,
+								Z	33095680
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	AFKENLEY_0101=
+					{
+						Posn
+						{
+							Abs
+							{	X	28657664,
+								Z	33106944
+							}
+						},
+						Action	wpcheckfordamage
+					},
+					WayPoint	AFKENLEY_0100=
+					{
+						Posn
+						{
+							Abs
+							{	X	28673280,
+								Z	33111808
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	AFKENLEY_2900=
+				{
+					EmergencyVehicleBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	{List FIREN,Truck1Shape,TankShape,TankShape,Truck1Shape,TankShape,Truck1Shape,Truck1Shape,TankShape,TankShape},
+					MoveCode	AUTO_NOPPILOT
+			}	}	}
+	};

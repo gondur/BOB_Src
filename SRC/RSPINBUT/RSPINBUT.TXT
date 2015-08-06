@@ -1,0 +1,9 @@
+RSPINBUT Directory: ActiveX spinable integer control
+==================
+
+As this control is based on our combo box control, 
+the caller has to fill in a list of text strings 
+which are then spun through in sequence.
+Because of this, the spinner can spin any type of value.
+This basic functionality is also present in the cobo 
+if you click on the text itself

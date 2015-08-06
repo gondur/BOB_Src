@@ -1,0 +1,6 @@
+RRADIO Directory: ActiveX radio button list control
+================
+
+This control represents one set of linked radio buttons with text.
+The buttons can appear in 1 row or in 1 column.
+The text is inserted at runtime. The width is set at design time.

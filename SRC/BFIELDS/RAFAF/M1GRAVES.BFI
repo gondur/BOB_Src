@@ -1,0 +1,82 @@
+	WayPoint	M1GRAVES_011a,
+	WayPoint	M1GRAVES_011b,
+	WayPoint	M1GRAVES_011c,
+	WayPoint	M1GRAVES_011d,
+	GroundItem	M1GRAVES_2904,
+	BattleField
+	{
+		FileName	FIL_1_M1GRAVES=M1GRAVES.BF,
+		Title	{},
+		Comment	{}
+,
+	Setval	{Truck1Shape, Shape {List {Random 0,7,1},PLTRUK,RUNTRK,TRUCK,TROOPT,MEDIC,CAR,VAN}},
+	Setval	{greenstrength, Int {Random 3,6,1}},
+
+	ItemGroup
+	{	Target	UID_AF_GRAVESEND,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	31665920,
+						Z	34433792
+					}
+				},
+				Route
+				{
+					WayPoint	M1GRAVES_011d=
+					{
+						Posn
+						{
+							Abs
+							{	X	31670016,
+								Z	34427648
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1GRAVES_011c=
+					{
+						Posn
+						{
+							Abs
+							{	X	31674368,
+								Z	34420224
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1GRAVES_011b=
+					{
+						Posn
+						{
+							Abs
+							{	X	31677696,
+								Z	34408960
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M1GRAVES_011a=
+					{
+						Posn
+						{
+							Abs
+							{	X	31682048,
+								Z	34409728
+							}
+						},
+						Action	wpdmbtrkstopno
+					}
+				},
+				NumInForm		greenstrength,
+				Formation	FTT_LONGLINE,
+				GroundItem	M1GRAVES_2904=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_RAF,
+					Shape	Truck1Shape
+			}	}	}
+	};

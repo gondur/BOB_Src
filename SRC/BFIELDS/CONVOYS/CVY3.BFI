@@ -1,0 +1,58 @@
+	WayPoint	cvy3_0101,
+	WayPoint	cvy3_0102,
+	GroundItem	cvy3_2901,
+	BattleField
+	{
+		FileName	FIL_1_CVY3=cvy3.BF,
+		Title	{},
+		Comment	{}
+,
+		GroundGroup
+		{
+			Posn
+			{
+				Abs
+				{	X	114688,
+					Z	32653312
+				}
+			},
+			Route
+			{
+				WayPoint	cvy3_0102=
+				{
+					Posn
+					{
+						Abs
+						{	X	9256960,
+							Z	33456128
+						}
+					},
+					//Vel	145,
+					Action	wpdmbtrknoactno
+				},
+				WayPoint	cvy3_0101=
+				{
+					Posn
+					{
+						Abs
+						{	X	11812864,
+							Z	35094528
+						}
+					},
+					//Vel	145,
+					Action	wpacnoactionno,
+					Range	0
+				}
+			},
+			NumInForm		3,
+			Formation	FTT_SHIPCONVOY1,
+			GroundItem	cvy3_2901=
+			{
+				BritBoatBAND,
+				Type	PT_ATransportShip,
+				Side	NAT_RAF,
+				Shape	{List DSTRYR,COASTR,COASTR,COASTR,COASTR,DSTRYR,COASTR,COASTR,COASTR,COASTR,DSTRYR,COASTR,COASTR,COASTR,COASTR,DSTRYR},
+				//Vel	145,
+				SetUID	UID_CONV_3
+		}	}
+	};

@@ -1,0 +1,92 @@
+	WayPoint	M3WITTER_011f,
+	WayPoint	M3WITTER_0120,
+	WayPoint	M3WITTER_0121,
+	WayPoint	M3WITTER_0122,
+	WayPoint	M3WITTER_0123,
+	GroundItem	M3WITTER_2906,
+	BattleField
+	{
+		FileName	FIL_1_M3WITTER=M3WITTER.BF,
+		Title	{},
+		Comment	{}
+,
+	ItemGroup
+	{	Target	UID_AF_WITTERING,
+			GroundGroup
+			{
+				Posn
+				{
+					Abs
+					{	X	25998848,
+						Z	46318336
+					}
+				},
+				Route
+				{
+					WayPoint	M3WITTER_0120=
+					{
+						Posn
+						{
+							Abs
+							{	X	26009088,
+								Z	46321280
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3WITTER_0123=
+					{
+						Posn
+						{
+							Abs
+							{	X	26021376,
+								Z	46324992
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3WITTER_0122=
+					{
+						Posn
+						{
+							Abs
+							{	X	26026496,
+								Z	46321152
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3WITTER_0121=
+					{
+						Posn
+						{
+							Abs
+							{	X	26029824,
+								Z	46312448
+							}
+						},
+						Action	wpdmbtrknoactno
+					},
+					WayPoint	M3WITTER_011f=
+					{
+						Posn
+						{
+							Abs
+							{	X	26025728,
+								Z	46306816
+							}
+						},
+						Action	wpstopno
+					}
+				},
+				NumInForm		3,
+				Formation	FTT_BIGV,
+				GroundItem	M3WITTER_2906=
+				{
+					BritMobileBAND,
+					Type	PT_VEHICLES,
+					Side	NAT_BLUE,
+					Shape	RUNTRK,
+					Vel	2501
+			}	}	}
+	};

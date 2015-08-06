@@ -1,0 +1,81 @@
+        87654321012345678
+
+      8 YXxLHAAAAAAAAIuUY 8        
+      7 XxLHtmmmmmmmmBIuU 7
+      6 xLHtlhaaaaaainBIu 6        
+      5 LHtlhTMMMMMMbinBI 5
+      4 GslhTLHAAAAINbinB 4    
+      3 GsgSLHtmmmmBINboC 3
+      2 GsgSGslhaainBOcoC 2        
+      1 GsgSGsg411boCOcoC 1
+      0 GsgSGsg402coCOcoC 0        
+      1 GsgSGsf332coCOcoC 1
+      2 GsgSFrkeedjoCOcoC 2        
+      3 GsfRKFqqqqpDJOcoC 3
+      4 FrkfRKEEEEDJPdjoC 4      
+      5 KFrkfQQQQQQPdjpDJ 5
+      6 wKFrkeeeeeedjpDJv 6        
+      7 WwKFqqqqqqqqpDJvV 7
+      8 ZWwKEEEEEEEEDJvVZ 8        
+
+        87654321012345678
+                                                                     
+	int		DX=1,DY=width;
+	int		DDA=0;
+	Buffer*		curr=Centresquare;
+	int		counter=1;
+	int		R=0;	//radius
+	int		R2=0;	//radius/2
+	enum	Phase
+	{	PH_0,PH_1,PH_2,PH_3,PH_4,			//centre square
+		PH_A,PH_B,PH_C,PH_D,PH_E,PH_F,PH_G,PH_H,	//odd radius
+		PH_I,PH_J,PH_K,PH_L,				//filler
+		PH_M,PH_N,PH_O,PH_P,PH_Q,PH_R,PH_S,PH_T,	//even radius
+		PH_U,PH_V,PH_W,PH_X,				//corners
+		PH_Y,PH_Z,PH_END				//last 4
+	};
+	Phase	phase=PH_0;
+	while(phase!=PH_END)	//optimiser should make case statement bypass while statement
+	{
+		Process(curr);
+		if (--counter!=0)
+			curr+=DDA;
+		else
+			switch(phase)
+case		phase		DDA		R+=	R2+=	counter=	curr+=
+							
+PH_0:		PH_1		+DX		1	0	2		DDA
+PH_1:		PH_2		+DY		0	0	2		DDA
+PH_2:		PH_3		-DX		0	0	2		DDA
+PH_3:		PH_4		-DY		0	0	2		DDA
+PH_4:		PH_A		+DX		1	1	2		DDA
+PH_A:		PH_B		+DX+DY		0	0	R		DDA
+PH_B:		PH_C		+DY		0	0	R		DDA
+PH_C:		PH_D				0	0	R		DDA
+PH_D:		PH_E				0	0	R		DDA
+PH_E:		PH_F				0	0	R		DDA
+PH_F:		PH_G				0	0	R		DDA
+PH_G:		PH_H				0	0	R		DDA
+PH_H:		PH_I				0	0	R		DDA
+PH_I:		PH_J				0	0	R		DDA
+PH_J:		PH_K				0	0	R		DDA
+PH_K:		PH_L				0	0	R		DDA
+PH_L:		PH_M				0	0	R		DDA
+PH_M:		PH_N				0	0	R		DDA
+PH_N:		PH_O				0	0	R		DDA
+PH_O:		PH_P				0	0	R		DDA
+PH_P:		PH_Q				0	0	R		DDA
+PH_Q:		PH_R				0	0	R		DDA
+PH_R:		PH_S				0	0	R		DDA
+PH_S:		PH_T				0	0	R		DDA
+PH_T:		PH_U				0	0	R		DDA
+PH_U:		PH_V				0	0	R		DDA
+PH_V:		PH_W				0	0	R		DDA
+PH_W:		PH_X				0	0	R		DDA
+PH_X:		PH_Y				0	0	R		DDA
+PH_Y:		PH_Z				0	0	R		DDA
+PH_Z:		PH_ALL				0	0	R		DDA
+
+
+		
+	}

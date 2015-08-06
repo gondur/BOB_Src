@@ -1,0 +1,85 @@
+	BattleField
+	{
+		FileName	FIL_1_D1C1=d1c1.BF,
+		Title	{},
+		Comment	{}
+,
+
+	GroundGroup
+	{
+		Posn
+		{
+			Abs
+					{	X	36457920,
+						Z	29732864
+					}
+		},
+		Route
+		{
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	 3055616,
+						Z	20799488
+					}
+				},
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	 6639616,
+						Z	21987328
+					}
+				},
+				Action	wpdmbtrknoactno
+			},
+			WayPoint	mainwld_0102=
+			{
+				Posn
+				{
+					Abs
+					{	X	 9936896,
+						Z	21639168
+					}
+				},
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	13008896,
+						Z	23871488
+					}
+				},
+				Action	wpdmbtrknoactno
+			},
+			WayPoint
+			{
+				Posn
+				{
+					Abs
+					{	X	18169856,
+						Z	24731648
+					}
+				},
+				Action	wpstopno
+			}
+		},
+		NumInForm		6,
+		Formation	FTT_SHIPCONVOY1,
+		GroundItem	mainwld_2900=
+		{
+			BritBoatBAND,
+			PT_ATransportShip,
+			NAT_BLUE,
+			CTYPE,
+			SetUID	UID_CONV_D1C1
+	}	}
+	};
